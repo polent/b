@@ -8,7 +8,7 @@ numberOfLatestPostsToShow: 3
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 <h1>Cases and more</h1>
-<p>Welcome to my blog! As a Director of Experience Engineering at Publicis Sapient, I bring over 20 years of expertise in leading dynamic teams and managing innovative web projects. This space is where I'll share case studies, code snippets, and insights into creating user-centric, accessible web experiences. Dive into my world of Agile project management, web design, SEO, and effective CMS scaling. Join me in exploring the intersection of technology and leadership, and how these elements combine to forge exceptional digital experiences.</p>
+<p>Welcome to my blog! My Name is Holger Hellinger. As a Director of Experience Engineering at Publicis Sapient, I bring over 20 years of expertise in leading dynamic teams and managing innovative web projects. This space is where I'll share case studies, code snippets, and insights into creating user-centric, accessible web experiences. Dive into my world of Agile project management, web design, SEO, and effective CMS scaling. Join me in exploring the intersection of technology and leadership, and how these elements combine to forge exceptional digital experiences.</p>
 <h2>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h2>
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}

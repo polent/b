@@ -7,7 +7,7 @@ eleventyNavigation:
 
 # About Me
 
-Welcome to my blog, a chronicle of my role as the Director of Experience Engineering at [Publicis Sapient](https://www.publicissapient.com/). Spanning over two decades in the tech industry, my career has been marked by leadership in dynamic team environments and managing multifaceted projects. This blog is a window into the world of creating responsive, user-focused web experiences, utilizing a mix of technologies including HTML/5, CSS, JavaScript, and mobile applications.
+Welcome to my blog. My name is Holger Hellinger. A chronicle of my role as the Director of Experience Engineering at [Publicis Sapient](https://www.publicissapient.com/). Spanning over two decades in the tech industry, my career has been marked by leadership in dynamic team environments and managing multifaceted projects. This blog is a window into the world of creating responsive, user-focused web experiences, utilizing a mix of technologies including HTML/5, CSS, JavaScript, and mobile applications.
 
 In this space, I'll share case studies and insights from my leadership journey, emphasizing my commitment to W3C standards, Mobile First principles, and Agile methodologies. You'll find a treasure trove of practical code examples and valuable insights that underscore my dedication to accessible and inclusive digital solutions.
 
