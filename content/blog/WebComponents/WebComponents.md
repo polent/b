@@ -11,7 +11,7 @@ tags:
 
 At my current employer we do all kind of Web Applications. We call it Experience Technology. These customer user experiences have different needs. Sometimes we do static content deliverables like temporary marketing campaign pages, or knowledge bases that never get touched again. More often we do enterprise shopping experiences, catalogue maintenance, and other e-commerce platforms.
 
-Asking someone of my team how to build their next customer user experience I get named: [React](https://reactjs.org/), [VUE](https://vuejs.org/), [Svelte]https://svelte.dev/) or at last, [Angular](https://angular.io/). Normally no one tells me yet: Let’s do it native, let’s use Web Components.
+Asking someone of my team how to build their next customer user experience I get named: [React](https://reactjs.org/), [VUE](https://vuejs.org/), [Svelte](https://svelte.dev/) or at last, [Angular](https://angular.io/). Normally no one tells me yet: Let’s do it native, let’s use Web Components.
 
 ## Do I know why?
 
@@ -136,7 +136,7 @@ Shadow DOM like shown below will be generated.
 
 ### Use HTML Templates
 
-Stay DRY. Use HTML templates. Look at the the above example. If you want to render more paragraphs, you can repeat your <p> or just use a `<template>`. It is obvious what is wet and what is dry.
+Stay DRY. Use HTML templates. Look at the the above example. If you want to render more paragraphs, you can repeat your `<p>` or just use a `<template>`. It is obvious what is wet and what is dry.
 
 You can use them together with custom elements and shadow root, or alone.
 
