@@ -283,3 +283,17 @@ footer {
   width: 100%;
   background-color: var(--color-gray-20);
 }
+blockquote {
+  font-weight: 100;
+  line-height: 1.4;
+  position: relative;
+  margin: 0 0 0 1em;
+  padding: 0 0 0 1em;
+  border-left: 2px dashed var(--color-gray-50);
+}
+
+cite {
+  line-height: 3;
+  text-align: right;
+  display: block;
+}
