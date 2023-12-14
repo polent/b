@@ -51,7 +51,7 @@ REST is a software architecture style that defines how to create web services. W
 
 ### GraphQL
 
-{% image "./4.png", "Flow: Client, GraphQL Server, DataGraphQL", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./5.png", "Flow: Client, GraphQL Server, DataGraphQL", [], "(min-width: 40em) 608px, 100vw" %}
 
 [GraphQL](https://graphql.org/learn/) is a query language for your API. Also, a server-side connection for executing queries belongs to a type of system to use for your data management. GraphQL is not tied to a personal database or storage engine and is driven by hidden code and data management.
 
