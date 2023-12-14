@@ -28,11 +28,15 @@
     --color-gray-20: #e0e0e0;
     --color-gray-50: #c0c0c0;
     --color-gray-90: #dad8d8;
+    --color-gray-90-inverse: #333;
 
     /* --text-color is assigned to --color-gray-_ above */
-    --text-color-link: #1493fb;
-    --text-color-link-active: #6969f7;
-    --text-color-link-visited: #a6a6f8;
+    --text-color-link: #02ed16;
+    --text-color-link-active: #96f769;
+    --text-color-link-visited: #02edb5;
+    --text-color-link-inverse: #082840;
+    --text-color-link-active-inverse: #5f2b48;
+    --text-color-link-visited-inverse: #17050f;
 
     --background-color: #15202b;
   }
@@ -189,19 +193,37 @@ header {
   grid-template-columns: 1fr;
   grid-gap: 0.25em;
 }
+
 @media only screen and (min-width: 640px) {
   .postlist {
     grid-template-columns: 1fr 1fr;
   }
-}
-
-@media only screen and (min-width: 640px) {
   .postlist-item {
     padding: 0.5em;
   }
   .postlist-item:nth-child(4n + 1),
   .postlist-item:nth-child(4n) {
     background-color: var(--color-gray-20);
+    color: var(--color-gray-90-inverse);
+  }
+
+  .postlist-item:nth-child(4n + 1) a[href],
+  .postlist-item:nth-child(4n) a[href] {
+    color: var(--text-color-link-inverse);
+  }
+  .postlist-item:nth-child(4n + 1) a[href]:visited,
+  .postlist-item:nth-child(4n) a[href]:visited {
+    color: var(--text-color-link-visited-inverse);
+  }
+  .postlist-item:nth-child(4n + 1)a[href]:hover,
+  .postlist-item:nth-child(4n + 1)a[href]:active,
+  .postlist-item:nth-child(4n)a[href]:hover,
+  .postlist-item:nth-child(4n)a[href]:active {
+    color: var(--text-color-link-active-inverse);
+  }
+  .postlist-item:nth-child(4n + 1) time,
+  .postlist-item:nth-child(4n) time {
+    color: var(--color-gray-90-inverse);
   }
 }
 
