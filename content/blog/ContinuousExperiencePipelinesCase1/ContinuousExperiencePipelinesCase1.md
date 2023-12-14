@@ -3,6 +3,7 @@ title: Case Study - Enhancing Digital Solutions for a Leading Logistics and Tran
 description: Publicis Sapient tackled a major logistics project by integrating Web Components with Stencil and Figma. This strategy streamlined development, unified the codebase, and enhanced design consistency across platforms, significantly boosting efficiency and maintenance in a complex, multi-technology landscape.
 date: 2023-12-13
 tags:
+  - web components
   - stencil
   - figma
 ---

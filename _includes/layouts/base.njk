@@ -8,12 +8,14 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
+    {%- if canonical %}<link rel="canonical" href="{{ canonical }}"/>{% endif %}
+
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
-		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
+		<meta name="generator" content="{{ eleventy.generator }}">
 
 		{#-
 		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
@@ -56,9 +58,7 @@
 			{{ content | safe }}
 		</main>
 
-		<footer>
-      <a href="https://polente.de/impressum">Imprint</a>
-    </footer>
+		<footer></footer>
 
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
 	</body>
