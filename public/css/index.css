@@ -185,36 +185,34 @@ header {
 .postlist {
   list-style: none;
   padding: 0;
-  padding-left: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.25em;
 }
-.postlist-item {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  counter-increment: start-from -1;
-  margin-bottom: 1em;
+@media only screen and (min-width: 640px) {
+  .postlist {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-.postlist-item:before {
-  display: inline-block;
-  pointer-events: none;
-  content: "" counter(start-from, decimal-leading-zero) ". ";
-  line-height: 100%;
-  text-align: right;
-  margin-left: -1.5rem;
+
+@media only screen and (min-width: 640px) {
+  .postlist-item {
+    padding: 0.5em;
+  }
+  .postlist-item:nth-child(4n + 1),
+  .postlist-item:nth-child(4n) {
+    background-color: var(--color-gray-20);
+  }
 }
-.postlist-date,
-.postlist-item:before {
-  font-size: 0.8125em; /* 13px /16 */
-  color: var(--color-gray-90);
-}
+
 .postlist-date {
   word-spacing: -0.5px;
+  display: block;
 }
 .postlist-link {
   font-size: 1.1875em; /* 19px /16 */
   font-weight: 700;
   flex-basis: calc(100% - 1.5rem);
-  padding-left: 0.25em;
   padding-right: 0.5em;
   text-underline-position: from-font;
   text-underline-offset: 0;

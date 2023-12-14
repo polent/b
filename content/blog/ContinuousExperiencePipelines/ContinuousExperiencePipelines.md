@@ -74,7 +74,7 @@ Figma has revolutionized our workflow by offering unparalleled control and integ
 
 ### How does a Continuous Experience Pipeline finally look like?
 
-{% image "./f4.png", "", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./f4.png", "A flow of Components and Tools used in the Continuous Experience Pipeline utilized and mentioned here", [], "(min-width: 40em) 608px, 100vw" %}
 
 In summary, our journey at Publicis Sapient in web development and design showcases the adaptability and success of our approaches, particularly in the continual evolution of tools and technologies in our Continuous Experience Pipeline.
 
