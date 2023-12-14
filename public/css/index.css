@@ -120,11 +120,17 @@ header:after {
 }
 
 table {
-  margin: 1em 0;
+  margin: 1em auto;
 }
 table td,
 table th {
   padding-right: 1em;
+}
+thead tr th {
+  border-bottom: 2px solid var(--color-gray-90);
+}
+tbody tr td {
+  border-bottom: 1px solid var(--color-gray-90);
 }
 
 pre,
@@ -298,6 +304,8 @@ h2 + .header-anchor {
   height: auto;
   aspect-ratio: 800 / 457 auto;
   object-fit: contain;
+  margin: 0 auto;
+  display: block;
 }
 footer {
   position: absolute;
