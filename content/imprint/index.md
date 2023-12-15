@@ -14,6 +14,11 @@ Mainzer Straße 2g\
 Email Contact:
 [sitte@polente.de](mailt:sitte@polente.de)
 
-Content Responsibility according to § 55 paragraph 2 RStV\
+## Content Responsibility
+
+according to § 55 paragraph 2 RStV:
+
 Holger Hellinger\
 Contact details as above
+
+Parent Blog: [https://polente.de](https://polente.de)

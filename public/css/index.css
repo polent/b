@@ -105,7 +105,7 @@ main :first-child {
 }
 
 header {
-  border-bottom: 1px dashed var(--color-gray-20);
+  border-bottom: 2px dotted var(--color-gray-20);
 }
 header:after {
   content: "";
@@ -168,6 +168,7 @@ header {
   font-size: 5em;
   margin-right: 1em;
   text-decoration: none;
+  transition: all 0.5s;
 }
 .home-link:hover {
   transform: scale(1.1);
@@ -326,4 +327,14 @@ cite {
   line-height: 3;
   text-align: right;
   display: block;
+}
+
+ul.b-tags {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-rows: masonry;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
