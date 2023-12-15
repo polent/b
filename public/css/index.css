@@ -59,9 +59,46 @@ html {
   overflow-y: scroll;
 }
 body {
-  max-width: 40em;
+  max-width: 960px;
   min-height: 100vh;
   position: relative;
+  font-size: clamp(0.8rem, 6vw, 1.1rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1.5rem 0 0 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+h2 {
+  font-size: clamp(1.6rem, 6vw, 2.4rem);
+}
+h3 {
+  font-size: clamp(1.4rem, 6vw, 2.2rem);
+}
+h4 {
+  font-size: clamp(1.2rem, 6vw, 2rem);
+}
+h5 {
+  font-size: clamp(1rem, 6vw, 1.8rem);
+}
+h6 {
+  font-size: clamp(0.8rem, 6vw, 1.6rem);
+}
+
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6 {
+  margin-top: 0.2rem;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -79,10 +116,6 @@ p:last-child {
   margin-bottom: 0;
 }
 p {
-  line-height: 1.5;
-}
-
-li {
   line-height: 1.5;
 }
 
@@ -201,7 +234,7 @@ header {
   grid-gap: 0.25em;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 720px) {
   .postlist {
     grid-template-columns: 1fr 1fr;
   }
@@ -237,9 +270,10 @@ header {
 .postlist-date {
   word-spacing: -0.5px;
   display: block;
+  text-align: right;
+  font-style: italic;
 }
 .postlist-link {
-  font-size: 1.1875em; /* 19px /16 */
   font-weight: 700;
   flex-basis: calc(100% - 1.5rem);
   padding-right: 0.5em;
@@ -270,7 +304,7 @@ header {
   gap: 0.5em;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 1em 0;
 }
 .post-metadata time {
   margin-right: 1em;
