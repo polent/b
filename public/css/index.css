@@ -231,7 +231,10 @@ header {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 0.25em;
+  grid-gap: 0.5em;
+}
+.postlist-item p {
+  margin-bottom: 0;
 }
 
 @media only screen and (min-width: 720px) {
