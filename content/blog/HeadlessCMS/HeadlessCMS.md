@@ -17,7 +17,7 @@ First CMS were still providing static HTML pages, that were rendered server-side
 
 This came with some problems as to how HTML is used, contents were only available in one format, and the source was created on a server that did not know anything about the device it was rendered on. With upcoming Mobile, but also other IoT devices it was hard to render this content appropriate on all devices.
 
-{% image "./1.png", "From Static Pages to Headless CMS, From HTML to Modern Layout techniques", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./1.png", "From Static Pages to Headless CMS, From HTML to Modern Layout techniques", [], "(min-width: 40em) 960px, 100vw" %}
 
 ## What does this mean?
 
@@ -29,7 +29,7 @@ How do traditional CMS monoliths work?
 
 A traditional CMS is a software that you either install and manage yourself or in a managed server environment. Traditional CMS is also known as “monolithic” because they contain all functions and assumptions for working in a single system. Traditional CMS often offers a visual authoring interface for editing content ([WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG)), as they only have one context for displaying the content — usually a website. The system normally offers a direct editing layer on an existing rendered layout.
 
-{% image "./2.png", "Showing a Headless flow, with an API layer and a Monolithic setup where Rendering, Data and Authoring is in one layerHeadless vs monolithic", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./2.png", "Showing a Headless flow, with an API layer and a Monolithic setup where Rendering, Data and Authoring is in one layerHeadless vs monolithic", [], "(min-width: 40em) 960px, 100vw" %}
 
 The headless CMS only contains a data layer and authoring. They provide an API for a headless rendering layer that consumes the data. The aforementioned is also one of the challenges. How can you render a WYSIWYG experience when your authoring system does not know about the rendering?
 
@@ -39,19 +39,19 @@ A new generation of CMS were invented. These often offer additionally Headless o
 
 Headless also provides the possibility to get a content hub to ensure “Content first” implementation. Your one base of content will be able to maintain a bucket of additional endpoints.
 
-{% image "./3.png", "The CMS as Content Hub", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./3.png", "The CMS as Content Hub", [], "(min-width: 40em) 960px, 100vw" %}
 
 This data will be consumed via APIs — below are some examples.
 
 ### Representational state transfer (REST)
 
-{% image "./4.png", "Rest API Flow", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./4.png", "Rest API Flow", [], "(min-width: 40em) 960px, 100vw" %}
 
 REST is a software architecture style that defines how to create web services. Web services, which conform to the REST architectural style and are known as RESTful Web Services, provide interoperability between computer systems on the Internet. RESTful web services allow the requesting systems to access and manipulate web resources using a set of stateless operations.
 
 ### GraphQL
 
-{% image "./5.png", "Flow: Client, GraphQL Server, DataGraphQL", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./5.png", "Flow: Client, GraphQL Server, DataGraphQL", [], "(min-width: 40em) 960px, 100vw" %}
 
 [GraphQL](https://graphql.org/learn/) is a query language for your API. Also, a server-side connection for executing queries belongs to a type of system to use for your data management. GraphQL is not tied to a personal database or storage engine and is driven by hidden code and data management.
 

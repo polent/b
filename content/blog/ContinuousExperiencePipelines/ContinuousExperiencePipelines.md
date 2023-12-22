@@ -12,7 +12,7 @@ tags:
 
 Publicis Sapient’s journey in web development and design, encapsulated in our Continuous Experience Pipeline approach, highlights our adaptability and success in addressing diverse client needs. Our approach demonstrates how the flexibility in choosing tools and technology can significantly improve the efficiency and scalability of web projects with Continuous Experience Pipelines.
 
-{% image "./f1.png", "", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./f1.png", "", [], "(min-width: 40em) 960px, 100vw" %}
 
 ### Introducing the Continuous Experience Pipelines
 
@@ -28,7 +28,7 @@ Our Continuous Experience Pipeline approach elegantly overcomes these challenges
 
 ### Case Studies, diverse ways of achieving Continuous Experience Pipelines
 
-{% image "./f2.png", "", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./f2.png", "", [], "(min-width: 40em) 960px, 100vw" %}
 
 At Publicis Sapient, we have successfully implemented numerous Design Systems as part of a Continuous Experience Pipeline setup for various clients. Our experience has demonstrated the effectiveness of this approach even in highly scalable customer environments.
 
@@ -37,7 +37,7 @@ At Publicis Sapient, we have successfully implemented numerous Design Systems as
 
 ### Figma: A Game-Changer in the Continuous Experience Pipeline
 
-{% image "./f3.png", "", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./f3.png", "", [], "(min-width: 40em) 960px, 100vw" %}
 
 ### Background on Continuous Experience Pipelines
 
@@ -74,7 +74,7 @@ Figma has revolutionized our workflow by offering unparalleled control and integ
 
 ### How does a Continuous Experience Pipeline finally look like?
 
-{% image "./f4.png", "A flow of Components and Tools used in the Continuous Experience Pipeline utilized and mentioned here", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./f4.png", "A flow of Components and Tools used in the Continuous Experience Pipeline utilized and mentioned here", [], "(min-width: 40em) 960px, 100vw" %}
 
 In summary, our journey at Publicis Sapient in web development and design showcases the adaptability and success of our approaches, particularly in the continual evolution of tools and technologies in our Continuous Experience Pipeline.
 
@@ -94,7 +94,7 @@ AI can revolutionize a Design System Manager and Continuous Experience Pipeline 
 
 ### Invitation
 
-{% image "./f5.png", "", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./f5.png", "", [], "(min-width: 40em) 960px, 100vw" %}
 
 If our journey in web development and design resonates with you, we’re eager to connect. Whether you’re looking to explore new tools like Stencil and Figma or want to share your own experiences, we welcome your insights and collaboration. Feel free to reach out to us for an exchange of ideas and strategies. Let’s work together to create impactful digital solutions.
 

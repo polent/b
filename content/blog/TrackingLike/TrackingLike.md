@@ -24,15 +24,15 @@ A quick check of a German Newspaper and their current state. Reason enough for m
 
 ### Without Protection
 
-{% image "./Clipboard01.png", "Shows Firefox Performance Tab with 395 Requests, 25 MB Data, and loading Time of 23 seconds — with tracking protection off", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./Clipboard01.png", "Shows Firefox Performance Tab with 395 Requests, 25 MB Data, and loading Time of 23 seconds — with tracking protection off", [], "(min-width: 40em) 960px, 100vw" %}
 
 ### Without Protection
 
-{% image "./Clipboard02.png", "451 requests, 40MB, finished after 1,61 seconds", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./Clipboard02.png", "451 requests, 40MB, finished after 1,61 seconds", [], "(min-width: 40em) 960px, 100vw" %}
 
 ### With Protection
 
-{% image "./Clipboard03.png", "100 requests, 14MB, finished after 1,47 seconds", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./Clipboard03.png", "100 requests, 14MB, finished after 1,47 seconds", [], "(min-width: 40em) 960px, 100vw" %}
 
 So, why is this a problem for your customers and yourself?
 
@@ -96,7 +96,7 @@ A side effect of this is, browser vendors like [Brave](https://brave.com/) get s
 
 The issue with politeness, for the wish to not getting tracked, apparently is getting visible. Reading [such articles, that blame browser vendors](https://digiday.com/marketing/wtf-apples-itp-2-3-update/) protecting their users, or [comments in tracking tools documentation](https://gist.github.com/mbaersch/677cfad72592631eea4d385116c91a63), that claim that bypass is nearly impossibly using local storage, are showing the dilemma. There is a lot of energy in trying to bypass users who do not want to get tracked.
 
-{% image "./Clipboard04.png", "The Hare and the Hedgehog Source: https://commons.wikimedia.org/wiki/File:Joseph-Albert_wettlauf-des-igels-und-des-hasen-1862.jpg ", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./Clipboard04.png", "The Hare and the Hedgehog Source: https://commons.wikimedia.org/wiki/File:Joseph-Albert_wettlauf-des-igels-und-des-hasen-1862.jpg ", [], "(min-width: 40em) 960px, 100vw" %}
 
 The more the industry bypasses, the more the game of “The Hare and the Hedgehog” starts. In the end, your client loses: Trust in you, speed and quality time on the internet, financially as stolen bandwidth and more.
 

@@ -28,7 +28,7 @@ Why the frameworks are so common and preferred is having some reasons:
 
 Doing a quick poll with our experience technologists hardens the opinion.
 
-{% image "./image.png", "Showing React 58%, Angular 3%, VUE 15%, Native Web Components 7%. Other 13%", [], "(min-width: 40em) 608px, 100vw" %}
+{% image "./image.png", "Showing React 58%, Angular 3%, VUE 15%, Native Web Components 7%. Other 13%", [], "(min-width: 40em) 960px, 100vw" %}
 
 Showing React 58%, Angular 3%, VUE 15%, Native Web Components 7%. Other 13%
 
