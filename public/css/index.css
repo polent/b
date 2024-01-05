@@ -345,12 +345,6 @@ h2 + .header-anchor {
   margin: 0 auto;
   display: block;
 }
-footer {
-  position: absolute;
-  bottom: 1px;
-  width: 100%;
-  background-color: var(--color-gray-20);
-}
 blockquote {
   font-weight: 100;
   line-height: 1.4;
