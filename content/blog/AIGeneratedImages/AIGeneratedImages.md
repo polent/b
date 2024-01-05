@@ -22,7 +22,7 @@ Platforms like Google and Bing, which have long been repositories for real-world
 
 {% image "./1000006111.png", "Collage of AI generated children style cats", [], "(min-width: 40em) 960px, 100vw" %}
 
-Take, for instance, the hypothetical situation where I publish images of cats that my daughter has drawn when she was three years old. These aren't real cats, but with enough online traction, they could very well populate search engines as genuine images of cats. This example illustrates the power of AI in creating convincing, albeit fictional, imagery.
+Take, for instance, the hypothetical situation where I publish images of cats that my daughter has drawn when she was three years old. These aren't real cats, but with enough online traction, they could very well populate search engines as genuine images of cats. This example illustrates the power of AI in creating convincing, albeit fictional, imagery, but creates fictional imagery.
 
 ## The Real Challenge
 
