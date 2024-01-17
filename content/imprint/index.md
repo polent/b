@@ -12,7 +12,7 @@ Mainzer Straße 2g\
 55435 Gau-Algesheim
 
 Email Contact:
-[sitte@polente.de](mailt:sitte@polente.de)
+[sitte@polente.de](mailto:sitte@polente.de)
 
 ## Content Responsibility
 
