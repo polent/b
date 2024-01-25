@@ -73,6 +73,7 @@ const messages = [
         'role': 'user',
         'content': 'Requesting the Recipe'
     ]
+]
 ```
 
 With this approach, I specifically request `GPT` to generate responses in JSON format. Initially, my plan was to have GPT create the entire Markdown content for the [JamStack](https://jamstack.org/) blog, which is built using [11ty](https://www.11ty.dev/). However, I encountered issues with reliability and testing challenges. To address this, I shifted to using JSON format, which proved to be simpler to test. If there's an issue, I can easily discard the output and start again. Presently, this restart is needed in about 1 out of 10 cases. The JSON format is structured as follows.
