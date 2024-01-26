@@ -55,8 +55,8 @@ Async function fetchopenairesponse(messages) {
     throw new Error(`http error! status: ${response.status}`);
   }
 
-  const data = await response.json();
-  return data.choices[0].text.trim();
+  const data = await JSON.parse(response);
+  return data.choices[0]['message']['content'];
 }
 ```
 
@@ -124,7 +124,7 @@ Async function fetchdalleimage(prompt) {
     throw new Error(`http error! status: ${response.status}`);
   }
 
-  const data = await response.json();
+  const data = await JSON.parse(response);
 
   return data;
 }
