@@ -1,8 +1,8 @@
 ---
-Title: crafting an ai-driven culinary adventure
-Description: Explore AI Chefs at Polente, where ai meets culinary art! discover unique, ai-generated recipes and imagery, automated via github, refreshed daily with innovative tech-driven cooking inspiration.
-Date: 2024-01-25
-Tags:
+title: "Crafting an ai-driven culinary adventure"
+description: "Explore AI Chefs at Polente, where ai meets culinary art! discover unique, ai-generated recipes and imagery, automated via github, refreshed daily with innovative tech-driven cooking inspiration"
+date: 2024-01-25
+tags:
   - recipes
   - blog
   - ai
@@ -142,10 +142,10 @@ With all the essential data and paths in place, I then generate a markdown file.
 
 ```bash
 ---
-Title: ""
-Description: ""
-Tags: []
-FigureRecipe:
+title: ""
+description: ""
+tags: []
+figureRecipe:
   caption: ""
   imageSrc: ""
   imageTitle: ""
