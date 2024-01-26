@@ -108,7 +108,7 @@ Async function fetchdalleimage(prompt) {
     method: "post",
     headers: {
       "content-type": "application/json",
-      authorization: "Bearer your_open_ai_key",
+      "authorization": "Bearer your_open_ai_key",
     },
     body: JSON.stringify({
       prompt: prompt,
