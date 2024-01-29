@@ -97,7 +97,8 @@ With this approach, I specifically request `GPT` to generate responses in `JSON`
 ```
 
 After crafting the `JSON` structure, the next step in my process involves interacting with `GPT` once more. This time, the goal is to generate a creative prompt for an image. This prompt is designed to align perfectly with the recipe's ingredients and description. It's a fascinating blend of AI's understanding of food and its capability to visualize it.
-Creating a visual feast with DALL·E 3.
+
+### Creating a visual feast with DALL·E 3
 
 Once `GPT` provides the image prompt, I then employ a method similar to the one below to request an image from DALL·E 3. This approach allows for the creation of unique, ai-generated images that visually represent the essence of each recipe. It's not just about listing ingredients and methods; it's about bringing each dish to life visually, making the cooking experience more engaging and inspiring.
 
@@ -132,10 +133,12 @@ Async function fetchdalleimage(prompt) {
 ```
 
 Before finalizing the content, I perform a series of tests on both the url and the revised prompt. This step is crucial to ensure their validity. It's all about maintaining the quality and reliability of the information being processed.
-Seamless integration and storage
+
+#### Seamless integration and storage
 
 Once I've confirmed that the data is accurate and usable, I proceed to save it on my webserver. This is a vital step in preserving the integrity and accessibility of the content.
-Crafting and archiving markdown files
+
+#### Crafting and archiving markdown files
 
 With all the essential data and paths in place, I then generate a markdown file. This file, bearing the same name as its corresponding image, is meticulously stored on the server. This methodical approach not only aids in organization but also ensures a smooth retrieval process for displaying the content on the website.
 
@@ -176,10 +179,12 @@ Name
 #### The Final Step In The Journey
 
 The creation and refinement of these recipes and their accompanying ai-generated imagery is just the beginning. To bring this project to life, I rely on a well-structured git repository. Each piece of content, once perfected, is committed and pushed to github. You can explore the repository at [github.com/polent/recipe](https://github.com/polent/recipe).
-Automated deployment for continuous fresh content
+
+#### Automated deployment for continuous fresh content
 
 The magic happens when I push these updates. Each push activates a build script through a github action, which then deploys the new content to the server. This process isn't just manual; it's augmented with automation. A cronjob is set up to trigger these updates randomly, ensuring that the blog is constantly refreshed with new recipes. At present, this means about 4-5 new culinary creations are shared each day.
-A recipe for innovation
+
+### A recipe for innovation
 
 This project is more than just a collection of recipes. It's a testament to the harmonious blend of culinary passion and technological innovation. Through this journey, I aim to not just share dishes but to inspire creativity and showcase the endless possibilities of AI in enhancing our daily experiences.
 
