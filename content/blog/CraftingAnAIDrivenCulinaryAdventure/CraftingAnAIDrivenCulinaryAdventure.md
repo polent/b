@@ -51,12 +51,13 @@ Async function fetchopenairesponse(messages) {
     }
   );
 
-  if (!response.ok) {
-    throw new Error(`http error! status: ${response.status}`);
+  const data = await JSON.parse(response);
+
+  if (data.error) {
+    throw new Error(`http error! status: ${data.message}`);
   }
 
-  const data = await JSON.parse(response);
-  return data.choices[0]['message']['content'];
+  return data.choices[0].message.content;
 }
 ```
 
@@ -120,13 +121,13 @@ Async function fetchdalleimage(prompt) {
     }),
   });
 
-  if (!response.ok) {
-    throw new Error(`http error! status: ${response.status}`);
-  }
-
   const data = await JSON.parse(response);
 
-  return data;
+  if (data.error) {
+    throw new Error(`http error! status: ${data.message}`);
+  }
+
+  return data.data[0];
 }
 ```
 
