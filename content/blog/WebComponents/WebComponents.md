@@ -186,10 +186,10 @@ But the base of all should be a Web component. **Just do it**.
 
 ## Resources mentioned and used
 
-- [https://royal.pingdom.com/](https://royal.pingdom.com/)webpages-are-getting-larger-every-year-and-heres-why-it-matters/
+- [https://royal.pingdom.com/webpages-are-getting-larger-every-year-and-heres-why-it-matters/](https://royal.pingdom.com/webpages-are-getting-larger-every-year-and-heres-why-it-matters/)
 - [https://www.sitepoint.com/average-page-weight-increased-another-16-2015/](https://www.sitepoint.com/average-page-weight-increased-another-16-2015/)
 - [https://conversionxl.com/blog/why-simple-websites-are-scientifically-better/](https://conversionxl.com/blog/why-simple-websites-are-scientifically-better/)
-- [https://leanweb.dev/ebook/intro/](ttps://leanweb.dev/ebook/intro/)
+- [https://leanweb.dev/ebook/intro/](https://leanweb.dev/ebook/intro/)
 - [https://uglyduck.ca/html-like-1999/](https://uglyduck.ca/html-like-1999/)
 - [https://twitter.com/intenttoship/status/1085742504958279682](https://twitter.com/intenttoship/status/1085742504958279682)
 - [https://github.com/webcomponents/webcomponentsjs](https://github.com/webcomponents/webcomponentsjs)
