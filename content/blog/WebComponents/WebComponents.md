@@ -193,7 +193,6 @@ But the base of all should be a Web component. **Just do it**.
 - [https://uglyduck.ca/html-like-1999/](https://uglyduck.ca/html-like-1999/)
 - [https://twitter.com/intenttoship/status/1085742504958279682](https://twitter.com/intenttoship/status/1085742504958279682)
 - [https://github.com/webcomponents/webcomponentsjs](https://github.com/webcomponents/webcomponentsjs)
-- [https://spectrum.chat/figma/general/invision-dsm-vs-sketch-library-vs-figma-team-library~0955f124-4be4-44d1-9113-89b11df7a327](https://spectrum.chat/figma/general/invision-dsm-vs-sketch-library-vs-figma-team-library~0955f124-4be4-44d1-9113-89b11df7a327)
 - [https://designcode.io/design-system-in-figma](https://designcode.io/design-system-in-figma)
 - [https://www.figma.com/](https://www.figma.com/)
 - [https://amzn.github.io/style-dictionary/](https://amzn.github.io/style-dictionary/)
