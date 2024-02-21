@@ -62,7 +62,7 @@ body {
   max-width: 960px;
   min-height: 100vh;
   position: relative;
-  font-size: clamp(0.8rem, 6vw, 1.1rem);
+  font-size: clamp(0.8rem, 4vw, 1.5rem);
 }
 
 h1,
