@@ -32,6 +32,8 @@ The diagram shows the flow from an e-commerce page through JAMstack Architecture
 
 In e-commerce, not all platforms need dynamic applications. Many business sites have content that rarely changes. Using Static Site Generators like Netlify or Vercel can rebuild pages when needed, easing server load and boosting performance.
 
+Static Site Rendering (SSR) using modern frameworks like Nuxt.js (for Vue.js) or Next.js (for React) takes the capabilities of traditional Static Site Generators further. These tools offer a hybrid approach, allowing pages to be pre-rendered during build time, which optimizes loading times and SEO performance. This is particularly useful for e-commerce sites where quick, accessible content is crucial for user engagement. Nuxt and Next handle both static and dynamic content, serving pre-rendered pages from the server initially, then hydrating these pages on the client-side to add interactive elements. This approach, combined with JAMstack architecture, ensures high performance, scalability, and a seamless user experience across all parts of the e-commerce platform, from browsing products to checking out, just in some cases without full blown hydration.
+
 #### Island Architecture: A Lean Approach
 
 To visually demonstrate the concept of Island Architecture in e-commerce, this flowchart delineates how an E-Commerce Page can be efficiently structured. It guides through the JAMStack Architecture down to discrete, independently functioning 'islands' such as price fetching and checkout processes, illustrating a streamlined workflow for enhanced performance and user experience.
@@ -39,6 +41,8 @@ To visually demonstrate the concept of Island Architecture in e-commerce, this f
 {% image "./diagram-island.png", "A flowchart representing the Island Architecture within an E-Commerce Page. At the top, 'E-Commerce Page' flows into 'JAMStack Architecture', which then leads to 'Island Architecture'. From there, two pathways emerge: one leading to 'Price Fetching' connected to 'APIs' and then 'Inventory Updates'; the other leading to 'Checkout Process', connected to 'Payment Gateway' and then 'Order Confirmation'. Each step is represented as a box, with arrows indicating the direction of the process flow.", [], "(min-width: 40em) 960px, 100vw" %}
 
 Island Architecture is a modern web development approach that facilitates the creation of web pages with both static and dynamic content. This method segments dynamic features, such as image carousels on e-commerce product pages or interactive filters on bank account pages, into small, independent "islands" that only load where needed. This lean approach reduces the volume of JavaScript, as only the interactive components require hydration, leading to improved performance and SEO. However, it's still an emerging concept with limited framework support and might not suit pages needing extensive interactivity. For an in-depth understanding and examples, please visit the detailed article on [Patterns.dev](https://www.patterns.dev/vanilla/islands-architecture).
+
+This is not exclusive to JAMstack approaches, and also other SSR generated applications can folow this approach.
 
 ### Benefits of a Simplified Architecture
 
@@ -74,5 +78,7 @@ Simplifying web architecture isn't just about reducing complexity; it's about ma
 - [Vercel](https://vercel.com/): Deploy static sites easily.
 - [Astro](https://astro.build/): Build faster websites.
 - [11ty](https://www.11ty.dev/): A simple static site generator.
+- [nuxt.js](https://nuxt.com/): A simple static site generator.
+- [next.js](https://nextjs.org/): A simple static site generator.
 
 This is the start of a broader discussion on better web development practices.
