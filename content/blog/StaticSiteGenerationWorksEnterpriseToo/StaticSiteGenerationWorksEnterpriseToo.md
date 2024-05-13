@@ -32,6 +32,8 @@ The diagram shows the flow from an e-commerce page through JAMstack Architecture
 
 In e-commerce, not all platforms need dynamic applications. Many business sites have content that rarely changes. Using Static Site Generators like Netlify or Vercel can rebuild pages when needed, easing server load and boosting performance.
 
+Consider that a JAMStack Architecture is mature and great, but also SPA driven Tooling with VUE or React offer options.
+
 Static Site Rendering (SSR) using modern frameworks like Nuxt.js (for Vue.js) or Next.js (for React) takes the capabilities of traditional Static Site Generators further. These tools offer a hybrid approach, allowing pages to be pre-rendered during build time, which optimizes loading times and SEO performance. This is particularly useful for e-commerce sites where quick, accessible content is crucial for user engagement. Nuxt and Next handle both static and dynamic content, serving pre-rendered pages from the server initially, then hydrating these pages on the client-side to add interactive elements. This approach, combined with JAMstack architecture, ensures high performance, scalability, and a seamless user experience across all parts of the e-commerce platform, from browsing products to checking out, just in some cases without full blown hydration.
 
 #### Island Architecture: A Lean Approach
@@ -42,7 +44,7 @@ To visually demonstrate the concept of Island Architecture in e-commerce, this f
 
 Island Architecture is a modern web development approach that facilitates the creation of web pages with both static and dynamic content. This method segments dynamic features, such as image carousels on e-commerce product pages or interactive filters on bank account pages, into small, independent "islands" that only load where needed. This lean approach reduces the volume of JavaScript, as only the interactive components require hydration, leading to improved performance and SEO. However, it's still an emerging concept with limited framework support and might not suit pages needing extensive interactivity. For an in-depth understanding and examples, please visit the detailed article on [Patterns.dev](https://www.patterns.dev/vanilla/islands-architecture).
 
-This is not exclusive to JAMstack approaches, and also other SSR generated applications can folow this approach.
+This is not exclusive to JAMstack approaches, and also other SSR generated applications can follow this approach.
 
 ### Benefits of a Simplified Architecture
 
