@@ -4,17 +4,20 @@ description: Guiding businesses with SPEED - Strategy, Product, Experience, Engi
 date: 2024-08-12
 tags:
   - SPEED
-  - ai
+  - AI
   - PS
+  - song
 ---
 
 ## Introduction
 
-In today's fast-paced digital world, transformation is not just an option—it's a necessity. At Publicis Sapient, we've embraced this imperative with our SPEED philosophy, guiding businesses to navigate and thrive in this dynamic landscape. Our approach integrates Strategy, Product, Experience, Engineering, and Data, creating a cohesive force that drives innovation and long-term success. The following song captures the essence of our philosophy, illustrating how these elements come together to unlock the limitless potential of digital transformation.
+In today's fast-paced digital world, transformation is not just an option—it's a necessity. At Publicis Sapient, we've embraced this imperative with our [SPEED](https://www.publicissapient.com/publicis-sapient-brings-its-speed-philosophy-to-digital-business) philosophy, guiding businesses to navigate and thrive in this dynamic landscape. Our approach integrates Strategy, Product, Experience, Engineering, and Data, creating a cohesive force that drives innovation and long-term success. The following song captures the essence of our philosophy, illustrating how these elements come together to unlock the limitless potential of digital transformation.
 
 {% image "./header.png", "", [], "(min-width: 40em) 960px, 100vw" %}
 
 ## Lyrics
+
+The lyrics generated to describe [SPEED](https://www.publicissapient.com/publicis-sapient-brings-its-speed-philosophy-to-digital-business):
 
 > In the world of digital, where change never slows,
 > Publicis Sapient brings a SPEED that flows,
