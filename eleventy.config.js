@@ -17,6 +17,19 @@ module.exports = function (eleventyConfig) {
     "./public/": "/",
     "./node_modules/prismjs/themes/prism-coy.css": "/css/prism-coy.css",
   });
+  // Copy .mp3 files to /media
+  eleventyConfig.addPassthroughCopy({ "content/**/*.mp3": "media" });
+
+  // Copy .mp4 files to /media
+  eleventyConfig.addPassthroughCopy({ "content/**/*.mp4": "media" });
+
+  // Copy .wav files to /media
+  eleventyConfig.addPassthroughCopy({ "content/**/*.wav": "media" });
+
+  // Optionally, add watch targets if needed
+  eleventyConfig.addWatchTarget("content/**/*.mp3");
+  eleventyConfig.addWatchTarget("content/**/*.mp4");
+  eleventyConfig.addWatchTarget("content/**/*.wav");
 
   // Run Eleventy when these files change:
   // https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets

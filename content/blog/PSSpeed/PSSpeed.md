@@ -82,15 +82,15 @@ In today's fast-paced digital world, transformation is not just an option—it's
 ### Speed Version 1 - the heavy one
 
 <audio controls="controls">
-  <source type="audio/mp3" src="SpeedForEver_1.mp3"></source>
-  <source type="audio/wav" src="SpeedForEver_1.wav"></source>
+  <source type="audio/mp3" src="/media/SpeedForEver_1.mp3"></source>
+  <source type="audio/wav" src="/media/SpeedForEver_1.wav"></source>
   <p>Your browser does not support the audio element.</p>
 </audio>
 
 ### Speed Version 2 - the heavy rap
 
 <audio controls="controls">
-  <source type="audio/mp3" src="SpeedForEver_2.mp3"></source>
-  <source type="audio/wav" src="SpeedForEver_2.wav"></source>
+  <source type="audio/mp3" src="/media/SpeedForEver_2.mp3"></source>
+  <source type="audio/wav" src="/media/SpeedForEver_2.wav"></source>
   <p>Your browser does not support the audio element.</p>
 </audio>
