@@ -97,3 +97,9 @@ The lyrics generated to describe [SPEED](https://www.publicissapient.com/publici
   <source type="audio/wav" src="/media/SpeedForEver_2.wav"></source>
   <p>Your browser does not support the audio element.</p>
 </audio>
+
+### Resources and Links
+
+- Songs are created with AI and Suno
+- [Song 1 on Suno](https://suno.com/song/2babe6d4-f601-4924-bbf8-c9f1c037a815)
+- [Song 2 on Suno](https://suno.com/song/1ac799a2-07eb-44dd-970e-57538ebafb12)
