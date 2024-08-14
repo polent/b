@@ -1,5 +1,5 @@
 ---
-title: Speed for Ever
+title: Speed forever
 description: Guiding businesses with SPEED - Strategy, Product, Experience, Engineering, and Data for success
 date: 2024-08-12
 tags:
