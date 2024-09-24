@@ -1,5 +1,5 @@
 ---
-title: Bridging the Gap - Navigating AI, Digital Transformation, and the Future of Experience Engineering
+title: AI, Digital Transformation, and the Future of Experience Engineering
 description: Exploring how AI shapes digital transformation while emphasizing the enduring need for human expertise in experience engineering, accessibility, and performance optimization.
 date: 2024-09-20
 tags:
@@ -18,6 +18,10 @@ tags:
 Over my 30-year career as a leading Director and Experience Engineering Specialist at Publicis Sapient, I've witnessed countless technological shifts. My passion lies in creating high-performing, accessible webpages — ensuring that non-functional requirements aren't just met but exceeded. As AI continues to permeate our industry, I find myself contemplating its impact on our work and how we can harness it without losing the human touch that makes technology truly resonate.
 
 {% image "./btg.png", "", [], "(min-width: 40em) 960px, 100vw" %}
+
+## TL;DR?
+
+This post explores how AI tools can streamline development while highlighting the importance of human oversight. It discusses potential risks like overreliance on proprietary tools, lack of specialist input, and limitations in AI’s current capabilities. The article emphasizes that human expertise is critical for ensuring accessibility, performance, and compliance, particularly in highly regulated industries. Overall, it promotes a balanced approach to AI integration while preserving human creativity and judgment and opportunities for people in technology.
 
 ## The Current AI Landscape and Potential Pitfalls
 
