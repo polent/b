@@ -369,3 +369,9 @@ ul.b-tags {
   margin: 0;
   padding: 0;
 }
+
+footer {
+  padding: 1em;
+  text-align: center;
+  display: block;
+}
