@@ -12,11 +12,7 @@ tags:
   - risks
 ---
 
-## The Wonderful World of AI in Software Development
-
-_A Satirical Look_
-
-### From the Future No One Saw Coming
+## From the Future No One Saw Coming
 
 {% image "./AIInSoftwareDevelopment.png", "This image shows a futuristic cityscape with AI-powered robots working on software development. The robots are collaborating with human engineers in a high-tech environment.", [], "(min-width: 40em) 960px, 100vw" %}
 
