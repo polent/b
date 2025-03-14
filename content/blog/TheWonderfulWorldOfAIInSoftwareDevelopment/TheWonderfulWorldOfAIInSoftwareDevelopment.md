@@ -12,11 +12,7 @@ tags:
   - risks
 ---
 
-## The Wonderful World of AI in Software Development
-
-_A Satirical Look_
-
-### From the Future No One Saw Coming
+## From the Future No One Saw Coming
 
 {% image "./AIInSoftwareDevelopment.png", "This image shows a futuristic cityscape with AI-powered robots working on software development. The robots are collaborating with human engineers in a high-tech environment.", [], "(min-width: 40em) 960px, 100vw" %}
 
@@ -28,7 +24,7 @@ Imagine we live in a world where software is developed entirely by Artificial In
 
 Why should we burden our up-and-coming talent with the basics of software development? Instead, let’s offer them crash courses in _“AI Operation for Dummies.”_ After all, AI can do it all, right? And if it doesn’t… well, tough luck. The algorithms will get better eventually — or so we hope.
 
-But wait — what happens when these "AI operators” don’t understand the implications of what they’re deploying? Will they even know how to spot the cracks forming in the digital foundation, or will they simply shrug and reboot their favorite AI tool?
+But wait — what happens when these _“AI operators”_ don’t understand the implications of what they’re deploying? Will they even know how to spot the cracks forming in the digital foundation, or will they simply shrug and reboot their favorite AI tool?
 
 ### Production-Ready AI Software
 
@@ -36,7 +32,7 @@ But wait — what happens when these "AI operators” don’t understand the imp
 
 Who can’t wait to see AI-generated software in production? Certainly not the security officers, who are already looking forward to the upcoming data leaks and hacks. But hey, a little thrill has never hurt anyone, right?
 
-What about the subtle bugs — those that erode trust over time? Or the misunderstood context in a decision-making process? How about that time AI “accidentally” decided certain users didn’t deserve access to a feature due to bias in its training data?
+What about the subtle bugs — those that erode trust over time? Or the misunderstood context in a decision-making process? How about that time AI _“accidentally”_ decided certain users didn’t deserve access to a feature due to bias in its training data?
 
 ### Trust is Good, AI is Better
 
