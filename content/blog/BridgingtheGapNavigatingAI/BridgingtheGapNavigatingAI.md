@@ -7,7 +7,7 @@ tags:
   - ai
   - leading
   - generative
-  - accessibility
+  - Accessibility
   - innovation
   - optimization
   - experience

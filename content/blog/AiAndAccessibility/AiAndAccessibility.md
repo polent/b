@@ -3,7 +3,7 @@ title: How AI is Changing Accessibility in the Workplace
 description: This blog looks at how AI is changing the way we think about and manage accessibility in digital spaces.
 date: 2024-01-09
 tags:
-  - accessibility
+  - Accessibility
   - ai
   - future
 ---
