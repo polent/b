@@ -13,7 +13,7 @@ tags:
 
 ### TL;DR
 
-We transitioned from MUI and our old in-house design system due to performance issues, component duplication, and complex theming. We developed a React-based component library, integrating design tokens directly from Figma for real-time updates. This led to a 28% reduction in JavaScript bundle sizes, improved application performance, and more than 19 point enhanced Lighthouse scores. Centralizing our design process in Figma established a single source of truth, ensuring consistency across teams. With upcoming EUAA 25 accessibility regulations, our proactive approach positions us ahead of the curve by embedding accessibility into our design system's foundation.  
+We transitioned from MUI and our old in-house design system due to performance issues, component duplication, and complex theming. We developed a React-based component library, integrating design tokens directly from Figma for real-time updates. This led to a 28% reduction in JavaScript bundle sizes, improved application performance, and more than 19 point enhanced Lighthouse scores. Centralizing our design process in Figma established a single source of truth, ensuring consistency across teams. With upcoming EUAA 25 accessibility regulations, our proactive approach positions us ahead of the curve by embedding accessibility into our design system's foundation.
 
 ## Streamlining Performance and Consistency
 
