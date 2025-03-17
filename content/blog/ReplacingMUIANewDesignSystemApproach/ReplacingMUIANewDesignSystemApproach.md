@@ -35,6 +35,20 @@ Despite our progress, parts of the old MUI and custom system still polluted our 
 
 With the upcoming EUAA 25 regulations on accessibility, having components that for example inherently meet contrast standards and include proper labeling will put us ahead of the curve. Accessibility is no longer an afterthought; it’s built into the foundation of our design system.
 
+## Results on Lighthouse
+
+Over the years, our Google Lighthouse measurements have provided valuable insights beyond just package sizes, and the results have been truly impressive.
+
+### Before Core MUI was out
+
+{% image "./before_MUI_HP.png", "Google Lighthouse report with a performance score of 72. 'Largest Contentful Paint' is 1.7s, 'Total Blocking Time' 470ms. Accessibility: 100.", [], "(min-width: 40em) 960px, 100vw" %}
+
+### After Core MUI was out
+
+{% image "./after_MUI_HP.png", "Google Lighthouse report with a performance score of 91. 'Largest Contentful Paint' is 1.0s, 'Total Blocking Time' 220ms. Accessibility: 100.", [], "(min-width: 40em) 960px, 100vw" %}
+
+Needless to say, these results exclude third-party services like GTM, Analytics, Pendo, or cookie banner providers, as they are beyond our direct control.
+
 ## Final Thoughts
 
 This effort has made our system easier to maintain and more useful for designers, developers, and clients. While we have more steps ahead, this phase of the journey highlights the value of thoughtful, deliberate change. If you have questions or want to learn more, please reach out.
