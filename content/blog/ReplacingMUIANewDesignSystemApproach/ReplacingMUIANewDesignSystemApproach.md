@@ -13,7 +13,7 @@ tags:
 
 ### TL;DR
 
-We transitioned from MUI and our old in-house design system due to performance issues, component duplication, and complex theming. We developed a React-based component library, integrating design tokens directly from Figma for real-time updates. This led to a 28% reduction in JavaScript bundle sizes, improved application performance, and enhanced Lighthouse scores. Centralizing our design process in Figma established a single source of truth, ensuring consistency across teams. With upcoming EUAA 25 accessibility regulations, our proactive approach positions us ahead of the curve by embedding accessibility into our design system's foundation.  
+We transitioned from MUI and our old in-house design system due to performance issues, component duplication, and complex theming. We developed a React-based component library, integrating design tokens directly from Figma for real-time updates. This led to a 28% reduction in JavaScript bundle sizes, improved application performance, and more than 19 point enhanced Lighthouse scores. Centralizing our design process in Figma established a single source of truth, ensuring consistency across teams. With upcoming EUAA 25 accessibility regulations, our proactive approach positions us ahead of the curve by embedding accessibility into our design system's foundation.  
 
 ## Streamlining Performance and Consistency
 
@@ -33,7 +33,7 @@ The issues described in Itai Vonshak’s post, such as teams losing trust in a d
 
 Despite our progress, parts of the old MUI and custom system still polluted our codebase. So, we formed a dedicated team to remove deprecated code, replace legacy components, and sync updates across teams. The results were immediate and clear:
 
-- Improved performance: By reducing JavaScript bundle sizes by up to 28%, apps ran faster and Lighthouse scores improved.
+- Improved performance: By reducing JavaScript bundle sizes by up to 28%, apps ran faster and Lighthouse scores improved for performance with over 19 points.
 - Increased clarity: With one single source of truth in Figma, everyone, from designers to developers, knew exactly which components to use and how.
 - Enhanced client satisfaction: Stakeholders saw their branding implemented correctly, and new tenants found it easier to adopt the system.
 
