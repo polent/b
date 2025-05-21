@@ -10,7 +10,7 @@ tags:
   - Token
 ---
 
-## Hello Engineers – Welcome to Your Private Space
+## Visual Studio Code docs on MCP servers and Agents
 
 The Visual Studio Code docs on **MCP servers** show how to supercharge GitHub Copilot's agent mode by plugging in external tools using the **Model Context Protocol (MCP)**.
 
