@@ -110,7 +110,7 @@ Look for `.github/copilot-instructions.md` in the **References** section of Copi
 
 ## Custom Prompts (Optional)
 
-You can also create prompt files like `.github/prompts/promts_Example.md`. These files guide Copilot to align with your coding style, frameworks, and project needs, enhancing its suggestions. For more details, [visit the official documentation](https://code.visualstudio.com/docs/copilot/copilot-customization).
+You can also create prompt files like `.github/prompts/prompts_Example.md`. These files guide Copilot to align with your coding style, frameworks, and project needs, enhancing its suggestions. For more details, [visit the official documentation](https://code.visualstudio.com/docs/copilot/copilot-customization).
 
 ## Additional specialized Instructions
 
