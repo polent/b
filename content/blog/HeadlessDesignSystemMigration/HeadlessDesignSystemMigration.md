@@ -1,6 +1,6 @@
 ---
-title: Headless Design System Migration with MCP and Slingshot
-description: How I removed UI from TSX to build a headless design system layer on top of a core component library, connected with MCP servers, and powered by Sapient Slingshot.
+title: Design System Migration with MCP and Slingshot
+description: How I removed UI from TSX to build a design system layer on top of a core component library, connected with MCP servers, and powered by Sapient Slingshot.
 date: 2025-09-11
 tags:
   - design system manager
@@ -9,17 +9,17 @@ tags:
   - slingshot
 ---
 
-## Removing UI from TSX for a Headless Design System Migration
+## Removing UI from TSX for a Design System Migration
 
-Sometimes change comes not from adding, but from removing. I recently removed UI contents from a TSX implementation so our client’s new design system could work **headless** with existing Providers, Components, and Containers.
+Sometimes change comes not from adding, but from removing. I recently removed UI contents from a TSX implementation so our client’s new aggregated design system component could work **headless** with existing Providers, Components, and Containers.
 
 ### The challenge
 
-The old TSX files mixed logic and UI. Layout, styles, and visual glue were baked into every component. This made it hard to scale or update design. The new design system needed a clean separation so it could deliver a **consistent experience across apps and markets**.
+The old TSX files mixed logic and UI. Layout, styles, and visual glue were baked into every component. This made it hard to scale or update design. The new design system components needed a clean separation so it could deliver a **consistent experience across apps and markets**.
 
 ### Headless as an add-on
 
-The headless design system is built **on top of the core component library**. It orchestrates existing base components, defines patterns, and ensures Cards, Filters, and Buttons look and behave the same everywhere.
+The design system is built **on top of the core component library**. It orchestrates existing base components, defines patterns, and ensures Cards, Filters, and Buttons look and behave the same everywhere.
 The UI components are **dumb**: they only render what they get. Data, content, and CTA events are injected from outside. This keeps them reusable, predictable, and easy to test.
 
 ### Connected with MCP servers
@@ -39,7 +39,7 @@ This automation helps the design system stay aligned with design specs and proje
 
 ### The aha moment
 
-Seeing a fully automated migration from that single prompt file, with design and ticket updates happening in sync. That’s when headless stopped being theory and started driving real efficiency.
+Seeing a fully automated migration from that single prompt file, with design and ticket updates happening in sync. That’s when agentic workflows stopped being theory and started driving real efficiency.
 
 ### The outcome
 
