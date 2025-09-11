@@ -4,7 +4,7 @@ description: Discover essential tools and strategies to enhance your Design Syst
 date: 2024-04-19
 tags:
   - dsm experience
-  - design system manager
+  - design system manager manager
   - figma
   - web components
   - design tokens

@@ -19,11 +19,11 @@ We transitioned from MUI and our old in-house design system due to performance i
 
 This blog post is about how we transitioned away from MUI and our old in-house design system. Over time, MUI no longer met our needs, and the earlier attempt at a custom design system faced issues. We struggled with component ownership, multiple entries for similar components, and a lack of integration between design tools and the final application. As a result, we ended up with a framework design system and another custom system that neither teams nor designers wanted to use.
 
-Due to performance degradation, component duplication, and complex theming with MUI, we decided to develop our own dedicated design system. ​ 
+Due to performance degradation, component duplication, and complex theming with MUI, we decided to develop our own dedicated design system. ​
 
-We then began working on a fresh, more effective approach. After considering different options, we decided to build a React-based component library. This choice aligned with our main consumer’s infrastructure. From the start, we focused on making the library easier to manage and more compatible with our design tools. (In an upcoming post, I’ll dive into why we’re now exploring a web component library built with Lit.) 
+We then began working on a fresh, more effective approach. After considering different options, we decided to build a React-based component library. This choice aligned with our main consumer’s infrastructure. From the start, we focused on making the library easier to manage and more compatible with our design tools. (In an upcoming post, I’ll dive into why we’re now exploring a web component library built with Lit.)
 
-We used design tokens directly imported from Figma. Any updates in Figma were reflected immediately in the application. We also implemented a simple theming system that allowed clients to have their own themes within a controlled range. For specific customizations, we encouraged app-level overrides to keep the library itself lean and efficient. 
+We used design tokens directly imported from Figma. Any updates in Figma were reflected immediately in the application. We also implemented a simple theming system that allowed clients to have their own themes within a controlled range. For specific customizations, we encouraged app-level overrides to keep the library itself lean and efficient.
 
 > “Design systems don’t fail because people ignore the rules; they fail because people lose faith that the rules will work.” – [Itai Vonshak](https://www.linkedin.com/pulse/broken-promises-design-systems-why-following-rules-wont-itai-vonshak-g2huf/)
 
