@@ -86,7 +86,7 @@ This framework provides a comprehensive audit method for e-commerce websites. It
 - Automated: Pa11y CI
 - Manual: Screen readers (NVDA, JAWS, VoiceOver)
 
-(Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility for All(https://www.publicissapient.com/insights/liberty-accessibility-for-all)]” initiative)
+Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility for All](https://www.publicissapient.com/insights/liberty-accessibility-for-all)” initiative
 
 ## 4. Front-End Code Quality
 
