@@ -5,7 +5,7 @@ canonical: https://polente.de/2019/11/27/should-i-use-a-framework-or-library/
 date: 2019-11-27
 tags:
   - web components
-  - performance
+  - Performance
   - stencil
 ---
 

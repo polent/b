@@ -3,16 +3,22 @@ title: E-Commerce Website Audit Framework
 description: A complete framework to audit e-commerce websites. Covers SEO, performance, accessibility, architecture, code quality, integrations, and security – with tools, do’s and don’ts, and actionable deliverables.
 date: 2025-09-15
 tags:
-  - e-commerce
-  - website audit
+  - E-Commerce
+  - Website audit
   - SEO
-  - performance
-  - accessibility
-  - security
-  - architecture
-  - integrations
-  - non-functional requirements
+  - Performance
+  - Accessibility
+  - Security
+  - Architecture
+  - Integrations
+  - Non-Functional-Requirements
 ---
+
+## TL;DR
+
+This framework provides a comprehensive audit method for e-commerce websites. It covers SEO, performance, accessibility, front-end code, architecture, security, integrations, documentation, and operations. Each section includes sample do’s and don’ts, recommended tools, and evaluation criteria. These examples are illustrative only — in real audits, there are many more program-, client-, and project-specific checks. Deliverables include an executive summary, a detailed findings report, and a scorecard (1–5 rating) to prioritize fixes.
+
+{% image "./ec.png", "", [], "(min-width: 40em) 960px, 100vw" %}
 
 ## 1. SEO & Online Visibility
 

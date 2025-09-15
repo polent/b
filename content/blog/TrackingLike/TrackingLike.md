@@ -4,7 +4,7 @@ description: Holger Hellinger advocates for ethical web tracking, emphasizing us
 date: 2020-03-19
 tags:
   - tracking
-  - performance
+  - Performance
   - cookies
 ---
 
