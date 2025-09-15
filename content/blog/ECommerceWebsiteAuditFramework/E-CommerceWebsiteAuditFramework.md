@@ -16,9 +16,9 @@ tags:
 
 ## TL;DR
 
-This framework provides a comprehensive audit method for e-commerce websites. It covers SEO, performance, accessibility, front-end code, architecture, security, integrations, documentation, and operations. Each section includes sample do’s and don’ts, recommended tools, and evaluation criteria. These examples are illustrative only — in real audits, there are many more program-, client-, and project-specific checks. Deliverables include an executive summary, a detailed findings report, and a scorecard (1–5 rating) to prioritize fixes.
+This framework provides a comprehensive audit method for e-commerce websites. It covers SEO, performance, accessibility, front-end code, architecture, security, integrations, documentation, and operations. Each section includes sample do’s and don’ts, recommended tools, and evaluation criteria. These examples are illustrative only; in real audits, there are many more program-, client-, and project-specific checks. Deliverables include an executive summary, a detailed findings report, and a scorecard (1–5 rating) to prioritize fixes.
 
-{% image "./ec.png", "", [], "(min-width: 40em) 960px, 100vw" %}
+{% image "./ec.png", "A flowchart diagram titled “E-Commerce Website Audit Framework.” In the center is the title box, surrounded by eight colored boxes: SEO & Online Visibility (on-page optimization, structured data, crawlability, search performance), Performance & Scalability (speed, resource usage, ability to handle growth), Accessibility (WCAG compliance, real-world usability), Frontend Code Quality (clean, maintainable, resilience), Software Architecture (scalability, modularity, resilience), Security (vulnerability protection, compliance with standards), Integrations & APIs (reliability, compliance of third-party systems), and Processes & Operations (deployment, monitoring, resilience).", [], "(min-width: 40em) 960px, 100vw" %}
 
 ## 1. SEO & Online Visibility
 
@@ -38,9 +38,9 @@ This framework provides a comprehensive audit method for e-commerce websites. It
 
 ### SEO Tools
 
-- Browser: [Lighthouse SEO Audit](https://developers.google.com/web/tools/lighthouse)
-- SaaS: SEMrush, Ahrefs, Screaming Frog
-- Agentic: AI-based tools (e.g. Surfer SEO for content optimization)
+- Browser: [Lighthouse SEO Audit](https://developers.google.com/web/tools/lighthouse) - [Documentation](https://developers.google.com/web/tools/lighthouse/audits/seo)
+- SaaS: [SEMrush](https://www.semrush.com/) - [Docs](https://www.semrush.com/kb/), [Ahrefs](https://ahrefs.com/) - [Academy](https://ahrefs.com/academy), [Screaming Frog](https://www.screamingfrog.co.uk/seo-spider/) - [User Guide](https://www.screamingfrog.co.uk/seo-spider/user-guide/)
+- Agentic: [Surfer SEO](https://surferseo.com/) - [Knowledge Base](https://docs.surferseo.com/) for content optimization
 
 ## 2. Performance & Scalability
 
@@ -60,9 +60,9 @@ This framework provides a comprehensive audit method for e-commerce websites. It
 
 ### Performance Tools
 
-- Browser: Chrome DevTools (Performance tab)
-- SaaS: WebPageTest, GTmetrix, SpeedCurve
-- CI/CD: Lighthouse CI, k6 for load testing
+- Browser: [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - [Performance tab guide](https://developer.chrome.com/docs/devtools/performance/)
+- SaaS: [WebPageTest](https://www.webpagetest.org/) - [Documentation](https://docs.webpagetest.org/), [GTmetrix](https://gtmetrix.com/) - [Help Center](https://gtmetrix.com/help/), [SpeedCurve](https://www.speedcurve.com/) - [Docs](https://support.speedcurve.com/)
+- CI/CD: [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) - [Getting Started](https://github.com/GoogleChrome/lighthouse-ci/blob/main/docs/getting-started.md), [k6](https://k6.io/) - [Documentation](https://k6.io/docs/) for load testing
 
 ## 3. Accessibility
 
@@ -82,9 +82,9 @@ This framework provides a comprehensive audit method for e-commerce websites. It
 
 ### Accessibility Tools
 
-- Browser: axe DevTools, WAVE, Lighthouse Accessibility Audit
-- Automated: Pa11y CI
-- Manual: Screen readers (NVDA, JAWS, VoiceOver)
+- Browser: [axe DevTools](https://www.deque.com/axe/devtools/) - [User Guide](https://docs.deque.com/devtools-html/4.0.0/), [WAVE](https://wave.webaim.org/) - [Documentation](https://wave.webaim.org/help), [Lighthouse Accessibility Audit](https://developers.google.com/web/tools/lighthouse) - [Accessibility docs](https://developers.google.com/web/tools/lighthouse/audits/accessibility)
+- Automated: [Pa11y CI](https://github.com/pa11y/pa11y-ci) - [Usage Guide](https://github.com/pa11y/pa11y-ci#usage)
+- Manual: Screen readers ([NVDA](https://www.nvaccess.org/) - [User Guide](https://www.nvaccess.org/files/nvda/documentation/userGuide.html), [JAWS](https://www.freedomscientific.com/products/software/jaws/) - [Documentation](https://support.freedomscientific.com/Products/Blindness/JAWS), [VoiceOver](https://support.apple.com/guide/voiceover/welcome/mac) - [User Guide](https://support.apple.com/guide/voiceover/welcome/mac))
 
 Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility for All](https://www.publicissapient.com/insights/liberty-accessibility-for-all)” initiative
 
@@ -106,9 +106,9 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 
 ### Quality Tools
 
-- Static Analysis: ESLint, Stylelint
-- Browser: Coverage tab in DevTools (unused CSS/JS)
-- CI/CD: SonarQube for code quality
+- Static Analysis: [ESLint](https://eslint.org/) - [Documentation](https://eslint.org/docs/latest/), [Stylelint](https://stylelint.io/) - [User Guide](https://stylelint.io/user-guide/)
+- Browser: [Coverage tab](https://developer.chrome.com/docs/devtools/coverage/) in DevTools (unused CSS/JS)
+- CI/CD: [SonarQube](https://www.sonarqube.org/) - [Documentation](https://docs.sonarqube.org/latest/) for code quality
 
 ## 5. Software Architecture
 
@@ -128,9 +128,9 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 
 ### Architecture Tools
 
-- Code Level: Architecture Decision Records (ADR), PlantUML diagrams
-- Monitoring: Datadog, New Relic, OpenTelemetry
-- Testing: Postman/Newman for APIs
+- Code Level: [Architecture Decision Records (ADR)](https://adr.github.io/) - [Templates](https://github.com/joelparkerhenderson/architecture-decision-record), [PlantUML](https://plantuml.com/) - [Language Reference Guide](https://plantuml.com/guide) diagrams
+- Monitoring: [Datadog](https://www.datadoghq.com/) - [Documentation](https://docs.datadoghq.com/), [New Relic](https://newrelic.com/) - [Docs](https://docs.newrelic.com/), [OpenTelemetry](https://opentelemetry.io/) - [Documentation](https://opentelemetry.io/docs/)
+- Testing: [Postman](https://www.postman.com/) - [Learning Center](https://learning.postman.com/)/[Newman](https://github.com/postmanlabs/newman) - [CLI docs](https://learning.postman.com/docs/running-collections/using-newman-cli/) for APIs
 
 ## 6. Security
 
@@ -150,9 +150,9 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 
 ### Security Tools
 
-- Browser: Security tab in Chrome DevTools
-- Code Level: OWASP Dependency-Check, Snyk
-- SaaS: Burp Suite, ZAP (DAST scans)
+- Browser: [Security tab](https://developer.chrome.com/docs/devtools/security/) in Chrome DevTools
+- Code Level: [OWASP Dependency-Check](https://owasp.org/www-project-dependency-check/) - [Documentation](https://jeremylong.github.io/DependencyCheck/), [Snyk](https://snyk.io/) - [Documentation](https://docs.snyk.io/)
+- SaaS: [Burp Suite](https://portswigger.net/burp) - [Documentation](https://portswigger.net/burp/documentation), [OWASP ZAP](https://www.zaproxy.org/) - [User Guide](https://www.zaproxy.org/docs/) (DAST scans)
 
 ## 7. Integrations & APIs
 
@@ -172,9 +172,9 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 
 ### Integrations Tools
 
-- Postman, Insomnia (manual testing)
-- Pact (contract testing)
-- WireMock (API mocking)
+- [Postman](https://www.postman.com/) - [Documentation](https://learning.postman.com/docs/getting-started/introduction/), [Insomnia](https://insomnia.rest/) - [Documentation](https://docs.insomnia.rest/) (manual testing)
+- [Pact](https://pact.io/) - [Documentation](https://docs.pact.io/) (contract testing)
+- [WireMock](https://wiremock.org/) - [Documentation](https://wiremock.org/docs/) (API mocking)
 
 ## 8. Documentation & Governance
 
@@ -194,9 +194,9 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 
 ### Documentation Tools
 
-- Confluence, Notion, or GitHub Wiki
-- ADR templates (Architectural Decision Records)
-- Scorecards & dashboards (e.g. Grafana)
+- [Confluence](https://www.atlassian.com/software/confluence) - [Documentation](https://confluence.atlassian.com/doc/), [Notion](https://www.notion.so/) - [Help Center](https://www.notion.so/help), or [GitHub Wiki](https://docs.github.com/en/communities/documenting-your-project-with-wikis) - [About wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis)
+- [ADR templates](https://github.com/joelparkerhenderson/architecture-decision-record) - [Examples](https://github.com/joelparkerhenderson/architecture-decision-record/tree/main/examples) (Architectural Decision Records)
+- Scorecards & dashboards ([Grafana](https://grafana.com/) - [Documentation](https://grafana.com/docs/grafana/latest/))
 
 ## 9. Processes & Operations
 
@@ -216,9 +216,9 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 
 ### Process Tools
 
-- CI/CD: GitHub Actions, GitLab CI, Jenkins
-- Observability: Prometheus + Grafana, ELK Stack
-- Incident Mgmt: PagerDuty, OpsGenie
+- CI/CD: [GitHub Actions](https://github.com/features/actions) - [Documentation](https://docs.github.com/en/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/) - [CI/CD Guide](https://docs.gitlab.com/ee/ci/), [Jenkins](https://www.jenkins.io/) - [Documentation](https://www.jenkins.io/doc/)
+- Observability: [Prometheus](https://prometheus.io/) - [Documentation](https://prometheus.io/docs/) + [Grafana](https://grafana.com/) - [Docs](https://grafana.com/docs/), [ELK Stack](https://www.elastic.co/elastic-stack) - [Documentation](https://www.elastic.co/guide/index.html)
+- Incident Mgmt: [PagerDuty](https://www.pagerduty.com/) - [Documentation](https://support.pagerduty.com/docs), [Opsgenie](https://www.atlassian.com/software/opsgenie) - [Documentation](https://support.atlassian.com/opsgenie/)
 
 ## Deliverables of the Audit
 
