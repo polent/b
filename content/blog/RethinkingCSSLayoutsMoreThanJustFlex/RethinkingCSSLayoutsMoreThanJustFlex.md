@@ -12,7 +12,7 @@ tags:
 
 ## TL;DR
 
-Many developers know only `display: block` and Flexbox. Grid, Floats, Flow-Root and Container Queries are almost forgotten. This creates weak layouts and too much JavaScript. Here is a short overview with examples when to use what.
+Many developers know only `display: block` and `display: none`. Grid, Floats, Flow-Root and Container Queries are always forgotten. This creates weak layouts and too much JavaScript. Here is a short overview with examples when to use what.
 
 ## How it started
 
