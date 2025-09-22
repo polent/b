@@ -103,7 +103,11 @@ nav {
 
 But please don’t use it for full page layouts. Flex is for rows and columns, not for full grids.
 
-## Media Queries
+## Responsiveness
+
+Sometimes layout alone is not enough. Grid, Flex or Floats give you the structure, but you also need ways to react to different sizes. This is where Media Queries and Container Queries come in. They work hand in hand with the layout techniques above and make your components really flexible.
+
+### Media Queries
 
 {% image "./media.png", "Hand-drawn style sketch of a card layout changing from a single vertical column on the left to a three-column grid on the right, connected by an arrow, illustrating a media query.", [], "(min-width: 40em) 960px, 100vw" %}
 
@@ -122,7 +126,7 @@ Classic and still needed. They react to screen width:
 }
 ```
 
-## Container Queries
+### Container Queries
 
 {% image "./container.png", "Hand-drawn style sketch showing two containers side by side. Container A has cards stacked in one column, while Container B has cards in three columns, labeled with '@container', showing container query behavior.", [], "(min-width: 40em) 960px, 100vw" %}
 
