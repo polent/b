@@ -3,7 +3,7 @@ title: Design System Migration with MCP and Slingshot
 description: How I removed UI from TSX to build a design system layer on top of a core component library, connected with MCP servers, and powered by Sapient Slingshot.
 date: 2025-09-11
 tags:
-  - design system manager
+  - Design System Manager
   - frontend
   - headless
   - slingshot

@@ -5,7 +5,7 @@ date: 2024-02-21
 tags:
   - pipeline
   - experience
-  - design system manager
+  - Design System Manager
 ---
 
 {% image "./blog1-speed.png", "Illustration with the essence of SPEED", [], "(min-width: 40em) 960px, 100vw" %}
@@ -20,7 +20,7 @@ An experience pipeline is a structured approach that ensures consistent, high-qu
 
 ## Key Components of the Pipeline
 
-- design system managers: Central to the pipeline, a design system ensures consistency and scalability. It includes reusable components and guidelines that save time and enhance user experiences.
+- Design System Managers: Central to the pipeline, a design system ensures consistency and scalability. It includes reusable components and guidelines that save time and enhance user experiences.
 - Collaboration and Communication: Cross-functional teams must work closely, sharing insights and feedback to refine the user experience continually.
 - Agile Methodology: Adopting agile practices allows for flexibility and rapid iteration, essential for responding to user needs and market changes.
 

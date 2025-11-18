@@ -3,7 +3,7 @@ title: Escaping the Golden Cage of Design Systems
 description: Explore the limits of design systems like Material UI and discover the freedom of continuous experience pipelines, offering innovative, custom-tailored solutions for dynamic, adaptable digital experiences.
 date: 2024-10-11
 tags:
-  - design system manager
+  - Design System Manager
   - continuous experience pipeline
   - innovation
   - material ui
