@@ -12,7 +12,7 @@ tags:
 
 ## From Design to Code with MCP Servers
 
-The [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) defines a standard way for local or remote tools to talk to models and IDEs. It lets you access external services or APIs directly inside your editor — without complex system setup or locked-in toolchains. MCP servers connect tools like Atlassian, Figma, or Storybook to your AI model and make workflows faster, consistent, and traceable.
+The [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) defines a standard way for local or remote tools to talk to models and IDEs. It lets you access external services or APIs directly inside your editor, without complex system setup or locked-in toolchains. MCP servers connect tools like Atlassian, Figma, or Storybook to your AI model and make workflows faster, consistent, and traceable.
 
 Below is an example `mcp.json` configuration that we use across our Design System setup:
 
@@ -23,8 +23,8 @@ Below is an example `mcp.json` configuration that we use across our Design Syste
       "url": "https://mcp.atlassian.com/v1/sse",
       "type": "http"
     },
-    "Figma Dev Mode MCP": {
-      "type": "sse",
+    "figma": {
+      "type": "http",
       "url": "http://127.0.0.1:3845/mcp"
     },
     "storybook-mcp": {
@@ -70,11 +70,11 @@ Example — an icon update process:
 
 ```markdown
 ---
-mode: 'agent'
+agent: 'agent'
 model: Claude Sonnet 4
 tools: [
   'edit/createFile', 'edit/editFiles', 'search', 'runCommands',
-  'atlassian/getJiraIssue', 'Figma Dev Mode MCP/get_design_context',
+  'atlassian/getJiraIssue', 'figma/get_design_context',
   'storybook-mcp/get-component-documentation'
 ]
 description: 'Design System - Icon Management Prompt'
@@ -114,7 +114,7 @@ With MCP servers and prompt files, engineers can:
 2. Fetch related Figma design data
 3. Get component documentation from Storybook
 4. Apply code standards automatically
-5. Build, commit, and update tickets — all in one flow
+5. Build, commit, and update tickets: all in one flow
 
 No tool-hopping. No lost context. Agents act with awareness of design, documentation, and project state.
 
@@ -124,7 +124,7 @@ This setup runs in **VS Code**, but also works with **Cursor**, **Cline**, or an
 
 ## Why It Matters
 
-For Design System teams, context switching is the biggest productivity loss. With MCP-based workflows, you stay inside one environment — the model fetches context from Jira, design, and documentation servers automatically.
+For Design System teams, context switching is the biggest productivity loss. With MCP-based workflows, you stay inside one environment. The model fetches context from Jira, design, and documentation servers automatically.
 
 The result: fewer errors, faster delivery, and better alignment between designers and engineers.
 
@@ -132,4 +132,4 @@ The result: fewer errors, faster delivery, and better alignment between designer
 
 Start small. Connect one MCP server (e.g., Figma). Try simple prompts to pull metadata or screenshots. Once stable, add Jira and Storybook.
 
-Over time, you’ll see your design system evolve from a manual process to a connected, intelligent workflow — a true **continuous experience pipeline**.
+Over time, you’ll see your design system evolve from a manual process to a connected, intelligent workflow: a true **continuous experience pipeline**.
