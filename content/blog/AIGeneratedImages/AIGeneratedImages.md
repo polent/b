@@ -4,7 +4,7 @@ description: In the digital age, AI-generated images are flooding online platfor
 date: 2024-01-04
 tags:
   - images
-  - ai
+  - AI
   - search
 ---
 

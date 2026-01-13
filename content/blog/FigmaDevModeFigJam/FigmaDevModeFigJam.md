@@ -4,7 +4,7 @@ description: This blog post explores Figma's Dev Mode and AI tools in FigJam, hi
 date: 2023-12-15
 tags:
   - figma
-  - ai
+  - AI
   - dev mode
 ---
 

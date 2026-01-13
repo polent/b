@@ -4,7 +4,7 @@ description: Explore the satirical yet thought-provoking challenges of relying e
 date: 2024-12-22
 tags:
   - ethics
-  - ai
+  - AI
   - future
   - software
   - engineers

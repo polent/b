@@ -4,9 +4,9 @@ description: How I removed UI from TSX to build a design system layer on top of 
 date: 2025-09-11
 tags:
   - Design System Manager
-  - frontend
-  - headless
-  - slingshot
+  - Frontend
+  - Headless
+  - Slingshot
 ---
 
 ## Removing UI from TSX for a Design System Migration

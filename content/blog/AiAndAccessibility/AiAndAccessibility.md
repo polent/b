@@ -4,7 +4,7 @@ description: This blog looks at how AI is changing the way we think about and ma
 date: 2024-01-09
 tags:
   - Accessibility
-  - ai
+  - AI
   - future
 ---
 

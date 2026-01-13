@@ -4,7 +4,7 @@ description: Explore the parallels and lessons between the dot-com bubble and to
 date: 2024-01-05
 tags:
   - DotCom
-  - ai
+  - AI
   - bubble
 ---
 

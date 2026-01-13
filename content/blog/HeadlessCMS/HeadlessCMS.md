@@ -5,7 +5,7 @@ canonical: https://polente.de/2021/01/05/how-does-a-headless-content-management-
 date: 2021-01-05
 tags:
   - cms
-  - headless
+  - Headless
   - history
 ---
 

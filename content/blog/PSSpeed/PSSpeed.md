@@ -4,7 +4,7 @@ description: Guiding businesses with SPEED - Strategy, Product, Experience, Engi
 date: 2024-08-12
 tags:
   - SPEED
-  - ai
+  - AI
   - PS
   - song
 ---

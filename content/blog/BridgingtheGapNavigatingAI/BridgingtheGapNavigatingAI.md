@@ -4,7 +4,7 @@ description: Exploring how AI shapes digital transformation while emphasizing th
 date: 2024-09-20
 tags:
   - future
-  - ai
+  - AI
   - leading
   - generative
   - Accessibility

@@ -5,7 +5,7 @@ date: 2025-11-11
 tags:
   - Design Systems
   - MCP
-  - ai
+  - AI
   - Copilot
   - Developer Experience
 ---
