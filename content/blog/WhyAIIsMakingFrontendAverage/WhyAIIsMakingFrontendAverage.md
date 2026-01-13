@@ -22,7 +22,7 @@ AI can read CSS specs and summarize blog posts, but AI does not "feel" layout pr
 
 ### The Knowledge Gap and Risk for Juniors
 
-Large Language Models (LLMs) are trained on historical data, meaning they excel at what was common two years ago but often struggle with what is possible today. Many modern CSS features—like native nesting, container queries, or scroll-driven animations—are simply not present in high enough volume in the training sets to be the default suggestion.
+Large Language Models (LLMs) are trained on historical data, meaning they excel at what was common two years ago but often struggle with what is possible today. Many modern CSS features, like native nesting, container queries, or scroll-driven animations. These features are simply not present in high enough volume in the training sets to be the default suggestion.
 
 This creates a dangerous feedback loop for junior developers. If they rely entirely on AI suggestions, they may never learn that these modern features exist. They might spend hours debugging complex JavaScript for a scroll effect that could have been three lines of CSS, simply because the AI didn't know any better.
 
