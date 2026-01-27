@@ -46,7 +46,7 @@ The more we use tools instead of our brains, the more identical things will beco
 
 ### The glimmer of hope: How AI can actually help us break free
 
-However, there is a path where AI doesn't make us boring, but rather empowers us to be more unique—if we have the courage to use it correctly.
+However, there is a path where AI doesn't make us boring, but rather empowers us to be more unique, if we have the courage to use it correctly.
 
 Instead of asking AI for the "best solution" (which is just the most average one), we can use it to clear the path for real creativity.
 
