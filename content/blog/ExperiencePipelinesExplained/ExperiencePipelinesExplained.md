@@ -5,7 +5,7 @@ date: 2024-04-19
 tags:
   - dsm experience
   - Design System Manager manager
-  - figma
+  - Figma
   - web components
   - Design Tokens
 ---

@@ -3,7 +3,7 @@ title: Dev Mode in Figma - A Revolution for Developers
 description: This blog post explores Figma's Dev Mode and AI tools in FigJam, highlighting their impact on design and development. It offers insights into streamlining workflows, enhancing collaboration, and adapting to technological advancements in design systems.
 date: 2023-12-15
 tags:
-  - figma
+  - Figma
   - AI
   - dev mode
 ---

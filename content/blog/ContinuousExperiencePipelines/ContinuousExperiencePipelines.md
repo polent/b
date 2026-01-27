@@ -5,7 +5,7 @@ date: 2023-12-13
 tags:
   - web components
   - stencil
-  - figma
+  - Figma
 ---
 
 ## TL;DR

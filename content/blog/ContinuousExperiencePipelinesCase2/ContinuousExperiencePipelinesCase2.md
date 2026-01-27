@@ -4,7 +4,7 @@ description: Publicis Sapient enhanced a B2B Electrical Distribution Company's R
 date: 2023-12-13
 tags:
   - react
-  - figma
+  - Figma
 ---
 
 ## TL;DR
