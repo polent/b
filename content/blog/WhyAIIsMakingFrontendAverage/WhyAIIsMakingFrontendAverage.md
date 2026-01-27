@@ -55,7 +55,7 @@ They live in containers.
 }
 ```
 
-Modells are currently also not trained a lot on the below features. To validate an outcode you need to know fromm it. Did you know all those new CSS features?
+Modells are currently also not trained a lot on the below features. To validate an outcode you need to know from it. Did you know all those new CSS features?
 
 ## Scroll Driven Animations Without JavaScript
 
