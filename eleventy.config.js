@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItMermaid = require("markdown-it-mermaid-server");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -107,6 +108,7 @@ module.exports = function (eleventyConfig) {
       level: [1, 2, 3, 4],
       slugify: eleventyConfig.getFilter("slugify"),
     });
+    mdLib.use(markdownItMermaid);
   });
 
   // Features to make your build faster (when you need them)
