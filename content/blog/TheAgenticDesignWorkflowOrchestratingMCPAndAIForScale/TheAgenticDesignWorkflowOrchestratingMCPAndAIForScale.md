@@ -24,6 +24,8 @@ The year 2026 marks a significant evolution in design system management, shiftin
 
 At the core of this approach are three interconnected MCP layers: the **Figma MCP Server** exposes design context to AI agents, **MCP Apps** render interactive review and configuration UIs directly inside AI conversations, and the **Storybook MCP** resolves design components to framework-specific code. Together, they form a continuous design system flow that replaces manual handoffs with an automated, bidirectional pipeline.
 
+{% image "./ai.png", "A conceptual line-art illustration of a suspension bridge labeled 'AI Orchestration Model Context Protocol.' The bridge connects 'Design Tokens' and 'Design Systems' on the left—represented by icons like color palettes and layers—to technical data structures and code blocks on the right.", [], "(min-width: 40em) 960px, 100vw" %}
+
 ## The Problem Space
 
 Traditional design and development workflows are plagued by inefficiencies stemming from disconnected tools, manual handoffs, and the constant need to translate design intent into production-ready code. Teams create full-blown designs and comprehensive workflows within Figma, making long-term management of design and UX artifacts incredibly difficult. In this "visual-first" approach, it becomes unclear to stakeholders what represents the latest truth, and deprecating old designs is a cumbersome, manual process.
@@ -288,6 +290,6 @@ The Agentic Design Workflow, powered by the Model Context Protocol and advanced 
 ### Experience Engineering Insights
 
 * **Holger Hellinger’s Blog:** [Design Tokens & MCP](https://b.polente.de/blog/)
-  * "Design Tokens — from bold vision to standard practice"
-  * "Using MCP Servers for Design System Management"
-  * "Escaping the Golden Cage of Design Systems"
+  * [Design Tokens — from bold vision to standard practice](https://b.polente.de/blog/DesignTokensAreFinalNow/)
+  * [Using MCP Servers for Design System Management](https://b.polente.de/blog/MCPServerInDesignSystemWorkflows/)
+  * [Escaping the Golden Cage of Design Systems](https://b.polente.de/blog/EmbracingTheFreedomOfCustomExperiencePipelines/)
