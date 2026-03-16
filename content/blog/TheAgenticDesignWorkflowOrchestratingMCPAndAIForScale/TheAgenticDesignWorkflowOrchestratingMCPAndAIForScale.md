@@ -1,6 +1,6 @@
 ---
 title: The Agentic Design Workflow - Orchestrating MCP and AI for Scale
-description: Explore how MCP Apps, the Figma MCP Server, and Storybook MCP form a continuous design system flow — replacing manual handoffs with AI-driven orchestration that turns annotations and tokens into production-ready code without pixel-perfect mockups.
+description: Explore how MCP Apps, the Figma MCP Server, and Storybook MCP form a continuous design system flow, replacing manual handoffs with AI-driven orchestration that turns annotations and tokens into production-ready code without pixel-perfect mockups.
 date: 2026-03-16
 tags:
   - MCP
@@ -30,7 +30,7 @@ Traditional design and development workflows are plagued by inefficiencies stemm
 
 This fragmentation leads to what we call the **"re-inventing the wheel" problem**: design components are meticulously crafted in design tools, only to be laboriously re-implemented by developers. Industry estimates suggest this traditional approach contributes to approximately **30% waste** in time and resources across the design-to-development lifecycle.
 
-Design systems, while intended to solve this, often become rigid **"golden cages"** — systems too inflexible to adapt to evolving project needs and technology stacks. The absence of a seamless, bidirectional flow between design artifacts (Figma components, design tokens) and development assets (Storybook components, production code) creates friction, delays, and perpetual synchronization challenges. This is exacerbated in complex, multi-platform environments where consistency and rapid iteration are paramount yet frequently undermined by the very processes designed to ensure them.
+Design systems, while intended to solve this, often become rigid **"golden cages"**, systems too inflexible to adapt to evolving project needs and technology stacks. The absence of a seamless, bidirectional flow between design artifacts (Figma components, design tokens) and development assets (Storybook components, production code) creates friction, delays, and perpetual synchronization challenges. This is exacerbated in complex, multi-platform environments where consistency and rapid iteration are paramount yet frequently undermined by the very processes designed to ensure them.
 
 ## The Proposed Workflow (Step-by-Step)
 
@@ -100,9 +100,9 @@ This step introduces the two MCP capabilities that make the agentic workflow pos
 
 The **Figma MCP Server** is a standard MCP server that exposes design system data to AI agents. Available as both a remote hosted endpoint and a local desktop server, it provides three specialized agent skills:
 
-* **Implement Design** — Select a Figma frame and generate code from it, respecting component structure and token values.
-* **Code Connect Components** — Map Figma components to their code implementations, creating a bidirectional link between design and development.
-* **Create Design System Rules** — Define and enforce design system constraints that agents must follow during code generation.
+* **Implement Design**: Select a Figma frame and generate code from it, respecting component structure and token values.
+* **Code Connect Components**: Map Figma components to their code implementations, creating a bidirectional link between design and development.
+* **Create Design System Rules**: Define and enforce design system constraints that agents must follow during code generation.
 
 The Figma MCP Server is the **read side** of the workflow: it gives agents access to tokens, component metadata, layout structures, and Code Connect mappings.
 
@@ -167,7 +167,7 @@ A crucial step in bridging the design-development gap is ensuring that component
 
 ### Step 8: Framework-Agnostic Component Resolution
 
-While Figma Connect facilitates mapping for React components, a significant portion of the digital landscape involves other frameworks (Vue, Angular, Svelte) or pure web components. For these, the agentic workflow relies on the **Storybook MCP** — a server that merges Storybook component metadata with Figma design context into a single rich context for the AI agent. The Storybook MCP can classify each component as Available, Partial, or Missing relative to the design system, providing the agent with a complete inventory regardless of the target framework. Combined with task context from ticketing systems (Jira, etc.), the agent can intelligently resolve and utilize the correct, framework-agnostic components. This ensures that the benefits of component orchestration extend beyond a single framework, providing comprehensive design system coverage.
+While Figma Connect facilitates mapping for React components, a significant portion of the digital landscape involves other frameworks (Vue, Angular, Svelte) or pure web components. For these, the agentic workflow relies on the **Storybook MCP**, a server that merges Storybook component metadata with Figma design context into a single rich context for the AI agent. The Storybook MCP can classify each component as Available, Partial, or Missing relative to the design system, providing the agent with a complete inventory regardless of the target framework. Combined with task context from ticketing systems (Jira, etc.), the agent can intelligently resolve and utilize the correct, framework-agnostic components. This ensures that the benefits of component orchestration extend beyond a single framework, providing comprehensive design system coverage.
 
 ### Step 9: Component Orchestration via MCP
 
