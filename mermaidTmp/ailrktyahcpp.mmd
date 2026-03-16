@@ -1,0 +1,47 @@
+graph TD
+    %% Cold Blue Technical Theme
+    classDef banana fill:#D1E8FF,stroke:#0052CC,stroke-width:1px,color:#003366,rx:10,ry:10;
+    classDef peel fill:#F0F7FF,stroke:#8EB6E6,stroke-width:1px,color:#003366,rx:10,ry:10;
+    classDef stem fill:#0052CC,stroke:#003366,stroke-width:1px,color:#FFFFFF,rx:5,ry:5;
+
+    subgraph Design_Phase ["💻 Design & Definition"]
+        direction TB
+        S1("Step 1: Figma Setup &<br/>Annotation Framework"):::banana
+        S2("Step 2: Token Intelligence<br/>(Brand Intent)"):::banana
+        S5("Step 5: Pattern-Based<br/>Annotation"):::banana
+        S6("Step 6: Component Architecture<br/>(Slots)"):::banana
+
+        S1 --> S2
+        S1 --> S5
+        S5 --> S6
+    end
+
+    subgraph Interaction_Phase ["🔄 MCP Integration Layer"]
+        direction TB
+        S3("Step 3: MCP Apps &<br/>Figma MCP Server"):::peel
+        S4("Step 4: Real-time UI<br/>Rendering (JSON)"):::peel
+
+        S3 -.-> S1
+        S4 -.-> S5
+    end
+
+    subgraph Dev_Handoff ["💻 Orchestration & Build"]
+        direction TB
+        S7("Step 7: Component Mapping<br/>(Figma Connect / React)"):::banana
+        S8("Step 8: Framework-Agnostic<br/>Resolution (Storybook MCP)"):::banana
+        S9("Step 9: Component Orchestration<br/>(Code Generation)"):::stem
+        S10("Step 10: Automated<br/>Documentation"):::peel
+
+        S6 --> S7
+        S6 --> S8
+        S7 --> S9
+        S8 --> S9
+        S9 --> S10
+    end
+
+    %% Connections between phases
+    S2 --> S9
+    S3 --> S9
+
+    %% Link Styling
+    linkStyle default stroke:#7B92B2,stroke-width:1px;

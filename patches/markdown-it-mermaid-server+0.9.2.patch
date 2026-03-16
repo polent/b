@@ -1,0 +1,21 @@
+diff --git a/node_modules/markdown-it-mermaid-server/index.mjs b/node_modules/markdown-it-mermaid-server/index.mjs
+index 99e8132..395fd28 100644
+--- a/node_modules/markdown-it-mermaid-server/index.mjs
++++ b/node_modules/markdown-it-mermaid-server/index.mjs
+@@ -135,8 +135,15 @@ function parseChartDefinition(chartDefinition) {
+ }
+ 
+ function transform() {
++  const mmdFiles = fs
++    .readdirSync(settings.workingFolder)
++    .filter((f) => f.endsWith(".mmd"))
++    .map((f) => path.join(settings.workingFolder, f));
++
++  if (mmdFiles.length === 0) return;
++
+   execSync(
+-    `npx mermaid-cli-batch --input ${makeWorkingFilePath("/*.mmd")}${settings.verbose ? " --verbose" : ""}`,
++    `npx mermaid-cli-batch --input ${mmdFiles.join(" ")}${settings.verbose ? " --verbose" : ""}`,
+     {
+       cwd: "./",
+       encoding: "utf-8",

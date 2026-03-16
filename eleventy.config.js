@@ -108,7 +108,7 @@ module.exports = function (eleventyConfig) {
       level: [1, 2, 3, 4],
       slugify: eleventyConfig.getFilter("slugify"),
     });
-    mdLib.use(markdownItMermaid);
+    mdLib.use(markdownItMermaid.default || markdownItMermaid);
   });
 
   // Features to make your build faster (when you need them)
