@@ -125,6 +125,38 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => a.name.localeCompare(b.name));
   });
 
+  // Extract h2 headings (with their anchor IDs) from rendered HTML for a
+  // simple "On this page" TOC. Relies on markdown-it-anchor adding id="…".
+  // Decode HTML entities so Nunjucks doesn't double-encode them on output.
+  const decodeHtmlEntities = (s) =>
+    s
+      .replace(/&#x([0-9a-fA-F]+);/g, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+      .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(parseInt(d, 10)))
+      .replace(/&lt;/g, "<")
+      .replace(/&gt;/g, ">")
+      .replace(/&quot;/g, '"')
+      .replace(/&apos;/g, "'")
+      .replace(/&nbsp;/g, " ")
+      .replace(/&amp;/g, "&");
+  eleventyConfig.addFilter("tocFromContent", (html) => {
+    if (!html) return [];
+    const out = [];
+    const re = /<h2\b[^>]*\sid="([^"]+)"[^>]*>([\s\S]*?)<\/h2>/gi;
+    let m;
+    while ((m = re.exec(html)) !== null) {
+      const id = m[1];
+      const text = decodeHtmlEntities(
+        m[2]
+          .replace(/<a\b[^>]*class="header-anchor"[^>]*>[\s\S]*?<\/a>/gi, "")
+          .replace(/<[^>]+>/g, "")
+          .replace(/\s+/g, " ")
+          .trim()
+      );
+      if (text) out.push({ id, text });
+    }
+    return out;
+  });
+
   // Estimate reading time in whole minutes (assumes ~220 wpm).
   eleventyConfig.addFilter("readingTime", (post) => {
     try {

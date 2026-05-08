@@ -16,11 +16,24 @@ layout: layouts/base.njk
 
 <ul class="post-metadata">
 	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
+	<li class="post-author">By <a href="/about/" rel="author">{{ metadata.author.name }}</a></li>
 	{%- for tag in tags | filterTagList %}
 	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 	<li><a href="{{ tagUrl }}" class="post-tag" data-pagefind-filter="tag">{{ tag }}</a></li>
 	{%- endfor %}
 </ul>
+
+{%- set toc = content | tocFromContent %}
+{%- if toc | length >= 3 %}
+<nav class="toc" aria-labelledby="toc-heading" data-pagefind-ignore>
+	<h2 id="toc-heading">On this page</h2>
+	<ol>
+	{%- for entry in toc %}
+		<li><a href="#{{ entry.id }}">{{ entry.text }}</a></li>
+	{%- endfor %}
+	</ol>
+</nav>
+{%- endif %}
 
 {{ content | safe }}
 </article>

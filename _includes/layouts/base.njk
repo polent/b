@@ -10,6 +10,25 @@
 
     {%- if canonical %}<link rel="canonical" href="{{ canonical }}"/>{% endif %}
 
+		{#- Open Graph and Twitter card metadata for social previews #}
+		{%- set ogTitle = title or metadata.title %}
+		{%- set ogDescription = description or metadata.description %}
+		{%- set ogUrl = page.url | htmlBaseUrl(metadata.url) %}
+		{%- set ogType = "article" if page.url.indexOf("/blog/") == 0 and page.url != "/blog/" else "website" %}
+		<meta property="og:site_name" content="{{ metadata.title }}">
+		<meta property="og:type" content="{{ ogType }}">
+		<meta property="og:title" content="{{ ogTitle }}">
+		<meta property="og:description" content="{{ ogDescription }}">
+		<meta property="og:url" content="{{ ogUrl }}">
+		<meta property="og:locale" content="{{ metadata.language }}_{{ metadata.language | upper }}">
+		{%- if ogType == "article" %}
+		<meta property="article:author" content="{{ metadata.author.name }}">
+		{%- if page.date %}<meta property="article:published_time" content="{{ page.date | htmlDateString }}">{% endif %}
+		{%- endif %}
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="{{ ogTitle }}">
+		<meta name="twitter:description" content="{{ ogDescription }}">
+
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">

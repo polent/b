@@ -4,8 +4,9 @@
 	"description": "Holgers Polente - based on 11ty",
 	"scripts": {
 		"postinstall": "patch-package",
-		"build": "npx @11ty/eleventy && npx pagefind --site _site",
-		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/ && npx pagefind --site _site",
+		"clean": "rimraf _site",
+		"build": "npm run clean && npx @11ty/eleventy && npx pagefind --site _site",
+		"build-ghpages": "npm run clean && npx @11ty/eleventy --pathprefix=/eleventy-base-blog/ && npx pagefind --site _site",
 		"start": "npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
@@ -40,6 +41,7 @@
 		"markdown-it-mermaid-server": "^0.9.2",
 		"pagefind": "^1.5.2",
 		"patch-package": "^8.0.1",
-		"playwright": "^1.58.2"
+		"playwright": "^1.58.2",
+		"rimraf": "^6.1.3"
 	}
 }

@@ -431,17 +431,62 @@ header {
   align-self: center;
 }
 
-/* Tags list */
+/* Post metadata strip */
 .post-metadata {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 0.5em;
+  gap: 0.4em 0.75em;
+  align-items: baseline;
   list-style: none;
   padding: 0;
   margin: 0 0 1em 0;
+  font-size: 0.9em;
+  color: var(--text-color-muted);
 }
 .post-metadata time {
-  margin-right: 1em;
+  margin-right: 0;
+}
+.post-metadata .post-author a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--card-border);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.post-metadata .post-author a:hover,
+.post-metadata .post-author a:focus-visible {
+  color: var(--text-color-link);
+  text-decoration-color: currentColor;
+}
+
+/* On-this-page TOC */
+.toc {
+  margin: 1.5rem 0 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--card-border);
+  background-color: var(--card-background);
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+.toc h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-color-muted);
+}
+.toc ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.25rem;
+}
+.toc li {
+  line-height: 1.4;
+}
+.toc a {
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
 }
 
 /* Direct Links / Markdown Headers */
