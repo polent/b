@@ -1,3 +1,4 @@
+const fs = require("fs");
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItMermaid = require("markdown-it-mermaid-server");
@@ -94,6 +95,23 @@ module.exports = function (eleventyConfig) {
     return (tags || []).filter(
       (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
     );
+  });
+
+  // Estimate reading time in whole minutes (assumes ~220 wpm).
+  eleventyConfig.addFilter("readingTime", (post) => {
+    try {
+      let raw = (post && post.templateContent) || "";
+      if (!raw && post && post.inputPath) {
+        raw = fs.readFileSync(post.inputPath, "utf8").replace(/^---[\s\S]*?---\n/, "");
+      }
+      const text = raw
+        .replace(/```[\s\S]*?```/g, " ")
+        .replace(/<[^>]+>/g, " ");
+      const words = text.split(/\s+/).filter(Boolean).length;
+      return Math.max(1, Math.round(words / 220));
+    } catch (e) {
+      return 1;
+    }
   });
 
   // Customize Markdown library settings:

@@ -1,9 +1,45 @@
-<ol reversed class="postlist">
-{% for post in postslist | reverse %}
-	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-		<h3><a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h3>
-    {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
-		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
-	</li>
-{% endfor %}
-</ol>
+{#
+  Render a list of posts as cards.
+
+  Inputs:
+    postslist     — array of post collection items, in display order (newest first).
+    headingLevel  — heading level for each post title (default 2). Use 3 when nested
+                    under a section heading on the page.
+    showYears     — when true, group consecutive posts by year with a heading at
+                    headingLevel - 1 (so callers should pass headingLevel >= 3).
+#}
+{% set headingLevel = headingLevel | default(2) %}
+{% set showYears = showYears | default(false) %}
+{% set yearLevel = headingLevel - 1 %}
+
+{%- if not showYears %}<ol class="postlist" reversed>{% endif %}
+{%- for post in postslist %}
+  {%- set thisYear = post.date | readableDate("yyyy") %}
+  {%- set prevYear = "" %}
+  {%- if not loop.first %}{% set prevYear = postslist[loop.index0 - 1].date | readableDate("yyyy") %}{% endif %}
+  {%- if showYears and thisYear != prevYear %}
+    {%- if not loop.first %}</ol>{% endif %}
+    <h{{ yearLevel }} class="postlist-year">{{ thisYear }}</h{{ yearLevel }}>
+    <ol class="postlist" reversed>
+  {%- endif %}
+  <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+    <h{{ headingLevel }}>
+      <a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+    </h{{ headingLevel }}>
+    {%- if post.data.description %}<p class="postlist-description">{{ post.data.description }}</p>{% endif %}
+    <p class="postlist-meta">
+      <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("d LLL yyyy") }}</time>
+      <span class="postlist-readtime">{{ post | readingTime }} min read</span>
+    </p>
+    {%- set postTags = post.data.tags | filterTagList %}
+    {%- if postTags | length %}
+    <ul class="postlist-tags" aria-label="Topics">
+      {%- for tag in postTags | head(3) %}
+      <li><a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a></li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+  </li>
+  {%- if showYears and loop.last %}</ol>{% endif %}
+{%- endfor %}
+{%- if not showYears %}</ol>{% endif %}

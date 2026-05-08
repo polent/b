@@ -1,10 +1,48 @@
 ---
+pagination:
+  data: collections.posts
+  size: 8
+  alias: postslist
+  reverse: true
+permalink: "blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber + 1 }}{% endif %}/"
+eleventyComputed:
+  title: "Archive{% if pagination.pageNumber > 0 %} — page {{ pagination.pageNumber + 1 }}{% endif %}"
+  eleventyNavigation:
+    key: "{% if pagination.pageNumber == 0 %}Archive{% endif %}"
+    order: 2
 layout: layouts/home.njk
-eleventyNavigation:
-  key: Archive
-  order: 2
 ---
-<h1>Archive</h1>
+<h1>Archive{% if pagination.pageNumber > 0 %} <span class="archive-page-suffix">— page {{ pagination.pageNumber + 1 }}</span>{% endif %}</h1>
 
-{% set postslist = collections.posts %}
+{% set headingLevel = 3 %}
+{% set showYears = true %}
 {% include "postslist.njk" %}
+
+{% if pagination.pages.length > 1 %}
+<nav class="pagination" aria-label="Archive pages">
+  <ul class="pagination-list">
+    {% if pagination.href.previous %}
+    <li><a href="{{ pagination.href.previous }}" rel="prev">← Previous</a></li>
+    {% else %}
+    <li><span aria-disabled="true">← Previous</span></li>
+    {% endif %}
+
+    {% for pageHref in pagination.hrefs %}
+    <li>
+      {% if pageHref == page.url %}
+      <a href="{{ pageHref }}" aria-current="page" aria-label="Page {{ loop.index }}, current page">{{ loop.index }}</a>
+      {% else %}
+      <a href="{{ pageHref }}" aria-label="Go to page {{ loop.index }}">{{ loop.index }}</a>
+      {% endif %}
+    </li>
+    {% endfor %}
+
+    {% if pagination.href.next %}
+    <li><a href="{{ pagination.href.next }}" rel="next">Next →</a></li>
+    {% else %}
+    <li><span aria-disabled="true">Next →</span></li>
+    {% endif %}
+  </ul>
+  <p class="pagination-status">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</p>
+</nav>
+{% endif %}
