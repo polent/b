@@ -52,6 +52,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPlugin(pluginBundle);
 
+  // Build-time globals
+  eleventyConfig.addGlobalData("buildYear", () => new Date().getFullYear());
+
   // Filters
   eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
     // Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
@@ -95,6 +98,31 @@ module.exports = function (eleventyConfig) {
     return (tags || []).filter(
       (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
     );
+  });
+
+  // Tag cloud data: returns [{ name, count, weight }] sorted A→Z.
+  // weight is 0..1 normalized across the cloud, used to scale font-size.
+  eleventyConfig.addFilter("tagCloudData", (collection) => {
+    const skip = new Set(["all", "nav", "post", "posts"]);
+    const counts = new Map();
+    for (const item of collection || []) {
+      for (const tag of (item.data && item.data.tags) || []) {
+        if (skip.has(tag)) continue;
+        counts.set(tag, (counts.get(tag) || 0) + 1);
+      }
+    }
+    const entries = [...counts.entries()];
+    if (entries.length === 0) return [];
+    const max = Math.max(...entries.map(([, c]) => c));
+    const min = Math.min(...entries.map(([, c]) => c));
+    const range = Math.max(1, max - min);
+    return entries
+      .map(([name, count]) => ({
+        name,
+        count,
+        weight: (count - min) / range,
+      }))
+      .sort((a, b) => a.name.localeCompare(b.name));
   });
 
   // Estimate reading time in whole minutes (assumes ~220 wpm).

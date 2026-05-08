@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 eleventyNavigation:
   key: Imprint
-  order: 4
+  order: 5
 ---
 
 # Imprint

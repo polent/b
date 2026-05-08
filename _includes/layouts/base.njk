@@ -57,8 +57,23 @@
 			{{ content | safe }}
 		</main>
 
-    <footer>
-      <a href="https://github.com/polent" rel="me">github.com/polent</a>
+    <footer class="site-footer">
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog/">Archive</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <li><a href="/search/">Search</a></li>
+          <li><a href="/about/">About Me</a></li>
+          <li><a href="/imprint/">Imprint</a></li>
+        </ul>
+      </nav>
+      <ul class="footer-meta">
+        <li><a href="/feed/feed.xml" type="application/atom+xml">Atom feed</a></li>
+        <li><a href="/feed/feed.json" type="application/json">JSON feed</a></li>
+        <li><a href="https://github.com/polent" rel="me">github.com/polent</a></li>
+      </ul>
+      <p class="footer-copy">© {{ buildYear }} {{ metadata.author.name }}</p>
     </footer>
 	</body>
 </html>

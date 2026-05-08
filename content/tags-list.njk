@@ -1,12 +1,21 @@
 ---
 permalink: /tags/
 layout: layouts/home.njk
+eleventyNavigation:
+  key: Tags
+  order: 3
 ---
 <h1>The Tags</h1>
+<p>Every topic covered on this blog. Larger tags are more frequent — pick one to see related posts.</p>
 
-<ul class="b-tags">
-{% for tag in collections.all | getAllTags | filterTagList %}
-	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
-{% endfor %}
+{% set cloud = collections.all | tagCloudData %}
+<ul class="tag-cloud" aria-label="All tags, sized by post count">
+{%- for tag in cloud %}
+	<li>
+		<a href="/tags/{{ tag.name | slugify }}/" class="tag-cloud-item" style="--weight: {{ tag.weight }}">
+			<span class="tag-cloud-name">{{ tag.name }}</span>
+			<span class="tag-cloud-count" aria-label="{{ tag.count }} post{% if tag.count != 1 %}s{% endif %}">{{ tag.count }}</span>
+		</a>
+	</li>
+{%- endfor %}
 </ul>

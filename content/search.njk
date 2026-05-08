@@ -1,0 +1,40 @@
+---
+permalink: /search/
+title: Search
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Search
+  order: 1
+---
+<h1>Search</h1>
+<p>Search across every post on this blog. Indexing runs at build time and the search itself stays fully in your browser — no requests leave your device.</p>
+
+<link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+<div id="search" class="search-wrapper" data-pagefind-ignore></div>
+<noscript>
+	<p>Search requires JavaScript. You can also browse <a href="/blog/">the archive</a> or <a href="/tags/">all tags</a>.</p>
+</noscript>
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+	window.addEventListener('DOMContentLoaded', () => {
+		new PagefindUI({
+			element: "#search",
+			showSubResults: true,
+			showImages: false,
+			resetStyles: false,
+			translations: {
+				placeholder: "Search posts…",
+				clear_search: "Clear search",
+				load_more: "Load more results",
+				search_label: "Search this site",
+				filters_label: "Filters",
+				zero_results: "No results for [SEARCH_TERM]",
+				many_results: "[COUNT] results for [SEARCH_TERM]",
+				one_result: "[COUNT] result for [SEARCH_TERM]",
+				alt_search: "No results for [SEARCH_TERM]. Showing results for [DIFFERENT_TERM] instead.",
+				search_suggestion: "No results for [SEARCH_TERM]. Try one of: [DIFFERENT_TERM]",
+				searching: "Searching for [SEARCH_TERM]…"
+			}
+		});
+	});
+</script>
