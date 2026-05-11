@@ -27,9 +27,9 @@ Before we had "Copilots". They suggested a line or a block. Now we have "Agents"
 
 I hear a new idea lately. People say: "Why do we care about clean code? Why format it nicely?". They think the agent can read any mess. They say we can just recreate the code every time with a prompt. If it is ugly for humans it does not matter because humans do not read it anymore.
 
-I think this is a big error.
+While it is highly likely that in the future we will not need clean code anymore—because AI will flawlessly manage and understand any mess—we are not there yet.
 
-Code is not just for machines. It is for the human who has to find a bug at 3 a.m. when the agent is not HElpful. If the code has no structure it has no logic you can follow. Relying only on an agent to "explain" ugly code is a risk. You lose the deep understanding of your own product. "Vibe coding" should not mean "messy coding". Good engineering is still about clarity.
+Right now, AI still does a lot of things wrong. When an agent makes a mistake, it is still the human who has to jump in and find the bug. Because of this, being able to read and understand code is still incredibly important. If the code has no structure, it has no logic you can follow to correct the AI's errors. "Vibe coding" should not mean "messy coding" today. Good engineering is still about clarity, at least until the AI is truly infallible.
 
 ## The illusion of speed
 
@@ -153,7 +153,7 @@ If you use AI agents in your team you need rules. Here is my "Stay Safe" list:
 - Clean Code Standards: Even if an agent wrote it it must be formatted and readable. No "Agent Only" code allowed.
 - Small Contexts: Give the agent small tasks. Do not say "Build me a shop". Say "Build me a component for a price tag".
 
-AI is a power tool. It is like a chainsaw. It can HElp you build a house fast. But if you don't know how to sue it you might lose a leg. Let's stay safe.
+AI is a power tool. It is like a chainsaw. It can help you build a house fast. But if you don't know how to sue it you might lose a leg. Let's stay safe.
 
 ## Sources and further reading
 
