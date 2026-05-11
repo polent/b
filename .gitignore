@@ -3,3 +3,4 @@ node_modules/
 .slingshot
 mermaidTmp/
 mermaidTmp/ailrktyahcpp.svg
+.claude/settings.json
