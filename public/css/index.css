@@ -662,6 +662,13 @@ cite {
   --pagefind-ui-font: var(--font-family);
 }
 
+/* Pagefind's input rule sets background-color but no color, so the
+   <input> falls back to the user-agent default (black) and ignores
+   --pagefind-ui-text in dark mode. Force it to follow the theme. */
+.search-wrapper .pagefind-ui__search-input {
+  color: var(--pagefind-ui-text) !important;
+}
+
 /* Center the label of Pagefind's Clear-search button and balance its
    asymmetric default padding (which is 0 15px 0 2px scaled).
    !important is needed because pagefind-ui.css is loaded after this
