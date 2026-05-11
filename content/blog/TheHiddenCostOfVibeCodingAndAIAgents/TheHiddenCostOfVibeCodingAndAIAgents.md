@@ -11,7 +11,7 @@ tags:
 
 ## The general illusion
 
-{% image "./Gemini_Generated_Image_zbxc1dzbxc1dzbxc.png", "Collaborative workspace, group of senior developers inspect a large glowing code scroll with a magnifying glass, AI agent in the background, professional and calm atmosphere. ", [], "(min-width: 40em) 960px, 100vw" %}
+{% image "./Gemini_Generated_Image_u1crinu1crinu1cr.png", "Collaborative workspace, group of senior developers inspect a large glowing code scroll with a magnifying glass, AI agent in the background, professional and calm atmosphere. ", [], "(min-width: 40em) 960px, 100vw" %}
 
 I see it every day now. A developer types a short prompt. The AI agent writes 200 lines of code. It looks perfect. The UI is pretty. The feature is "done" in ten minutes. We call this vibe coding. If it feels right and the demo works, we ship it.
 
