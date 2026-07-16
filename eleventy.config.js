@@ -3,11 +3,12 @@ const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItMermaid = require("markdown-it-mermaid-server");
 
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+// eleventy-plugin-rss v3 is ESM; require() returns a namespace object, so unwrap .default.
+const pluginRss = require("@11ty/eleventy-plugin-rss").default || require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+// Eleventy 3 bundles the HTML base + bundle plugins in core (no separate deps).
+const { EleventyHtmlBasePlugin, BundlePlugin } = require("@11ty/eleventy");
 
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
@@ -50,7 +51,8 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-  eleventyConfig.addPlugin(pluginBundle);
+  // Provides {% css %}/{% js %}/{% getBundle %} shortcodes (css, js, html bundles).
+  eleventyConfig.addPlugin(BundlePlugin);
 
   // Build-time globals
   eleventyConfig.addGlobalData("buildYear", () => new Date().getFullYear());
