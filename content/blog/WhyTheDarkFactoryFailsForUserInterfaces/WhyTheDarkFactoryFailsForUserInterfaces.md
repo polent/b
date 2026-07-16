@@ -45,3 +45,11 @@ This feels like a dark factory because it is automated. But the human is still i
 If we remove the human completely, we will build biased systems. We must use automation to help us with mechanical tasks, but not to replace human judgment.
 
 The pipeline can be dark, but the design must stay human.
+
+## Ressources
+
+- [What Is a Dark Factory Codebase? The Future of Autonomous Software Development](https://www.mindstudio.ai/blog/what-is-a-dark-factory-codebase)
+- [The Dark Factory Pattern: Moving From AI-Assisted to Fully Autonomous Coding](https://hackernoon.com/the-dark-factory-pattern-moving-from-ai-assisted-to-fully-autonomous-coding)
+- [AI Coding Gap: Dark Factories and Why Your AI Strategy Is Failing in 2026](https://andrewbaker.ninja/2026/03/22/ai-coding-gap-dark-factories-and-why-your-ai-strategy-is-failing/)
+- [Slop review with AI: the dark factory](https://medium.com/@polyglot_factotum/slop-review-with-ai-the-dark-factory-ffca22406822)
+- [The Gravity Between You and the 100X Dark Factory](https://www.linkedin.com/pulse/gravity-between-you-100x-dark-factory-brandon-casci-bmpzf/)
