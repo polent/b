@@ -4,7 +4,7 @@ title: "The Dark Factory Trap: Finding the Sweet Spot for AI in Engineering"
 description: Why fully autonomous dark factories risk model collapse in web design, and how human in the loop pipelines keep digital products reliable and accessible.
 date: 2026-08-14
 tags:
-  - engineering
+  - Engineering
   - AI
   - Architecture
   - Accessibility
