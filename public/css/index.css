@@ -45,13 +45,14 @@
   --ease: cubic-bezier(0.2, 0, 0.2, 1);
 
   --syntax-tab-size: 2;
-}
 
-/* Light theme.
-   The navy ink and the existing link blue are kept — they are the site's
-   established identity. Teal is the accent: it appears only on the eyebrow,
-   the rule under a post title, and the current-section marker in the TOC. */
-:root {
+  /* ----------------------------------------------------------------------
+     Light theme.
+     The navy ink and the existing link blue are kept — they are the site's
+     established identity. Teal is the accent: it appears only on the eyebrow,
+     the rule under a post title, and the current-section marker in the TOC.
+     ---------------------------------------------------------------------- */
+
   /* Tells the UA to render form controls, scrollbars and the canvas light.
      The dark blocks below flip it, so native chrome follows the page. */
   color-scheme: light;
