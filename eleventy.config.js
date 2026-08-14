@@ -228,8 +228,8 @@ module.exports = function (eleventyConfig) {
   // pass `content` directly without looking themselves up in a collection.
   eleventyConfig.addFilter("readingTime", (post) => {
     // Normalise both accepted shapes to one object so the rest reads the same
-    // either way. Written without optional chaining: the editor's JS parser in
-    // this project rejects it.
+    // either way. Written without `?.` / `??`: the editor's JS parser in this
+    // project still rejects them (see jsconfig.json).
     const source = typeof post === "string" ? { templateContent: post } : post || {};
     let raw = source.templateContent || "";
 

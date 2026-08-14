@@ -1,0 +1,30 @@
+{
+  "//": [
+    "Tells the editor's JavaScript service what this project actually is:",
+    "CommonJS running on Node 22+. Without it the service falls back to an",
+    "older language level and reports valid modern syntax — optional chaining,",
+    "nullish coalescing — as a parse error.",
+    "",
+    "This only affects editor tooling. Node runs these files either way, and",
+    "the Eleventy build does not read it."
+  ],
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "checkJs": false,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "*.js",
+    "_data/**/*.js",
+    "content/**/*.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "_site",
+    "mermaidTmp",
+    "public"
+  ]
+}
