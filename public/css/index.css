@@ -1,143 +1,172 @@
-/* Defaults */
+/* =========================================================================
+   Design tokens
+   ========================================================================= */
+
 :root {
-  --font-family: -apple-system, system-ui, sans-serif;
-  --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono,
-    Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
-    Courier, monospace;
-}
+  /* Type roles.
+     Display and body share the system sans; they are separated by weight,
+     tracking and leading rather than by family, which keeps the page at zero
+     font requests. The mono face is the utility voice: eyebrows, metadata,
+     labels — anything that reads as instrumentation rather than prose. */
+  --font-body: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-display: var(--font-body);
+  --font-mono: ui-monospace, Consolas, Menlo, Monaco, "Andale Mono WT",
+    "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Liberation Mono",
+    "Courier New", Courier, monospace;
 
-/* Theme colors */
-:root {
-  --color-gray-20: #e0e0e0;
-  --color-gray-50: #c0c0c0;
-  --color-gray-90: #333;
-  --color-gray-90-inverse: #333;
+  /* Fluid type scale, ~1.25 ratio. */
+  --step--2: clamp(0.72rem, 0.7rem + 0.1vw, 0.78rem);
+  --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
+  --step-0: clamp(1.05rem, 1rem + 0.25vw, 1.15rem);
+  --step-1: clamp(1.25rem, 1.15rem + 0.5vw, 1.45rem);
+  --step-2: clamp(1.55rem, 1.35rem + 0.9vw, 2rem);
+  --step-3: clamp(1.9rem, 1.6rem + 1.4vw, 2.6rem);
+  --step-4: clamp(2.25rem, 1.8rem + 2.2vw, 3.4rem);
 
-  --background-color: #fff;
-  --card-background: #fafafa;
-  --card-border: #d0d0d0;
+  /* Spacing scale. */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4.5rem;
 
-  --text-color: var(--color-gray-90);
-  --text-color-muted: #555;
-  --text-color-link: #082840;
-  --text-color-link-active: #5f2b48;
-  --text-color-link-visited: #17050f;
+  /* Layout. */
+  --measure: 68ch;
+  --shell: min(100% - 2rem, 75rem);
+  --radius: 6px;
+  --radius-pill: 999px;
 
-  --focus-ring: #ff9800;
+  /* Motion. Every transition in the sheet references one of these, so the
+     reduced-motion block at the end has a single place to neutralise. */
+  --motion-fast: 120ms;
+  --motion-med: 220ms;
+  --ease: cubic-bezier(0.2, 0, 0.2, 1);
 
   --syntax-tab-size: 2;
 }
 
+/* Light theme.
+   The navy ink and the existing link blue are kept — they are the site's
+   established identity. Teal is the accent: it appears only on the eyebrow,
+   the rule under a post title, and the current-section marker in the TOC. */
+:root {
+  --bg: #ffffff;
+  --surface: #f4f6f7;
+  --rule: #dde4e8;
+  --ink: #16222e;
+  --ink-strong: #0a1620;
+  --muted: #5a6875;
+  --link: #0b4a63;
+  --link-active: #5f2b48;
+  --link-visited: #4a3355;
+  --accent: #0e7490;
+  --accent-quiet: #d9edf1;
+  --ring: #ff9800;
+
+  /* Legacy aliases. prism-diff.css and the Pagefind overrides still address
+     these names; keep them mapped rather than editing those files. */
+  --color-gray-20: var(--rule);
+  --color-gray-50: #c0c0c0;
+  --color-gray-90: var(--ink);
+  --color-gray-90-inverse: #333;
+  --background-color: var(--bg);
+  --card-background: var(--surface);
+  --card-border: var(--rule);
+  --text-color: var(--ink);
+  --text-color-muted: var(--muted);
+  --text-color-link: var(--link);
+  --text-color-link-active: var(--link-active);
+  --text-color-link-visited: var(--link-visited);
+  --focus-ring: var(--ring);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-gray-20: #2c3a48;
-    --color-gray-50: #c0c0c0;
-    --color-gray-90: #dad8d8;
+    --bg: #101a24;
+    --surface: #18242f;
+    --rule: #26343f;
+    --ink: #dae3ea;
+    --ink-strong: #f2f7fa;
+    --muted: #94a4b2;
+    --link: #7cd1ff;
+    --link-active: #ffd166;
+    --link-visited: #c3aee0;
+    --accent: #4fc9de;
+    --accent-quiet: #1b3540;
+    --ring: #ffb74d;
+
+    --color-gray-50: #8b9aa7;
     --color-gray-90-inverse: #333;
-
-    --card-background: #1d2a36;
-    --card-border: #2f4254;
-
-    --text-color-muted: #b8b8b8;
-    /* --text-color is assigned to --color-gray-_ above */
-    --text-color-link: #7cd1ff;
-    --text-color-link-active: #ffd166;
-    --text-color-link-visited: #b39ddb;
-
-    --focus-ring: #ffb74d;
-
-    --background-color: #15202b;
   }
 }
 
-/* Global stylesheet */
+/* =========================================================================
+   Base
+   ========================================================================= */
+
 * {
   box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  /* Anchor jumps land below the sticky TOC rather than under it. */
+  scroll-padding-top: var(--space-lg);
 }
 
 html,
 body {
   padding: 0;
   margin: 0 auto;
-  font-family: var(--font-family);
-  color: var(--text-color);
-  background-color: var(--background-color);
-}
-html {
-  overflow-y: scroll;
-}
-body {
-  max-width: 960px;
-  min-height: 100vh;
-  position: relative;
-  font-size: clamp(1rem, 2.2vw, 1.25rem);
-  line-height: 1.6;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background-color: var(--bg);
 }
 
-/* Accessible focus ring for keyboard users */
+body {
+  max-width: none;
+  min-height: 100vh;
+  position: relative;
+  font-size: var(--step-0);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* One shell width for header, main and footer so their edges — and their
+   hairline rules — line up down the page. */
+.site-header,
+main,
+.site-footer {
+  width: var(--shell);
+  margin-inline: auto;
+}
+
 :focus-visible {
-  outline: 3px solid var(--focus-ring);
+  outline: 3px solid var(--ring);
   outline-offset: 2px;
   border-radius: 2px;
 }
 
-/* Skip link — invisible until focused */
 .skip-link {
   position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: var(--background-color);
-  color: var(--text-color-link);
-  border: 2px solid var(--text-color-link);
+  top: var(--space-xs);
+  left: var(--space-xs);
+  padding: var(--space-xs) var(--space-md);
+  background: var(--bg);
+  color: var(--link);
+  border: 2px solid var(--link);
   font-weight: 700;
   text-decoration: none;
   z-index: 1000;
   transform: translateY(-150%);
-  transition: transform 0.15s ease-out;
+  transition: transform var(--motion-fast) var(--ease);
 }
 .skip-link:focus {
   transform: translateY(0);
-}
-@media (prefers-reduced-motion: reduce) {
-  .skip-link { transition: none; }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 1.5rem 0 0 0;
-}
-
-h1 {
-  font-size: clamp(2rem, 6vw, 3rem);
-}
-h2 {
-  font-size: clamp(1.6rem, 6vw, 2.4rem);
-}
-h3 {
-  font-size: clamp(1.4rem, 6vw, 2.2rem);
-}
-h4 {
-  font-size: clamp(1.2rem, 6vw, 2rem);
-}
-h5 {
-  font-size: clamp(1rem, 6vw, 1.8rem);
-}
-h6 {
-  font-size: clamp(0.8rem, 6vw, 1.6rem);
-}
-
-h1 + h2,
-h2 + h3,
-h3 + h4,
-h4 + h5,
-h5 + h6 {
-  margin-top: 0.2rem;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -151,67 +180,474 @@ h5 + h6 {
   width: 1px;
 }
 
+/* =========================================================================
+   Typography
+   ========================================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  color: var(--ink-strong);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: var(--space-xl) 0 var(--space-sm);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--step-3);
+  letter-spacing: -0.03em;
+}
+h2 {
+  font-size: var(--step-2);
+}
+h3 {
+  font-size: var(--step-1);
+}
+h4 {
+  font-size: var(--step-0);
+}
+h5,
+h6 {
+  font-size: var(--step--1);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6 {
+  margin-top: var(--space-sm);
+}
+
+p {
+  line-height: 1.65;
+  margin: 0 0 var(--space-md);
+}
 p:last-child {
   margin-bottom: 0;
 }
-p {
-  line-height: 1.5;
+
+/* The utility voice: mono, uppercase, letterspaced. Used for the post
+   eyebrow, the TOC heading and the year markers in the archive. */
+.eyebrow,
+.post-eyebrow,
+.toc h2 {
+  font-family: var(--font-mono);
+  font-size: var(--step--2);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 a[href] {
-  color: var(--text-color-link);
+  color: var(--link);
 }
 a[href]:visited {
-  color: var(--text-color-link-visited);
+  color: var(--link-visited);
 }
 a[href]:hover,
 a[href]:active {
-  color: var(--text-color-link-active);
+  color: var(--link-active);
+}
+
+/* =========================================================================
+   Link motion
+
+   Prose links keep a visible underline at rest — the animation adjusts an
+   existing affordance instead of supplying the only one. Hover and focus
+   deepen the underline and push it away from the baseline.
+   ========================================================================= */
+
+.post-content a[href],
+.postlist-description a[href],
+p a[href] {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  text-decoration-color: var(--rule);
+  transition: text-decoration-color var(--motion-fast) var(--ease),
+    text-underline-offset var(--motion-fast) var(--ease),
+    color var(--motion-fast) var(--ease);
+}
+.post-content a[href]:hover,
+.post-content a[href]:focus-visible,
+.postlist-description a[href]:hover,
+.postlist-description a[href]:focus-visible,
+p a[href]:hover,
+p a[href]:focus-visible {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.22em;
+  text-decoration-color: currentColor;
+}
+
+/* Navigation links carry no underline at rest, so they get one that wipes in
+   from the left on hover, focus and for the current page. */
+.nav-item a[href],
+.site-footer a[href],
+.breadcrumbs a[href] {
+  position: relative;
+  text-decoration: none;
+}
+.nav-item a[href]::after,
+.site-footer a[href]::after,
+.breadcrumbs a[href]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.2em;
+  height: 2px;
+  background-color: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--motion-med) var(--ease);
+}
+.nav-item a[href]:hover::after,
+.nav-item a[href]:focus-visible::after,
+.nav a[href][aria-current="page"]::after,
+.site-footer a[href]:hover::after,
+.site-footer a[href]:focus-visible::after,
+.breadcrumbs a[href]:hover::after,
+.breadcrumbs a[href]:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* =========================================================================
+   Header and nav
+   ========================================================================= */
+
+.site-header,
+header:not(.post-header) {
+  display: flex;
+  gap: var(--space-md) var(--space-lg);
+  flex-wrap: wrap;
+  align-items: center;
+  padding: var(--space-md) var(--space-xs);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: var(--space-lg);
+}
+
+.home-link {
+  font-size: 2.5rem;
+  line-height: 1;
+  text-decoration: none;
+  transition: transform var(--motion-med) var(--ease);
+}
+.home-link:hover {
+  transform: translateY(-2px) scale(1.06);
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: var(--step--1);
+}
+.nav-item {
+  display: inline-block;
+}
+.nav a[href][aria-current="page"] {
+  color: var(--ink-strong);
+  font-weight: 600;
 }
 
 main {
-  padding: 1rem;
+  padding: 0 var(--space-xs) var(--space-xl);
 }
 main :first-child {
   margin-top: 0;
 }
 
-header {
-  border-bottom: 2px dotted var(--color-gray-20);
-}
-header:after {
-  content: "";
-  display: table;
-  clear: both;
+/* Prose on non-post pages (home, about, imprint) gets the same reading
+   measure as an article. Class-bearing children — the post list grid, the tag
+   cloud, pagination — are excluded so they still use the full shell. */
+main > p,
+main > h1,
+main > h2,
+main > h3,
+main > blockquote,
+main > ul:not([class]),
+main > ol:not([class]) {
+  max-width: var(--measure);
 }
 
-.links-nextprev {
+/* =========================================================================
+   Post header — eyebrow, title, accent rule, standfirst
+   ========================================================================= */
+
+.post-header {
+  margin-bottom: var(--space-xl);
+  max-width: var(--measure);
+}
+
+.post-eyebrow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-xs) var(--space-sm);
+  color: var(--muted);
+  margin: 0 0 var(--space-sm);
+}
+.post-eyebrow > * + *::before {
+  content: "·";
+  margin-right: var(--space-sm);
+  color: var(--rule);
+}
+.post-eyebrow .post-eyebrow-topic {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.post-eyebrow .post-eyebrow-topic:hover,
+.post-eyebrow .post-eyebrow-topic:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* The signature: a short accent rule beneath every post title. The same
+   accent marks the current section in the sidebar TOC, so the reader sees
+   one device, used twice, meaning "you are here". */
+.post-title {
+  font-size: var(--step-4);
+  margin: 0;
+}
+.post-title::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 3px;
+  margin-top: var(--space-md);
+  background-color: var(--accent);
+}
+
+.post-standfirst {
+  font-size: var(--step-1);
+  line-height: 1.45;
+  color: var(--muted);
+  margin: var(--space-md) 0 0;
+  text-wrap: pretty;
+}
+
+.post-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs) var(--space-sm);
+  align-items: baseline;
   list-style: none;
-  border-top: 1px dashed var(--color-gray-20);
-  padding: 1em 0;
+  padding: 0;
+  margin: var(--space-md) 0 0;
+  font-size: var(--step--1);
+  color: var(--muted);
+}
+.post-metadata .post-author a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.post-metadata .post-author a:hover,
+.post-metadata .post-author a:focus-visible {
+  color: var(--link);
+  text-decoration-color: currentColor;
+}
+/* Tags here are navigation, not prose — give them the same pill affordance
+   they carry on the post list so the two read as the same control. */
+.post-metadata .post-tag {
+  font-size: var(--step--2);
+  padding: 0.1rem 0.55rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: border-color var(--motion-fast) var(--ease),
+    color var(--motion-fast) var(--ease);
+}
+.post-metadata .post-tag:hover,
+.post-metadata .post-tag:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* =========================================================================
+   Post shell — sidebar TOC on wide screens
+   ========================================================================= */
+
+.post-shell {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.post-content {
+  max-width: var(--measure);
+  min-width: 0;
+}
+
+@media (min-width: 68.75rem) {
+  .post-shell-has-toc {
+    grid-template-columns: 14rem minmax(0, 1fr);
+    gap: var(--space-xl);
+    align-items: start;
+  }
+  .post-shell-has-toc .toc {
+    position: sticky;
+    top: var(--space-md);
+    max-height: calc(100vh - var(--space-xl));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    border-left: 1px solid var(--rule);
+  }
+  .post-shell-has-toc .toc ol {
+    padding-left: 0;
+  }
+  .post-shell-has-toc .toc li {
+    padding-left: var(--space-md);
+    border-left: 2px solid transparent;
+    margin-left: -1px;
+  }
+  /* The accent marker, echoing the rule under the post title. */
+  .post-shell-has-toc .toc li:has(.is-current) {
+    border-left-color: var(--accent);
+  }
+}
+
+.toc {
+  margin: 0 0 var(--space-lg);
+  padding: var(--space-md);
+  border: 1px solid var(--rule);
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  font-size: var(--step--1);
+}
+.toc h2 {
+  margin: 0 0 var(--space-sm);
+  color: var(--muted);
+  font-size: var(--step--2);
+  letter-spacing: 0.12em;
+}
+.toc ol {
+  margin: 0;
+  padding-left: var(--space-md);
+  display: grid;
+  gap: var(--space-2xs);
+  list-style: none;
+  counter-reset: toc;
+}
+.toc li {
+  line-height: 1.35;
+  padding: var(--space-2xs) 0;
+}
+.toc a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color var(--motion-fast) var(--ease);
+}
+.toc a:hover,
+.toc a:focus-visible {
+  color: var(--link);
+}
+.toc a.is-current {
+  color: var(--ink-strong);
+  font-weight: 600;
+}
+
+/* =========================================================================
+   Prose
+   ========================================================================= */
+
+.post-content > * {
+  max-width: 100%;
+}
+
+blockquote {
+  font-weight: 400;
+  font-size: var(--step-0);
+  line-height: 1.55;
+  color: var(--muted);
+  position: relative;
+  margin: var(--space-lg) 0;
+  padding: 0 0 0 var(--space-md);
+  border-left: 3px solid var(--accent);
+}
+
+cite {
+  line-height: 2;
+  text-align: right;
+  display: block;
+  font-size: var(--step--1);
+}
+
+ul,
+ol {
+  padding-left: var(--space-md);
+}
+li {
+  margin-bottom: var(--space-2xs);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: var(--space-xl) 0;
 }
 
 table {
-  margin: 1em auto;
+  margin: var(--space-lg) 0;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: var(--step--1);
 }
 table td,
 table th {
-  padding-right: 1em;
+  padding: var(--space-xs) var(--space-md) var(--space-xs) 0;
+  text-align: left;
 }
 thead tr th {
-  border-bottom: 2px solid var(--color-gray-90);
+  border-bottom: 2px solid var(--ink);
+  font-family: var(--font-mono);
+  font-size: var(--step--2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 tbody tr td {
-  border-bottom: 1px solid var(--color-gray-90);
+  border-bottom: 1px solid var(--rule);
+}
+
+/* Wide tables scroll inside their own box rather than the page. */
+.post-content table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+@media (min-width: 48rem) {
+  .post-content table {
+    display: table;
+    white-space: normal;
+  }
 }
 
 pre,
 code {
-  font-family: var(--font-family-monospace);
+  font-family: var(--font-mono);
 }
 pre:not([class*="language-"]) {
-  margin: 0.5em 0;
-  line-height: 1.375; /* 22px /16 */
+  margin: var(--space-md) 0;
+  line-height: 1.375;
   -moz-tab-size: var(--syntax-tab-size);
   -o-tab-size: var(--syntax-tab-size);
   tab-size: var(--syntax-tab-size);
@@ -225,77 +661,92 @@ pre:not([class*="language-"]) {
   word-break: normal;
 }
 code {
-  word-break: break-all;
+  word-break: break-word;
+}
+:not(pre) > code {
+  font-size: 0.9em;
+  padding: 0.1em 0.35em;
+  background-color: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+}
+pre[class*="language-"] {
+  max-width: 100%;
+  overflow-x: auto;
+  border-radius: var(--radius);
 }
 
-/* Header */
-header {
-  display: flex;
-  gap: 1em 0.5em;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 1em;
+.b-image {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 800 / 457 auto;
+  object-fit: contain;
+  margin: var(--space-lg) auto;
+  display: block;
+  border-radius: var(--radius);
 }
-.home-link {
-  font-size: 5em;
-  margin-right: 1em;
+
+/* Server-rendered mermaid diagrams. */
+.post-content svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: var(--space-lg) auto;
+}
+
+/* Direct Links / Markdown Headers.
+   The anchor's text is transparent until hover, so it must be exempt from the
+   prose underline above — otherwise it renders as a floating dash beside every
+   heading. The `.post-content` prefix is needed to outweigh that rule. */
+.header-anchor {
+  font-style: normal;
+  font-size: 0.7em;
+  margin-left: 0.35em;
+  vertical-align: middle;
+}
+.post-content a[href].header-anchor,
+a[href].header-anchor,
+a[href].header-anchor:visited {
+  color: transparent;
   text-decoration: none;
-  transition: transform 0.5s;
 }
-.home-link:hover {
-  transform: scale(1.1);
-}
-@media (prefers-reduced-motion: reduce) {
-  .home-link {
-    transition: none;
-  }
-  .home-link:hover {
-    transform: none;
-  }
-}
-
-/* Nav */
-.nav {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.nav-item {
-  display: inline-block;
-  margin-right: 1em;
-}
-.nav-item a[href]:not(:hover) {
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
   text-decoration: none;
+  color: var(--accent);
 }
-.nav a[href][aria-current="page"] {
-  text-decoration: underline;
+:hover > a[href].header-anchor {
+  color: var(--muted);
 }
 
-/* Posts list — card pattern */
+/* =========================================================================
+   Post list
+   ========================================================================= */
+
 .postlist {
   list-style: none;
   padding: 0;
-  margin: 1em 0;
+  margin: var(--space-lg) 0;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-@media only screen and (min-width: 720px) {
-  .postlist {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+  gap: var(--space-md);
 }
 
 .postlist-item {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  padding: 1rem 1.1rem;
-  background-color: var(--card-background);
-  border: 1px solid var(--card-border);
-  border-radius: 6px;
+  gap: var(--space-xs);
+  padding: var(--space-md);
+  background-color: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  transition: border-color var(--motion-med) var(--ease),
+    transform var(--motion-med) var(--ease);
+}
+.postlist-item:hover,
+.postlist-item:focus-within {
+  border-color: var(--accent);
+  transform: translateY(-2px);
 }
 
 .postlist-item > * {
@@ -304,39 +755,48 @@ header {
 
 .postlist-item h2,
 .postlist-item h3 {
-  font-size: clamp(1.1rem, 2.4vw, 1.4rem);
-  line-height: 1.3;
+  font-size: var(--step-1);
+  line-height: 1.25;
   margin: 0;
+  letter-spacing: -0.015em;
 }
 
 .postlist-link {
   font-weight: 700;
-  text-underline-position: from-font;
-  text-underline-offset: 2px;
-  text-decoration-thickness: 1px;
+  text-decoration: none;
+  color: var(--ink-strong);
+}
+.postlist-item:hover .postlist-link,
+.postlist-link:focus-visible {
+  color: var(--link);
 }
 
 .postlist-description {
-  color: var(--text-color);
-  font-size: 0.95em;
+  color: var(--muted);
+  font-size: var(--step--1);
   line-height: 1.5;
+  text-wrap: pretty;
 }
 
 .postlist-meta {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 0.25rem 0.75rem;
-  font-size: 0.85em;
-  color: var(--text-color-muted);
+  gap: var(--space-2xs) var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: var(--step--2);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: auto;
 }
 .postlist-meta .postlist-date {
-  font-style: italic;
+  font-style: normal;
 }
 .postlist-meta .postlist-readtime::before {
   content: "·";
-  margin-right: 0.5rem;
-  color: var(--text-color-muted);
+  margin-right: var(--space-xs);
+  color: var(--rule);
 }
 
 .postlist-tags {
@@ -345,223 +805,91 @@ header {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
+  gap: var(--space-2xs);
 }
 .postlist-tags li {
   margin: 0;
 }
 .postlist-tags .post-tag {
-  font-size: 0.78em;
+  font-size: var(--step--2);
   padding: 0.1rem 0.55rem;
-  border: 1px solid var(--card-border);
-  border-radius: 999px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-pill);
   text-decoration: none;
   font-style: normal;
+  transition: border-color var(--motion-fast) var(--ease),
+    color var(--motion-fast) var(--ease);
 }
 .postlist-tags .post-tag:hover,
 .postlist-tags .post-tag:focus-visible {
-  border-color: var(--text-color-link-active);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .postlist-item-active .postlist-link {
   font-weight: 800;
 }
 
-/* Year groups */
 .postlist-year {
-  margin: 1.5rem 0 0.5rem;
-  padding-bottom: 0.25rem;
-  border-bottom: 1px solid var(--card-border);
-  font-size: clamp(1.4rem, 3vw, 1.8rem);
-  letter-spacing: 0.02em;
+  font-family: var(--font-mono);
+  margin: var(--space-xl) 0 var(--space-xs);
+  padding-bottom: var(--space-2xs);
+  border-bottom: 1px solid var(--rule);
+  font-size: var(--step-0);
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  text-transform: none;
 }
 
-/* Pagination */
-.pagination {
-  margin: 2rem 0 1rem;
-  border-top: 1px solid var(--card-border);
-  padding-top: 1rem;
-}
-.pagination-list {
+.links-nextprev {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  justify-content: center;
-}
-.pagination-list a,
-.pagination-list span {
-  display: inline-block;
-  min-width: 2.4rem;
-  padding: 0.4rem 0.7rem;
-  text-align: center;
-  border: 1px solid var(--card-border);
-  border-radius: 4px;
-  text-decoration: none;
-  font-size: 0.95rem;
-}
-.pagination-list a[aria-current="page"] {
-  background-color: var(--text-color-link);
-  color: var(--background-color);
-  border-color: var(--text-color-link);
-  font-weight: 700;
-}
-.pagination-list span[aria-disabled="true"] {
-  color: var(--text-color-muted);
-  opacity: 0.5;
-}
-.pagination-status {
-  text-align: center;
-  font-size: 0.85em;
-  color: var(--text-color-muted);
-  margin: 0.5rem 0 0;
+  border-top: 1px solid var(--rule);
+  padding: var(--space-md) 0 0;
+  margin: var(--space-xl) 0 0;
+  display: grid;
+  gap: var(--space-xs);
+  font-size: var(--step--1);
+  max-width: var(--measure);
 }
 
-/* Tags */
+/* =========================================================================
+   Tags
+   ========================================================================= */
+
 .post-tag {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-transform: capitalize;
-  font-style: italic;
+  font-style: normal;
 }
 .postlist-item > .post-tag {
   align-self: center;
 }
 
-/* Post metadata strip */
-.post-metadata {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 0.4em 0.75em;
-  align-items: baseline;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1em 0;
-  font-size: 0.9em;
-  color: var(--text-color-muted);
-}
-.post-metadata time {
-  margin-right: 0;
-}
-.post-metadata .post-author a {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-color: var(--card-border);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-.post-metadata .post-author a:hover,
-.post-metadata .post-author a:focus-visible {
-  color: var(--text-color-link);
-  text-decoration-color: currentColor;
-}
-
-/* On-this-page TOC */
-.toc {
-  margin: 1.5rem 0 2rem;
-  padding: 1rem 1.25rem;
-  border: 1px solid var(--card-border);
-  background-color: var(--card-background);
-  border-radius: 6px;
-  font-size: 0.95em;
-}
-.toc h2 {
-  margin: 0 0 0.5rem;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-color-muted);
-}
-.toc ol {
-  margin: 0;
-  padding-left: 1.25rem;
-  display: grid;
-  gap: 0.25rem;
-}
-.toc li {
-  line-height: 1.4;
-}
-.toc a {
-  text-underline-offset: 2px;
-  text-decoration-thickness: 1px;
-}
-
-/* Direct Links / Markdown Headers */
-.header-anchor {
-  text-decoration: none;
-  font-style: normal;
-  font-size: 1em;
-  margin-left: 0.1em;
-}
-a[href].header-anchor,
-a[href].header-anchor:visited {
-  color: transparent;
-}
-a[href].header-anchor:focus,
-a[href].header-anchor:hover {
-  text-decoration: underline;
-}
-a[href].header-anchor:focus,
-:hover > a[href].header-anchor {
-  color: #aaa;
-}
-
-h2 + .header-anchor {
-  font-size: 1.5em;
-}
-
-.b-image {
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 800 / 457 auto;
-  object-fit: contain;
-  margin: 0 auto;
-  display: block;
-}
-blockquote {
-  font-weight: 100;
-  line-height: 1.4;
-  position: relative;
-  margin: 0 0 0 1em;
-  padding: 0 0 0 1em;
-  border-left: 2px dashed var(--color-gray-50);
-}
-
-cite {
-  line-height: 3;
-  text-align: right;
-  display: block;
-}
-
-/* Tag cloud (used on /tags/) */
 .tag-cloud {
   list-style: none;
-  margin: 1.25rem 0 1.5rem;
+  margin: var(--space-md) 0 var(--space-lg);
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem 0.5rem;
+  gap: var(--space-xs);
   align-items: baseline;
   line-height: 1.4;
 }
-
 .tag-cloud li {
   margin: 0;
 }
-
 .tag-cloud-item {
   --weight: 0;
   display: inline-flex;
   align-items: baseline;
-  gap: 0.4rem;
+  gap: var(--space-2xs);
   padding: 0.3em 0.85em;
-  border: 1px solid var(--card-border);
-  border-radius: 999px;
-  background-color: var(--card-background);
-  color: var(--text-color-link);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-pill);
+  background-color: var(--surface);
+  color: var(--link);
   text-decoration: none;
   text-transform: capitalize;
   font-style: normal;
@@ -570,38 +898,91 @@ cite {
   line-height: 1.2;
   white-space: nowrap;
   max-width: 100%;
-  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+  transition: border-color var(--motion-fast) var(--ease),
+    background-color var(--motion-fast) var(--ease),
+    color var(--motion-fast) var(--ease);
 }
 .tag-cloud-item:hover,
 .tag-cloud-item:focus-visible {
-  border-color: var(--text-color-link);
-  background-color: var(--background-color);
-  color: var(--text-color-link-active);
+  border-color: var(--accent);
+  background-color: var(--accent-quiet);
+  color: var(--link-active);
 }
 .tag-cloud-item:visited {
-  color: var(--text-color-link-visited);
+  color: var(--link-visited);
 }
 .tag-cloud-item .tag-cloud-name {
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .tag-cloud-item .tag-cloud-count {
+  font-family: var(--font-mono);
   font-size: 0.7em;
-  color: var(--text-color-muted);
+  color: var(--muted);
   font-variant-numeric: tabular-nums;
   font-weight: 400;
 }
-@media (prefers-reduced-motion: reduce) {
-  .tag-cloud-item {
-    transition: none;
-  }
+
+/* =========================================================================
+   Pagination, breadcrumbs, footer
+   ========================================================================= */
+
+.pagination {
+  margin: var(--space-xl) 0 var(--space-md);
+  border-top: 1px solid var(--rule);
+  padding-top: var(--space-md);
+}
+.pagination-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+  justify-content: center;
+}
+.pagination-list a,
+.pagination-list span {
+  display: inline-block;
+  min-width: 2.4rem;
+  padding: 0.4rem 0.7rem;
+  text-align: center;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: var(--step--1);
+  font-variant-numeric: tabular-nums;
+  transition: border-color var(--motion-fast) var(--ease);
+}
+.pagination-list a:hover,
+.pagination-list a:focus-visible {
+  border-color: var(--accent);
+}
+.pagination-list a[aria-current="page"] {
+  background-color: var(--link);
+  color: var(--bg);
+  border-color: var(--link);
+  font-weight: 700;
+}
+.pagination-list span[aria-disabled="true"] {
+  color: var(--muted);
+  opacity: 0.5;
+}
+.pagination-status {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: var(--step--2);
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: var(--space-xs) 0 0;
 }
 
-/* Breadcrumbs */
 .breadcrumbs {
-  margin: 0 0 0.75rem;
-  font-size: 0.85em;
-  color: var(--text-color-muted);
+  margin: 0 0 var(--space-md);
+  font-size: var(--step--2);
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+  color: var(--muted);
 }
 .breadcrumbs ol {
   list-style: none;
@@ -609,27 +990,31 @@ cite {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem 0.5rem;
+  gap: var(--space-2xs) var(--space-xs);
 }
 .breadcrumbs li + li::before {
   content: "›";
-  margin-right: 0.5rem;
-  color: var(--text-color-muted);
+  margin-right: var(--space-xs);
+  color: var(--rule);
 }
 .breadcrumbs [aria-current="page"] {
-  color: var(--text-color-muted);
+  color: var(--muted);
   font-weight: 500;
+  /* Long post titles must not stretch the crumb trail. */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 28ch;
 }
 
-/* Footer */
 .site-footer {
-  margin-top: 3rem;
-  padding: 1.5rem 1rem 2rem;
-  border-top: 1px solid var(--card-border);
+  margin-top: var(--space-2xl);
+  padding: var(--space-lg) 0 var(--space-xl);
+  border-top: 1px solid var(--rule);
   display: grid;
-  gap: 1rem;
-  font-size: 0.9rem;
-  color: var(--text-color-muted);
+  gap: var(--space-md);
+  font-size: var(--step--1);
+  color: var(--muted);
 }
 .site-footer ul {
   list-style: none;
@@ -637,29 +1022,35 @@ cite {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 1.25rem;
+  gap: var(--space-xs) var(--space-md);
   justify-content: center;
 }
 .site-footer .footer-meta {
-  font-size: 0.85em;
+  font-family: var(--font-mono);
+  font-size: var(--step--2);
+  letter-spacing: 0.06em;
 }
 .site-footer .footer-copy {
   text-align: center;
   margin: 0;
-  font-size: 0.85em;
+  font-size: var(--step--2);
 }
 
-/* Search page */
+/* =========================================================================
+   Search page
+   ========================================================================= */
+
 .search-wrapper {
-  margin: 1.5rem 0;
-  --pagefind-ui-primary: var(--text-color-link);
-  --pagefind-ui-text: var(--text-color);
-  --pagefind-ui-background: var(--card-background);
-  --pagefind-ui-border: var(--card-border);
-  --pagefind-ui-tag: var(--card-background);
+  margin: var(--space-lg) 0;
+  max-width: var(--measure);
+  --pagefind-ui-primary: var(--link);
+  --pagefind-ui-text: var(--ink);
+  --pagefind-ui-background: var(--surface);
+  --pagefind-ui-border: var(--rule);
+  --pagefind-ui-tag: var(--surface);
   --pagefind-ui-border-width: 1px;
-  --pagefind-ui-border-radius: 6px;
-  --pagefind-ui-font: var(--font-family);
+  --pagefind-ui-border-radius: var(--radius);
+  --pagefind-ui-font: var(--font-body);
 }
 
 /* Pagefind's input rule sets background-color but no color, so the
@@ -682,3 +1073,33 @@ cite {
   padding-left: calc(15px * var(--pagefind-ui-scale)) !important;
 }
 
+/* =========================================================================
+   Reduced motion
+
+   Every transition above routes through --motion-*, but third-party CSS
+   (Pagefind, Prism) does not, so this neutralises motion globally rather
+   than per-component. Durations are near-zero instead of `none` so that
+   transitionend / animationend handlers still fire.
+   ========================================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  /* Motion that conveys state must resolve to its end state, not vanish. */
+  .home-link:hover {
+    transform: none;
+  }
+  .postlist-item:hover,
+  .postlist-item:focus-within {
+    transform: none;
+  }
+}

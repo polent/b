@@ -160,9 +160,12 @@ module.exports = function (eleventyConfig) {
   });
 
   // Estimate reading time in whole minutes (assumes ~220 wpm).
+  // Accepts either a collection item or a raw HTML string, so layouts can
+  // pass `content` directly without looking themselves up in a collection.
   eleventyConfig.addFilter("readingTime", (post) => {
     try {
-      let raw = (post && post.templateContent) || "";
+      let raw =
+        typeof post === "string" ? post : (post && post.templateContent) || "";
       if (!raw && post && post.inputPath) {
         raw = fs.readFileSync(post.inputPath, "utf8").replace(/^---[\s\S]*?---\n/, "");
       }

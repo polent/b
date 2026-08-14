@@ -4,6 +4,8 @@ layout: layouts/base.njk
 {# Only include the syntax highlighter CSS on blog posts #}
 {%- css %}{% include "node_modules/prismjs/themes/prism-coy.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
+{%- set postTags = tags | filterTagList %}
+{%- set readTime = content | readingTime %}
 <nav class="breadcrumbs" aria-label="Breadcrumb">
 	<ol>
 		<li><a href="/">Home</a></li>
@@ -12,30 +14,38 @@ layout: layouts/base.njk
 	</ol>
 </nav>
 <article data-pagefind-body>
-<h1>{{ title }}</h1>
-
-<ul class="post-metadata">
-	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-	<li class="post-author">By <a href="/about/" rel="author">{{ metadata.author.name }}</a></li>
-	{%- for tag in tags | filterTagList %}
-	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag" data-pagefind-filter="tag">{{ tag }}</a></li>
-	{%- endfor %}
-</ul>
+<header class="post-header">
+	<p class="post-eyebrow">
+		{%- if postTags | length %}<a href="/tags/{{ postTags[0] | slugify }}/" class="post-eyebrow-topic">{{ postTags[0] }}</a>{% endif %}
+		<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate("d LLL yyyy") }}</time>
+		<span>{{ readTime }} min read</span>
+	</p>
+	<h1 class="post-title">{{ title }}</h1>
+	{%- if description %}<p class="post-standfirst">{{ description }}</p>{% endif %}
+	<ul class="post-metadata">
+		<li class="post-author">By <a href="/about/" rel="author">{{ metadata.author.name }}</a></li>
+		{%- for tag in postTags %}
+		<li><a href="/tags/{{ tag | slugify }}/" class="post-tag" data-pagefind-filter="tag">{{ tag }}</a></li>
+		{%- endfor %}
+	</ul>
+</header>
 
 {%- set toc = content | tocFromContent %}
-{%- if toc | length >= 3 %}
-<nav class="toc" aria-labelledby="toc-heading" data-pagefind-ignore>
-	<h2 id="toc-heading">On this page</h2>
-	<ol>
-	{%- for entry in toc %}
-		<li><a href="#{{ entry.id }}">{{ entry.text }}</a></li>
-	{%- endfor %}
-	</ol>
-</nav>
-{%- endif %}
-
-{{ content | safe }}
+<div class="post-shell{% if toc | length >= 3 %} post-shell-has-toc{% endif %}">
+	{%- if toc | length >= 3 %}
+	<nav class="toc" aria-labelledby="toc-heading" data-pagefind-ignore>
+		<h2 id="toc-heading">On this page</h2>
+		<ol>
+		{%- for entry in toc %}
+			<li><a href="#{{ entry.id }}">{{ entry.text }}</a></li>
+		{%- endfor %}
+		</ol>
+	</nav>
+	{%- endif %}
+	<div class="post-content">
+		{{ content | safe }}
+	</div>
+</div>
 </article>
 
 {%- if collections.posts %}
@@ -48,3 +58,88 @@ layout: layouts/base.njk
 </ul>
 {%- endif %}
 {%- endif %}
+
+{#- Structured data so search engines and LLM crawlers get the post as data
+    rather than having to infer it from markup. #}
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	"headline": {{ title | dump | safe }},
+	"description": {{ (description or metadata.description) | dump | safe }},
+	"url": {{ (page.url | htmlBaseUrl(metadata.url)) | dump | safe }},
+	"mainEntityOfPage": { "@type": "WebPage", "@id": {{ (page.url | htmlBaseUrl(metadata.url)) | dump | safe }} },
+	"datePublished": {{ (page.date | htmlDateString) | dump | safe }},
+	"inLanguage": {{ metadata.language | dump | safe }},
+	"wordCount": {{ readTime * 220 }},
+	"timeRequired": "PT{{ readTime }}M",
+	"keywords": {{ (postTags | join(", ")) | dump | safe }},
+	"author": {
+		"@type": "Person",
+		"name": {{ metadata.author.name | dump | safe }},
+		"url": {{ metadata.author.url | dump | safe }}
+	},
+	"publisher": {
+		"@type": "Person",
+		"name": {{ metadata.author.name | dump | safe }}
+	},
+	"isPartOf": {
+		"@type": "Blog",
+		"name": {{ metadata.title | dump | safe }},
+		"url": {{ metadata.url | dump | safe }}
+	}
+}
+</script>
+
+{#- Progressive enhancement: highlight the current section in the sidebar TOC.
+    Without JS the TOC is still a plain, working list of anchor links. #}
+<script>
+(function () {
+	var toc = document.querySelector(".toc");
+	if (!toc || !window.IntersectionObserver) return;
+
+	var links = new Map();
+	toc.querySelectorAll('a[href^="#"]').forEach(function (a) {
+		var id = decodeURIComponent(a.getAttribute("href").slice(1));
+		var heading = document.getElementById(id);
+		if (heading) links.set(heading, a);
+	});
+	if (!links.size) return;
+
+	var visible = new Set();
+	var observer = new IntersectionObserver(
+		function (entries) {
+			entries.forEach(function (entry) {
+				if (entry.isIntersecting) visible.add(entry.target);
+				else visible.delete(entry.target);
+			});
+
+			// Mark the highest visible heading; if none are on screen, keep the
+			// last one scrolled past so the rail never goes blank mid-section.
+			var current = null;
+			links.forEach(function (_, heading) {
+				if (visible.has(heading)) {
+					if (!current || heading.offsetTop < current.offsetTop) current = heading;
+				}
+			});
+			if (!current) {
+				links.forEach(function (_, heading) {
+					if (heading.getBoundingClientRect().top < 0) current = heading;
+				});
+			}
+
+			links.forEach(function (a, heading) {
+				var on = heading === current;
+				a.classList.toggle("is-current", on);
+				if (on) a.setAttribute("aria-current", "true");
+				else a.removeAttribute("aria-current");
+			});
+		},
+		{ rootMargin: "0px 0px -70% 0px" }
+	);
+
+	links.forEach(function (_, heading) {
+		observer.observe(heading);
+	});
+})();
+</script>

@@ -1,3 +1,7 @@
 User-agent: *
 Disallow: /404.html
+
 Sitemap: https://b.polente.de/sitemap.xml
+
+# Structured summary of this site for language models: https://llmstxt.org/
+# LLM-Content: https://b.polente.de/llms.txt

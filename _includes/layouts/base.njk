@@ -33,6 +33,27 @@
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
 
+		{#- Structured plain-text index of the site for language models.
+		    See https://llmstxt.org/ #}
+		<link rel="alternate" href="/llms.txt" type="text/plain" title="llms.txt">
+
+		{#- Site-level structured data. Per-post BlogPosting is emitted by the post layout. #}
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Blog",
+			"name": {{ metadata.title | dump | safe }},
+			"url": {{ metadata.url | dump | safe }},
+			"description": {{ metadata.description | dump | safe }},
+			"inLanguage": {{ metadata.language | dump | safe }},
+			"author": {
+				"@type": "Person",
+				"name": {{ metadata.author.name | dump | safe }},
+				"url": {{ metadata.author.url | dump | safe }}
+			}
+		}
+		</script>
+
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
 		<meta name="generator" content="{{ eleventy.generator }}">
 
@@ -59,7 +80,7 @@
 	<body>
 		<a href="#main" class="skip-link">Skip to main content</a>
 
-		<header>
+		<header class="site-header">
 			<a href="/" class="home-link" aria-label="Home"><span aria-hidden="true">💻</span></a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}

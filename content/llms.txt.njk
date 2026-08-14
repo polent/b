@@ -1,0 +1,32 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ metadata.title }}
+
+> {{ metadata.description }}
+
+Written by {{ metadata.author.name }}. Posts cover experience engineering,
+design systems, frontend architecture, accessibility, web standards and the
+practical use of AI in software delivery. Content is hand-written; code
+examples come from real client delivery work.
+
+## Posts
+
+{#- `| safe` because this file is plain text, not HTML: Nunjucks' default
+    escaping would emit &quot; and &#39; into titles and descriptions. -#}
+{% for post in collections.posts | reverse -%}
+- [{{ post.data.title | safe }}]({{ post.url | htmlBaseUrl(metadata.url) }}): {{ post.data.description | default("", true) | replace("\n", " ") | safe }} (Published {{ post.date | htmlDateString }}. Topics: {{ post.data.tags | filterTagList | join(", ") | safe }}.)
+{% endfor %}
+## Pages
+
+- [Blog archive]({{ "/blog/" | htmlBaseUrl(metadata.url) }}): Every post, grouped by year.
+- [Topics]({{ "/tags/" | htmlBaseUrl(metadata.url) }}): Posts grouped by topic tag.
+- [Search]({{ "/search/" | htmlBaseUrl(metadata.url) }}): Full-text search across all posts.
+- [About]({{ "/about/" | htmlBaseUrl(metadata.url) }}): Who writes this and why.
+- [Imprint]({{ "/imprint/" | htmlBaseUrl(metadata.url) }}): Legal notice and contact details.
+
+## Feeds
+
+- [Atom feed]({{ "/feed/feed.xml" | htmlBaseUrl(metadata.url) }}): Full post content as Atom XML.
+- [JSON feed]({{ "/feed/feed.json" | htmlBaseUrl(metadata.url) }}): Full post content as JSON Feed 1.1.
