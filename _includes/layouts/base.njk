@@ -8,6 +8,29 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
+		{#- Mobile browser chrome follows the theme. Both are rewritten by the
+		    theme script when a reader overrides the OS preference. #}
+		<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+		<meta name="theme-color" content="#101a24" media="(prefers-color-scheme: dark)">
+
+		{#- Runs before first paint so an overridden theme does not flash the
+		    other palette. Also marks the document script-capable, which is what
+		    reveals the theme switch — without JS the OS preference still applies
+		    through the media query, so nothing is lost, and no dead control is
+		    shown. #}
+		<script>
+		(function () {
+			var d = document.documentElement;
+			d.classList.add("js");
+			try {
+				var saved = localStorage.getItem("theme");
+				if (saved === "light" || saved === "dark") d.setAttribute("data-theme", saved);
+			} catch (e) {
+				/* Storage blocked (private mode): fall through to the OS preference. */
+			}
+		})();
+		</script>
+
     {%- if canonical %}<link rel="canonical" href="{{ canonical }}"/>{% endif %}
 
 		{#- Open Graph and Twitter card metadata for social previews #}
@@ -91,6 +114,12 @@
 				{%- endfor %}
 				</ul>
 			</nav>
+
+			<div class="theme-switch" role="group" aria-label="Colour theme">
+				<button type="button" data-theme-choice="system" aria-pressed="true">Auto</button>
+				<button type="button" data-theme-choice="light" aria-pressed="false">Light</button>
+				<button type="button" data-theme-choice="dark" aria-pressed="false">Dark</button>
+			</div>
 		</header>
 
 		<main id="main">
@@ -115,5 +144,72 @@
       </ul>
       <p class="footer-copy">© {{ buildYear }} {{ metadata.author.name }}</p>
     </footer>
+
+	{#- Wires the theme switch. "Auto" clears the stored choice rather than
+	    recording a third value, so a reader who never touches this — or who
+	    returns to Auto — keeps following their OS, including when they change
+	    it later in the same session. #}
+	<script>
+	(function () {
+		var LIGHT = "#ffffff";
+		var DARK = "#101a24";
+		var root = document.documentElement;
+		var group = document.querySelector(".theme-switch");
+		if (!group) return;
+		var buttons = group.querySelectorAll("[data-theme-choice]");
+
+		function stored() {
+			try {
+				var v = localStorage.getItem("theme");
+				return v === "light" || v === "dark" ? v : "system";
+			} catch (e) {
+				return "system";
+			}
+		}
+
+		// Both meta tags get the same colour for an explicit choice, so whichever
+		// one the OS media query matches reports the palette actually on screen.
+		function paintBrowserChrome(choice) {
+			var light = document.querySelector('meta[name="theme-color"][media*="light"]');
+			var dark = document.querySelector('meta[name="theme-color"][media*="dark"]');
+			if (!light || !dark) return;
+			if (choice === "system") {
+				light.setAttribute("content", LIGHT);
+				dark.setAttribute("content", DARK);
+			} else {
+				var c = choice === "dark" ? DARK : LIGHT;
+				light.setAttribute("content", c);
+				dark.setAttribute("content", c);
+			}
+		}
+
+		function apply(choice) {
+			if (choice === "system") root.removeAttribute("data-theme");
+			else root.setAttribute("data-theme", choice);
+			buttons.forEach(function (b) {
+				b.setAttribute(
+					"aria-pressed",
+					b.getAttribute("data-theme-choice") === choice ? "true" : "false"
+				);
+			});
+			paintBrowserChrome(choice);
+		}
+
+		apply(stored());
+
+		buttons.forEach(function (b) {
+			b.addEventListener("click", function () {
+				var choice = b.getAttribute("data-theme-choice");
+				try {
+					if (choice === "system") localStorage.removeItem("theme");
+					else localStorage.setItem("theme", choice);
+				} catch (e) {
+					/* Storage blocked: the choice applies now but will not persist. */
+				}
+				apply(choice);
+			});
+		});
+	})();
+	</script>
 	</body>
 </html>

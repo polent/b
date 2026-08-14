@@ -52,6 +52,10 @@
    established identity. Teal is the accent: it appears only on the eyebrow,
    the rule under a post title, and the current-section marker in the TOC. */
 :root {
+  /* Tells the UA to render form controls, scrollbars and the canvas light.
+     The dark blocks below flip it, so native chrome follows the page. */
+  color-scheme: light;
+
   --bg: #ffffff;
   --surface: #f4f6f7;
   --rule: #dde4e8;
@@ -82,8 +86,16 @@
   --focus-ring: var(--ring);
 }
 
+/* Dark palette, applied in two situations:
+     1. the operating system asks for dark and the reader has not overridden it
+     2. the reader picked dark explicitly, whatever the OS says
+   The declaration list is deliberately duplicated rather than merged, because
+   a media query and an attribute selector cannot share one rule. KEEP THE TWO
+   BLOCKS IDENTICAL — editing one alone splits the theme in half. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
     --bg: #101a24;
     --surface: #18242f;
     --rule: #26343f;
@@ -100,6 +112,27 @@
     --color-gray-50: #8b9aa7;
     --color-gray-90-inverse: #333;
   }
+}
+
+/* Explicit reader choice. Must stay in sync with the block above. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #101a24;
+  --surface: #18242f;
+  --rule: #26343f;
+  --ink: #dae3ea;
+  --ink-strong: #f2f7fa;
+  --muted: #94a4b2;
+  --link: #7cd1ff;
+  --link-active: #ffd166;
+  --link-visited: #c3aee0;
+  --accent: #4fc9de;
+  --accent-quiet: #1b3540;
+  --ring: #ffb74d;
+
+  --color-gray-50: #8b9aa7;
+  --color-gray-90-inverse: #333;
 }
 
 /* =========================================================================
@@ -354,6 +387,52 @@ header:not(.post-header) {
   margin: 0;
   list-style: none;
   font-size: var(--step--1);
+}
+
+/* =========================================================================
+   Theme switch
+
+   Hidden until the inline script in <head> marks the document as
+   script-capable, so readers without JS are not shown three dead buttons —
+   they still get the operating system's preference via the media query.
+   ========================================================================= */
+
+.theme-switch {
+  display: none;
+}
+.js .theme-switch {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 1px;
+  padding: 2px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-pill);
+  background-color: var(--surface);
+}
+
+.theme-switch button {
+  font: inherit;
+  font-family: var(--font-mono);
+  font-size: var(--step--2);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  border-radius: var(--radius-pill);
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  transition: color var(--motion-fast) var(--ease),
+    background-color var(--motion-fast) var(--ease);
+}
+.theme-switch button:hover {
+  color: var(--ink-strong);
+}
+.theme-switch button[aria-pressed="true"] {
+  background-color: var(--bg);
+  color: var(--ink-strong);
+  box-shadow: 0 0 0 1px var(--rule);
 }
 .nav-item {
   display: inline-block;
