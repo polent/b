@@ -694,6 +694,77 @@ pre[class*="language-"] {
   margin: var(--space-lg) auto;
 }
 
+/* =========================================================================
+   Footnotes (markdown-it-footnote)
+   ========================================================================= */
+
+/* The reference marker sits in running prose, so it must not disturb the line
+   box — hence the zero line-height and relative lift rather than a superscript
+   font-size alone. */
+.footnote-ref {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  top: -0.4em;
+  margin-left: 0.1em;
+  font-variant-numeric: tabular-nums;
+}
+.footnote-ref a {
+  text-decoration: none;
+  padding: 0 0.1em;
+}
+.footnote-ref a:hover,
+.footnote-ref a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+/* The plugin's own separator is redundant now that the block carries a
+   heading; the section border does that job. */
+.footnotes-sep {
+  display: none;
+}
+
+.footnotes {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--rule);
+  font-size: var(--step--1);
+  color: var(--muted);
+}
+.footnotes-heading {
+  font-family: var(--font-mono);
+  font-size: var(--step--2);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 var(--space-md);
+}
+.footnotes-list {
+  margin: 0;
+  padding-left: var(--space-md);
+  display: grid;
+  gap: var(--space-xs);
+}
+.footnote-item p {
+  margin: 0;
+}
+/* A footnote you have jumped to should say so, not leave you hunting. */
+.footnote-item:target {
+  background-color: var(--accent-quiet);
+  border-radius: 3px;
+  box-shadow: 0 0 0 0.4em var(--accent-quiet);
+}
+.footnote-backref {
+  text-decoration: none;
+  margin-left: 0.35em;
+  color: var(--accent);
+}
+.footnote-backref:hover,
+.footnote-backref:focus-visible {
+  text-decoration: underline;
+}
+
 /* Direct Links / Markdown Headers.
    The anchor's text is transparent until hover, so it must be exempt from the
    prose underline above — otherwise it renders as a floating dash beside every

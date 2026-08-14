@@ -61,12 +61,8 @@ AI tools make our pipelines faster, our security checks stricter, and our docume
 
 However, real system architecture, user empathy, and strategic decisions cannot be outsourced to a dark factory. Real human expertise remains the foundation of reliable software.
 
----
-
-## References
-
-* [^1]: [MindStudio Blog: What Is a Dark Factory Codebase?](https://www.mindstudio.ai/blog/what-is-a-dark-factory-codebase)
-* [^2]: [Model Context Protocol Specification](https://modelcontextprotocol.io)
-* [^3]: [W3C Web Accessibility Initiative (WAI) Guidelines](https://www.w3.org/WAI/)
-* [^4]: [OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/)
-* [^5]: [Nature: AI models collapse when trained on recursively generated data (Shumailov et al.)](https://www.nature.com/articles/s41586-024-07566-y)
+[^1]: [MindStudio Blog: What Is a Dark Factory Codebase?](https://www.mindstudio.ai/blog/what-is-a-dark-factory-codebase)
+[^2]: [Model Context Protocol Specification](https://modelcontextprotocol.io)
+[^3]: [W3C Web Accessibility Initiative (WAI) Guidelines](https://www.w3.org/WAI/)
+[^4]: [OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/)
+[^5]: [Nature: AI models collapse when trained on recursively generated data (Shumailov et al.)](https://www.nature.com/articles/s41586-024-07566-y)

@@ -1,6 +1,7 @@
 const fs = require("fs");
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItFootnote = require("markdown-it-footnote");
 const markdownItMermaid = require("markdown-it-mermaid-server");
 
 // eleventy-plugin-rss v3 is ESM; require() returns a namespace object, so unwrap .default.
@@ -254,6 +255,32 @@ module.exports = function (eleventyConfig) {
       slugify: eleventyConfig.getFilter("slugify"),
     });
     mdLib.use(markdownItMermaid.default || markdownItMermaid);
+
+    // `[^1]` references and `[^1]:` definitions. markdown-it has no footnote
+    // support of its own, so without this the syntax renders as literal text.
+    mdLib.use(markdownItFootnote);
+
+    // The plugin emits a bare <section class="footnotes">. Give it a heading
+    // and a landmark so the block is announced and reachable, rather than
+    // being an unlabelled list of links at the end of the document.
+    mdLib.renderer.rules.footnote_block_open = () =>
+      '<section class="footnotes" aria-labelledby="footnotes-heading">\n' +
+      '<h2 id="footnotes-heading" class="footnotes-heading">References</h2>\n' +
+      '<ol class="footnotes-list">\n';
+    mdLib.renderer.rules.footnote_block_close = () => "</ol>\n</section>\n";
+
+    // The default back-link is a bare "↩︎" with no accessible name, so it is
+    // announced as punctuation or skipped. Name it after the footnote it
+    // returns to, and hide the glyph itself from the accessibility tree.
+    mdLib.renderer.rules.footnote_anchor = (tokens, idx, options, env, slf) => {
+      let id = slf.rules.footnote_anchor_name(tokens, idx, options, env, slf);
+      if (tokens[idx].meta.subId > 0) id += ":" + tokens[idx].meta.subId;
+      return (
+        ` <a href="#fnref${id}" class="footnote-backref"` +
+        ` aria-label="Back to reference ${tokens[idx].meta.id + 1}">` +
+        '<span aria-hidden="true">↩︎</span></a>'
+      );
+    };
   });
 
   // Features to make your build faster (when you need them)
