@@ -136,7 +136,8 @@ module.exports = function (eleventyConfig) {
   const groupTagsBySlug = (posts, slugify) => {
     const bySlug = new Map();
     for (const item of posts) {
-      for (const tag of (item.data && item.data.tags) || []) {
+      const { tags } = item.data || {};
+      for (const tag of tags || []) {
         if (TAG_SKIP.has(tag)) continue;
         const slug = slugify(tag);
         if (!bySlug.has(slug)) {
@@ -226,20 +227,31 @@ module.exports = function (eleventyConfig) {
   // Accepts either a collection item or a raw HTML string, so layouts can
   // pass `content` directly without looking themselves up in a collection.
   eleventyConfig.addFilter("readingTime", (post) => {
-    try {
-      let raw =
-        typeof post === "string" ? post : (post && post.templateContent) || "";
-      if (!raw && post && post.inputPath) {
-        raw = fs.readFileSync(post.inputPath, "utf8").replace(/^---[\s\S]*?---\n/, "");
+    // Normalise both accepted shapes to one object so the rest reads the same
+    // either way. Written without optional chaining: the editor's JS parser in
+    // this project rejects it.
+    const source = typeof post === "string" ? { templateContent: post } : post || {};
+    let raw = source.templateContent || "";
+
+    // Rendered content is not available for every collection item, so fall
+    // back to the source file. Only this read can realistically throw, and a
+    // post whose word count silently became "1 min" is worth hearing about,
+    // so narrow the catch to it and say what happened.
+    if (!raw && source.inputPath) {
+      try {
+        raw = fs
+          .readFileSync(source.inputPath, "utf8")
+          .replace(/^---[\s\S]*?---\n/, "");
+      } catch (error) {
+        console.warn(
+          `[readingTime] could not read ${source.inputPath}, estimating from an empty body: ${error.message}`
+        );
       }
-      const text = raw
-        .replace(/```[\s\S]*?```/g, " ")
-        .replace(/<[^>]+>/g, " ");
-      const words = text.split(/\s+/).filter(Boolean).length;
-      return Math.max(1, Math.round(words / 220));
-    } catch (e) {
-      return 1;
     }
+
+    const text = raw.replace(/```[\s\S]*?```/g, " ").replace(/<[^>]+>/g, " ");
+    const words = text.split(/\s+/).filter(Boolean).length;
+    return Math.max(1, Math.round(words / 220));
   });
 
   // Customize Markdown library settings:
@@ -282,14 +294,6 @@ module.exports = function (eleventyConfig) {
       );
     };
   });
-
-  // Features to make your build faster (when you need them)
-
-  // If your passthrough copy gets heavy and cumbersome, add this line
-  // to emulate the file copy on the dev server. Learn more:
-  // https://www.11ty.dev/docs/copy/#emulate-passthrough-copy-during-serve
-
-  // eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 
   return {
     // Control which files Eleventy will process
