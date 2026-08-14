@@ -1,5 +1,7 @@
 const path = require("path");
-const eleventyImage = require("@11ty/eleventy-img");
+// eleventy-img is ESM-only since v7, so require() hands back the module
+// namespace rather than the callable default export.
+const { default: eleventyImage, generateHTML } = require("@11ty/eleventy-img");
 
 module.exports = (eleventyConfig) => {
   function relativeToInputPath(inputPath, relativeFilePath) {
@@ -32,7 +34,7 @@ module.exports = (eleventyConfig) => {
         decoding: "async",
         class: "b-image",
       };
-      return eleventyImage.generateHTML(metadata, imageAttributes);
+      return generateHTML(metadata, imageAttributes);
     }
   );
 };
