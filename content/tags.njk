@@ -1,22 +1,21 @@
 ---
 pagination:
-  data: collections
+  data: collections.tagPages
   size: 1
   alias: tag
-  filter:
-    - all
-    - post
-    - posts
-    - tagList
   addAllPagesToCollections: true
 layout: layouts/home.njk
 eleventyComputed:
-  title: Tagged with “{{ tag }}”
-permalink: /tags/{{ tag | slugify }}/
+  title: Tagged with “{{ tag.name }}”
+permalink: /tags/{{ tag.slug }}/
 ---
-<h1>Tagged with “{{ tag }}”</h1>
+<h1>Tagged with “{{ tag.name }}”</h1>
 
-{% set postslist = collections[ tag ] | reverse %}
+{%- if tag.variants | length %}
+<p class="tag-variants">Also written as {% for s in tag.variants %}<code>{{ s }}</code>{% if not loop.last %}, {% endif %}{% endfor %} — all the same topic.</p>
+{%- endif %}
+
+{% set postslist = tag.posts | reverse %}
 {% set headingLevel = 2 %}
 {% set showYears = false %}
 {% include "postslist.njk" %}

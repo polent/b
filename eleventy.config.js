@@ -102,29 +102,91 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  // Tag cloud data: returns [{ name, count, weight }] sorted A→Z.
-  // weight is 0..1 normalized across the cloud, used to scale font-size.
-  eleventyConfig.addFilter("tagCloudData", (collection) => {
-    const skip = new Set(["all", "nav", "post", "posts"]);
-    const counts = new Map();
-    for (const item of collection || []) {
+  // Tag pages are keyed by SLUG, not by the raw tag string.
+  //
+  // Eleventy creates one collection per distinct tag string, so two spellings
+  // of the same topic ("Engineering" / "engineering", "Web Standards" /
+  // "Web-Standards") produced two templates both claiming /tags/<slug>/ and
+  // the build died with DuplicatePermalinkOutputError — naming neither tag.
+  // Merging by slug here makes that collision impossible by construction and
+  // lets posts capitalise tags however reads best.
+  //
+  // Each entry: { slug, name, posts, count, weight, spellings }
+  //   name     — canonical spelling (the most used one)
+  //   weight   — 0..1 across the set, used to scale the tag cloud
+  //   spellings— every variant seen, for the /tags/ page to disclose
+  const canonicalTagBySlug = new Map();
+  const TAG_SKIP = new Set(["all", "nav", "post", "posts", "tagList"]);
+  const byName = (a, b) => a.localeCompare(b);
+
+  // Canonical spelling = the most used one. A tie (the common case when a new
+  // post introduces a second casing) falls to the capitalised form, since that
+  // is what reads correctly as a heading and a pill; only then to alphabetical,
+  // so the pick stays stable from build to build rather than insertion-ordered.
+  const startsUpper = (s) => (/^\p{Lu}/u.test(s) ? 1 : 0);
+  const pickCanonical = (spellings) =>
+    [...spellings.entries()].sort(
+      (a, b) =>
+        b[1] - a[1] ||
+        startsUpper(b[0]) - startsUpper(a[0]) ||
+        byName(a[0], b[0])
+    )[0][0];
+
+  const groupTagsBySlug = (posts, slugify) => {
+    const bySlug = new Map();
+    for (const item of posts) {
       for (const tag of (item.data && item.data.tags) || []) {
-        if (skip.has(tag)) continue;
-        counts.set(tag, (counts.get(tag) || 0) + 1);
+        if (TAG_SKIP.has(tag)) continue;
+        const slug = slugify(tag);
+        if (!bySlug.has(slug)) {
+          bySlug.set(slug, { slug, spellings: new Map(), posts: [] });
+        }
+        const entry = bySlug.get(slug);
+        entry.spellings.set(tag, (entry.spellings.get(tag) || 0) + 1);
+        // A post tagged with two spellings of one topic must still appear once.
+        if (!entry.posts.includes(item)) entry.posts.push(item);
       }
     }
-    const entries = [...counts.entries()];
-    if (entries.length === 0) return [];
-    const max = Math.max(...entries.map(([, c]) => c));
-    const min = Math.min(...entries.map(([, c]) => c));
-    const range = Math.max(1, max - min);
-    return entries
-      .map(([name, count]) => ({
+    return bySlug;
+  };
+
+  eleventyConfig.addCollection("tagPages", (api) => {
+    const slugify = eleventyConfig.getFilter("slugify");
+    const bySlug = groupTagsBySlug(api.getFilteredByTag("posts"), slugify);
+
+    const entries = [...bySlug.values()].map((e) => {
+      const name = pickCanonical(e.spellings);
+      return {
+        slug: e.slug,
         name,
-        count,
-        weight: (count - min) / range,
-      }))
-      .sort((a, b) => a.name.localeCompare(b.name));
+        posts: e.posts.sort((a, b) => a.date - b.date),
+        count: e.posts.length,
+        // Every spelling seen, and the non-canonical ones on their own so a
+        // template can list them without having to skip an entry mid-loop.
+        spellings: [...e.spellings.keys()].sort(byName),
+        variants: [...e.spellings.keys()].filter((s) => s !== name).sort(byName),
+      };
+    });
+
+    if (entries.length) {
+      const counts = entries.map((e) => e.count);
+      const min = Math.min(...counts);
+      const range = Math.max(1, Math.max(...counts) - min);
+      for (const e of entries) e.weight = (e.count - min) / range;
+    }
+
+    canonicalTagBySlug.clear();
+    for (const e of entries) canonicalTagBySlug.set(e.slug, e.name);
+
+    return entries.sort((a, b) => byName(a.name, b.name));
+  });
+
+  // Render a tag using the canonical spelling for its slug, so one topic reads
+  // the same way on every post. Falls back to the raw tag when the map has not
+  // been built yet (a tag used only by a draft, or a non-post template).
+  eleventyConfig.addFilter("canonicalTag", (tag) => {
+    const slugify = eleventyConfig.getFilter("slugify");
+    return canonicalTagBySlug.get(slugify(tag)) || tag;
   });
 
   // Extract h2 headings (with their anchor IDs) from rendered HTML for a

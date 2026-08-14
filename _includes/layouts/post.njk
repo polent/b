@@ -16,7 +16,7 @@ layout: layouts/base.njk
 <article data-pagefind-body>
 <header class="post-header">
 	<p class="post-eyebrow">
-		{%- if postTags | length %}<a href="/tags/{{ postTags[0] | slugify }}/" class="post-eyebrow-topic">{{ postTags[0] }}</a>{% endif %}
+		{%- if postTags | length %}<a href="/tags/{{ postTags[0] | slugify }}/" class="post-eyebrow-topic">{{ postTags[0] | canonicalTag }}</a>{% endif %}
 		<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate("d LLL yyyy") }}</time>
 		<span>{{ readTime }} min read</span>
 	</p>
@@ -25,7 +25,7 @@ layout: layouts/base.njk
 	<ul class="post-metadata">
 		<li class="post-author">By <a href="/about/" rel="author">{{ metadata.author.name }}</a></li>
 		{%- for tag in postTags %}
-		<li><a href="/tags/{{ tag | slugify }}/" class="post-tag" data-pagefind-filter="tag">{{ tag }}</a></li>
+		<li><a href="/tags/{{ tag | slugify }}/" class="post-tag" data-pagefind-filter="tag">{{ tag | canonicalTag }}</a></li>
 		{%- endfor %}
 	</ul>
 </header>

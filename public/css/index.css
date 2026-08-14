@@ -867,6 +867,21 @@ a[href].header-anchor:hover {
   align-self: center;
 }
 
+/* Shown on a tag page when the same topic has been written more than one way.
+   Disclosure, not an error: the page already merges them. */
+.tag-variants {
+  font-size: var(--step--1);
+  color: var(--muted);
+  margin: 0 0 var(--space-md);
+}
+.tag-variants code {
+  font-size: 0.9em;
+  padding: 0.05em 0.3em;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background-color: var(--surface);
+}
+
 .tag-cloud {
   list-style: none;
   margin: var(--space-md) 0 var(--space-lg);

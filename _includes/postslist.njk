@@ -35,7 +35,7 @@
     {%- if postTags | length %}
     <ul class="postlist-tags" aria-label="Topics">
       {%- for tag in postTags | head(3) %}
-      <li><a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a></li>
+      <li><a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag | canonicalTag }}</a></li>
       {%- endfor %}
     </ul>
     {%- endif %}
