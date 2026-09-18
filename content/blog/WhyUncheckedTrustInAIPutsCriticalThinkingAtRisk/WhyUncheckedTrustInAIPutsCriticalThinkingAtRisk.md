@@ -14,9 +14,9 @@ tags:
 
 ## Two Mistakes in One Afternoon
 
-A few weeks ago I watched someone paste a client's full contract into a chat window to "get the risks out of it". Nobody in the room blinked. Later that same day, a status report came back to me that had clearly been summarised by a machine at least twice. It read beautifully. It was also wrong in the one detail that mattered.
+Imagine an ordinary afternoon in an ordinary office. Someone pastes a client's full contract into a chat window to "get the risks out of it", and nobody in the room blinks. A few hours later a status report lands on your desk that has clearly been summarised by a machine at least twice. It reads beautifully. It is also wrong in the one detail that matters.
 
-Both things happened in the same office, with the same tools, in the same afternoon. For a while I filed them as two separate problems. They are not. They are the same reflex, pointing in two different directions, and there is a third cost underneath both of them that we are only now starting to measure.
+Two incidents, same office, same tools, same afternoon. It is tempting to file them as two separate problems. They are not. They are the same reflex, pointing in two different directions, and there is a third cost underneath both of them that we are only now starting to measure.
 
 We lose data. Then we lose judgement. Then we lose the ability to do the thinking ourselves. Each one is harder to get back than the last.
 
@@ -24,7 +24,7 @@ We lose data. Then we lose judgement. Then we lose the ability to do the thinkin
 
 Many users treat chat windows like private diaries. They submit sensitive personal matters, internal business details, and unvetted information directly into prompt fields.
 
-I am not talking about hypotheticals. I mean the customer contract pasted in "to summarise the risks". The production log with real email addresses still in it. The performance review someone wanted help phrasing. The architecture diagram covered by an NDA. The config file with a live key three lines down that nobody scrolled to.
+Imagine what that looks like in practice. The customer contract pasted in "to summarise the risks". The production log with real email addresses still in it. The performance review someone wanted help phrasing. The architecture diagram covered by an NDA. The config file with a live key three lines down that nobody scrolled to.
 
 Major AI platforms continue to rely on human review loops to evaluate and train models. On consumer tiers, conversations are frequently used for training by default. Reviewers sample chats for quality and abuse. Retention windows outlive the conversation. Memory features deliberately carry context from one session into the next. And most of this happens through tools nobody in the company ever approved, the browser extension, the phone app used after the web version was blocked, the personal account opened because the corporate one felt slow.
 
@@ -38,7 +38,7 @@ So here is the part that matters. No privacy setting fixes this, because the dec
 
 ## The Same Reflex at Both Ends
 
-Notice what actually caused that failure. It was not ignorance about data protection. It was that a window answering in fluent first person feels like a colleague rather than a service running on somebody else's hardware. We hand it things we would never hand a stranger, because it does not feel like a stranger.
+Notice what would actually cause that first failure. It was not ignorance about data protection. It was that a window answering in fluent first person feels like a colleague rather than a service running on somebody else's hardware. We hand it things we would never hand a stranger, because it does not feel like a stranger.
 
 The same misreading runs in the other direction. If it feels like a competent colleague, then its answer feels like a colleague's answer: already checked, already reasoned through, ready to forward. It is not. It is a plausible sequence of tokens, delivered with identical confidence whether it is exactly right or badly wrong. The model has no tell.
 
@@ -56,7 +56,7 @@ A troubling pattern is spreading across workplace environments:
 
 Every summarisation step is lossy. What makes it dangerous is that it is not lossy at random. Caveats, hedges, conditions and dependencies are the first things to go, because they sit furthest from the central point of the text. Confidence survives compression. Doubt does not.
 
-I have watched a line go in as "integration is blocked pending a decision from legal, best case two weeks" and come out, two machine passes later, as "integration on track". Nobody lied. Nobody even made a mistake they could point at. The qualifier simply did not make the cut, twice in a row, and what reached the client was not merely inaccurate. It was *more certain* than anything anyone in the chain actually believed.
+Imagine a line going in as "integration is blocked pending a decision from legal, best case two weeks" and coming out, two machine passes later, as "integration on track". Nobody lied. Nobody even made a mistake they could point at. The qualifier simply did not make the cut, twice in a row, and what reached the client was not merely inaccurate. It was *more certain* than anything anyone in the chain actually believed.
 
 Underneath sits an old management failure with new tooling. Everyone in the chain assumed somebody earlier had checked. Nobody had. [Automation bias](/blog/TheHiddenCostOfVibeCodingAndAIAgents/) does the rest: a confident answer from a machine gets less scrutiny than a hesitant one from a person, which is precisely backwards. AI did not invent diffusion of responsibility. It just runs it at machine speed, with better typography.
 
