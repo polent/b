@@ -16,7 +16,7 @@ There is a big trend in tech right now. People talk about the dark factory in so
 
 Now, companies like MindStudio write about this for code. They want a system where a specification goes in and working code comes out. No developer reviews the code. No human is in the loop.
 
-This works for some things. If you update database logic, manage infrastructure, or do simple security patches, it is fine because the blast radius is small. But software is not just backend. In my area, we build interfaces for real users. For consumers. This is where the dark factory is a horrible thought.
+This works for some things. If you update database logic, manage infrastructure, or do simple security patches, more automation is fine because the blast radius is small. We still review the results. But software is not just backend. In my area, we build interfaces for real users. For consumers. This is where the dark factory is a horrible thought.
 
 ## Why User Interfaces Need Empathy
 

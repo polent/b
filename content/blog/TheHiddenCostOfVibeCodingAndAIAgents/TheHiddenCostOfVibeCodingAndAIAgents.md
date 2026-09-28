@@ -27,9 +27,9 @@ Before we had "Copilots". They suggested a line or a block. Now we have "Agents"
 
 I hear a new idea lately. People say: "Why do we care about clean code? Why format it nicely?". They think [the agent can read any mess](/blog/TheMythOfTheCodeReaderWhyAIAgentsAreTheBetterSeniorEngineers/). They say we can just recreate the code every time with a prompt. If it is ugly for humans it does not matter because humans do not read it anymore.
 
-While it is highly likely that in the future we will not need clean code anymore—because AI will flawlessly manage and understand any mess—we are not there yet.
+Some say that in the future we will not need clean code anymore, because AI will manage and understand any mess. We are not there yet.
 
-Right now, AI still does a lot of things wrong. When an agent makes a mistake, it is still the human who has to jump in and find the bug. Because of this, being able to read and understand code is still incredibly important. If the code has no structure, it has no logic you can follow to correct the AI's errors. "Vibe coding" should not mean "messy coding" today. Good engineering is still about clarity, at least until the AI is truly infallible.
+Right now, AI still does a lot of things wrong. When an agent makes a mistake, it is still the human who has to jump in and find the bug. Because of this, being able to read and understand code is still incredibly important. If the code has no structure, it has no logic you can follow to correct the AI's errors. "Vibe coding" should not mean "messy coding" today. Good engineering is still about clarity.
 
 ## The illusion of speed
 
