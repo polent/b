@@ -22,9 +22,9 @@ Imagine we live in a world where software is developed entirely by Artificial In
 
 ### The New Era of Developer Training
 
-Why should we burden our up-and-coming talent with the basics of software development? Instead, let’s offer them crash courses in _“[AI Operation for Dummies](/blog/IsAIRottingOurProgrammingBrainsorFreeingUs/).”_ After all, AI can do it all, right? And if it doesn’t… well, tough luck. The algorithms will get better eventually — or so we hope.
+Why should we burden our up-and-coming talent with the basics of software development? Instead, let’s offer them crash courses in _“[AI Operation for Dummies](/blog/IsAIRottingOurProgrammingBrainsorFreeingUs/).”_ After all, AI can do it all, right? And if it doesn’t… well, tough luck. The algorithms will get better eventually. Or so we hope.
 
-But wait — what happens when these _“AI operators”_ don’t understand the implications of what they’re deploying? Will they even know how to spot the cracks forming in the digital foundation, or will they simply shrug and reboot their favorite AI tool?
+But wait. What happens when these _“AI operators”_ don’t understand the implications of what they’re deploying? Will they even know how to spot the cracks forming in the digital foundation? Or will they simply shrug and reboot their favorite AI tool?
 
 ### Production-Ready AI Software
 
@@ -32,13 +32,13 @@ But wait — what happens when these _“AI operators”_ don’t understand the
 
 Who can’t wait to see AI-generated software in production? Certainly not the security officers, who are already looking forward to the upcoming data leaks and hacks. But hey, a little thrill has never hurt anyone, right?
 
-What about the subtle bugs — those that erode trust over time? Or the misunderstood context in a decision-making process? How about that time AI _“accidentally”_ decided certain users didn’t deserve access to a feature due to bias in its training data?
+What about the subtle bugs, those that erode trust over time? Or the misunderstood context in a decision-making process? How about that time AI _“accidentally”_ decided certain users didn’t deserve access to a feature due to bias in its training data?
 
 ### Trust is Good, AI is Better
 
-Why still use humans for software validation when AI can do it much faster? And if some sensitive information leaks in the process — so what? Transparency is the buzzword of the hour. Except, transparency only works if someone understands what’s being made transparent.
+Why still use humans for software validation when AI can do it much faster? And if some sensitive information leaks in the process, so what? Transparency is the buzzword of the hour. Except, transparency only works if someone understands what’s being made transparent.
 
-Let’s talk about gatekeeping. Where do we build in control mechanisms? Do we rely on AI engineers — those same individuals who are incentivized to push technology boundaries — to also understand the human, ethical, and regulatory impacts? Or do we need a new breed of professionals entirely?
+Let’s talk about gatekeeping. Where do we build in control mechanisms? Do we rely on AI engineers, those same individuals who are incentivized to push technology boundaries, to also understand the human, ethical, and regulatory impacts? Or do we need a new breed of professionals entirely?
 
 _“Human people that understand real risks and issues”_ may sound redundant, but isn’t this exactly the point? Engineers are brilliant at building things, but are they the best at breaking them to understand the risks?
 
@@ -46,7 +46,7 @@ _“Human people that understand real risks and issues”_ may sound redundant, 
 
 When does AI become dangerous? Not in the dramatic _“take over the world”_ way, but in the more insidious, slow-destruction way: eroding privacy, embedding societal bias, amplifying inequalities, and creating dependency.
 
-Who sets the boundaries? Engineers focused on innovation might not fully appreciate the risks — does the world need more _“technological ethicists”_ or _“AI moderators”_ who understand the human consequences of technology?
+Who sets the boundaries? Engineers focused on innovation might not fully appreciate the risks. Does the world need more _“technological ethicists”_ or _“AI moderators”_ who understand the human consequences of technology?
 
 Isn’t it time for engineers, regulators, and yes, even philosophers, to collaborate on keeping AI in check? Or are we simply handing over the keys and hoping for the best?
 
@@ -54,7 +54,7 @@ Isn’t it time for engineers, regulators, and yes, even philosophers, to collab
 
 #### A Piece of Cake for AI
 
-AI can handle everything, right? Data breaches, accessibility problems, performance hits, and security gaps — it’s got this! And if not? Well, who cares about the fallout when we’re all busy being mesmerized by the shiny new tech?
+AI can handle everything, right? Data breaches, accessibility problems, performance hits, and security gaps. It’s got this! And if not? Well, who cares about the fallout when we’re all busy being mesmerized by the shiny new tech?
 
 Except, here’s the rub: AI is only as good as the data it’s fed, the biases it learns, and the oversight it lacks.
 
@@ -82,5 +82,3 @@ It’s time to ask the hard questions:
 - Is it even possible to control a technology as fast-moving and complex as AI without new systems of checks and balances?
 
 Stay critical. Question the hype. Remember: not everything that glitters is gold. Sometimes, it’s just fool’s gold wrapped in an algorithm.
-
-What do you think? Who should hold the reins in this AI-driven future? Engineers, philosophers, or someone else entirely?

@@ -12,9 +12,9 @@ tags:
 
 ## The Hater Blind Spot
 
-For years, the Linux and open-source communities have waited for their "daylight"; a moment where the world finally sees the danger of the Big Tech silos. With the rise of the **#DIDit** (Digital Independence Day) movement, sparked by the cultural momentum of Marc-Uwe Kling, that moment has arrived. People are deleting their Meta accounts, ditching Windows, and proudly announcing they now host their own Mastodon or Nextcloud instances.
+For years, the Linux and open-source communities have waited for their "daylight". That is the moment the world finally sees the danger of the Big Tech silos. With the rise of the **#DIDit** (Digital Independence Day) movement, that moment has arrived. The cultural momentum of Marc-Uwe Kling sparked it. People are deleting their Meta accounts and ditching Windows. They proudly announce they now host their own Mastodon or Nextcloud instances.
 
-But there is a bitter irony here. In the rush to show off their independence to Microsoft and Google, many tech-sovereign advocates are ignoring the massive environmental ledger they are creating. While they escape the "claws" of the [Big Five](/blog/UniversalCommerceProtocolSoundsOpenItIsNot/), they are often replacing highly optimized infrastructure with fragmented, energy-hungry chaos.
+But there is a bitter irony here. Many tech-sovereign advocates rush to show their independence from Microsoft and Google. In that rush they ignore the massive environmental ledger they create. They escape the "claws" of the [Big Five](/blog/UniversalCommerceProtocolSoundsOpenItIsNot/). But they often replace highly optimized infrastructure with fragmented, energy-hungry chaos.
 
 ## The Efficiency Trap: Scaling Matters
 
@@ -22,24 +22,24 @@ The hard truth is that **sharing is almost always greener than owning**. Hypersc
 
 In contrast, the average private server or "home cloud" setup is often an ecological disaster:
 
-* **Idle Power Waste:** A private instance typically sits at **5–15% utilization**, yet it burns power 24/7.
+* **Idle Power Waste:** A private instance typically sits at **5 to 15% utilization**. It still burns power 24/7.
 * **Utilization Gap:** Cloud providers can do **3 to 5 times more work per watt** than a standard enterprise or home-managed server.
 * **Thermal Inefficiency:** Without professional, climate-optimized cooling, private hardware wastefully converts electricity into heat rather than bits.
 
-> To put it bluntly: Running your own server just to prove you don't need a billionaire's cloud is like driving a private diesel truck to work every day just to prove you don't need the public bus system. It is independent, but it is ecologically irresponsible.
+> To put it bluntly: you run your own server just to prove you don't need a billionaire's cloud. That is like driving a private diesel truck to work every day just to prove you don't need the public bus system. It is independent. But it is ecologically irresponsible.
 
 ```json
 {
   "key_insight": "Hyperscale efficiency vs. Fragmented waste",
   "pue_hyperscale": 1.09,
   "pue_private_avg": 2.1,
-  "efficiency_delta": "Professional cloud is up to 4x more energy efficient"
+  "efficiency_delta": "Professional cloud does 3 to 5x more work per watt"
 }
 ```
 
 ## European Hosters: A Better Middle Ground?
 
-If you want to be free from the US "Oligarchs" without burning the planet, you don't have to host it under your desk. Several European providers offer a more sustainable path to sovereignty:
+You can be free from the US "Oligarchs" without burning the planet. You don't have to host it under your desk. Several European providers offer a more sustainable path to sovereignty:
 
 | Provider | Origin | Sustainability Profile | Professional Focus |
 | --- | --- | --- | --- |
@@ -52,7 +52,7 @@ If you want to be free from the US "Oligarchs" without burning the planet, you d
 
 ## Audit Checklist: Is Your Sovereignty Sustainable?
 
-Before you declare your digital independence, run this quick audit to see if you are replacing the "plague" with "cholera."
+Before you declare your digital independence, run this quick audit. It shows if you are just swapping one bad option for another.
 
 * [ ] **Provider Energy Mix:** Is your hoster using 100% certified renewable energy?
 * [ ] **PUE Transparency:** Does your provider publish a PUE below 1.2? (Lower is better).
@@ -68,4 +68,4 @@ Before you declare your digital independence, run this quick audit to see if you
 * **[Electricity Maps: Real-time Carbon Intensity of Global Power Grids](https://app.electricitymaps.com/)**
 * **[Green IT Global: The Efficiency Paradox of Decentralization](https://greenit.globant.com/)**
 * **[Circular Electronics Partnership: Roadmap for Hardware Lifecycles](https://cep2030.org/)**
-* **[Digital Independence Day (#DIDit) Campaign - Marc-Uwe Kling](https://di.day/)**
+* **[Digital Independence Day (#DIDit) Campaign: Marc-Uwe Kling](https://di.day/)**
