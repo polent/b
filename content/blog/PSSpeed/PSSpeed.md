@@ -11,13 +11,13 @@ tags:
 
 ## Introduction
 
-In today's fast-paced digital world, transformation is not just an option—it's a necessity. At Publicis Sapient, we've embraced this imperative with our [SPEED](https://www.publicissapient.com/publicis-sapient-brings-its-speed-philosophy-to-digital-business) philosophy, guiding businesses to navigate and thrive in this dynamic landscape. Our approach integrates Strategy, Product, Experience, Engineering, and Data, creating a cohesive force that drives innovation and long-term success. The following song captures the essence of our philosophy, illustrating how these elements come together to unlock the limitless potential of digital transformation.
+Digital markets change fast. Transformation is a must, not an option. At Publicis Sapient, we answer this with our [SPEED](https://www.publicissapient.com/publicis-sapient-brings-its-speed-philosophy-to-digital-business) philosophy. It guides businesses to adapt and grow while the market keeps moving. SPEED combines Strategy, Product, Experience, Engineering and Data. Together they drive innovation and long-term success. The song below sums up this philosophy. It shows how these parts work together in digital transformation.
 
 {% image "./header.png", "", [], "(min-width: 40em) 960px, 100vw" %}
 
 ## Lyrics
 
-The lyrics generated to describe [SPEED](https://www.publicissapient.com/publicis-sapient-brings-its-speed-philosophy-to-digital-business):
+AI generated these lyrics to describe [SPEED](https://www.publicissapient.com/publicis-sapient-brings-its-speed-philosophy-to-digital-business):
 
 > In the world of digital, where change never slows,
 > Publicis Sapient brings a SPEED that flows,
@@ -82,7 +82,7 @@ The lyrics generated to describe [SPEED](https://www.publicissapient.com/publici
 > Publicis Sapient’s SPEED is the key,
 > To unlock the future, to set businesses free.
 
-### Speed Version 1 - the heavy one
+### Speed Version 1: the heavy one
 
 <audio controls="controls">
   <source type="audio/mp3" src="/media/SpeedForEver_1.mp3">
@@ -90,7 +90,7 @@ The lyrics generated to describe [SPEED](https://www.publicissapient.com/publici
   <p>Your browser does not support the audio element.</p>
 </audio>
 
-### Speed Version 2 - the heavy rap
+### Speed Version 2: the heavy rap
 
 <audio controls="controls">
   <source type="audio/mp3" src="/media/SpeedForEver_2.mp3">
@@ -100,6 +100,6 @@ The lyrics generated to describe [SPEED](https://www.publicissapient.com/publici
 
 ### Resources and Links
 
-- Songs are created with AI and Suno
+- Songs made with AI and Suno
 - [Song 1 on Suno](https://suno.com/song/2babe6d4-f601-4924-bbf8-c9f1c037a815)
 - [Song 2 on Suno](https://suno.com/song/1ac799a2-07eb-44dd-970e-57538ebafb12)
