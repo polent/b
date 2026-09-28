@@ -15,28 +15,28 @@ tags:
   - collaboration
 ---
 
-## A Brave Decision Three Years Ago
+## A Brave Decision in 2022
 
-When we decided three years ago to roll out design tokens across our project, it felt a little visionary and a little brave. At the time, nobody really knew where this path would lead, or whether design tokens would ever become widespread. Today? A project without design tokens would feel odd and uncommon.
+In 2022 we decided to roll out design tokens across our project. It felt a little visionary and a little brave. At the time, nobody knew where this path would lead. Nobody knew if design tokens would ever become widespread. Today a project without design tokens would feel odd and uncommon.
 
-This shift enabled us to make one binding decision: design and tech components are no longer separate. Design tokens bridge that gap. And in the last two years, with AI-powered tools emerging, that bridge has only grown more critical. We can now [connect Figma and Storybook and Atlassian Confluence and VS Code at once](/blog/MCPServerInDesignSystemWorkflows/). Even tools like BrowserStack allow automated testing and design-token integration. But that, as they say, is a story for another day.
+This shift let us make one firm decision. Design and tech components are no longer separate. Design tokens bridge that gap. Since 2023 AI-powered tools have arrived, and that bridge has become even more important. We can now [connect Figma and Storybook and Atlassian Confluence and VS Code at once](/blog/MCPServerInDesignSystemWorkflows/). Even tools like BrowserStack allow automated testing and design-token integration. That is a topic for another post.
 
-## What's New – And Where Do Design Tokens Help Us?
+## What's New and Where Do Design Tokens Help Us?
 
 - **Theming & multi-brand support**: Manage light and dark modes, accessibility variants, and [multiple brand themes](/blog/ReplacingMUIANewDesignSystemApproach/) without file duplication.
 - **Modern color specification**: Full support for Display P3, OKLCH, and all CSS Color Module 4 spaces, aligning with how design tools actually work.
-- **Rich token relationships**: Inheritance, aliases, component-level references allow sophisticated design systems to flourish.
+- **Rich token relationships**: Inheritance, aliases, component-level references support large, complex design systems.
 - **Cross-platform consistency**: One token file can generate platform-specific code for iOS, Android, web, and Flutter, keeping everything in sync.
 
-There are already many tools that support this workflow: the specification’s stability is backed by reference implementations like [Style Dictionary, Tokens Studio and Terrazzo](/blog/ExperiencePipelinesExplained/). More than ten design tools and open-source projects – including Penpot, Figma, Sketch, Framer, Knapsack, Supernova and zeroheight – already support or are implementing the standard.
-Even more importantly: the tooling is open. Developed by the Design Tokens Community Group, the specification reflects real-world design-system use cases from teams at companies of all sizes. Being an open standard means no single vendor controls the format—teams have freedom of tool choice without compatibility concerns.
+Many tools already support this workflow. Reference implementations like [Style Dictionary, Tokens Studio and Terrazzo](/blog/ExperiencePipelinesExplained/) back the stability of the specification. More than ten design tools and open-source projects already support the standard or are implementing it. These include Penpot, Figma, Sketch, Framer, Knapsack, Supernova and zeroheight.
+Even more important: the specification is open. The Design Tokens Community Group developed it. It reflects real-world design-system use cases from teams at companies of all sizes. It is an open standard. No single vendor controls the format. Teams can choose their tools freely without compatibility concerns.
 
 ## Design Tokens in Detail
 
 ### What are design tokens?
 
 - **Abstract values**: They replace static values like `#FFFFFF` (white) with descriptive names like `color.white`.
-- **Atomic building blocks**: They represent the most fundamental visual attributes—colors, fonts, shadows, border-radii, spacing and animations.
+- **Atomic building blocks**: They represent the most fundamental visual attributes: colors, fonts, shadows, border-radii, spacing and animations.
 - **Centrally maintained**: All visual properties are defined and maintained in a single, central place.
 - **Platform-agnostic**: They ensure consistency across different applications and platforms.
 - **Data format**: Often stored in structured formats like JSON, and can be integrated as variables across programming languages and platforms.
@@ -44,7 +44,7 @@ Even more importantly: the tooling is open. Developed by the Design Tokens Commu
 ### Why do they matter?
 
 - **Improved collaboration**: They create a shared language between designers and developers, leading to more efficient teamwork.
-- **Increased consistency**: They ensure that the design "looks and feels" the same across the entire digital landscape.
+- **Increased consistency**: They ensure that the design "looks and feels" the same across all digital products.
 - **Easier maintenance**: Changes to design guidelines can be made in one place and propagated instantly across all elements.
 - **Scalability**: They make it far easier to scale a design system as projects and product portfolios grow.
 
@@ -60,7 +60,7 @@ Here are five concrete examples:
 
 ## Final Thoughts
 
-When we embarked on this journey, adopting design tokens felt like a leap into the unknown. Today, it's clear they are foundational. They empower design and engineering to speak the same language, enable scalable and consistent systems, and prepare us for a future where tooling spans design apps, component libraries, AI workflows and beyond. If you haven't yet embraced design tokens, now is the time. A project without them simply wouldn't feel right.
+When we started, adopting design tokens felt like a step into the unknown. Today it is clear they are a foundation. Design and engineering speak the same language. Systems stay scalable and consistent. And we are ready for tooling that spans design apps, component libraries, AI workflows and more. Design tokens belong in every project now. A project without them would not feel right.
 
 ## References
 
