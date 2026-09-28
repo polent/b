@@ -1,12 +1,11 @@
 ---
 title: Speed forever
-description: Guiding businesses with SPEED - Strategy, Product, Experience, Engineering, and Data for success
+description: "An AI-generated song about Publicis Sapient's SPEED: Strategy, Product, Experience, Engineering and Data."
 date: 2024-08-12
 tags:
   - SPEED
   - AI
-  - PS
-  - song
+  - Music
 ---
 
 ## Introduction

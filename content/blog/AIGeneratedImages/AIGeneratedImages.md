@@ -1,11 +1,12 @@
 ---
 title: Navigating the Real and the Fabricated
-description: In the digital age, AI-generated images are flooding online platforms, challenging our perception of reality. This blog explores the impact on search engines and the importance of human discernment. It argues for critical thinking in an era where AI blurs the line between real and artificial imagery.
+description: "AI-generated images are flooding image search. Filters alone will not fix it. Our own thinking and judgment are the best tools we have."
 date: 2024-01-04
 tags:
-  - images
   - AI
-  - search
+  - Images
+  - Search
+  - Critical Thinking
 ---
 
 ## The New Wave of Picture Making

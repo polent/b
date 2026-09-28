@@ -1,11 +1,11 @@
 ---
 title: "Navigating Bubbles: Lessons from Dot-Com to AI"
-description: Explore the parallels and lessons between the dot-com bubble and today's AI boom. Drawing on firsthand experience from the dot-com era, this post delves into sustainable, client-centric tech development, highlighting the evolution from early web ventures to current AI challenges and opportunities.
+description: "I built web ventures in the dot-com era. Its lessons still hold for the AI boom: sustainable, client-centric work outlasts the hype."
 date: 2024-01-05
 tags:
-  - DotCom
   - AI
-  - bubble
+  - Dot-Com
+  - Sustainability
 ---
 
 {% image "./dalle-3.png", "The transition from the dot-com era to the modern AI boom. A diverse group of people take part in activities from both periods of technology change.", [], "(min-width: 40em) 960px, 100vw" %}

@@ -1,11 +1,12 @@
 ---
-title: Replacing MUI - A New Design System Approach
-description: Learn how we transitioned from MUI to a custom design system, achieving better performance, streamlined processes, and built-in accessibility compliance.
+title: "Replacing MUI: A New Design System Approach"
+description: "How we moved from MUI to a custom design system. Bundles dropped by up to 28%, Lighthouse went up 19 points, and accessibility is built in."
 date: 2025-03-14
 tags:
-  - Accessibility
-  - MUI
   - Design System
+  - MUI
+  - Accessibility
+  - Performance
   - Component Library
 ---
 

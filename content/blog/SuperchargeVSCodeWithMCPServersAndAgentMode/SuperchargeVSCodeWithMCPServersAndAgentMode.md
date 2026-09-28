@@ -1,13 +1,12 @@
 ---
 title: Supercharge GitHub Copilot's Agent Mode
-description: Learn how to extend GitHub Copilot in VS Code using MCP servers. This guide shows how to connect tools like Jira or NX, write custom instructions, and create smarter developer workflows with agent mode.
+description: "Extend GitHub Copilot in VS Code with MCP servers. Connect Jira or NX, and write custom instructions and prompt files for agent mode."
 date: 2025-05-21
 tags:
   - MCP
-  - Agent
-  - VSCode
-  - Secret
-  - Token
+  - Copilot
+  - VS Code
+  - AI Agents
 ---
 
 ## Visual Studio Code docs on MCP servers and Agents

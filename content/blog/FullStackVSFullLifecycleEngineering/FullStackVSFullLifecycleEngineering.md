@@ -1,11 +1,11 @@
 ---
 title: Full Stack vs. Full Lifecycle Engineering
-description: This blog contrasts Full Stack Engineering, limited by its broad approach, with Full Lifecycle Engineering, which offers in-depth expertise for better outcomes in AI and complex projects.
+description: "Full Stack Engineers know a bit of everything. Full Lifecycle Engineers bring deep knowledge to each part of the process. The best teams have both."
 date: 2024-01-05
 tags:
-  - full stack
-  - full lifecycle
-  - engineering
+  - Full Stack
+  - Full Lifecycle
+  - Engineering Leadership
 ---
 
 ## TL;DR

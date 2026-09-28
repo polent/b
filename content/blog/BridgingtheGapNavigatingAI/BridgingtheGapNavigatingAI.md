@@ -1,16 +1,12 @@
 ---
 title: AI, Digital Transformation, and the Future of Experience Engineering
-description: Exploring how AI shapes digital transformation while emphasizing the enduring need for human expertise in experience engineering, accessibility, and performance optimization.
+description: "AI shapes digital transformation. Accessibility, performance and compliance still need human expertise in experience engineering."
 date: 2024-09-20
 tags:
-  - future
   - AI
-  - leading
-  - generative
+  - Experience Engineering
   - Accessibility
-  - innovation
-  - optimization
-  - experience
+  - Performance
 ---
 
 ## Introduction

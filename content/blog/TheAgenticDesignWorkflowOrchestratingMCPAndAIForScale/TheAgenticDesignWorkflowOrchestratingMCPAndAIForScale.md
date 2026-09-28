@@ -1,21 +1,14 @@
 ---
-title: The Agentic Design Workflow - Orchestrating MCP and AI for Scale
-description: Explore how MCP Apps, the Figma MCP Server, and Storybook MCP form a continuous design system flow, replacing manual handoffs with AI-driven orchestration that turns annotations and tokens into production-ready code without pixel-perfect mockups.
+title: "The Agentic Design Workflow: Orchestrating MCP and AI for Scale"
+description: "The Figma MCP Server, MCP Apps and Storybook MCP form one design system flow. Annotations and tokens become production code without pixel-perfect mockups."
 date: 2026-03-16
 tags:
   - MCP
-  - MCP Apps
-  - Design Systems
-  - Figma MCP
-  - Storybook MCP
+  - Design System
+  - Figma
+  - Storybook
   - Design Tokens
-  - AI Orchestration
-  - Design to Code
-  - Agentic Design
-  - Component Architecture
-  - Design Engineering
-  - Continuous Design
-  - Design Ops
+  - AI Agents
 ---
 
 ## Executive Summary
@@ -290,6 +283,6 @@ The Agentic Design Workflow, powered by the Model Context Protocol and AI reason
 ### Experience Engineering Insights
 
 * **Holger Hellinger’s Blog:** [Design Tokens & MCP](/blog/)
-  * [Design Tokens: from bold vision to standard practice](/blog/DesignTokensAreFinalNow/)
+  * [Design Tokens: From Bold Vision to Standard Practice](/blog/DesignTokensAreFinalNow/)
   * [Using MCP Servers for Design System Management](/blog/MCPServerInDesignSystemWorkflows/)
   * [Escaping the Golden Cage of Design Systems](/blog/EmbracingTheFreedomOfCustomExperiencePipelines/)

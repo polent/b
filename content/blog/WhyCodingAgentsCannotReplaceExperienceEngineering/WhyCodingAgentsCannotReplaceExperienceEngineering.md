@@ -1,13 +1,12 @@
 ---
 title: Why Coding Agents Cannot Replace Experience Engineering
-description: Why coding agents cannot replace software engineers. Building digital products requires client discovery, domain expertise, interface design, and human friction that AI cannot duplicate.
+description: "Coding agents cannot replace engineers. Digital products need client discovery, domain expertise, interface design and human friction AI cannot copy."
 date: 2026-08-23
 tags:
+  - AI Agents
+  - Experience Engineering
   - Software Engineering
   - Engineering Leadership
-  - Experience Engineering
-  - Artificial Intelligence
-  - Digital Delivery
 ---
 
 ## The Code Is Only the Surface

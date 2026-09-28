@@ -1,15 +1,12 @@
 ---
 title: The Wonderful World of AI in Software Development
-description: Explore the satirical yet thought-provoking challenges of relying entirely on AI for software development. From ethical dilemmas to technical risks, we question the role of engineers, gatekeepers, and humanity in shaping an AI-driven future.
+description: "A satire on relying fully on AI for software development: ethics, technical risks, and who still guards quality when the engineers are gone."
 date: 2024-12-22
 tags:
-  - ethics
   - AI
-  - future
-  - software
-  - engineers
-  - gatekeepers
-  - risks
+  - Satire
+  - Ethics
+  - Software Engineering
 ---
 
 ## From the Future No One Saw Coming

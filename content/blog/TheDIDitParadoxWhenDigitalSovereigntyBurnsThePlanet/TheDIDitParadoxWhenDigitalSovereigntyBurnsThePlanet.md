@@ -1,13 +1,13 @@
 ---
-title: The DIDit Paradox – When Digital Sovereignty Burns the Planet
-description: As the open-source community celebrates Digital Independence Day, we must face a hard truth. Decentralizing from Big Tech often comes with a massive, hidden environmental cost.
+title: "The DIDit Paradox: When Digital Sovereignty Burns the Planet"
+description: "The open-source community celebrates Digital Independence Day. But leaving Big Tech for self-hosting often has a large, hidden environmental cost."
 date: 2026-02-07
 tags:
-  - DigitalSovereignty
-  - GreenIT
-  - CloudComputing
-  - OpenSource
+  - Digital Sovereignty
   - Sustainability
+  - Green IT
+  - Cloud Computing
+  - Open Source
 ---
 
 ## The Hater Blind Spot

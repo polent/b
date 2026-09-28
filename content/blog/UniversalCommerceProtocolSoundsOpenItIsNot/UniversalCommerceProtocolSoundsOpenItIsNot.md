@@ -1,14 +1,13 @@
 ---
 title: Universal Commerce Protocol Sounds Open. It Is Not
-description: Universal Commerce Protocol promises open commerce for AI. But small businesses may lose visibility, margins, and independence while big platforms gain more control.
+description: "Universal Commerce Protocol promises open commerce for AI. Small businesses may lose visibility, margins and independence while big platforms gain control."
 date: 2026-01-12
 tags:
-  - AI commerce
-  - universal commerce protocol
-  - vendor lock-in
-  - small businesses
-  - platforms
-  - amazon
+  - AI Commerce
+  - E-Commerce
+  - Vendor Lock-in
+  - Small Business
+  - Amazon
 ---
 
 ## Universal Commerce Protocol, or UCP, sounds like a good idea

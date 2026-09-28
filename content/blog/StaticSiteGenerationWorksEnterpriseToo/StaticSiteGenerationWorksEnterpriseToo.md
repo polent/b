@@ -1,13 +1,13 @@
 ---
 title: "Simplifying E-Commerce Architecture"
-description: Explore the benefits of Static Site Generators and Island Architecture for e-commerce with our expert guide. Learn how to simplify your web development process, enhance performance, and reduce costs, all while improving SEO and user experience. Perfect for businesses seeking sustainable, efficient digital solutions.
+description: "Heavy frameworks create debt in enterprise e-commerce. Static Site Generators and Island Architecture make sites faster, cheaper and better for SEO."
 date: 2024-02-21
 tags:
-  - framework
-  - lean
-  - static
-  - jamstack
-  - ecommerce
+  - E-Commerce
+  - Static Site Generation
+  - Island Architecture
+  - JAMstack
+  - Performance
 ---
 
 ## TL;DR

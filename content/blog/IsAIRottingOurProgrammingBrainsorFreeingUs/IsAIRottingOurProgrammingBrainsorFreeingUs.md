@@ -1,12 +1,12 @@
 ---
 title: Engineering Excellence or Brain Rot? The AI Development Paradox
-description: Why AI in software development needs more than just a prompt. Lessons from legacy code, greenfield success, and the investment required for a clean baseline.
+description: "Why AI in software development needs more than a prompt. Lessons from legacy code, greenfield success and the investment a clean baseline needs."
 date: 2026-05-15
 tags:
   - AI
-  - Engineering-Leadership
-  - Software-Quality
-  - Web-Standards
+  - Engineering Leadership
+  - Software Quality
+  - Web Standards
   - Productivity
 ---
 

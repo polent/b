@@ -1,13 +1,13 @@
 ---
 title: Why AI Is Making Frontend Average
-description: AI tools suggest what is common, not what is current. Modern CSS features exist, but AI keeps pushing old patterns. This post explains why and how we can change it.
+description: "AI tools suggest what is common, not what is current. Modern CSS exists, but AI keeps pushing old patterns. Here is why, and how to change it."
 date: 2026-01-13
 tags:
-- CSS
-- Frontend
-- AI
-- Web-Standards
-- Modern-CSS
+  - CSS
+  - Frontend
+  - AI
+  - Web Standards
+  - Modern CSS
 ---
 
 ## Frontend Is Getting Average Again

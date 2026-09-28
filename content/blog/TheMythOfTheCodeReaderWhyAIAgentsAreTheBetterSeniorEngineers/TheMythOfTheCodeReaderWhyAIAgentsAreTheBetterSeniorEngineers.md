@@ -1,12 +1,12 @@
 ---
 title: "The Myth of the Code Reader: Why AI Agents Are the Better Senior Engineers"
-description: "Many think senior developers will only read and review AI code in the future. This is wrong. With good tooling and files like decision.md, agents learn faster than human teams."
+description: "Many think senior developers will only read and review AI code in the future. This is wrong. With files like decision.md, agents learn faster than teams."
 date: 2026-05-16
 tags:
-  - Software Engineering
   - AI Agents
+  - Software Engineering
+  - Architecture
   - Developer Tooling
-  - Architecture Documentation
 ---
 
 ## The Supposed Senior Discipline

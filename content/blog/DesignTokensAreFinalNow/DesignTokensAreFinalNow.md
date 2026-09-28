@@ -1,18 +1,12 @@
 ---
-title: Design Tokens – from bold vision to standard practice
-description: Discover how design tokens transformed our workflow, bridged design and engineering, and why every modern project should adopt them now.
+title: "Design Tokens: From Bold Vision to Standard Practice"
+description: "In 2022 we rolled out design tokens. Today the specification is stable and open. Tokens bridge design and engineering in every project."
 date: 2025-11-18
 tags:
   - Design Tokens
-  - theming
-  - multi-brand support
   - Design System
-  - Cross-platform Consistency
-  - typography
-  - spacing
-  - color specification
-  - open standard
-  - collaboration
+  - Theming
+  - Open Standard
 ---
 
 ## A Brave Decision in 2022

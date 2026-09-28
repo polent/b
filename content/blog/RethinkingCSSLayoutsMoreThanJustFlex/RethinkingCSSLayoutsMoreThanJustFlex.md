@@ -1,6 +1,6 @@
 ---
-title: Rethinking CSS Layouts – More Than Just Flex
-description: Many developers today only know Flexbox. Grid, Flow-Root, Float or Container Queries are almost forgotten. Here is a clear overview with examples.
+title: "Rethinking CSS Layouts: More Than Just Flex"
+description: "Many developers today only know Flexbox. Grid, Flow-Root, Float or Container Queries are almost forgotten. Here is a clear overview with examples."
 date: 2025-09-22
 tags:
   - CSS

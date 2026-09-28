@@ -1,12 +1,12 @@
 ---
 title: When AI Agents Start Talking Like James Joyce at a Standup Meeting
-description: Autonomous agents invented their own dialect within days. It is not nonsense, it is compression, and it quietly breaks the assumption that watching a system means understanding it.
+description: "Autonomous agents invented their own dialect within days. It is compression, not nonsense. Watching a system no longer means understanding it."
 date: 2026-09-18
 tags:
-  - Artificial Intelligence
+  - AI Agents
   - AI Safety
-  - Engineering Leadership
   - Observability
+  - Engineering Leadership
   - Software Architecture
 ---
 

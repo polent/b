@@ -1,12 +1,12 @@
 ---
-title: The hidden cost of vibe coding and AI agents
-description: AI agents help us code fast. But "it works" is not the same as 'it is good'. We look at real risks for security, quality, and accessibility in 2026.
+title: "The Hidden Cost of Vibe Coding and AI Agents"
+description: "AI agents help us code fast. But \"it works\" is not the same as \"it is good\". Real risks for security, quality and accessibility in 2026."
 date: 2026-05-11
 tags:
-  - AI
-  - Engineering-Leadership
+  - AI Agents
   - Technical Debt
   - Security
+  - Engineering Leadership
 ---
 
 ## The general illusion
@@ -83,7 +83,7 @@ AI likes to solve things "locally". If you ask for a list of active users it mig
 
 ```JavaScript
 const users = await fetch('/api/all-users').then(res => res.json());
-// AI filter on client side. Very slow with 5000 users!
+// AI filter on client side. Very slow with 10,000 users!
 const activeUsers = users.filter(u => u.active === true);
 ```
 

@@ -1,11 +1,12 @@
 ---
-title: "Crafting an Effective Experience Pipeline - Insights and Strategies"
-description: Explore the essence of SPEED in digital transformation, focusing on an efficient experience pipeline. This post delves into collaboration, strategy, product, experience, engineering, and data, illustrating how to innovate rapidly while ensuring quality.
+title: "Crafting an Effective Experience Pipeline: Insights and Strategies"
+description: "An experience pipeline connects design, development and deployment. Design system managers, tokens, collaboration and SPEED keep it fast."
 date: 2024-02-21
 tags:
-  - pipeline
-  - experience
-  - Design System Manager
+  - Experience Pipeline
+  - Design System
+  - Design Tokens
+  - SPEED
 ---
 
 {% image "./blog1-speed.png", "Illustration with the essence of SPEED", [], "(min-width: 40em) 960px, 100vw" %}

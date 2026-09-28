@@ -1,11 +1,11 @@
 ---
-title: Prompting is not everything — Why the tool matters
-description: I tested Claude, Gemini, and Copilot with a "Zero-Shot" CV generator task. The results show that a good prompt needs a strong engine to work.
+title: "Prompting Is Not Everything: Why the Tool Matters"
+description: "I tested Claude, Gemini and Copilot with a zero-shot CV generator task. The results show that a good prompt needs a strong engine to work."
 date: 2026-05-06
 tags:
-  - AI Research
-  - Frontend Development
+  - AI
   - LLM Comparison
+  - Frontend
   - Automation
 ---
 

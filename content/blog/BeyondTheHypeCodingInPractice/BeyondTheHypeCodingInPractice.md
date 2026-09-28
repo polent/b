@@ -1,13 +1,13 @@
 ---
 title: "The Dark Factory Trap: Finding the Sweet Spot for AI in Engineering"
-description: Why fully autonomous dark factories risk model collapse, and how human in the loop pipelines keep digital products reliable, accessible, and clean.
+description: "Fully autonomous dark factories risk model collapse and generic products. Human-in-the-loop pipelines keep software reliable, accessible and clean."
 date: 2026-08-14
 tags:
-- Engineering
-- AI
-- Architecture
-- Accessibility
-- Web Standards
+  - Dark Factory
+  - AI Agents
+  - Architecture
+  - Accessibility
+  - Web Standards
 ---
 
 ## From Clean Text Editors to Modern Tooling

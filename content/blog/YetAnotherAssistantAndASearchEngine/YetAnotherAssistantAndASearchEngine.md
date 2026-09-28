@@ -1,13 +1,13 @@
 ---
 title: "Tech Titans Unveil New Gadgets: Innovation or Intrusion?"
-description: Explore the latest from Google and OpenAI as they introduce a new assistant and search engine. This post delves into whether these innovations truly enhance our digital experience or merely serve as new tools for data collection. Join the discussion on the impact of these technologies on our privacy and digital freedom.
+description: "Google and OpenAI announce a new assistant and a search engine. They look more like tools for data collection than real progress for users."
 date: 2024-05-13
 tags:
   - AI
-  - search
-  - assistants
-  - open platform
-  - big tech
+  - Search
+  - AI Assistants
+  - Privacy
+  - Big Tech
 ---
 
 {% image "./aiandsearch.png", "An AI Driven search illustration", [], "(min-width: 40em) 960px, 100vw" %}

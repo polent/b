@@ -1,15 +1,13 @@
 ---
 title: Why Unchecked Trust in AI Puts Critical Thinking at Risk
-description: Careless prompts cost you data. Unchecked output costs you judgment. And the research now shows the third price we pay, that our memory and our ability to think unaided quietly erode.
+description: "Careless prompts cost you data. Unchecked output costs you judgment. Research shows a third price: our memory and ability to think unaided erode."
 date: 2026-09-17
 tags:
-  - Artificial Intelligence
-  - Digital Transformation
+  - AI
   - Critical Thinking
   - Privacy
   - Data Protection
-  - Engineering-Leadership
-  - Leadership
+  - Engineering Leadership
 ---
 
 ## Two Mistakes in One Afternoon

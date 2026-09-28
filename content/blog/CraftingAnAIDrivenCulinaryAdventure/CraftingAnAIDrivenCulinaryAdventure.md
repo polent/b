@@ -1,13 +1,12 @@
 ---
-title: "Crafting an AI-driven culinary adventure"
-description: "Explore AI Chefs at Polente, where AI meets culinary art! discover unique, AI-generated recipes and imagery, automated via github, refreshed daily with innovative tech-driven cooking inspiration"
+title: "Crafting an AI-Driven Culinary Adventure"
+description: "How AI Chefs at Polente creates recipes and images with GPT and DALL·E, builds them with 11ty and publishes new ones every day via GitHub Actions."
 date: 2024-01-25
 tags:
-  - recipes
-  - blog
   - AI
-  - copywriter
-  - chef
+  - Automation
+  - 11ty
+  - Recipes
 ---
 
 ## Behind The Scenes Of AI Chefs at Polente

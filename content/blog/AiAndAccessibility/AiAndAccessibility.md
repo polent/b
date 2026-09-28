@@ -1,11 +1,10 @@
 ---
-title: How AI is Changing Accessibility in the Workplace
-description: This blog looks at how AI is changing the way we think about and manage accessibility in digital spaces.
+title: "How AI Is Changing Digital Accessibility"
+description: "AI helps test accessibility, adapt interfaces and simplify content. Used the right way, it makes digital products easier to use for everyone."
 date: 2024-01-09
 tags:
   - Accessibility
   - AI
-  - future
 ---
 
 ## Introduction

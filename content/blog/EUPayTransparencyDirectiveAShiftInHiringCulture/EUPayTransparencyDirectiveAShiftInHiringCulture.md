@@ -1,12 +1,12 @@
 ---
 title: "EU Pay Transparency Directive: A Shift in Hiring Culture"
-description: "The EU Pay Transparency Directive comes into effect in June 2026. This post explores its impact on recruitment workflows, candidate rights, and company culture."
+description: "The EU Pay Transparency Directive changes hiring from June 2026. It affects recruitment workflows, candidate rights and company culture."
 date: 2026-05-18
 tags:
   - Leadership
-  - HR Technology
+  - Hiring
   - Company Culture
-  - Legal Standards
+  - Legal
 ---
 
 ## The New Rules for Pay Transparency

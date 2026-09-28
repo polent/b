@@ -1,10 +1,10 @@
 ---
 title: Using MCP Servers for Design System Management
-description: How Model Context Protocol servers connect tools like Figma, Atlassian, and Storybook for seamless design-to-code workflows in VS Code or any modern IDE.
+description: "How Model Context Protocol servers connect Figma, Atlassian and Storybook for design-to-code workflows in VS Code or any modern IDE."
 date: 2025-11-11
 tags:
-  - Design Systems
   - MCP
+  - Design System
   - AI
   - Copilot
   - Developer Experience

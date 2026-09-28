@@ -1,13 +1,13 @@
 ---
 title: "Optimizing Your Design System Manager (DSM) Experience: Practical Tools and Strategies"
-description: Discover essential tools and strategies to enhance your Design System Manager (DSM) experience. Learn how to use Figma, Style Dictionary, and other resources effectively to maintain consistency, improve collaboration, and streamline your design process. This guide covers everything from managing design tokens to integrating web components, providing you with actionable tips to optimize your DSM workflow.
+description: "Practical tools for a design system manager: Figma as source of truth, tokens with Style Dictionary, web components, Storybook and feedback loops."
 date: 2024-04-19
 tags:
-  - dsm experience
-  - Design System Manager manager
-  - Figma
-  - web components
+  - Design System
   - Design Tokens
+  - Figma
+  - Web Components
+  - Experience Pipeline
 ---
 
 {% image "./pipe.png", "Teams working together in an office environment", [], "(min-width: 40em) 960px, 100vw" %}

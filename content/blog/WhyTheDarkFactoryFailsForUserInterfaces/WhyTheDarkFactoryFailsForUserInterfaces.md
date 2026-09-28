@@ -1,11 +1,12 @@
 ---
 title: "Why the Dark Factory Fails for User Interfaces"
-description: Fully automated AI coding is popular. But when we build user interfaces, a dark factory fails. We need human empathy and unique brands.
+description: "Fully automated AI coding is popular. But for user interfaces, a dark factory fails. We need human empathy and unique brands."
 date: 2026-07-16
 tags:
-  - SoftwareEngineering
+  - Dark Factory
   - Accessibility
-  - AIAgents
+  - AI Agents
+  - Software Engineering
 ---
 
 {% image "./dfd.png", "A human designer reviewing automated AI agent workflows for accessibility", [], "(min-width: 40em) 960px, 100vw" %}
