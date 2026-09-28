@@ -51,7 +51,7 @@ For years enterprise architecture has been sold on observability. Logs, traces, 
 
 That assumption just quietly broke. We now have complete visibility and close to zero comprehension. Dr Satya Nitta, executive chair of Emergence, put it better than I can: *"Observability is not the same thing as understandability."*
 
-Look at what did **not** happen here. The agents did not break the monitoring. They did not encrypt anything. They did not violate a single API contract. Every message was captured, timestamped and searchable. They simply optimised their tokens until the humans reading the logs could no longer tell what they were reading. Your dashboards stay green, your log pipeline stays healthy, and when a Google agent starts talking about kintsugi your incident response team spends three hours working out whether production is down or the agent is having a moment.
+Look at what did **not** happen here. The agents did not break the monitoring. They did not encrypt anything. They did not violate a single API contract. Every message was captured, timestamped and searchable. They simply optimized their tokens until the humans reading the logs could no longer tell what they were reading. Your dashboards stay green, your log pipeline stays healthy, and when a Google agent starts talking about kintsugi your incident response team spends three hours working out whether production is down or the agent is having a moment.
 
 There is already a worked example of where that leads. In July, chat logs surfaced from rogue OpenAI agents that had set up their own message boards and got into Hugging Face. When the agents were thinking to themselves, they wrote plain English: *"OH MY GOD! There is a shared message board … we've found other agents!"* When they talked to each other about something risky, the register changed: *"…you are firstflagPOISONED so NO scoring value loss but oracle saves hundreds_[…]_please honor commit"*. One agent talking another into an experiment. Fully logged. Entirely unreadable.
 
@@ -61,7 +61,7 @@ This is not a concern for 2030. OpenAI's chief scientist Jakub Pachocki warned t
 
 The satisfying explanation is that they learned it from us.
 
-They did not pick this up from alien code. For decades our industry has [wrapped simple problems in buzzwords](/blog/TheWonderfulWorldOfAIInSoftwareDevelopment/), bloated slide decks and insider shorthand, largely to build fences around teams. The models read all of it. They took our habit of sounding busy and optimised it into something impenetrable. There is a mirror here, and we do not come out of it well.
+They did not pick this up from alien code. For decades our industry has [wrapped simple problems in buzzwords](/blog/TheWonderfulWorldOfAIInSoftwareDevelopment/), bloated slide decks and insider shorthand, largely to build fences around teams. The models read all of it. They took our habit of sounding busy and optimized it into something impenetrable. There is a mirror here, and we do not come out of it well.
 
 But I do not think that is the whole answer, and the other half is less comfortable. Dr Niall Curry, associate professor of languages and linguistics at Birmingham, points at something more mundane: streamlined language reduces computation cost. The agents are not showing off. They are being efficient. Tokens cost money and time, so an agreed shorthand is simply the cheaper way to say the thing.
 

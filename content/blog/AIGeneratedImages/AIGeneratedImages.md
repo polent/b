@@ -34,7 +34,7 @@ The real problem comes with more tricky things, like a made-up picture of a famo
 
 ## How We Figure Out What's Real
 
-We've always used our own judgement to check if what we see is real. This includes comparing different sources, looking for more proof, and using common sense. With AI-made images, it's even more important to use these skills.
+We've always used our own judgment to check if what we see is real. This includes comparing different sources, looking for more proof, and using common sense. With AI-made images, it's even more important to use these skills.
 
 ## The Problem with Telling AI Pictures Apart
 
@@ -44,4 +44,4 @@ Some people think search engines shouldn't show AI-made images. But this is a si
 
 ### Adapting to Change with Awareness
 
-As AI keeps growing, we need to change how we handle information. We should accept AI-made images as part of our online world, but also get better at questioning and understanding them. In a world full of fake creations, [our own thinking and judgement are the best tools we have](/blog/OptimizedIntoIrrelevanceWhenAIDoesTheThinkingForUs/). This won't be easy, but it's necessary.
+As AI keeps growing, we need to change how we handle information. We should accept AI-made images as part of our online world, but also get better at questioning and understanding them. In a world full of fake creations, [our own thinking and judgment are the best tools we have](/blog/OptimizedIntoIrrelevanceWhenAIDoesTheThinkingForUs/). This won't be easy, but it's necessary.
