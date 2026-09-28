@@ -13,39 +13,39 @@ tags:
 
 ### TL;DR
 
-We transitioned from MUI and our old in-house design system due to performance issues, component duplication, and complex theming. We developed a React-based component library, integrating design tokens directly from Figma for real-time updates. This led to a 28% reduction in JavaScript bundle sizes, improved application performance, and more than 19 point enhanced Lighthouse scores. Centralizing our design process in Figma established a single source of truth, ensuring consistency across teams. With upcoming EUAA 25 accessibility regulations, our proactive approach positions us ahead of the curve by embedding accessibility into our design system's foundation.
+We moved away from MUI and our old in-house design system. The reasons were performance issues, component duplication and complex theming. We built a React-based component library. It takes design tokens directly from Figma, so updates show up right away. JavaScript bundle sizes dropped by 28%. Apps got faster, and Lighthouse scores went up by 19 points. Figma is now our single source of truth for design. That keeps teams consistent. The EUAA 25 accessibility regulations are coming. Accessibility is already built into the foundation of our design system, so we are ready.
 
 ## Streamlining Performance and Consistency
 
-This blog post is about how we transitioned away from MUI and our old in-house design system. Over time, MUI no longer met our needs, and the earlier attempt at a custom design system faced issues. We struggled with component ownership, multiple entries for similar components, and a lack of integration between design tools and the final application. As a result, we ended up with a framework design system and another custom system that neither teams nor designers wanted to use.
+This post is about how we moved away from MUI and our old in-house design system. Over time, MUI no longer met our needs. Our earlier attempt at a custom design system had problems too. We struggled with component ownership and multiple entries for similar components. Design tools and the final application were not connected. In the end, we had a framework design system and another custom system. Neither teams nor designers wanted to use them.
 
-Due to performance degradation, component duplication, and complex theming with MUI, we decided to develop our own dedicated design system. 
+Performance got worse, components were duplicated, and theming with MUI was complex. So we decided to build our own dedicated design system.
 
-We then began working on a fresh, more effective approach. After considering different options, we decided to build a React-based component library. This choice aligned with our main consumer’s infrastructure. From the start, we focused on making the library easier to manage and more compatible with our design tools. (In an upcoming post, I’ll dive into why we’re now exploring a web component library built with Lit.)
+Then we started on a fresh, more effective approach. After looking at different options, we chose to build a React-based component library. This matched the infrastructure of our main consumer. From the start, we made the library easier to manage and a better fit for our design tools. (In an upcoming post, I’ll explain why we’re now looking at a web component library built with Lit.)
 
-We used [design tokens directly imported from Figma](/blog/DesignTokensAreFinalNow/). Any updates in Figma were reflected immediately in the application. We also implemented a simple theming system that allowed clients to have their own themes within a controlled range. For specific customizations, we encouraged app-level overrides to keep the library itself lean and efficient.
+We used [design tokens directly imported from Figma](/blog/DesignTokensAreFinalNow/). Any update in Figma showed up in the application right away. We also built a simple theming system. Clients could have their own themes within a controlled range. For specific customizations, we pushed for app-level overrides. That kept the library itself lean and efficient.
 
-> “Design systems don’t fail because people ignore the rules; they fail because people lose faith that the rules will work.” – [Itai Vonshak](https://www.linkedin.com/pulse/broken-promises-design-systems-why-following-rules-wont-itai-vonshak-g2huf/)
+> “Design systems don’t fail because people ignore the rules; they fail because people lose faith that the rules will work.” ([Itai Vonshak](https://www.linkedin.com/pulse/broken-promises-design-systems-why-following-rules-wont-itai-vonshak-g2huf/))
 
-The issues described in [Itai Vonshak’s post](/blog/EmbracingTheFreedomOfCustomExperiencePipelines/), such as teams losing trust in a design system due to unworkable rules, have not arisen in our case, thanks to the clarity and predictability built into our process. Our dedicated design system approach continues to work well, avoiding the challenges many teams face when navigating multiple, conflicting frameworks.
+[Itai Vonshak’s post](https://www.linkedin.com/pulse/broken-promises-design-systems-why-following-rules-wont-itai-vonshak-g2huf/) describes [teams losing trust in a design system](/blog/EmbracingTheFreedomOfCustomExperiencePipelines/) because of unworkable rules. That has not happened to us. Our process is clear and predictable. Our dedicated design system approach still works well. It avoids the problems many teams face with multiple, conflicting frameworks.
 
 ## Cleaning House and Gaining Performance
 
-Despite our progress, parts of the old MUI and custom system still polluted our codebase. So, we formed a dedicated team to remove deprecated code, replace legacy components, and sync updates across teams. The results were immediate and clear:
+Despite our progress, parts of the old MUI and custom system still polluted our codebase. So we set up a dedicated team. It removed deprecated code, replaced legacy components and synced updates across teams. The results were immediate and clear:
 
-- Improved performance: By reducing JavaScript bundle sizes by up to 28%, apps ran faster and Lighthouse scores improved for performance with over 19 points.
-- Increased clarity: With one single source of truth in Figma, everyone, from designers to developers, knew exactly which components to use and how.
+- Improved performance: JavaScript bundle sizes dropped by up to 28%. Apps ran faster, and Lighthouse performance scores went up by 19 points.
+- Increased clarity: With one single source of truth in Figma, everyone from designers to developers knew exactly which components to use and how.
 - Enhanced client satisfaction: Stakeholders saw their branding implemented correctly, and new tenants found it easier to adopt the system.
 
 {% image "./chart.png", "A line chart with five differently colored lines displays values between 0 and 800 over a period from mid-February to mid-March. The lines remain mostly stable with occasional downward steps.", [], "(min-width: 40em) 960px, 100vw" %}
 
 ## Built-In Accessibility and Future Proofing
 
-With the upcoming EUAA 25 regulations on accessibility, having components that for example [inherently meet contrast standards](/blog/ContinuousExperiencePipelinesCase2/) and include proper labeling will put us ahead of the curve. Accessibility is no longer an afterthought; it’s built into the foundation of our design system.
+The EUAA 25 regulations on accessibility are coming. Our components, for example, [inherently meet contrast standards](/blog/ContinuousExperiencePipelinesCase2/) and include proper labeling. That puts us in a good position. Accessibility is no longer an afterthought. It’s built into the foundation of our design system.
 
 ## Results on Lighthouse
 
-Over the years, our Google Lighthouse measurements have provided valuable insights beyond just package sizes, and the results have been truly impressive.
+Over the years, our Google Lighthouse measurements have given us useful insights beyond package sizes. The results are impressive.
 
 ### Before Core MUI was out
 
@@ -55,8 +55,8 @@ Over the years, our Google Lighthouse measurements have provided valuable insigh
 
 {% image "./after_MUI_HP.png", "Google Lighthouse report with a performance score of 91. 'Largest Contentful Paint' is 1.0s, 'Total Blocking Time' 220ms. Accessibility: 100.", [], "(min-width: 40em) 960px, 100vw" %}
 
-Needless to say, these results exclude third-party services like GTM, Analytics, Pendo, or cookie banner providers, as they are beyond our direct control.
+These results exclude third-party services like GTM, Analytics, Pendo or cookie banner providers. They are outside our direct control.
 
 ## Final Thoughts
 
-This effort has made our system easier to maintain and more useful for designers, developers, and clients. While we have more steps ahead, this phase of the journey highlights the value of thoughtful, deliberate change. If you have questions or want to learn more, please reach out.
+This effort made our system easier to maintain and more useful for designers, developers and clients. We have more steps ahead. This phase shows the value of deliberate change.

@@ -12,17 +12,17 @@ tags:
 
 ## From Clean Text Editors to Modern Tooling
 
-I am not a fan of AI hype, but I appreciate strong tooling when building digital products. Back in the nineties, I always preferred simple text editors over visual site builders. I tried tools like FrontPage and Dreamweaver, but they never offered real control over clean output. That is why I stayed with editors like Notepad++, Sublime, and Atom, where I had full control over every single line of markup.
+I am not a fan of AI hype, but I appreciate strong tooling when building digital products. Back in the nineties, I always preferred simple text editors over visual site builders. I tried tools like FrontPage and Dreamweaver, but they never offered real control over clean output. That is why I stayed with editors like Notepad++, Sublime, and Atom. There I had full control over every single line of markup.
 
-When smart linters, validation plugins, and auto suggestions came up, using them was a natural step. In my [current VS Code setup](/blog/SuperchargeVSCodeWithMCPServersAndAgentMode/), I have dozens of plugins running for validation, linting, formatting, and connecting to client code repositories. Nobody questions why we use Prettier or CSS post processors today. They are standard engineering tools.
+When smart linters, validation plugins, and auto-suggestions came up, using them was a natural step. In my [current VS Code setup](/blog/SuperchargeVSCodeWithMCPServersAndAgentMode/), dozens of plugins run for validation, linting, and formatting. Others connect to client code repositories. Nobody questions why we use Prettier or CSS post-processors today. They are standard engineering tools.
 
-AI has a very different footprint. Using a large language model to turn the first letter of a string into uppercase is a complete waste of resources. Regex and native functions do that much better. Yet between useless [hype and empty bubbles](/blog/FromDotComToAI/), there is a clear sweet spot where automated pipelines create real value.
+AI has a different footprint. Using a large language model to turn the first letter of a string into uppercase is a complete waste of resources. Regex and native functions do that much better. Yet between useless [hype and empty bubbles](/blog/FromDotComToAI/), there is a clear sweet spot where automated pipelines create real value.
 
 ## How a Modern Agent Pipeline Works in Practice
 
 [The idea of a dark factory](/blog/WhyTheDarkFactoryFailsForUserInterfaces/) comes from manufacturing, where a facility runs with the lights off because only machines work on the floor [^1]. In software engineering, some people try to feed a prompt into an agent and expect a finished product without any human intervention.
 
-That hands off model works for simple scripts, but complex web platforms need careful guidance. In our daily delivery on a multi API progressive web app, we use agents to support our engineers rather than replace them.
+That hands-off model works for simple scripts, but complex web platforms need careful guidance. In our daily delivery on a multi-API progressive web app, we use agents to support our engineers rather than replace them.
 
 Here is an example setup of how our pipeline operates:
 
@@ -48,17 +48,17 @@ This leads directly to two problems:
 
 Consulting and software architecture are grounded in human conversation. We listen to clients, learn their technical constraints, and discover what their end users actually need.
 
-Here is a real world example of where automated assumptions fail:
+Here is a real-world example of where automated assumptions fail:
 
 In a recent project, our client had a file storage system that supported user comments on uploaded files. We needed to integrate digital assets from an enterprise CMS into that exact interface. The AI suggested enabling comments on those CMS assets right away.
 
-What the AI could not see was that the CMS API did not support a commenting endpoint unless the asset was duplicated into the file storage backend first. An autonomous dark factory would have built an interface based on false assumptions, leading to broken flows and costly rework.
+What the AI could not see: the CMS API had no commenting endpoint. Comments only worked after the asset was duplicated into the file storage backend. An autonomous dark factory would have built an interface on false assumptions. The result would be broken flows and costly rework.
 
 ## Conclusion
 
 AI tools make our pipelines faster, our security checks stricter, and our documentation more consistent. They help our engineering teams deliver up to 50 percent more value with high quality standards.
 
-However, real system architecture, user empathy, and strategic decisions cannot be outsourced to a dark factory. Real human expertise remains the foundation of reliable software.
+Real system architecture, user empathy, and strategic decisions cannot be outsourced to a dark factory. Real human expertise remains the foundation of reliable software.
 
 [^1]: [MindStudio Blog: What Is a Dark Factory Codebase?](https://www.mindstudio.ai/blog/what-is-a-dark-factory-codebase)
 [^2]: [Model Context Protocol Specification](https://modelcontextprotocol.io)

@@ -26,11 +26,11 @@ Coding agents only process the prompt in front of them. When requirements are va
 
 ## Deep Domain Knowledge and Interface Design
 
-Good software relies heavily on subject matter expert knowledge. This context lives inside client organizations, specialized workflows, and unique user habits. You cannot simply train this dynamic context into a general model.
+Good software relies heavily on subject-matter expert knowledge. This context lives inside client organizations, specialized workflows, and unique user habits. You cannot simply train this dynamic context into a general model.
 
 Interface design also requires human empathy. Crafting accessible, intuitive interfaces means understanding how real people interact with systems under stress or with [assistive technology](/blog/AiAndAccessibility/).
 
-An LLM can reproduce standard UI patterns, but it cannot evaluate whether an interface feels right in a specific business context. It produces [an average of what already exists on the web](/blog/WhyAIIsMakingFrontendAverage/). It can optimize existing copper wire solutions, but it will not invent the wireless alternative.
+An LLM can reproduce standard UI patterns, but it cannot evaluate whether an interface feels right in a specific business context. It produces [an average of what already exists on the web](/blog/WhyAIIsMakingFrontendAverage/). It can optimize existing copper-wire solutions, but it will not invent the wireless alternative.
 
 ## Human Friction Builds Better Products
 
@@ -40,4 +40,4 @@ Junior developers may lack deep technical background, but they bring curiosity a
 
 This friction between team members is what protects projects from expensive mistakes.
 
-Coding agents are powerful utilities for boilerplate, repetitive tasks, and fast prototyping. But they are tools, not teammates. The responsibility for architectural decisions, client collaboration, accessibility, and user experience remains firmly in human hands.
+Coding agents are good at boilerplate, repetitive tasks, and fast prototyping. But they are tools, not teammates. The responsibility for architectural decisions, client collaboration, accessibility, and user experience stays with humans.

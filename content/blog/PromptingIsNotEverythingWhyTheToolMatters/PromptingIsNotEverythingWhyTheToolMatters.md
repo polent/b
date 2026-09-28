@@ -11,7 +11,7 @@ tags:
 
 ## The Experiment: Building a CV Website with AI
 
-I did a fun project to check [how modern CLIs and chat agents work](/blog/SuperchargeVSCodeWithMCPServersAndAgentMode/) with a simple prompt and clean data. The goal was to see if an AI can build a state-of-the-art CV webpage completely alone. No questions allowed—just "Zero-Shot" execution.
+I did a fun project to check [how modern CLIs and chat agents work](/blog/SuperchargeVSCodeWithMCPServersAndAgentMode/) with a simple prompt and clean data. The goal was to see if an AI can build a state-of-the-art CV webpage completely alone. No questions allowed. Just "Zero-Shot" execution.
 
 All code and the source data are here: [github.com/polent/Research](https://github.com/polent/Research)
 
@@ -19,20 +19,20 @@ All code and the source data are here: [github.com/polent/Research](https://gith
 
 I used a JSON file for the content and a profile image. The prompt asked for a professional design, light and dark themes, and [high standards for accessibility and SEO](/blog/AiAndAccessibility/).
 
-I tested four different setups. It was a bit unfair for Copilot because I used an older version without a subscription. But this shows exactly the point: the more expensive and modern tools work better. Even the best prompt cannot save an outdated model.
+I tested four different setups. It was a bit unfair for Copilot. I used an older version without a subscription. But this shows the point: the more expensive and modern tools work better. Even the best prompt cannot save an outdated model.
 
 ## The Results
 
 You can see the difference in the output links:
 
-* **Claude (Opus 4.7):** This was my favorite. The code is very clean and follows all rules. [View Claude Result](https://present.polente.de/research/claude-opus-4-7/)
-* **Gemini (CLI):** It made the file very SEO friendly. This was expected and shows good technical logic. [View Gemini Result](https://present.polente.de/research/gemini-cli/)
+* **Claude (Opus 4.7):** This was my favorite. The code is clean and follows all rules. [View Claude Result](https://present.polente.de/research/claude-opus-4-7/)
+* **Gemini (CLI):** It made the file SEO friendly. This was expected and shows good technical logic. [View Gemini Result](https://present.polente.de/research/gemini-cli/)
 * **Copilot (GPT-4):** This result was massively broken. It produced a lot of useless code. [View Copilot Result](https://present.polente.de/research/copilot-gpt4/)
 * **Something (Sonnet):** This one was massively overengineered and still broken. It even looked for images outside the correct folder. [Something Result](https://present.polente.de/research/ss-claude-sonnet-4/)
 
 ## My Conclusion
 
-The tool you use is just as critical as the prompt you write. For complex frontend tasks that need to be "Zero-Shot," you need a tool that [understands modern W3C standards](/blog/WhyAIIsMakingFrontendAverage/) and accessibility: **Success with Claude / Gemini**
+The tool you use is just as critical as the prompt you write. Complex frontend tasks that need to be "Zero-Shot" need a tool that [understands modern W3C standards](/blog/WhyAIIsMakingFrontendAverage/) and accessibility: **Success with Claude / Gemini**
 
 ## The Master Prompt
 

@@ -12,7 +12,7 @@ tags:
 
 ## From Design to Code with MCP Servers
 
-The [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) defines a standard way for local or remote tools to talk to models and IDEs. It lets you access external services or APIs directly inside your editor, without complex system setup or locked-in toolchains. MCP servers connect tools like Atlassian, Figma, or Storybook to your AI model and make workflows faster, consistent, and traceable.
+The [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) defines a standard way for local or remote tools to talk to models and IDEs. You can access external services or APIs directly inside your editor. No complex system setup. No locked-in toolchains. MCP servers connect tools like Atlassian, Figma, or Storybook to your AI model. This makes workflows faster, consistent, and traceable.
 
 Below is an example `mcp.json` configuration that we use across our Design System setup:
 
@@ -49,24 +49,24 @@ More details: [Figma MCP Guide](https://help.figma.com/hc/en-us/articles/3213210
 
 Before development starts, the **Atlassian MCP server** helps fetch and manage Jira tickets. Typical actions include:
 
-* `#getJiraIssue`
-* `#editJiraIssue`
-* `#addCommentToJiraIssue`
+- `#getJiraIssue`
+- `#editJiraIssue`
+- `#addCommentToJiraIssue`
 
-This ensures the agent knows the ticket context before coding begins.
+The agent then knows the ticket context before coding starts.
 Documentation: [Atlassian Rovo Setup](https://support.atlassian.com/rovo/docs/setting-up-ides/)
 
 For component development, we use the **Storybook MCP**. Still in alpha, it already provides two useful modes:
 
-* `dev`: retrieves component documentation or usage.
-* `docs`: gives UI building instructions.
+- `dev`: retrieves component documentation or usage.
+- `docs`: gives UI building instructions.
 
 More info: [Storybook MCP Addon](https://storybook.js.org/addons/@storybook/addon-mcp)
 
 ## Using Prompt Files
 
 [Prompt files let you define complex, repeatable workflows](/blog/HeadlessDesignSystemMigration/).
-Example — an icon update process:
+Example: an icon update process.
 
 ```markdown
 ---
@@ -132,4 +132,4 @@ The result: fewer errors, faster delivery, and better alignment between designer
 
 Start small. Connect one MCP server (e.g., Figma). Try simple prompts to pull metadata or screenshots. Once stable, add Jira and Storybook.
 
-Over time, you’ll see your design system evolve from a manual process to a connected, intelligent workflow: a true **[continuous experience pipeline](/blog/ContinuousExperiencePipelines/)**.
+Over time, your design system moves from a manual process to a connected workflow. It becomes a **[continuous experience pipeline](/blog/ContinuousExperiencePipelines/)**.

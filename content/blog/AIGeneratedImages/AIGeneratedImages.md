@@ -10,11 +10,11 @@ tags:
 
 ## The New Wave of Picture Making
 
-Lately, there's a big increase in pictures made by AI (Artificial Intelligence) on the internet. This change is reshaping the way we see and use pictures online. AI is getting really good at making images that look real, and it's getting hard to tell what's real and what's not.
+The internet has seen a big increase in pictures made by AI (Artificial Intelligence) lately. This changes how we see and use pictures online. AI now makes images that look real. It is getting hard to tell what's real and what's not.
 
 ## How This Affects Image Search Engines
 
-[Search engines like Google and Bing](/blog/YetAnotherAssistantAndASearchEngine/), which used to have mostly real pictures, are now full of these AI-made images. Some people think these AI images are just filling up space and are hard to separate from real ones. But, this view might miss out on the bigger picture and what AI images can do.
+[Search engines like Google and Bing](/blog/YetAnotherAssistantAndASearchEngine/) used to show mostly real pictures. Now they are full of AI-made images. Some people think these AI images just fill up space and are hard to separate from real ones. This view might miss the bigger picture and what AI images can do.
 
 ## A Personal View
 
@@ -22,26 +22,26 @@ Lately, there's a big increase in pictures made by AI (Artificial Intelligence) 
 
 {% image "./1000006111.png", "A collection of children's style cat drawings made by AI", [], "(min-width: 40em) 960px, 100vw" %}
 
-Imagine if I posted pictures of cats drawn by my daughter when she was three. These aren't real cats, but if they get popular online, they might end up in search engines as if they were real cat pictures. This shows how AI can make fake images that seem real.
+Imagine I posted pictures of cats my daughter drew when she was three. These aren't real cats. If they get popular online, they might end up in search engines as if they were real cat pictures. This shows how AI can make fake images that seem real.
 
 ## The Big Problem
 
 ### Telling What's True from What's Made Up
 
-The real problem comes with more tricky things, like a made-up picture of a famous person building sandcastles on the beach. Figuring out if these complex fake images are real or not needs us to be more careful and smart.
+The real problem starts with trickier cases. Think of a made-up picture of a famous person building sandcastles on the beach. Checking if complex fakes like this are real takes more care and clear thinking.
 
 {% image "./1000006110.jpg", "A person building sandcastles on a beach", [], "(min-width: 40em) 960px, 100vw" %}
 
 ## How We Figure Out What's Real
 
-We've always used our own judgment to check if what we see is real. This includes comparing different sources, looking for more proof, and using common sense. With AI-made images, it's even more important to use these skills.
+We have always used our own judgment to check if what we see is real. We compare sources, look for more proof and use common sense. With AI-made images, these skills matter even more.
 
 ## The Problem with Telling AI Pictures Apart
 
-Some people think search engines shouldn't show AI-made images. But this is a simple answer to a complicated problem. The real issue is not just about filtering out AI stuff, but about teaching people how to [think critically about the images they see](/blog/WhyUncheckedTrustInAIPutsCriticalThinkingAtRisk/).
+Some people think search engines shouldn't show AI-made images. That is a simple answer to a complicated problem. The real issue is not just filtering out AI content. It is teaching people how to [think critically about the images they see](/blog/WhyUncheckedTrustInAIPutsCriticalThinkingAtRisk/).
 
 ## Conclusion
 
 ### Adapting to Change with Awareness
 
-As AI keeps growing, we need to change how we handle information. We should accept AI-made images as part of our online world, but also get better at questioning and understanding them. In a world full of fake creations, [our own thinking and judgment are the best tools we have](/blog/OptimizedIntoIrrelevanceWhenAIDoesTheThinkingForUs/). This won't be easy, but it's necessary.
+As AI keeps growing, we need to change how we handle information. We should accept AI-made images as part of our online world. We also need to get better at questioning and understanding them. In a world full of fake creations, [our own thinking and judgment are the best tools we have](/blog/OptimizedIntoIrrelevanceWhenAIDoesTheThinkingForUs/). This is not easy, but it is necessary.

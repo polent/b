@@ -11,16 +11,15 @@ tags:
 
 ## Removing UI from TSX for a Design System Migration
 
-Sometimes change comes not from adding, but from removing. I recently removed UI contents from a TSX implementation so our client’s new aggregated design system component could work **headless** with existing Providers, Components, and Containers.
+Sometimes change comes from removing, not adding. I recently removed UI contents from a TSX implementation. Now our client’s new aggregated design system component works **headless** with existing Providers, Components, and Containers.
 
 ### The challenge
 
-The old TSX files mixed logic and UI. Layout, styles, and visual glue were baked into every component. This made it hard to scale or update design. The new design system components needed a clean separation so it could deliver a **consistent experience across apps and markets**.
+The old TSX files mixed logic and UI. Layout, styles, and visual glue were baked into every component. This made it hard to scale or update design. The new design system components needed a clean separation. Only then could they deliver a **consistent experience across apps and markets**.
 
 ### Headless as an add-on
 
-The design system is built **on top of the [core component library](/blog/ReplacingMUIANewDesignSystemApproach/)**. It orchestrates existing base components, defines patterns, and ensures Cards, Filters, and Buttons look and behave the same everywhere.
-The UI components are **dumb**: they only render what they get. Data, content, and CTA events are injected from outside. This keeps them reusable, predictable, and easy to test.
+The design system is built **on top of the [core component library](/blog/ReplacingMUIANewDesignSystemApproach/)**. It combines existing base components, defines patterns, and makes Cards, Filters, and Buttons look and behave the same everywhere. The UI components are **dumb**: they only render what they get. Data, content, and CTA events are injected from outside. This keeps them reusable, predictable, and easy to test.
 
 ### Connected with MCP servers
 
@@ -36,11 +35,11 @@ This automation helps the design system stay aligned with design specs and proje
 
 - Used **Agentic Chat** and **VS Code** to strip UI from TSX.
 - Built a migration path in a single **prompt file** that guided all changes.
-- Integrated MCP servers to connect design, code, and tickets seamlessly.
+- Integrated MCP servers to connect design, code, and tickets.
 
 ### The aha moment
 
-Seeing a fully automated migration from that single prompt file, with design and ticket updates happening in sync. That’s when [agentic workflows stopped being theory](/blog/TheAgenticDesignWorkflowOrchestratingMCPAndAIForScale/) and started driving real efficiency.
+I saw a fully automated migration run from that single prompt file. Design and ticket updates happened in sync. That’s when [agentic workflows stopped being theory](/blog/TheAgenticDesignWorkflowOrchestratingMCPAndAIForScale/) and started to save real time.
 
 ### The outcome
 
@@ -50,6 +49,4 @@ Seeing a fully automated migration from that single prompt file, with design and
 
 ### Conclusion: Powered by Sapient Slingshot
 
-[**Sapient Slingshot**](https://www.publicissapient.com/sapient-ai/sapient-slingshot) turned this from a tedious migration into a repeatable system.
-With one prompt file, we automated a process that would normally take weeks, aligned design and dev in real time, and set a new standard for scaling design systems.
-This shows the power of AI-driven engineering: **fewer manual steps, faster delivery, and better quality — without compromise.**
+[**Sapient Slingshot**](https://www.publicissapient.com/sapient-ai/sapient-slingshot) turned a tedious migration into a repeatable system. With one prompt file, we automated a process that normally takes weeks. Design and dev stayed aligned in real time. This is how we scale design systems now. AI-driven engineering means **fewer manual steps, faster delivery, and better quality.**
