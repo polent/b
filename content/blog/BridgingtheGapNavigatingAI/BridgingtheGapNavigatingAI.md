@@ -15,7 +15,7 @@ tags:
 
 ## Introduction
 
-I have worked 30 years as a leading Director and Experience Engineering Specialist at Publicis Sapient. I have seen many technology changes. My passion is building high-performing, accessible webpages. Non-functional requirements should not just be met. They should be exceeded. AI now spreads through our industry. So I think about its impact on our work. I also think about how we can use it without losing the human touch that makes technology work for people.
+I have worked almost 30 years as a leading Director and Experience Engineering Specialist at Publicis Sapient. I have seen many technology changes. My passion is building high-performing, accessible webpages. Non-functional requirements should not just be met. They should be exceeded. AI now spreads through our industry. So I think about its impact on our work. I also think about how we can use it without losing the human touch that makes technology work for people.
 
 {% image "./btg.png", "", [], "(min-width: 40em) 960px, 100vw" %}
 

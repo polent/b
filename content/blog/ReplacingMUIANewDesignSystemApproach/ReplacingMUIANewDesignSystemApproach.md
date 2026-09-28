@@ -13,7 +13,7 @@ tags:
 
 ### TL;DR
 
-We moved away from MUI and our old in-house design system. The reasons were performance issues, component duplication and complex theming. We built a React-based component library. It takes design tokens directly from Figma, so updates show up right away. JavaScript bundle sizes dropped by 28%. Apps got faster, and Lighthouse scores went up by 19 points. Figma is now our single source of truth for design. That keeps teams consistent. The EUAA 25 accessibility regulations are coming. Accessibility is already built into the foundation of our design system, so we are ready.
+We moved away from MUI and our old in-house design system. The reasons were performance issues, component duplication and complex theming. We built a React-based component library. It takes design tokens directly from Figma, so updates show up right away. JavaScript bundle sizes dropped by up to 28%. Apps got faster, and Lighthouse scores went up by 19 points. Figma is now our single source of truth for design. That keeps teams consistent. The EUAA 25 accessibility regulations are coming. Accessibility is already built into the foundation of our design system, so we are ready.
 
 ## Streamlining Performance and Consistency
 

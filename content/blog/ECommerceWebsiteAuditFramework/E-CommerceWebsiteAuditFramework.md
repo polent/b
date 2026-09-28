@@ -66,7 +66,7 @@ This is a framework to audit e-commerce websites. It covers SEO, performance, ac
 
 ## 3. Accessibility
 
-**What to check:** Compliance with WCAG 2.1+ and [real-world usability](/blog/AiAndAccessibility/).
+**What to check:** Compliance with WCAG 2.2 and [real-world usability](/blog/AiAndAccessibility/).
 
 ✅ **Do**
 
@@ -218,7 +218,7 @@ Reference: Publicis Sapient CoE Accessibility in Canada: “[Accessibility for A
 
 - CI/CD: [GitHub Actions](https://github.com/features/actions): [Documentation](https://docs.github.com/en/actions), [GitLab CI](https://docs.gitlab.com/ci/): [CI/CD Guide](https://docs.gitlab.com/ci/), [Jenkins](https://www.jenkins.io/): [Documentation](https://www.jenkins.io/doc/)
 - Observability: [Prometheus](https://prometheus.io/): [Documentation](https://prometheus.io/docs/) + [Grafana](https://grafana.com/): [Docs](https://grafana.com/docs/), [ELK Stack](https://www.elastic.co/elastic-stack): [Documentation](https://www.elastic.co/guide/index.html)
-- Incident Mgmt: [PagerDuty](https://www.pagerduty.com/): [Documentation](https://support.pagerduty.com/docs), [Opsgenie](https://www.atlassian.com/software/opsgenie): [Documentation](https://support.atlassian.com/opsgenie/)
+- Incident Mgmt: [PagerDuty](https://www.pagerduty.com/): [Documentation](https://support.pagerduty.com/docs), [Opsgenie](https://www.atlassian.com/software/opsgenie): [Documentation](https://support.atlassian.com/opsgenie/) (end of sale announced by Atlassian)
 
 ## Deliverables of the Audit
 
@@ -236,7 +236,7 @@ Reference: Publicis Sapient CoE Accessibility in Canada: “[Accessibility for A
 
 The audit identified several strengths in the current platform, including a scalable cloud architecture and good API documentation. But there are significant gaps in accessibility, performance, and security.
 
-- **Accessibility**: The site does not meet WCAG 2.1 AA. Missing alt text, poor contrast, and keyboard traps were found. This limits usability for a portion of users and poses compliance risks.
+- **Accessibility**: The site does not meet WCAG 2.2 AA. Missing alt text, poor contrast, and keyboard traps were found. This limits usability for a portion of users and poses compliance risks.
 - **Performance**: Load times on mobile devices are slow (LCP ~4.2s). Large unoptimized images and render-blocking scripts are the main issues.
 - **Security**: Outdated libraries with known vulnerabilities were detected. No CSP headers are set, leaving the site vulnerable to XSS attacks.
 - **SEO**: Overall strong, but duplicate meta descriptions and missing structured data for products reduce search visibility.

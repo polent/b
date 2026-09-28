@@ -15,7 +15,7 @@ tags:
 
 I see it every day now. A developer types a short prompt. The AI agent writes 200 lines of code. It looks perfect. The UI is pretty. The feature is "done" in ten minutes. We call this vibe coding. If it feels right and the demo works, we ship it.
 
-But there is a trap. AI is good at making things that look like they work. It is not always good at making things that actually work for a long time. In my 25 years of tech, [I have seen many hypes](/blog/FromDotComToAI/). AI is different because it is so fast. It can create technical debt faster than any human.
+But there is a trap. AI is good at making things that look like they work. It is not always good at making things that actually work for a long time. In almost 30 years of tech, [I have seen many hypes](/blog/FromDotComToAI/). AI is different because it is so fast. It can create technical debt faster than any human.
 
 We need to talk about the real price of this speed. It is not just about writing code. It is about owning it.
 

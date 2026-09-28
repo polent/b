@@ -12,7 +12,7 @@ tags:
 
 ## Behind The Scenes Of AI Chefs at Polente
 
-This is a look behind the scenes of [AI Chefs at Polente](https://recipe.polente.de/). The site brings cooking and artificial intelligence together. I am a director of experience engineering with over two decades in the field. I've always been fascinated by how technology can improve our daily lives. [AI Chefs at Polente](https://recipe.polente.de/) builds on this idea. It combines my passion for cooking with the current capabilities of AI.
+This is a look behind the scenes of [AI Chefs at Polente](https://recipe.polente.de/). The site brings cooking and artificial intelligence together. I am a director of experience engineering with almost three decades in the field. I've always been fascinated by how technology can improve our daily lives. [AI Chefs at Polente](https://recipe.polente.de/) builds on this idea. It combines my passion for cooking with the current capabilities of AI.
 
 ## The Genesis Of AI Chefs at Polente
 
