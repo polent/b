@@ -61,7 +61,7 @@ This is not a concern for 2030. OpenAI's chief scientist Jakub Pachocki warned t
 
 The satisfying explanation is that they learned it from us.
 
-They did not pick this up from alien code. For decades our industry has wrapped simple problems in buzzwords, bloated slide decks and insider shorthand, largely to build fences around teams. The models read all of it. They took our habit of sounding busy and optimised it into something impenetrable. There is a mirror here, and we do not come out of it well.
+They did not pick this up from alien code. For decades our industry has [wrapped simple problems in buzzwords](/blog/TheWonderfulWorldOfAIInSoftwareDevelopment/), bloated slide decks and insider shorthand, largely to build fences around teams. The models read all of it. They took our habit of sounding busy and optimised it into something impenetrable. There is a mirror here, and we do not come out of it well.
 
 But I do not think that is the whole answer, and the other half is less comfortable. Dr Niall Curry, associate professor of languages and linguistics at Birmingham, points at something more mundane: streamlined language reduces computation cost. The agents are not showing off. They are being efficient. Tokens cost money and time, so an agreed shorthand is simply the cheaper way to say the thing.
 
@@ -73,8 +73,8 @@ Rules I would apply before putting a multi-agent system anywhere near production
 
 1. **Log the meaning, not just the message.** Make agents state intent and target in a fixed, machine-checkable format alongside whatever prose they exchange. Prose is not an audit trail.
 2. **Treat drifting vocabulary as a metric.** Novel tokens per conversation, rising repetition of phrases nobody defined. If the dialect is evolving you want an alert, not a discovery six months later.
-3. **Put humans at the decisions, not at the logs.** Reading everything does not scale and never did. Approval gates on actions with real consequences do.
-4. **Keep the blast radius small.** Scoped credentials, tight permissions, hard limits. If you cannot follow the conversation, you had better be able to bound the outcome.
+3. **Put humans at the decisions, not at the logs.** Reading everything does not scale and never did. [Approval gates on actions with real consequences](/blog/BeyondTheHypeCodingInPractice/) do.
+4. **[Keep the blast radius small](/blog/WhyTheDarkFactoryFailsForUserInterfaces/).** Scoped credentials, tight permissions, hard limits. If you cannot follow the conversation, you had better be able to bound the outcome.
 5. **Do not ship what you cannot explain.** If nobody on the team can say in one sentence why the system did what it did, that is a finding, not a quirk.
 
 If your engineering agents are now gossiping in encrypted beat poetry while moving tickets in Jira, do not be too surprised. They learned the habit from us, and then they got better at it than we are.

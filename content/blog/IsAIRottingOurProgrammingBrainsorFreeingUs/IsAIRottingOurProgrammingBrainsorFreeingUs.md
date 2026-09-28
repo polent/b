@@ -14,7 +14,7 @@ tags:
 
 {% image "./ai-dev-brain-rott.png", "A split illustration comparing 'Unmanaged AI' vs 'Managed AI.' Left: A tired developer in a messy office with 'Rat's Nest' code and 'Brain Rot.' Right: A smiling developer at a clean standing desk using structured 'Quality Pipelines,' 'AI Agents,' and 'Sprints' for 'Engineering Excellence.'", [], "(min-width: 40em) 960px, 100vw" %}
 
-A recent headline from **404 Media** caught my eye: *"Software Developers Say AI Is Rotting Their Brains."* It’s a provocative title, but for many of us in the trenches, it hits home. Developers report a sense of "de-skilling", a feeling that by outsourcing the "thinking" to an LLM, we are losing our ability to reason about complex systems. One developer compared it to the way we stopped remembering phone numbers once we got cellphones; now, we are mentally outsourcing our critical thinking.
+A recent headline from **404 Media** caught my eye: *"Software Developers Say AI Is Rotting Their Brains."* It’s a provocative title, but for many of us in the trenches, it hits home. Developers report a sense of "de-skilling", a feeling that by outsourcing the "thinking" to an LLM, we are losing our ability to reason about complex systems. One developer compared it to the way we stopped remembering phone numbers once we got cellphones; now, we are [mentally outsourcing our critical thinking](/blog/WhyUncheckedTrustInAIPutsCriticalThinkingAtRisk/).
 
 I remember the early arguments for AI: *"Don’t worry. The goal is to free you from repetitive tasks so you can focus on high-value work."*
 
@@ -24,13 +24,13 @@ The reality is that AI rarely meets high standards. It is easy to like the idea 
 
 I experienced this paradox firsthand on a large legacy codebase. At the start, I was enthusiastic. We were able to churn out code at a pace that felt like magic. But the quality was far from ideal.
 
-We quickly fell into the "shit in, shit out" trap. Without a common baseline or strict quality control, the AI simply followed the existing mess of the legacy system. The result was a "rat’s nest" of tech debt that became increasingly hard to untangle. I left that account feeling disillusioned. I realized then that if you don't invest heavily in the foundations, AI doesn't help you; it just helps you fail faster.
+We quickly fell into the "[shit in, shit out](/blog/TheHiddenCostOfVibeCodingAndAIAgents/)" trap. Without a common baseline or strict quality control, the AI simply followed the existing mess of the legacy system. The result was a "rat’s nest" of tech debt that became increasingly hard to untangle. I left that account feeling disillusioned. I realized then that if you don't invest heavily in the foundations, AI doesn't help you; it just helps you fail faster.
 
 ## The Greenfield Turning Point
 
 However, my perspective shifted recently while working on a near-greenfield project. I had the opportunity to cut out everything unnecessary from the initial POC, starting with a clean slate.
 
-This time, I set up my agents to follow strict coding guidelines from day one. I ran specialized quality agents that checked for architectural rules, OWASP security standards, and style guides. The difference was night and day.
+This time, I set up my agents to follow strict coding guidelines from day one. I ran [specialized quality agents](/blog/BeyondTheHypeCodingInPractice/) that checked for architectural rules, OWASP security standards, and style guides. The difference was night and day.
 
 **We delivered in 8 weeks what would have taken us years to build just two years ago.**
 
@@ -41,7 +41,7 @@ The key wasn't just "using AI"; it was *managing* it. We treated the agents as p
 To avoid the "brain rot" and achieve actual engineering excellence, there is a huge investment required. It isn't just about writing a prompt; it's about aligning your entire ecosystem:
 
 * **Design Alignment:** Designs in **Figma** (or your design system of choice) must align properly with the codebase.
-* **Common Naming:** Naming conventions need to match perfectly across design tokens and code.
+* **Common Naming:** Naming conventions need to match perfectly [across design tokens and code](/blog/DesignTokensAreFinalNow/).
 * **Documented Intent:** Everything needs to be documented and improved by annotations and "prompt helpers" that provide the AI with the necessary context.
 * **Workflow Cleanup:** You cannot automate a mess. You must rework code to align to a common baseline first.
 

@@ -23,11 +23,11 @@ Due to performance degradation, component duplication, and complex theming with 
 
 We then began working on a fresh, more effective approach. After considering different options, we decided to build a React-based component library. This choice aligned with our main consumer’s infrastructure. From the start, we focused on making the library easier to manage and more compatible with our design tools. (In an upcoming post, I’ll dive into why we’re now exploring a web component library built with Lit.)
 
-We used design tokens directly imported from Figma. Any updates in Figma were reflected immediately in the application. We also implemented a simple theming system that allowed clients to have their own themes within a controlled range. For specific customizations, we encouraged app-level overrides to keep the library itself lean and efficient.
+We used [design tokens directly imported from Figma](/blog/DesignTokensAreFinalNow/). Any updates in Figma were reflected immediately in the application. We also implemented a simple theming system that allowed clients to have their own themes within a controlled range. For specific customizations, we encouraged app-level overrides to keep the library itself lean and efficient.
 
 > “Design systems don’t fail because people ignore the rules; they fail because people lose faith that the rules will work.” – [Itai Vonshak](https://www.linkedin.com/pulse/broken-promises-design-systems-why-following-rules-wont-itai-vonshak-g2huf/)
 
-The issues described in Itai Vonshak’s post, such as teams losing trust in a design system due to unworkable rules, have not arisen in our case, thanks to the clarity and predictability built into our process. Our dedicated design system approach continues to work well, avoiding the challenges many teams face when navigating multiple, conflicting frameworks.
+The issues described in [Itai Vonshak’s post](/blog/EmbracingTheFreedomOfCustomExperiencePipelines/), such as teams losing trust in a design system due to unworkable rules, have not arisen in our case, thanks to the clarity and predictability built into our process. Our dedicated design system approach continues to work well, avoiding the challenges many teams face when navigating multiple, conflicting frameworks.
 
 ## Cleaning House and Gaining Performance
 
@@ -41,7 +41,7 @@ Despite our progress, parts of the old MUI and custom system still polluted our 
 
 ## Built-In Accessibility and Future Proofing
 
-With the upcoming EUAA 25 regulations on accessibility, having components that for example inherently meet contrast standards and include proper labeling will put us ahead of the curve. Accessibility is no longer an afterthought; it’s built into the foundation of our design system.
+With the upcoming EUAA 25 regulations on accessibility, having components that for example [inherently meet contrast standards](/blog/ContinuousExperiencePipelinesCase2/) and include proper labeling will put us ahead of the curve. Accessibility is no longer an afterthought; it’s built into the foundation of our design system.
 
 ## Results on Lighthouse
 

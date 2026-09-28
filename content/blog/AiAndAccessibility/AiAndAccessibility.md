@@ -42,13 +42,13 @@ AI is also helping us every day to make digital tools more accessible. It can do
 
 AI is helping to create content that is easy to understand for everyone. It can suggest ways to write or design things better.
 
-There are also design tools that use AI to make sure new websites and apps are accessible from the start. This is really helpful for keeping up with the latest guidelines.
+There are also design tools that use AI to make sure new websites and apps are [accessible from the start](/blog/ContinuousExperiencePipelinesCase2/). This is really helpful for keeping up with the latest guidelines.
 
 ## The Future of Accessibility with AI Integration
 
 Looking ahead, AI could do even more for accessibility. It might be able to change digital tools to fit each person's needs. This would make the web a place where everyone can participate equally.
 
-But we have to keep improving AI tools and use them in the right way. This is important for making sure they help everyone and don't leave anyone out.
+But we have to keep improving AI tools and [use them in the right way](/blog/WhyUncheckedTrustInAIPutsCriticalThinkingAtRisk/). This is important for making sure they help everyone and don't leave anyone out.
 
 AI could help us create a digital world that is truly open to everyone. This is an exciting future to think about!
 

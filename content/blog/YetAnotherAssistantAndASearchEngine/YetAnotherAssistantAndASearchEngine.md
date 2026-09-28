@@ -34,13 +34,13 @@ It's a familiar scenario: companies claim their smart assistants will simplify o
 
 ## OpenAI's Search Engine: Just Another Data Issue?
 
-As OpenAI steps into the competitive arena with its new AI-driven search engine, skepticism arise about its true intent. Could this platform, armed with the power of ChatGPT, simply become another mechanism for data collection rather than a provider of unbiased search results? With its debut set to challenge established giants like Google, this initiative raises concerns about privacy and the potential for manipulative algorithms that prioritize profit over user benefit​.
+As OpenAI steps into the competitive arena with its new AI-driven search engine, skepticism arise about its true intent. Could this platform, armed with the power of ChatGPT, simply become another mechanism for data collection rather than a provider of unbiased search results? With its debut set to challenge established giants like Google, this initiative raises concerns about privacy and the potential for [manipulative algorithms](/blog/UniversalCommerceProtocolSoundsOpenItIsNot/) that prioritize profit over user benefit​.
 
 While the search engine promises enhanced user interactions through AI-generated content, it needs to be seen whether it will respect user privacy or follow the path of existing platforms that harvest user data. The tech community and consumers are watching closely. I may hope for a tool that prioritizes transparency and fairness in the age of information overload. But I may be wrong.
 
 ## Big Tech's Profit Machine
 
-These announcements are hardly surprising. Tech giants continuously churn out new products—not to better the world, but to line their pockets. Each new assistant and search engine seems to be another way to harvest and monetize our data.
+These announcements are hardly surprising. Tech giants continuously churn out new products—not to better the world, but to line their pockets. Each new assistant and search engine seems to be another way to [harvest and monetize our data](/blog/TrackingLike/).
 
 ## Time for a Tech Reality Check
 

@@ -22,7 +22,7 @@ Imagine we live in a world where software is developed entirely by Artificial In
 
 ### The New Era of Developer Training
 
-Why should we burden our up-and-coming talent with the basics of software development? Instead, let’s offer them crash courses in _“AI Operation for Dummies.”_ After all, AI can do it all, right? And if it doesn’t… well, tough luck. The algorithms will get better eventually — or so we hope.
+Why should we burden our up-and-coming talent with the basics of software development? Instead, let’s offer them crash courses in _“[AI Operation for Dummies](/blog/IsAIRottingOurProgrammingBrainsorFreeingUs/).”_ After all, AI can do it all, right? And if it doesn’t… well, tough luck. The algorithms will get better eventually — or so we hope.
 
 But wait — what happens when these _“AI operators”_ don’t understand the implications of what they’re deploying? Will they even know how to spot the cracks forming in the digital foundation, or will they simply shrug and reboot their favorite AI tool?
 
@@ -61,11 +61,11 @@ Except, here’s the rub: AI is only as good as the data it’s fed, the biases 
 What happens when:
 
 - Data integrity isn’t prioritized, leading to garbage-in, garbage-out problems?
-- Accessibility becomes an afterthought because AI doesn’t _“see”_ disabilities?
+- [Accessibility becomes an afterthought](/blog/AiAndAccessibility/) because AI doesn’t _“see”_ disabilities?
 - Security gaps go unpatched because the system decided those were _“low risk”_?
 - Ethics become a footnote in the race to innovate?
 
-Without a human safety net, these problems compound into systems that not only fail but fail spectacularly and at scale.
+Without a human safety net, these problems compound into systems that not only fail but [fail spectacularly and at scale](/blog/WhyTheDarkFactoryFailsForUserInterfaces/).
 
 ### Conclusion
 
@@ -73,7 +73,7 @@ Without a human safety net, these problems compound into systems that not only f
 
 So, let’s all jump on the AI bandwagon! But be careful: Don’t get run over by the wheels. As the saying goes, _“He who laughs last, laughs best.”_
 
-AI is incredible, transformative, and undeniably useful. But blind trust in technology leads to predictable disasters. Where’s the balance? Who is responsible for ensuring the tools we trust are also trustworthy?
+AI is incredible, transformative, and undeniably useful. But [blind trust in technology](/blog/WhyUncheckedTrustInAIPutsCriticalThinkingAtRisk/) leads to predictable disasters. Where’s the balance? Who is responsible for ensuring the tools we trust are also trustworthy?
 
 It’s time to ask the hard questions:
 

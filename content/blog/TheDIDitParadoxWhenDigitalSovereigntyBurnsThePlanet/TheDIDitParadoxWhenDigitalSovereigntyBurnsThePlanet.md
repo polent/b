@@ -14,7 +14,7 @@ tags:
 
 For years, the Linux and open-source communities have waited for their "daylight"; a moment where the world finally sees the danger of the Big Tech silos. With the rise of the **#DIDit** (Digital Independence Day) movement, sparked by the cultural momentum of Marc-Uwe Kling, that moment has arrived. People are deleting their Meta accounts, ditching Windows, and proudly announcing they now host their own Mastodon or Nextcloud instances.
 
-But there is a bitter irony here. In the rush to show off their independence to Microsoft and Google, many tech-sovereign advocates are ignoring the massive environmental ledger they are creating. While they escape the "claws" of the Big Five, they are often replacing highly optimized infrastructure with fragmented, energy-hungry chaos.
+But there is a bitter irony here. In the rush to show off their independence to Microsoft and Google, many tech-sovereign advocates are ignoring the massive environmental ledger they are creating. While they escape the "claws" of the [Big Five](/blog/UniversalCommerceProtocolSoundsOpenItIsNot/), they are often replacing highly optimized infrastructure with fragmented, energy-hungry chaos.
 
 ## The Efficiency Trap: Scaling Matters
 

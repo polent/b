@@ -13,7 +13,7 @@ tags:
 
 ## Universal Commerce Protocol, or UCP, sounds like a good idea
 
-One protocol for commerce. Open. Standardized. Ready for AI. Companies can expose products and services to AI agents. AI can search, compare, and even buy on behalf of users.
+One protocol for commerce. Open. Standardized. Ready for AI. Companies can expose products and services to AI agents. AI can search, compare, and [even buy on behalf of users](/blog/YetAnotherAssistantAndASearchEngine/).
 
 On paper, this is progress. In reality, it smells like the next step where small businesses slowly disappear.
 
@@ -40,7 +40,7 @@ If your data is not perfect, you are skipped. If you are skipped, you do not exi
 
 ### Before, you needed SEO
 
-Now, you need machine readiness. That means:
+Now, [you need machine readiness](/blog/ECommerceWebsiteAuditFramework/E-CommerceWebsiteAuditFramework/). That means:
 
 - APIs
 - uptime
@@ -65,7 +65,7 @@ But openness does not remove power imbalance. Big companies will build:
 
 Small businesses will depend on those tools to stay visible.
 
-This is vendor lock-in without a contract. You are free to leave. You just disappear if you do.
+This is [vendor lock-in without a contract](/blog/EmbracingTheFreedomOfCustomExperiencePipelines/). You are free to leave. You just disappear if you do.
 
 ## Platforms Will Sell For You. With or Without You
 

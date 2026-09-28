@@ -23,7 +23,7 @@ Web development is always changing. There's a big difference now between being g
 ### Knowing a Bit of Everything?
 
 - **What They Do**: Full Stack Engineers work on everything from the front (what users see) to the back (server-side) of a website. But sometimes, this isn't enough for today's complicated tech.
-- **Problems**: They use many tools, but might not know some of them deeply. This can lead to average results, especially in making a good user experience or fast website.
+- **Problems**: They use many tools, but might not know some of them deeply. This can lead to average results, especially in [making a good user experience or fast website](/blog/WhyCodingAgentsCannotReplaceExperienceEngineering/).
 - **Effects**: This way of working often means having to go back and improve things later, which is more work and can make the project not as good in the end.
 
 ## Full Lifecycle Engineering
@@ -46,6 +46,6 @@ Web development is always changing. There's a big difference now between being g
 
 ## Conclusion
 
-The debate between Full Stack and Full Lifecycle Engineering shows how the tech world is moving towards needing more specialized knowledge for complicated tech. Full Stack Engineers are adaptable, but the depth and skills of Full Lifecycle Engineers are crucial for complex, lasting projects. To avoid average results that come from knowing a little about a lot, use experts in your projects for the best results.
+The debate between Full Stack and Full Lifecycle Engineering shows how the tech world is moving towards needing more specialized knowledge for complicated tech. Full Stack Engineers are adaptable, but the depth and skills of Full Lifecycle Engineers are crucial for complex, lasting projects. To avoid [average results that come from knowing a little about a lot](/blog/WhyAIIsMakingFrontendAverage/), use experts in your projects for the best results.
 
 Image Source: DALL·E 3

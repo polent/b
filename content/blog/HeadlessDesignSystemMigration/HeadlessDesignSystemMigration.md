@@ -19,15 +19,15 @@ The old TSX files mixed logic and UI. Layout, styles, and visual glue were baked
 
 ### Headless as an add-on
 
-The design system is built **on top of the core component library**. It orchestrates existing base components, defines patterns, and ensures Cards, Filters, and Buttons look and behave the same everywhere.
+The design system is built **on top of the [core component library](/blog/ReplacingMUIANewDesignSystemApproach/)**. It orchestrates existing base components, defines patterns, and ensures Cards, Filters, and Buttons look and behave the same everywhere.
 The UI components are **dumb**: they only render what they get. Data, content, and CTA events are injected from outside. This keeps them reusable, predictable, and easy to test.
 
 ### Connected with MCP servers
 
 This setup also uses **MCP servers**:
 
-- Some, like the **NX repo MCP**, come out of the box.
-- **Figma MCP** pulls design rules and tokens directly.
+- Some, like the **[NX repo MCP](/blog/SuperchargeVSCodeWithMCPServersAndAgentMode/)**, come out of the box.
+- **Figma MCP** [pulls design rules and tokens directly](/blog/MCPServerInDesignSystemWorkflows/).
 - **Atlassian MCP** keeps tickets updated, syncing progress and status in real time.
 This automation helps the design system stay aligned with design specs and project workflows without extra manual work.
 
@@ -39,7 +39,7 @@ This automation helps the design system stay aligned with design specs and proje
 
 ### The aha moment
 
-Seeing a fully automated migration from that single prompt file, with design and ticket updates happening in sync. That’s when agentic workflows stopped being theory and started driving real efficiency.
+Seeing a fully automated migration from that single prompt file, with design and ticket updates happening in sync. That’s when [agentic workflows stopped being theory](/blog/TheAgenticDesignWorkflowOrchestratingMCPAndAIForScale/) and started driving real efficiency.
 
 ### The outcome
 

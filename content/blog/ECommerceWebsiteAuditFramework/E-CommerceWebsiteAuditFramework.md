@@ -50,7 +50,7 @@ This framework provides a comprehensive audit method for e-commerce websites. It
 
 - Optimize images (WebP/AVIF, responsive sizes).
 - Minify and bundle JS/CSS carefully.
-- Use a CDN for global delivery.
+- [Use a CDN for global delivery](/blog/StaticSiteGenerationWorksEnterpriseToo/).
 
 ❌ **Don’t**
 
@@ -66,7 +66,7 @@ This framework provides a comprehensive audit method for e-commerce websites. It
 
 ## 3. Accessibility
 
-**What to check:** Compliance with WCAG 2.1+ and real-world usability.
+**What to check:** Compliance with WCAG 2.1+ and [real-world usability](/blog/AiAndAccessibility/).
 
 ✅ **Do**
 
@@ -94,7 +94,7 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 
 ✅ **Do**
 
-- Write semantic HTML (`<button>`, not `<div onclick>`).
+- [Write semantic HTML](/blog/RethinkingCSSLayoutsMoreThanJustFlex/) (`<button>`, not `<div onclick>`).
 - Use CSS naming conventions (e.g. BEM).
 - Split JS bundles and lazy load non-critical code.
 
@@ -102,7 +102,7 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 
 - Mix styling inline (`style=""`).
 - Abuse `!important` in CSS.
-- Depend on large frameworks for trivial functionality.
+- [Depend on large frameworks for trivial functionality](/blog/ReplacingMUIANewDesignSystemApproach/).
 
 ### Quality Tools
 

@@ -12,7 +12,7 @@ tags:
 
 ## Frontend Is Getting Average Again
 
-AI helps us write code faster, but speed is not quality. Most AI tools suggest solutions that work but feel old: media queries everywhere, Flexbox centering for everything, and custom selects rebuilt with JavaScript.
+AI helps us write code faster, but speed is not quality. Most AI tools suggest solutions that work but feel old: media queries everywhere, [Flexbox centering for everything](/blog/RethinkingCSSLayoutsMoreThanJustFlex/), and custom selects rebuilt with JavaScript.
 
 The problem is not missing specs; the problem is missing real use cases. AI learns from what is used most, not from what is best today.
 
@@ -24,7 +24,7 @@ AI can read CSS specs and summarize blog posts, but AI does not "feel" layout pr
 
 Large Language Models (LLMs) are trained on historical data, meaning they excel at what was common two years ago but often struggle with what is possible today. Many modern CSS features, like native nesting, container queries, or scroll-driven animations. These features are simply not present in high enough volume in the training sets to be the default suggestion.
 
-This creates a dangerous feedback loop for junior developers. If they rely entirely on AI suggestions, they may never learn that these modern features exist. They might spend hours debugging complex JavaScript for a scroll effect that could have been three lines of CSS, simply because the AI didn't know any better.
+This creates a [dangerous feedback loop](/blog/OptimizedIntoIrrelevanceWhenAIDoesTheThinkingForUs/) for junior developers. If they rely entirely on AI suggestions, they may never learn that these modern features exist. They might spend hours debugging complex JavaScript for a scroll effect that could have been three lines of CSS, simply because the AI didn't know any better.
 
 ## Modern CSS Features AI Often Misses
 
@@ -197,7 +197,7 @@ h1 {
 
 ### AI Makes Average Cheap
 
-AI makes average cheap. Junior developers often trust AI output blindly, repeating old patterns instead of exploring modern solutions. Modern CSS exists, but only humans push it forward.
+AI makes average cheap. Junior developers often [trust AI output blindly](/blog/TheHiddenCostOfVibeCodingAndAIAgents/), repeating old patterns instead of exploring modern solutions. Modern CSS exists, but only humans push it forward.
 
 ## Conclusion
 

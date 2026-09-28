@@ -23,7 +23,7 @@ Implementing a robust Design System Manager (DSM) can streamline your design pro
 Figma is not just another tool; it is a pivotal part of our DSM strategy due to its flexibility and comprehensive features.
 
 - **Personas and UX Design**: We utilize Figma to maintain our personas and user experience designs. It helps keep user profiles updated and accessible to all team members.
-- **Token Management**: Figma aids in creating and managing design tokens. With Style Dictionary by Amazon, these tokens can be transformed into reusable code across platforms, ensuring a uniform style throughout your digital presence.
+- **Token Management**: Figma aids in creating and managing design tokens. [With Style Dictionary by Amazon](/blog/DesignTokensAreFinalNow/), these tokens can be transformed into reusable code across platforms, ensuring a uniform style throughout your digital presence.
 
 ```plaintext
 Design Tokens Example in Figma:
@@ -48,14 +48,14 @@ style-dictionary build --platform web/css
 
 #### Accessibility and Reusability
 
-- **Start with Accessibility**: Incorporate accessibility features right from the design stage by using annotations in Figma to guide developers.
+- **Start with Accessibility**: Incorporate accessibility features right from the design stage by using [annotations in Figma](/blog/FigmaDevModeFigJam/) to guide developers.
 - **Think Ahead**: Plan how you will use these tokens. By keeping a versioned repository of your design tokens (using Git, for instance), you can ensure that they are easily accessible and maintainable.
 
 ### Integration Across Platforms
 
 #### Utilizing Web Standards
 
-- **Web Components**: We for example used Stencil to create Web Components that are compatible with multiple frameworks. This approach provides flexibility and reduces dependency on any single technology.
+- **Web Components**: We for example [used Stencil to create Web Components](/blog/ContinuousExperiencePipelinesCase1/) that are compatible with multiple frameworks. This approach provides flexibility and reduces dependency on any single technology.
 
 ```javascript
 // Example of a simple web component
@@ -71,7 +71,7 @@ customElements.define(
 
 #### Documentation and Continuous Feedback
 
-- **Unified Documentation**: Tools like Storybook are invaluable for documenting UI components and ensuring that they meet quality standards.
+- **Unified Documentation**: [Tools like Storybook](/blog/MCPServerInDesignSystemWorkflows/) are invaluable for documenting UI components and ensuring that they meet quality standards.
 - **Engage and Iterate**: Maintain open channels for team feedback and hold regular sessions to discuss improvements. This helps in refining your DSM and addressing any issues proactively.
 
 #### Strategic Thinking

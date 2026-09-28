@@ -78,7 +78,7 @@ Const messages = [
 ]
 ```
 
-With this approach, I specifically request `GPT` to generate responses in `JSON` format. Initially, my plan was to have `GPT` create the entire markdown content for the [jamstack](https://jamstack.org/) blog, which is built using [11ty](https://www.11ty.dev/). However, I encountered issues with reliability and testing challenges. To address this, I shifted to using `JSON` format, which proved to be simpler to test. If there's an issue, I can easily discard the output and start again. Presently, this restart is needed in about 1 out of 10 cases. The `JSON` format is structured as follows.
+With this approach, I specifically request `GPT` to generate responses in `JSON` format. Initially, my plan was to have `GPT` create the entire markdown content for the [jamstack](https://jamstack.org/) blog, [which is built using](/blog/StaticSiteGenerationWorksEnterpriseToo/) [11ty](https://www.11ty.dev/). However, I encountered issues with reliability and testing challenges. To address this, I shifted to using `JSON` format, which proved to be simpler to test. If there's an issue, I can easily discard the output and start again. Presently, this restart is needed in about 1 out of 10 cases. The `JSON` format is structured as follows.
 
 #### Best Format
 
@@ -100,7 +100,7 @@ After crafting the `JSON` structure, the next step in my process involves intera
 
 ### Creating a visual feast with DALL·E 3
 
-Once `GPT` provides the image prompt, I then employ a method similar to the one below to request an image from DALL·E 3. This approach allows for the creation of unique, ai-generated images that visually represent the essence of each recipe. It's not just about listing ingredients and methods; it's about bringing each dish to life visually, making the cooking experience more engaging and inspiring.
+Once `GPT` provides the image prompt, I then employ a method similar to the one below to request an image from DALL·E 3. This approach allows for the creation of unique, [ai-generated images](/blog/AIGeneratedImages/) that visually represent the essence of each recipe. It's not just about listing ingredients and methods; it's about bringing each dish to life visually, making the cooking experience more engaging and inspiring.
 
 #### Fetching Images
 

@@ -15,7 +15,7 @@ tags:
 
 I see it every day now. A developer types a short prompt. The AI agent writes 200 lines of code. It looks perfect. The UI is pretty. The feature is "done" in ten minutes. We call this vibe coding. If it feels right and the demo works, we ship it.
 
-But there is a trap. AI is very good at making things that look like they work. It is not always good at making things that actually work for a long time. In my 25 years of tech, I have seen many hypes. AI is different because it is so fast. It can create technical debt faster than any human.
+But there is a trap. AI is very good at making things that look like they work. It is not always good at making things that actually work for a long time. In my 25 years of tech, [I have seen many hypes](/blog/FromDotComToAI/). AI is different because it is so fast. It can create technical debt faster than any human.
 
 We need to talk about the real price of this speed. It is not just about writing code. It is about owning it.
 
@@ -25,7 +25,7 @@ Before we had "Copilots". They suggested a line or a block. Now we have "Agents"
 
 ## The myth of "Agent Only" code
 
-I hear a new idea lately. People say: "Why do we care about clean code? Why format it nicely?". They think the agent can read any mess. They say we can just recreate the code every time with a prompt. If it is ugly for humans it does not matter because humans do not read it anymore.
+I hear a new idea lately. People say: "Why do we care about clean code? Why format it nicely?". They think [the agent can read any mess](/blog/TheMythOfTheCodeReaderWhyAIAgentsAreTheBetterSeniorEngineers/). They say we can just recreate the code every time with a prompt. If it is ugly for humans it does not matter because humans do not read it anymore.
 
 While it is highly likely that in the future we will not need clean code anymore—because AI will flawlessly manage and understand any mess—we are not there yet.
 
@@ -37,7 +37,7 @@ Speed is the main selling point. But we often confuse "shipping code" with "deli
 
 ## Skill gap and trust in AI output
 
-There is a big problem called Automation Bias. When the AI gives a confident answer we tend to believe it.
+There is a big problem called [Automation Bias](/blog/WhyUncheckedTrustInAIPutsCriticalThinkingAtRisk/). When the AI gives a confident answer we tend to believe it.
 
 - Novices: A study showed that beginners who use AI often score 17% lower on understanding the concepts they just "coded".
 - Experts: Senior engineers use AI to skip the boring parts. But even they can get lazy. If you do not understand the output you cannot validate it.
@@ -96,7 +96,7 @@ const activeUsers = await fetch('/api/users?status=active').then(res => res.json
 
 ## Accessibility and why we still fail
 
-AI still fails at accessibility at scale. It can help with simple alt text but it struggles with complex keyboard navigation.
+[AI still fails at accessibility at scale](/blog/AiAndAccessibility/). It can help with simple alt text but it struggles with complex keyboard navigation.
 
 ### Example: The "Fake" Button
 
@@ -131,7 +131,7 @@ We had bad code before AI. But AI increases speed and volume. It lowers the barr
 AI learns from the internet. The internet is full of bad and old and insecure code.
 
 - Amplification Bias: A 2024 study found that AI does not just learn human mistakes. It makes them worse.
-- Outdated Patterns: AI might suggest older ways to code because they were popular years ago.
+- Outdated Patterns: AI might suggest older ways to code [because they were popular years ago](/blog/WhyAIIsMakingFrontendAverage/).
 
 ## Where AI actually works well
 

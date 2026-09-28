@@ -92,7 +92,7 @@ The foundational step involves importing the baseline design system into Figma *
 
 ### Step 2: Token Intelligence
 
-Building on the Figma setup, this step focuses on exporting semantic tokens from brand intent via a pipeline workflow. Design tokens, as defined by Holger Hellinger's insights, are the atomic units of a design system, encapsulating styling information (colors, typography, spacing, etc.). An intelligent pipeline, potentially augmented by AI, will extract and formalize these tokens from the Figma design system, ensuring consistency and enabling dynamic application across various platforms and technologies. This process moves beyond static values to semantic understanding, linking design decisions directly to their underlying brand principles.
+Building on the Figma setup, this step focuses on exporting semantic tokens from brand intent [via a pipeline workflow](/blog/ExperiencePipelinesExplained/). Design tokens, as defined by Holger Hellinger's insights, are the atomic units of a design system, encapsulating styling information (colors, typography, spacing, etc.). An intelligent pipeline, potentially augmented by AI, will extract and formalize these tokens from the Figma design system, ensuring consistency and enabling dynamic application across various platforms and technologies. This process moves beyond static values to semantic understanding, linking design decisions directly to their underlying brand principles.
 
 ### Step 3: MCP Apps & the Figma MCP Server
 
@@ -110,7 +110,7 @@ The Figma MCP Server is the **read side** of the workflow: it gives agents acces
 
 #### MCP Apps (Interactive Review Layer)
 
-**MCP Apps** are a fundamentally different capability. Released in January 2026 as the first official MCP extension (`@modelcontextprotocol/ext-apps`), they allow MCP servers to return **interactive UI components** that render directly inside AI conversations — in Claude, VS Code, ChatGPT, or any supporting MCP host.
+**MCP Apps** are a fundamentally different capability. Released in January 2026 as the first official MCP extension (`@modelcontextprotocol/ext-apps`), they allow MCP servers to return **interactive UI components** that render directly inside AI conversations — [in Claude, VS Code, ChatGPT](/blog/SuperchargeVSCodeWithMCPServersAndAgentMode/), or any supporting MCP host.
 
 Architecturally, an MCP App consists of two paired primitives:
 
@@ -169,7 +169,7 @@ A crucial step in bridging the design-development gap is ensuring that component
 
 ### Step 8: Framework-Agnostic Component Resolution
 
-While Figma Connect facilitates mapping for React components, a significant portion of the digital landscape involves other frameworks (Vue, Angular, Svelte) or pure web components. For these, the agentic workflow relies on the **Storybook MCP**, a server that merges Storybook component metadata with Figma design context into a single rich context for the AI agent. The Storybook MCP can classify each component as Available, Partial, or Missing relative to the design system, providing the agent with a complete inventory regardless of the target framework. Combined with task context from ticketing systems (Jira, etc.), the agent can intelligently resolve and utilize the correct, framework-agnostic components. This ensures that the benefits of component orchestration extend beyond a single framework, providing comprehensive design system coverage.
+While Figma Connect facilitates mapping for React components, a significant portion of the digital landscape involves other frameworks (Vue, Angular, Svelte) or [pure web components](/blog/WebComponents/). For these, the agentic workflow relies on the **Storybook MCP**, a server that merges Storybook component metadata with Figma design context into a single rich context for the AI agent. The Storybook MCP can classify each component as Available, Partial, or Missing relative to the design system, providing the agent with a complete inventory regardless of the target framework. Combined with task context from ticketing systems (Jira, etc.), the agent can intelligently resolve and utilize the correct, framework-agnostic components. This ensures that the benefits of component orchestration extend beyond a single framework, providing comprehensive design system coverage.
 
 ### Step 9: Component Orchestration via MCP
 
@@ -289,7 +289,7 @@ The Agentic Design Workflow, powered by the Model Context Protocol and advanced 
 
 ### Experience Engineering Insights
 
-* **Holger Hellinger’s Blog:** [Design Tokens & MCP](https://b.polente.de/blog/)
-  * [Design Tokens — from bold vision to standard practice](https://b.polente.de/blog/DesignTokensAreFinalNow/)
-  * [Using MCP Servers for Design System Management](https://b.polente.de/blog/MCPServerInDesignSystemWorkflows/)
-  * [Escaping the Golden Cage of Design Systems](https://b.polente.de/blog/EmbracingTheFreedomOfCustomExperiencePipelines/)
+* **Holger Hellinger’s Blog:** [Design Tokens & MCP](/blog/)
+  * [Design Tokens — from bold vision to standard practice](/blog/DesignTokensAreFinalNow/)
+  * [Using MCP Servers for Design System Management](/blog/MCPServerInDesignSystemWorkflows/)
+  * [Escaping the Golden Cage of Design Systems](/blog/EmbracingTheFreedomOfCustomExperiencePipelines/)

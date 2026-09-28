@@ -11,13 +11,13 @@ tags:
 
 ## The Experiment: Building a CV Website with AI
 
-I did a fun project to check how modern CLIs and Chat agents work with a simple prompt and clean data. The goal was to see if an AI can build a state-of-the-art CV webpage completely alone. No questions allowed—just "Zero-Shot" execution.
+I did a fun project to check [how modern CLIs and Chat agents work](/blog/SuperchargeVSCodeWithMCPServersAndAgentMode/) with a simple prompt and clean data. The goal was to see if an AI can build a state-of-the-art CV webpage completely alone. No questions allowed—just "Zero-Shot" execution.
 
 All code and the source data are here: [github.com/polent/Research](https://github.com/polent/Research)
 
 ## The Setup and the Tools
 
-I used a JSON file for the content and a profile image. The prompt asked for a professional design, light and dark themes, and high standards for accessibility and SEO.
+I used a JSON file for the content and a profile image. The prompt asked for a professional design, light and dark themes, and [high standards for accessibility and SEO](/blog/AiAndAccessibility/).
 
 I tested four different setups. It was a bit unfair for Copilot because I used an older version without a subscription. But this shows exactly the point: the more expensive and modern tools work better. Even the best prompt cannot save an outdated model.
 
@@ -32,7 +32,7 @@ You can see the difference in the output links:
 
 ## My Conclusion
 
-The tool you use is just as critical as the prompt you write. For complex frontend tasks that need to be "Zero-Shot," you need a tool that understands modern W3C standards and accessibility: **Success with Claude / Gemini**
+The tool you use is just as critical as the prompt you write. For complex frontend tasks that need to be "Zero-Shot," you need a tool that [understands modern W3C standards](/blog/WhyAIIsMakingFrontendAverage/) and accessibility: **Success with Claude / Gemini**
 
 ## The Master Prompt
 

@@ -76,7 +76,7 @@ The current AI market and the dot-com bubble of the late 1990s and early 2000s e
 
 One of the most significant differences between the dot-com era and today's AI market is the nature of the companies involved. During the dot-com bubble, many startups with unproven business models and little to no profits went public, driven by the hype around the internet. In contrast, the AI field is dominated by more established companies. Tech giants like Google, Microsoft, and Amazon, which have been investing in AI for years, are leading the charge. These companies not only have deep pockets but also vast datasets and sophisticated technology infrastructures that give them a significant advantage in developing AI technologies. This maturity and establishment in the market suggest a more stable environment compared to the volatile landscape of the dot-com era.
 
-These companies will be the winners. The Free Riders thinking that using a Chat Prompt solves their issues, will not.
+These companies will be the winners. The Free Riders thinking that [using a Chat Prompt solves their issues](/blog/PromptingIsNotEverythingWhyTheToolMatters/), will not.
 
 ### Lower Stock Valuations in AI
 
@@ -94,7 +94,7 @@ As we delve deeper into the AI revolution, it's crucial to address the growing c
 
 ### Energy Consumption and Environmental Impact
 
-One of the primary concerns with the rapid advancement of AI is its energy consumption and potential environmental impact. AI systems, particularly large machine learning models, require significant computational power. This demand often translates into high energy usage, raising concerns about the carbon footprint of AI technologies. The energy-intensive nature of training and running sophisticated AI models has implications for global energy consumption and the environment. As AI becomes more pervasive, the industry must prioritize developing energy-efficient algorithms and leveraging renewable energy sources to mitigate these environmental impacts.
+One of the primary concerns with the rapid advancement of AI is its [energy consumption and potential environmental impact](/blog/TheDIDitParadoxWhenDigitalSovereigntyBurnsThePlanet/). AI systems, particularly large machine learning models, require significant computational power. This demand often translates into high energy usage, raising concerns about the carbon footprint of AI technologies. The energy-intensive nature of training and running sophisticated AI models has implications for global energy consumption and the environment. As AI becomes more pervasive, the industry must prioritize developing energy-efficient algorithms and leveraging renewable energy sources to mitigate these environmental impacts.
 
 ### Need for Sustainable and Client-Focused AI Development
 
@@ -128,7 +128,7 @@ The dot-com bubble taught us the importance of grounding technological excitemen
 - **Responsible Investment:** Channeling funds into AI projects that promise sustainable growth and have a clear understanding of their market and the problems they aim to solve.
 - **Ethical Considerations:** Keeping ethical considerations at the forefront, ensuring AI is used to enhance and not detract from human capabilities and welfare.
 - **Client Needs and Values:** Aligning AI development with the actual needs and values of clients, ensuring that the technology adds real value to their lives and businesses.
-- **Don't trust the Salesman:** The more fancy and promising the person sells their product the more you should step back.
+- **[Don't trust the Salesman](/blog/BeyondTheHypeCodingInPractice/):** The more fancy and promising the person sells their product the more you should step back.
 
 By approaching the AI boom with a focus on sustainability, client-centric solutions, and responsible innovation, we can harness the power of AI to create a future that is not only technologically advanced but also socially responsible and environmentally sustainable. This balanced approach will enable us to leverage AI's potential fully while avoiding the pitfalls that have marked previous technological upheavals.
 

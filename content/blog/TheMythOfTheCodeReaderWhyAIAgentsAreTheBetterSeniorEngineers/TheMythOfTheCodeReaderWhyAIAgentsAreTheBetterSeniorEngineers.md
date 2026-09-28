@@ -19,9 +19,9 @@ This is short-sighted. Yes, current tooling is not fully mature yet. But thinkin
 
 ## Humans Repeat Errors. Agents Follow Structure.
 
-Many critics say AI code generators build the same structural errors again and again. But let us be honest: this happens in human development teams all the time. An engineer in a hurry rarely reads the full project history or deep documentation. People copy old errors, ignore best practices, and skip reading.
+Many critics say AI code generators [build the same structural errors again and again](/blog/TheHiddenCostOfVibeCodingAndAIAgents/). But let us be honest: this happens in human development teams all the time. An engineer in a hurry rarely reads the full project history or deep documentation. People copy old errors, ignore best practices, and skip reading.
 
-With autonomous AI agents, it is different. They do not feel time pressure and they do not get tired of reading. If we document architectural rules and past decisions clearly – for example in a central `decision.md` file –, something great happens:
+With autonomous AI agents, it is different. They do not feel time pressure and they do not get tired of reading. If we [document architectural rules and past decisions](/blog/BeyondTheHypeCodingInPractice/) clearly – for example in a central `decision.md` file –, something great happens:
 
 > Busy human engineers often ignore documentation when the deadline is near. AI agents will read and follow the instructions in decision.md strictly on every single run.
 
@@ -29,4 +29,4 @@ With autonomous AI agents, it is different. They do not feel time pressure and t
 
 The future is not about seniors spending all day proofreading bad AI code. The tools will get mature very soon. The real senior discipline is shifting away from code reading towards Context Engineering.
 
-It is about building the right tooling infrastructure. We need to feed the agents with precise context so that bad code never gets created in the first place. When you keep your software architecture and coding standards machine-readable, your agent pipelines will work with fewer errors than a stressed human team ever could.
+It is about building the right tooling infrastructure. We need to feed the agents with precise context so that bad code never gets created in the first place. When you keep your software architecture and coding standards [machine-readable](/blog/TheAgenticDesignWorkflowOrchestratingMCPAndAIForScale/), your agent pipelines will work with fewer errors than a stressed human team ever could.

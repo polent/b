@@ -16,9 +16,9 @@ Many developers know only `display: block` and `display: none`. Grid, Floats, Fl
 
 ## How it started
 
-I work with many developers at a big client. All are experienced, but something is missing. When it comes to layout, I see only Flexbox. Grid, Floats, even simple display types are gone.
+I work with many developers at a big client. All are experienced, but something is missing. When it comes to layout, [I see only Flexbox](/blog/WhyAIIsMakingFrontendAverage/). Grid, Floats, even simple display types are gone.
 
-Maybe this comes from the fullstack idea. Everyone does a bit of everything, but no one is really strong in CSS. Or maybe we think: React and our design system will solve it. But when we build bigger components, people fail.
+Maybe this comes from the [fullstack idea](/blog/FullStackVSFullLifecycleEngineering/). Everyone does a bit of everything, but no one is really strong in CSS. Or maybe we think: [React and our design system will solve it](/blog/ReplacingMUIANewDesignSystemApproach/). But when we build bigger components, people fail.
 
 So I write here how to build layouts again with CSS, not only Flex.
 

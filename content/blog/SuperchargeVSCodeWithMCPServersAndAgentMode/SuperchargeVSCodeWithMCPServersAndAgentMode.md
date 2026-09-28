@@ -47,7 +47,7 @@ The goal?
 
 Here are a few MCP servers I currently have configured:
 
-- **Atlassian integration** (Jira & Confluence): [`sooperset/mcp-atlassian`](https://github.com/sooperset/mcp-atlassian)
+- **[Atlassian integration](/blog/MCPServerInDesignSystemWorkflows/)** (Jira & Confluence): [`sooperset/mcp-atlassian`](https://github.com/sooperset/mcp-atlassian)
 - **NX integration** for monorepos: [`nx-mcp`](https://github.com/modelcontextprotocol/servers)
 
 More MCP servers are available here: 👉 [List of MCP Servers](https://github.com/modelcontextprotocol/servers)
@@ -91,7 +91,7 @@ To hide your MCP server variables securely, follow this flow:
 
 ## Project-Specific Instructions for Copilot
 
-GitHub Copilot now supports a `.github/copilot-instructions.md` file in your repo to tailor responses to your tools, workflows, and coding style.
+GitHub Copilot now supports a `.github/[copilot-instructions.md` file](/blog/HeadlessDesignSystemMigration/) in your repo to tailor responses to your tools, workflows, and coding style.
 
 ### How to Set It Up
 

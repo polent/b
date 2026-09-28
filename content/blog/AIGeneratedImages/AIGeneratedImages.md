@@ -14,7 +14,7 @@ Lately, there's a big increase in pictures made by AI (Artificial Intelligence) 
 
 ## How This Affects Image Search Engines
 
-Search engines like Google and Bing, which used to have mostly real pictures, are now full of these AI-made images. Some people think these AI images are just filling up space and are hard to separate from real ones. But, this view might miss out on the bigger picture and what AI images can do.
+[Search engines like Google and Bing](/blog/YetAnotherAssistantAndASearchEngine/), which used to have mostly real pictures, are now full of these AI-made images. Some people think these AI images are just filling up space and are hard to separate from real ones. But, this view might miss out on the bigger picture and what AI images can do.
 
 ## A Personal View
 
@@ -38,10 +38,10 @@ We've always used our own judgement to check if what we see is real. This includ
 
 ## The Problem with Telling AI Pictures Apart
 
-Some people think search engines shouldn't show AI-made images. But this is a simple answer to a complicated problem. The real issue is not just about filtering out AI stuff, but about teaching people how to think critically about the images they see.
+Some people think search engines shouldn't show AI-made images. But this is a simple answer to a complicated problem. The real issue is not just about filtering out AI stuff, but about teaching people how to [think critically about the images they see](/blog/WhyUncheckedTrustInAIPutsCriticalThinkingAtRisk/).
 
 ## Conclusion
 
 ### Adapting to Change with Awareness
 
-As AI keeps growing, we need to change how we handle information. We should accept AI-made images as part of our online world, but also get better at questioning and understanding them. In a world full of fake creations, our own thinking and judgement are the best tools we have. This won't be easy, but it's necessary.
+As AI keeps growing, we need to change how we handle information. We should accept AI-made images as part of our online world, but also get better at questioning and understanding them. In a world full of fake creations, [our own thinking and judgement are the best tools we have](/blog/OptimizedIntoIrrelevanceWhenAIDoesTheThinkingForUs/). This won't be easy, but it's necessary.

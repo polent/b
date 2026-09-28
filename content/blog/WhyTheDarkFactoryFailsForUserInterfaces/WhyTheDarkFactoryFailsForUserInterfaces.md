@@ -20,7 +20,7 @@ This works for some things. If you update database logic, manage infrastructure,
 
 ## Why User Interfaces Need Empathy
 
-A machine can write code, but it does not have empathy. If AI agents build all user interfaces, they will soon look identical. They will look like boring templates or generic publications. The brand and its unique feeling will get lost.
+A machine can write code, but it does not have empathy. If AI agents build all user interfaces, [they will soon look identical](/blog/OptimizedIntoIrrelevanceWhenAIDoesTheThinkingForUs/). They will look like boring templates or generic publications. The brand and its unique feeling will get lost.
 
 Also, we must think about real human situations. What about people who cannot speak? What about public banking where you cannot talk to your phone?
 
@@ -28,15 +28,15 @@ AI agents only check the things they are programmed to check. They do not unders
 
 ## The Problem with AI and Accessibility
 
-When AI writes frontend code, it often makes mistakes with accessibility. AI learns from the average website on the internet. But most websites on the internet are not accessible.
+When AI writes frontend code, it often makes mistakes with accessibility. [AI learns from the average website on the internet](/blog/WhyAIIsMakingFrontendAverage/). But most websites on the internet are not accessible.
 
-Because of this, AI code often lacks proper semantic HTML. It misses important ARIA labels. If we let AI agents deploy code directly to users, we will exclude millions of people. The systems will be biased and difficult to use for people with disabilities.
+Because of this, AI code often lacks proper semantic HTML. It misses [important ARIA labels](/blog/AiAndAccessibility/). If we let AI agents deploy code directly to users, we will exclude millions of people. The systems will be biased and difficult to use for people with disabilities.
 
 ## How We Use Automation Today
 
 My teams and I work with high automation since long. We use modern tools to make our workflows fast.
 
-We have agents that read Jira tickets and plan tasks. We run automated gates before we commit any code. Today, we have special agents for code quality, accessibility, security, and performance. Our pipelines run security checks and user interaction tests. Nobody does these steps manually.
+We have agents that read Jira tickets and plan tasks. We run automated gates before we commit any code. Today, we have [special agents for code quality](/blog/BeyondTheHypeCodingInPractice/), accessibility, security, and performance. Our pipelines run security checks and user interaction tests. Nobody does these steps manually.
 
 This feels like a dark factory because it is automated. But the human is still in control. We review the results and we make the final decisions.
 

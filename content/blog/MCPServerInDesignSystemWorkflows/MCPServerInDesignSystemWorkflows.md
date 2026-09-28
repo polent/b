@@ -40,7 +40,7 @@ Below is an example `mcp.json` configuration that we use across our Design Syste
 
 ## Workflow Overview
 
-Our workflow starts in **Figma**. Designers use Figma and Figma Make to create responsive UX and UI layouts for clients. Semantic structure and design flexibility are key. Once approved, design tokens are exported into a shared repository. We use **Style Dictionary** to generate tokens for web, Flutter, and other platform targets.
+Our workflow starts in **Figma**. Designers use Figma and Figma Make to create responsive UX and UI layouts for clients. Semantic structure and design flexibility are key. Once approved, design tokens are exported into a shared repository. We use **Style Dictionary** [to generate tokens for web, Flutter, and other platform targets](/blog/DesignTokensAreFinalNow/).
 
 {% image "./workflow.jpg", "Flowchart showing a design-to-code system. On the left, red circles show design steps from brand style guide to UI components. In the center, black and blue circles show tools like Figma, Style Dictionary, Git, and Storybook. On the right, web components are built, published via JFrog/NPM, and shared with contributors.", [], "(min-width: 40em) 960px, 100vw" %}
 
@@ -65,7 +65,7 @@ More info: [Storybook MCP Addon](https://storybook.js.org/addons/@storybook/addo
 
 ## Using Prompt Files
 
-Prompt files let you define complex, repeatable workflows.
+[Prompt files let you define complex, repeatable workflows](/blog/HeadlessDesignSystemMigration/).
 Example — an icon update process:
 
 ```markdown
@@ -93,7 +93,7 @@ Learn more: [VS Code Custom Prompts](https://code.visualstudio.com/docs/copilot/
 
 ## Instruction Files
 
-To make the agent aware of your coding conventions, you can use instruction files.
+To make the agent aware of your coding conventions, [you can use instruction files](/blog/SuperchargeVSCodeWithMCPServersAndAgentMode/).
 Example for test files:
 
 ```markdown
@@ -124,7 +124,7 @@ This setup runs in **VS Code**, but also works with **Cursor**, **Cline**, or an
 
 ## Why It Matters
 
-For Design System teams, context switching is the biggest productivity loss. With MCP-based workflows, you stay inside one environment. The model fetches context from Jira, design, and documentation servers automatically.
+For Design System teams, [context switching is the biggest productivity loss](/blog/TheAgenticDesignWorkflowOrchestratingMCPAndAIForScale/). With MCP-based workflows, you stay inside one environment. The model fetches context from Jira, design, and documentation servers automatically.
 
 The result: fewer errors, faster delivery, and better alignment between designers and engineers.
 
@@ -132,4 +132,4 @@ The result: fewer errors, faster delivery, and better alignment between designer
 
 Start small. Connect one MCP server (e.g., Figma). Try simple prompts to pull metadata or screenshots. Once stable, add Jira and Storybook.
 
-Over time, you’ll see your design system evolve from a manual process to a connected, intelligent workflow: a true **continuous experience pipeline**.
+Over time, you’ll see your design system evolve from a manual process to a connected, intelligent workflow: a true **[continuous experience pipeline](/blog/ContinuousExperiencePipelines/)**.

@@ -46,7 +46,7 @@ The first mistake costs you data, and data is at least lost in a way you can des
 
 ## The Broken Summary Chain
 
-AI accelerates repetitive engineering tasks, fast code drafting, and targeted document searches. The risk begins when teams remove human judgment from the workflow.
+AI accelerates repetitive engineering tasks, [fast code drafting](/blog/BeyondTheHypeCodingInPractice/), and targeted document searches. The risk begins when teams remove human judgment from the workflow.
 
 A troubling pattern is spreading across workplace environments:
 
@@ -74,7 +74,7 @@ The same study contains the fix, though. Participants who wrote unaided *first* 
 
 Microsoft Research and Carnegie Mellon surveyed 319 knowledge workers about 936 real tasks and found the trade-off stated plainly: the more confidence someone placed in the AI, the less critical thinking they reported doing. Trust and scrutiny move in opposite directions. The better the tool feels, the less of yourself you bring to it.
 
-None of this is entirely new. Back in 2011, Sparrow, Liu and Wegner showed what they called the Google effect. When people expect to have access to information later, they remember *where to find it* instead of the thing itself. We have been outsourcing memory to machines for fifteen years and mostly getting away with it. What changed is the depth of the outsourcing. With a search engine you still opened the sources, compared them, and decided which one to believe. With a chatbot the sources never appear at all. You end up remembering neither the fact nor where it came from.
+None of this is entirely new. Back in 2011, Sparrow, Liu and Wegner showed what they called the Google effect. When people expect to have access to information later, they remember *where to find it* instead of the thing itself. We have been outsourcing memory to machines for fifteen years and mostly getting away with it. What changed is the depth of the outsourcing. [With a search engine you still opened the sources](/blog/YetAnotherAssistantAndASearchEngine/), compared them, and decided which one to believe. With a chatbot the sources never appear at all. You end up remembering neither the fact nor where it came from.
 
 If that sounds abstract, consider the version you can already feel. A 2020 study in *Scientific Reports* found that heavier lifetime GPS use predicts worse spatial memory, dose-dependently, and the researchers specifically ruled out the obvious objection: it was not that people with a poor sense of direction used GPS more. Using it made them worse. Most of us can no longer navigate a city we have lived in for a decade. That is not a metaphor for what happens to reasoning under heavy AI use. It is a preview.
 

@@ -30,7 +30,7 @@ But this is exactly where the fallacy lies.
 
 ### The average as the ideal
 
-When we use AI to make design decisions, what are those decisions based on? On data from the past. On what *has already worked*. The AI learns from existing inventory. If we ask it, "Create a design for a successful sneaker shop," it won't give us something radically new. It gives us the average of what statistically fails the least.
+When we use AI to make design decisions, what are those decisions based on? On data from the past. On what *has already worked*. The AI learns from existing inventory. If we ask it, "Create a design for a successful sneaker shop," it won't give us something radically new. It gives us [the average of what statistically fails the least](/blog/WhyAIIsMakingFrontendAverage/).
 
 We are optimizing ourselves into absolute sameness.
 
@@ -40,7 +40,7 @@ The danger is real: The more we rely on tools to do the thinking for us, the mor
 
 We run the risk of viewing design merely as "painting by numbers," where the algorithm dictates the colors. If we stop allowing for human imperfection, emotional breaks, and "illogical" decisions, we lose exactly what makes brands stand out: Character.
 
-The more we use tools instead of our brains, the more identical things will become. It’s a feedback loop: The AI learns from our uniform shops, proposes uniform designs to us, we build them, and the next AI learns from that again.
+The more we use tools instead of our brains, the more identical things will become. It’s a feedback loop: The AI learns from our uniform shops, proposes uniform designs to us, we build them, and [the next AI learns from that again](/blog/BeyondTheHypeCodingInPractice/).
 
 **Where will this end?**
 
@@ -50,7 +50,7 @@ However, there is a path where AI doesn't make us boring, but rather empowers us
 
 Instead of asking AI for the "best solution" (which is just the most average one), we can use it to clear the path for real creativity.
 
-1. **Automating the everyday:** Let AI handle the tedious code, the resizing, and the technical implementation of Design Tokens. This frees up our human brains to focus entirely on the *feeling* and the *story* of a shop.
+1. **Automating the everyday:** Let AI handle the tedious code, the resizing, and the technical implementation of [Design Tokens](/blog/DesignTokensAreFinalNow/). This frees up our human brains to focus entirely on the *feeling* and the *story* of a shop.
 2. **The "Anti-Pattern" Generator:** We can use AI to brainstorm ideas that *break* the norm. Ask it: "What is the opposite of a standard e-commerce layout?" AI can be a sparring partner that pushes us out of our comfort zone, rather than keeping us in it.
 
 ### Conclusion
