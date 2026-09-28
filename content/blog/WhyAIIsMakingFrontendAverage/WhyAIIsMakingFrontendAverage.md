@@ -55,18 +55,19 @@ They live in containers.
 }
 ```
 
-Modells are currently also not trained a lot on the below features. To validate an outcode you need to know from it. Did you know all those new CSS features?
+Models are currently also not trained a lot on the below features. To validate an outcome you need to know about it. Did you know all those new CSS features?
 
 ## Scroll Driven Animations Without JavaScript
 
 ```css
-@scroll-timeline reveal {
-  source: auto;
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .card {
   animation: fade-in linear both;
-  animation-timeline: reveal;
+  animation-timeline: view();
 }
 ```
 
@@ -142,8 +143,9 @@ color: light-dark(#111, #eee);
 ## Native Select Styling
 
 ```css
-select {
-  appearance: none;
+select,
+::picker(select) {
+  appearance: base-select;
 }
 ```
 
@@ -158,14 +160,20 @@ li {
 ## if Function
 
 ```css
-padding: if(var(--dense), 0.25rem, 1rem);
+padding: if(style(--dense: 1): 0.25rem; else: 1rem);
 ```
 
 ## Anchor Positioning
 
 ```css
+.trigger {
+  anchor-name: --trigger;
+}
+
 .tooltip {
+  position: absolute;
   position-anchor: --trigger;
+  position-area: top;
 }
 ```
 

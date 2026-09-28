@@ -11,7 +11,7 @@ tags:
 
 ## The Experiment: Building a CV Website with AI
 
-I did a fun project to check [how modern CLIs and Chat agents work](/blog/SuperchargeVSCodeWithMCPServersAndAgentMode/) with a simple prompt and clean data. The goal was to see if an AI can build a state-of-the-art CV webpage completely alone. No questions allowed—just "Zero-Shot" execution.
+I did a fun project to check [how modern CLIs and chat agents work](/blog/SuperchargeVSCodeWithMCPServersAndAgentMode/) with a simple prompt and clean data. The goal was to see if an AI can build a state-of-the-art CV webpage completely alone. No questions allowed—just "Zero-Shot" execution.
 
 All code and the source data are here: [github.com/polent/Research](https://github.com/polent/Research)
 
@@ -25,10 +25,10 @@ I tested four different setups. It was a bit unfair for Copilot because I used a
 
 You can see the difference in the output links:
 
-* **Claude (Opus 4.7):** This was my favorite. The code is very clean and follow all rules. [View Claude Result](https://present.polente.de/research/claude-opus-4-7/)
+* **Claude (Opus 4.7):** This was my favorite. The code is very clean and follows all rules. [View Claude Result](https://present.polente.de/research/claude-opus-4-7/)
 * **Gemini (CLI):** It made the file very SEO friendly. This was expected and shows good technical logic. [View Gemini Result](https://present.polente.de/research/gemini-cli/)
-* **Copilot (GPT-4):** This result was massive broken. It produced a lot of useless code. [View Copilot Result](https://present.polente.de/research/copilot-gpt4/)
-* **Something (Sonnet):** This one was massive overengineered and still broken. It even looked for images outside the correct folder. [Something Result](https://present.polente.de/research/ss-claude-sonnet-4/)
+* **Copilot (GPT-4):** This result was massively broken. It produced a lot of useless code. [View Copilot Result](https://present.polente.de/research/copilot-gpt4/)
+* **Something (Sonnet):** This one was massively overengineered and still broken. It even looked for images outside the correct folder. [Something Result](https://present.polente.de/research/ss-claude-sonnet-4/)
 
 ## My Conclusion
 

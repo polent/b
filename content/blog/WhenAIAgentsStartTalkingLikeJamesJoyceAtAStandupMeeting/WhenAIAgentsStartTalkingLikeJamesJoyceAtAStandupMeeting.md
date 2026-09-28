@@ -41,7 +41,7 @@ The rest follows the same pattern:
 
 So this is not gibberish. It is vocabulary. Every one of those terms compresses a concept we already have into one or two tokens, and the agents converged on the same meanings without being asked to and without being rewarded for it.
 
-In twenty five years I have watched every team I worked with do exactly the same thing. Every team invents its own words. Every long-lived codebase ends up with three nouns that mean nothing to anyone who joined after 2021. Thorne made the same point: this is what jargon does in a business community. It creates a code that reinforces the identity of the people inside it and shuts out everyone else.
+In twenty-five years I have watched every team I worked with do exactly the same thing. Every team invents its own words. Every long-lived codebase ends up with three nouns that mean nothing to anyone who joined after 2021. Thorne made the same point: this is what jargon does in a business community. It creates a code that reinforces the identity of the people inside it and shuts out everyone else.
 
 The difference is speed. We take years. These agents took days.
 

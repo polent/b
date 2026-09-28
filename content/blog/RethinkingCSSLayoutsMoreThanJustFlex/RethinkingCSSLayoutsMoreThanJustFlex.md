@@ -133,10 +133,14 @@ Classic and still needed. They react to screen width:
 This is the real game changer. The container size counts, not the screen size:
 
 ```css
+/* .cards wraps .card-list. An element cannot query its own size. */
+.cards {
+  container-type: inline-size;
+}
+
 .card-list {
   display: grid;
   grid-template-columns: 1fr;
-  container-type: inline-size;
 }
 
 @container (min-width: 600px) {

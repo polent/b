@@ -29,6 +29,7 @@ This setup also uses **MCP servers**:
 - Some, like the **[NX repo MCP](/blog/SuperchargeVSCodeWithMCPServersAndAgentMode/)**, come out of the box.
 - **Figma MCP** [pulls design rules and tokens directly](/blog/MCPServerInDesignSystemWorkflows/).
 - **Atlassian MCP** keeps tickets updated, syncing progress and status in real time.
+
 This automation helps the design system stay aligned with design specs and project workflows without extra manual work.
 
 ### What I did

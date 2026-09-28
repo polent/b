@@ -103,13 +103,13 @@ const activeUsers = await fetch('/api/users?status=active').then(res => res.json
 #### BAD:
 
 ```HTML
-&lt;div onclick=&quot;submitForm()&quot; class=&quot;blue-box&quot;&gt;Click Me&lt;/div&gt;
+<div onclick="submitForm()" class="blue-box">Click Me</div>
 ```
 
 #### BETTER:
 
 ```HTML
-&lt;button type=&quot;button&quot; onclick=&quot;submitForm()&quot;&gt;Click Me&lt;/button&gt;
+<button type="button" onclick="submitForm()">Click Me</button>
 ```
 
 _Why? A real button handles spacebar and enter key by default. A div does nothing_
@@ -153,7 +153,7 @@ If you use AI agents in your team you need rules. Here is my "Stay Safe" list:
 - Clean Code Standards: Even if an agent wrote it it must be formatted and readable. No "Agent Only" code allowed.
 - Small Contexts: Give the agent small tasks. Do not say "Build me a shop". Say "Build me a component for a price tag".
 
-AI is a power tool. It is like a chainsaw. It can help you build a house fast. But if you don't know how to sue it you might lose a leg. Let's stay safe.
+AI is a power tool. It is like a chainsaw. It can help you build a house fast. But if you don't know how to use it you might lose a leg. Let's stay safe.
 
 ## Sources and further reading
 

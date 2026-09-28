@@ -35,7 +35,7 @@ Even more importantly: the tooling is open. Developed by the Design Tokens Commu
 
 ### What are design tokens?
 
-- **Abstract values**: They replace static values like `$0xFFFFFF` (white) with descriptive names like `color.white`.
+- **Abstract values**: They replace static values like `#FFFFFF` (white) with descriptive names like `color.white`.
 - **Atomic building blocks**: They represent the most fundamental visual attributes—colors, fonts, shadows, border-radii, spacing and animations.
 - **Centrally maintained**: All visual properties are defined and maintained in a single, central place.
 - **Platform-agnostic**: They ensure consistency across different applications and platforms.

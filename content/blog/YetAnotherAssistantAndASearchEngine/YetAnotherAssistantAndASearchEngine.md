@@ -22,7 +22,7 @@ Google's upcoming Pixel 9 smartphones are expected to introduce a new AI assista
 
 The Pixel 9 series, including the Pixel 9 and Pixel 9 Pro, is set to feature enhancements like Adaptive Touch to boost touch sensitivity, emphasizing user interaction and AI integration. These devices are expected to be smarter, utilizing advanced AI capabilities to differentiate from other Android devices, with Pixie being exclusive to Google's hardware.
 
-### Open AI Search
+### OpenAI Search
 
 OpenAI is reportedly preparing to launch its own AI-powered search engine, which is expected to be a significant competitor to Google's search engine. This new search engine from OpenAI is likely to be integrated with ChatGPT, providing a combination of generative AI capabilities and conventional web search functionalities. This integration is anticipated to allow the search engine to deliver AI-generated summaries alongside traditional search results, enhancing the overall user experience with more relevant and contextually informed responses.
 
@@ -34,9 +34,9 @@ It's a familiar scenario: companies claim their smart assistants will simplify o
 
 ## OpenAI's Search Engine: Just Another Data Issue?
 
-As OpenAI steps into the competitive arena with its new AI-driven search engine, skepticism arise about its true intent. Could this platform, armed with the power of ChatGPT, simply become another mechanism for data collection rather than a provider of unbiased search results? With its debut set to challenge established giants like Google, this initiative raises concerns about privacy and the potential for [manipulative algorithms](/blog/UniversalCommerceProtocolSoundsOpenItIsNot/) that prioritize profit over user benefit​.
+As OpenAI steps into the competitive arena with its new AI-driven search engine, skepticism arises about its true intent. Could this platform, armed with the power of ChatGPT, simply become another mechanism for data collection rather than a provider of unbiased search results? With its debut set to challenge established giants like Google, this initiative raises concerns about privacy and the potential for [manipulative algorithms](/blog/UniversalCommerceProtocolSoundsOpenItIsNot/) that prioritize profit over user benefit.
 
-While the search engine promises enhanced user interactions through AI-generated content, it needs to be seen whether it will respect user privacy or follow the path of existing platforms that harvest user data. The tech community and consumers are watching closely. I may hope for a tool that prioritizes transparency and fairness in the age of information overload. But I may be wrong.
+While the search engine promises enhanced user interactions through AI-generated content, it remains to be seen whether it will respect user privacy or follow the path of existing platforms that harvest user data. The tech community and consumers are watching closely. I may hope for a tool that prioritizes transparency and fairness in the age of information overload. But I may be wrong.
 
 ## Big Tech's Profit Machine
 
@@ -58,7 +58,7 @@ We must advocate for a digital future where the web continues to serve as a broa
 - [Google's More Powerful Pixie AI Assistant Could Debut on Pixel 9](https://www.nextpit.com/google-pixel-9-pro-pixie-smart-assistant-features-conversational)
 - [Google Pixel 9 could be the smartest smartphone yet, with new Pixie assistant rumoured](https://www.t3.com/news/google-pixel-9-could-be-the-smartest-smartphone-yet-with-new-pixie-assistant-rumoured)
 
-### Open AI Search
+### OpenAI Search
 
 - [What would an OpenAI search engine look like, and would it get you to switch from Google?](https://www.windowscentral.com/software-apps/what-would-an-openai-search-engine-look-like-and-would-it-get-you-to-switch-from-google)
 - [OpenAI may launch ChatGPT-based search engine next week](https://www.indiatoday.in/technology/news/story/openai-may-launch-chatgpt-based-search-engine-next-week-2535754-2024-05-06)

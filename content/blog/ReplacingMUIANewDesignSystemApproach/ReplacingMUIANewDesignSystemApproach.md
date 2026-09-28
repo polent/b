@@ -19,7 +19,7 @@ We transitioned from MUI and our old in-house design system due to performance i
 
 This blog post is about how we transitioned away from MUI and our old in-house design system. Over time, MUI no longer met our needs, and the earlier attempt at a custom design system faced issues. We struggled with component ownership, multiple entries for similar components, and a lack of integration between design tools and the final application. As a result, we ended up with a framework design system and another custom system that neither teams nor designers wanted to use.
 
-Due to performance degradation, component duplication, and complex theming with MUI, we decided to develop our own dedicated design system. ​
+Due to performance degradation, component duplication, and complex theming with MUI, we decided to develop our own dedicated design system. 
 
 We then began working on a fresh, more effective approach. After considering different options, we decided to build a React-based component library. This choice aligned with our main consumer’s infrastructure. From the start, we focused on making the library easier to manage and more compatible with our design tools. (In an upcoming post, I’ll dive into why we’re now exploring a web component library built with Lit.)
 

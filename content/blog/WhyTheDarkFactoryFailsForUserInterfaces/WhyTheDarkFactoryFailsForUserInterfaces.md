@@ -34,7 +34,7 @@ Because of this, AI code often lacks proper semantic HTML. It misses [important 
 
 ## How We Use Automation Today
 
-My teams and I work with high automation since long. We use modern tools to make our workflows fast.
+My teams and I work with high automation for a long time. We use modern tools to make our workflows fast.
 
 We have agents that read Jira tickets and plan tasks. We run automated gates before we commit any code. Today, we have [special agents for code quality](/blog/BeyondTheHypeCodingInPractice/), accessibility, security, and performance. Our pipelines run security checks and user interaction tests. Nobody does these steps manually.
 
@@ -46,7 +46,7 @@ If we remove the human completely, we will build biased systems. We must use aut
 
 The pipeline can be dark, but the design must stay human.
 
-## Ressources
+## Resources
 
 - [What Is a Dark Factory Codebase? The Future of Autonomous Software Development](https://www.mindstudio.ai/blog/what-is-a-dark-factory-codebase)
 - [The Dark Factory Pattern: Moving From AI-Assisted to Fully Autonomous Coding](https://hackernoon.com/the-dark-factory-pattern-moving-from-ai-assisted-to-fully-autonomous-coding)

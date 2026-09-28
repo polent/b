@@ -66,7 +66,7 @@ graph TD
 
     subgraph Dev_Handoff ["💻 Orchestration & Build"]
         direction TB
-        S7("Step 7: Component Mapping<br/>(Figma Connect / React)"):::banana
+        S7("Step 7: Component Mapping<br/>(Code Connect / React)"):::banana
         S8("Step 8: Framework-Agnostic<br/>Resolution (Storybook MCP)"):::banana
         S9("Step 9: Component Orchestration<br/>(Code Generation)"):::stem
         S10("Step 10: Automated<br/>Documentation"):::peel
@@ -165,11 +165,11 @@ Instead of creating dozens of variants for a single component (e.g., `card-with-
 
 ### Step 7: Component Mapping
 
-A crucial step in bridging the design-development gap is ensuring that components within Figma are accurately mapped to their corresponding Storybook components via Figma Connect. This mapping is vital for the agent to correctly populate responsive patterns and templates with the right interactive elements. By establishing a robust, automated link, any updates or changes in the Figma design system can be reflected and validated directly within Storybook, maintaining synchronization and reducing discrepancies between design and code.
+A crucial step in bridging the design-development gap is ensuring that components within Figma are accurately mapped to their corresponding Storybook components via Figma Code Connect. This mapping is vital for the agent to correctly populate responsive patterns and templates with the right interactive elements. By establishing a robust, automated link, any updates or changes in the Figma design system can be reflected and validated directly within Storybook, maintaining synchronization and reducing discrepancies between design and code.
 
 ### Step 8: Framework-Agnostic Component Resolution
 
-While Figma Connect facilitates mapping for React components, a significant portion of the digital landscape involves other frameworks (Vue, Angular, Svelte) or [pure web components](/blog/WebComponents/). For these, the agentic workflow relies on the **Storybook MCP**, a server that merges Storybook component metadata with Figma design context into a single rich context for the AI agent. The Storybook MCP can classify each component as Available, Partial, or Missing relative to the design system, providing the agent with a complete inventory regardless of the target framework. Combined with task context from ticketing systems (Jira, etc.), the agent can intelligently resolve and utilize the correct, framework-agnostic components. This ensures that the benefits of component orchestration extend beyond a single framework, providing comprehensive design system coverage.
+While Code Connect facilitates mapping for React components, a significant portion of the digital landscape involves other frameworks (Vue, Angular, Svelte) or [pure web components](/blog/WebComponents/). For these, the agentic workflow relies on the **Storybook MCP**, a server that merges Storybook component metadata with Figma design context into a single rich context for the AI agent. The Storybook MCP can classify each component as Available, Partial, or Missing relative to the design system, providing the agent with a complete inventory regardless of the target framework. Combined with task context from ticketing systems (Jira, etc.), the agent can intelligently resolve and utilize the correct, framework-agnostic components. This ensures that the benefits of component orchestration extend beyond a single framework, providing comprehensive design system coverage.
 
 ### Step 9: Component Orchestration via MCP
 
@@ -181,7 +181,7 @@ The ongoing maintenance of design system documentation is often a bottleneck. In
 
 ## Tooling Roadmap
 
-Implementing the Agentic Design Workflow requires assembling a concrete stack of MCP-compatible tools. The following table maps each layer of the continuous design flow to its current tooling:
+Implementing the Agentic Design Workflow requires assembling a concrete stack of MCP-compatible tools. The following list maps each layer of the continuous design flow to its current tooling:
 
 1. **Design Context — Figma MCP Server** (Remote or Desktop): Exposes tokens, components, layouts, and Code Connect mappings to agents. Provides three agent skills: Implement Design, Code Connect Components, and Create Design System Rules.
 2. **Interactive Review — MCP Apps** (`@modelcontextprotocol/ext-apps` SDK): Renders interactive dashboards, diff viewers, pattern galleries, and configuration wizards inside AI conversations (Claude, VS Code, ChatGPT, Goose).

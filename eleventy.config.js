@@ -268,6 +268,26 @@ module.exports = function (eleventyConfig) {
     });
     mdLib.use(markdownItMermaid.default || markdownItMermaid);
 
+    // The syntax highlighter returns code unescaped when Prism does not know
+    // the fence language (it matches case-sensitively, so ```HTML or ```text
+    // fall through). The markup inside the fence then renders as real HTML.
+    // Lowercase the language, and drop unknown ones so markdown-it escapes.
+    const prismLanguages = new Set();
+    for (const [name, def] of Object.entries(require("prismjs/components.json").languages)) {
+      prismLanguages.add(name);
+      [].concat(def.alias || []).forEach((alias) => prismLanguages.add(alias));
+    }
+    mdLib.core.ruler.push("normalize_fence_language", (state) => {
+      for (const token of state.tokens) {
+        if (token.type !== "fence" || !token.info) continue;
+        const [lang, ...rest] = token.info.trim().split(/\s+/);
+        const lower = lang.toLowerCase();
+        const base = lower.split("/")[0].replace(/^diff-/, "");
+        const known = base === "mermaid" || (base !== "text" && prismLanguages.has(base));
+        token.info = known ? [lower, ...rest].join(" ") : "";
+      }
+    });
+
     // `[^1]` references and `[^1]:` definitions. markdown-it has no footnote
     // support of its own, so without this the syntax renders as literal text.
     mdLib.use(markdownItFootnote);

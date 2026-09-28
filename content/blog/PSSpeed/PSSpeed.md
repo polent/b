@@ -85,16 +85,16 @@ The lyrics generated to describe [SPEED](https://www.publicissapient.com/publici
 ### Speed Version 1 - the heavy one
 
 <audio controls="controls">
-  <source type="audio/mp3" src="/media/SpeedForEver_1.mp3"></source>
-  <source type="audio/wav" src="/media/SpeedForEver_1.wav"></source>
+  <source type="audio/mp3" src="/media/SpeedForEver_1.mp3">
+  <source type="audio/wav" src="/media/SpeedForEver_1.wav">
   <p>Your browser does not support the audio element.</p>
 </audio>
 
 ### Speed Version 2 - the heavy rap
 
 <audio controls="controls">
-  <source type="audio/mp3" src="/media/SpeedForEver_2.mp3"></source>
-  <source type="audio/wav" src="/media/SpeedForEver_2.wav"></source>
+  <source type="audio/mp3" src="/media/SpeedForEver_2.mp3">
+  <source type="audio/wav" src="/media/SpeedForEver_2.wav">
   <p>Your browser does not support the audio element.</p>
 </audio>
 

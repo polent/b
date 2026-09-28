@@ -48,7 +48,7 @@ The goal?
 Here are a few MCP servers I currently have configured:
 
 - **[Atlassian integration](/blog/MCPServerInDesignSystemWorkflows/)** (Jira & Confluence): [`sooperset/mcp-atlassian`](https://github.com/sooperset/mcp-atlassian)
-- **NX integration** for monorepos: [`nx-mcp`](https://github.com/modelcontextprotocol/servers)
+- **NX integration** for monorepos: [`nx-mcp`](https://github.com/nrwl/nx-console)
 
 More MCP servers are available here: 👉 [List of MCP Servers](https://github.com/modelcontextprotocol/servers)
 
@@ -76,7 +76,7 @@ To hide your MCP server variables securely, follow this flow:
     "type": "promptString",
     "password": true,
     "description": "Enter your BS token"
-  }],
+  }]
 }
 ```
 
@@ -110,7 +110,7 @@ Look for `.github/copilot-instructions.md` in the **References** section of Copi
 
 ## Custom Prompts (Optional)
 
-You can also create prompt files like `.github/prompts/prompts_Example.md`. These files guide Copilot to align with your coding style, frameworks, and project needs, enhancing its suggestions. For more details, [visit the official documentation](https://code.visualstudio.com/docs/copilot/copilot-customization).
+You can also create prompt files like `.github/prompts/example.prompt.md`. These files guide Copilot to align with your coding style, frameworks, and project needs, enhancing its suggestions. For more details, [visit the official documentation](https://code.visualstudio.com/docs/copilot/customization/prompt-files).
 
 ## Additional specialized Instructions
 

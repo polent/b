@@ -38,7 +38,7 @@ This framework provides a comprehensive audit method for e-commerce websites. It
 
 ### SEO Tools
 
-- Browser: [Lighthouse SEO Audit](https://developers.google.com/web/tools/lighthouse) - [Documentation](https://developers.google.com/web/tools/lighthouse/audits/seo)
+- Browser: [Lighthouse SEO Audit](https://developer.chrome.com/docs/lighthouse) - [Documentation](https://developer.chrome.com/docs/lighthouse/seo/)
 - SaaS: [SEMrush](https://www.semrush.com/) - [Docs](https://www.semrush.com/kb/), [Ahrefs](https://ahrefs.com/) - [Academy](https://ahrefs.com/academy), [Screaming Frog](https://www.screamingfrog.co.uk/seo-spider/) - [User Guide](https://www.screamingfrog.co.uk/seo-spider/user-guide/)
 - Agentic: [Surfer SEO](https://surferseo.com/) - [Knowledge Base](https://docs.surferseo.com/) for content optimization
 
@@ -62,7 +62,7 @@ This framework provides a comprehensive audit method for e-commerce websites. It
 
 - Browser: [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - [Performance tab guide](https://developer.chrome.com/docs/devtools/performance/)
 - SaaS: [WebPageTest](https://www.webpagetest.org/) - [Documentation](https://docs.webpagetest.org/), [GTmetrix](https://gtmetrix.com/) - [Help Center](https://gtmetrix.com/help/), [SpeedCurve](https://www.speedcurve.com/) - [Docs](https://support.speedcurve.com/)
-- CI/CD: [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) - [Getting Started](https://github.com/GoogleChrome/lighthouse-ci/blob/main/docs/getting-started.md), [k6](https://k6.io/) - [Documentation](https://k6.io/docs/) for load testing
+- CI/CD: [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) - [Getting Started](https://github.com/GoogleChrome/lighthouse-ci/blob/main/docs/getting-started.md), [k6](https://k6.io/) - [Documentation](https://grafana.com/docs/k6/latest/) for load testing
 
 ## 3. Accessibility
 
@@ -82,7 +82,7 @@ This framework provides a comprehensive audit method for e-commerce websites. It
 
 ### Accessibility Tools
 
-- Browser: [axe DevTools](https://www.deque.com/axe/devtools/) - [User Guide](https://docs.deque.com/devtools-html/4.0.0/), [WAVE](https://wave.webaim.org/) - [Documentation](https://wave.webaim.org/help), [Lighthouse Accessibility Audit](https://developers.google.com/web/tools/lighthouse) - [Accessibility docs](https://developers.google.com/web/tools/lighthouse/audits/accessibility)
+- Browser: [axe DevTools](https://www.deque.com/axe/devtools/) - [User Guide](https://docs.deque.com/devtools-html/4.0.0/), [WAVE](https://wave.webaim.org/) - [Documentation](https://wave.webaim.org/help), [Lighthouse Accessibility Audit](https://developer.chrome.com/docs/lighthouse) - [Accessibility docs](https://developer.chrome.com/docs/lighthouse/accessibility/)
 - Automated: [Pa11y CI](https://github.com/pa11y/pa11y-ci) - [Usage Guide](https://github.com/pa11y/pa11y-ci#usage)
 - Manual: Screen readers ([NVDA](https://www.nvaccess.org/) - [User Guide](https://www.nvaccess.org/files/nvda/documentation/userGuide.html), [JAWS](https://www.freedomscientific.com/products/software/jaws/) - [Documentation](https://support.freedomscientific.com/Products/Blindness/JAWS), [VoiceOver](https://support.apple.com/guide/voiceover/welcome/mac) - [User Guide](https://support.apple.com/guide/voiceover/welcome/mac))
 
@@ -108,7 +108,7 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 
 - Static Analysis: [ESLint](https://eslint.org/) - [Documentation](https://eslint.org/docs/latest/), [Stylelint](https://stylelint.io/) - [User Guide](https://stylelint.io/user-guide/)
 - Browser: [Coverage tab](https://developer.chrome.com/docs/devtools/coverage/) in DevTools (unused CSS/JS)
-- CI/CD: [SonarQube](https://www.sonarqube.org/) - [Documentation](https://docs.sonarqube.org/latest/) for code quality
+- CI/CD: [SonarQube](https://www.sonarsource.com/products/sonarqube/) - [Documentation](https://docs.sonarsource.com/sonarqube-server/) for code quality
 
 ## 5. Software Architecture
 
@@ -216,7 +216,7 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 
 ### Process Tools
 
-- CI/CD: [GitHub Actions](https://github.com/features/actions) - [Documentation](https://docs.github.com/en/actions), [GitLab CI](https://docs.gitlab.com/ee/ci/) - [CI/CD Guide](https://docs.gitlab.com/ee/ci/), [Jenkins](https://www.jenkins.io/) - [Documentation](https://www.jenkins.io/doc/)
+- CI/CD: [GitHub Actions](https://github.com/features/actions) - [Documentation](https://docs.github.com/en/actions), [GitLab CI](https://docs.gitlab.com/ci/) - [CI/CD Guide](https://docs.gitlab.com/ci/), [Jenkins](https://www.jenkins.io/) - [Documentation](https://www.jenkins.io/doc/)
 - Observability: [Prometheus](https://prometheus.io/) - [Documentation](https://prometheus.io/docs/) + [Grafana](https://grafana.com/) - [Docs](https://grafana.com/docs/), [ELK Stack](https://www.elastic.co/elastic-stack) - [Documentation](https://www.elastic.co/guide/index.html)
 - Incident Mgmt: [PagerDuty](https://www.pagerduty.com/) - [Documentation](https://support.pagerduty.com/docs), [Opsgenie](https://www.atlassian.com/software/opsgenie) - [Documentation](https://support.atlassian.com/opsgenie/)
 

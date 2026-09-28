@@ -25,7 +25,7 @@ This post explores how AI tools can streamline development while highlighting th
 
 ## The Current AI Landscape and Potential Pitfalls
 
-While all companys heavily invest in AI, I've observed potential dangers in how it's being integrated:
+While all companies heavily invest in AI, I've observed potential dangers in how it's being integrated:
 
 ### Overreliance on Proprietary Tools
 

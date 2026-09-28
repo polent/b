@@ -32,7 +32,7 @@ They do not care about story, craft, or passion. They want:
 - clear pricing
 - zero uncertainty
 
-Big companies can deliver this. Small shops usually can not.
+Big companies can deliver this. Small shops usually cannot.
 
 If your data is not perfect, you are skipped. If you are skipped, you do not exist.
 
@@ -49,7 +49,7 @@ Now, [you need machine readiness](/blog/ECommerceWebsiteAuditFramework/E-Commerc
 
 This is not free. It needs time, people, and money.
 
-A small painter selling hand made art can not compete here. Amazon can.
+A small painter selling handmade art cannot compete here. Amazon can.
 
 So the AI will find Amazon. Not because it is better. Because it is easier.
 

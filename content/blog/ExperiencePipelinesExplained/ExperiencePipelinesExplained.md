@@ -10,7 +10,7 @@ tags:
   - Design Tokens
 ---
 
-{% image "./pipe.png", "Teams working together in an Office envirnment", [], "(min-width: 40em) 960px, 100vw" %}
+{% image "./pipe.png", "Teams working together in an office environment", [], "(min-width: 40em) 960px, 100vw" %}
 
 ## Mastering Your DSM Experience Pipeline
 

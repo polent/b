@@ -20,7 +20,7 @@ Below is an example `mcp.json` configuration that we use across our Design Syste
 {
   "servers": {
     "atlassian": {
-      "url": "https://mcp.atlassian.com/v1/sse",
+      "url": "https://mcp.atlassian.com/v1/mcp",
       "type": "http"
     },
     "figma": {
