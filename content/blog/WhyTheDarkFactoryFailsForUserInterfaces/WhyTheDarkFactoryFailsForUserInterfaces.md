@@ -22,7 +22,7 @@ This works for some things. If you update database logic, manage infrastructure,
 
 A machine can write code, but it does not have empathy. If AI agents build all user interfaces, [they will soon look identical](/blog/OptimizedIntoIrrelevanceWhenAIDoesTheThinkingForUs/). They will look like boring templates or generic publications. The brand and its unique feeling will get lost.
 
-Also, we must think about real human situations. What about people who cannot speak? What about public banking where you cannot talk to your phone?
+Also, we must think about real human situations. Some people cannot speak. In public banking, you cannot talk to your phone.
 
 AI agents only check the things they are programmed to check. They do not understand physical human limits. Gathering user needs, understanding legal rules, and planning for accessibility is hard. The dreamers of the dark factory often forget this.
 
@@ -34,7 +34,7 @@ Because of this, AI code often lacks proper semantic HTML. It misses [important 
 
 ## How We Use Automation Today
 
-My teams and I work with high automation for a long time. We use modern tools to make our workflows fast.
+My teams and I have worked with high automation for a long time. We use modern tools to make our workflows fast.
 
 We have agents that read Jira tickets and plan tasks. We run automated gates before we commit any code. Today, we have [special agents for code quality](/blog/BeyondTheHypeCodingInPractice/), accessibility, security, and performance. Our pipelines run security checks and user interaction tests. Nobody does these steps manually.
 

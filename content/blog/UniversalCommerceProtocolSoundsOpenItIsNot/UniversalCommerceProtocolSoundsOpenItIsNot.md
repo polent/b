@@ -139,12 +139,6 @@ The protocol is open. The outcome is not.
 
 Just faster. And quieter.
 
-### What do you think?
-
-Is Universal Commerce Protocol a real chance for small businesses or just another step where platforms take everything in between?
-
-I am curious to hear other opinions.
-
 ## Resources
 
 - [Universal Commerce Protocol announcement](https://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/)

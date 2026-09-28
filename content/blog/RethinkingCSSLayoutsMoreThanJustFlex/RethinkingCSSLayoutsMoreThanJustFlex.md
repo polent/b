@@ -12,7 +12,7 @@ tags:
 
 ## TL;DR
 
-Many developers know only `display: block` and `display: none`. Grid, Floats, Flow-Root and Container Queries are always forgotten. This creates weak layouts and too much JavaScript. Here is a short overview with examples when to use what.
+Many developers know only `display: block` and `display: none`. Grid, Floats, Flow-Root and Container Queries are often forgotten. This creates weak layouts and too much JavaScript. Here is a short overview with examples of when to use what.
 
 ## How it started
 
@@ -20,7 +20,7 @@ I work with many developers at a big client. All are experienced, but something 
 
 Maybe this comes from the [fullstack idea](/blog/FullStackVSFullLifecycleEngineering/). Everyone does a bit of everything, but no one is really strong in CSS. Or maybe we think: [React and our design system will solve it](/blog/ReplacingMUIANewDesignSystemApproach/). But when we build bigger components, people fail.
 
-So I write here how to build layouts again with CSS, not only Flex.
+So here is how to build layouts with CSS again, not only with Flex.
 
 ## Semantic Markup first
 
@@ -33,7 +33,7 @@ Before CSS, you need good HTML. Layout will never be clean if everything is `<di
 <article>…</article>
 <section>…</section>
 <footer>…</footer>
-````
+```
 
 This makes code readable, accessible and structured. CSS works better on it.
 
@@ -105,7 +105,7 @@ But please don’t use it for full page layouts. Flex is for rows and columns, n
 
 ## Responsiveness
 
-Sometimes layout alone is not enough. Grid, Flex or Floats give you the structure, but you also need ways to react to different sizes. This is where Media Queries and Container Queries come in. They work hand in hand with the layout techniques above and make your components really flexible.
+Sometimes layout alone is not enough. Grid, Flex or Floats give you the structure, but you also need ways to react to different sizes. This is where Media Queries and Container Queries come in. They work hand in hand with the layout techniques above. They make your components flexible.
 
 ### Media Queries
 
@@ -130,7 +130,7 @@ Classic and still needed. They react to screen width:
 
 {% image "./container.png", "Hand-drawn style sketch showing two containers side by side. Container A has cards stacked in one column, while Container B has cards in three columns, labeled with '@container', showing container query behavior.", [], "(min-width: 40em) 960px, 100vw" %}
 
-This is the real game changer. The container size counts, not the screen size:
+This is the biggest change. The container size counts, not the screen size:
 
 ```css
 /* .cards wraps .card-list. An element cannot query its own size. */
@@ -150,10 +150,10 @@ This is the real game changer. The container size counts, not the screen size:
 }
 ```
 
-Now a component adapts itself, no matter if inside a small or large container.
+Now a component adapts itself, no matter if it sits in a small or large container.
 
 ## Conclusion
 
-If Flex is your only tool, every layout looks like a Flex problem. Use Grid for structure, Floats for small tricks, Flow-Root for clean containers, Flex for rows, Media Queries for screens and Container Queries for real responsive components.
+If Flex is your only tool, every layout looks like a Flex problem. Use Grid for structure, Floats for small tricks and Flow-Root for clean containers. Use Flex for rows, Media Queries for screens and Container Queries for real responsive components.
 
 And don’t forget: everything starts with good semantic HTML. Then CSS will be strong and clear again.

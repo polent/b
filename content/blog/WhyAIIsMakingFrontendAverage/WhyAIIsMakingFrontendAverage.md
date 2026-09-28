@@ -14,7 +14,7 @@ tags:
 
 AI helps us write code faster, but speed is not quality. Most AI tools suggest solutions that work but feel old: media queries everywhere, [Flexbox centering for everything](/blog/RethinkingCSSLayoutsMoreThanJustFlex/), and custom selects rebuilt with JavaScript.
 
-The problem is not missing specs; the problem is missing real use cases. AI learns from what is used most, not from what is best today.
+The problem is not missing specs. The problem is missing real use cases. AI learns from what is used most, not from what is best today.
 
 ## AI Learns Patterns, Not Intent
 
@@ -22,9 +22,9 @@ AI can read CSS specs and summarize blog posts, but AI does not "feel" layout pr
 
 ### The Knowledge Gap and Risk for Juniors
 
-Large Language Models (LLMs) are trained on historical data, meaning they excel at what was common two years ago but often struggle with what is possible today. Many modern CSS features, like native nesting, container queries, or scroll-driven animations. These features are simply not present in high enough volume in the training sets to be the default suggestion.
+Large Language Models (LLMs) are trained on historical data. They are good at what was common two years ago. They often struggle with what is possible today. Take modern CSS features like native nesting, container queries or scroll-driven animations. They do not show up often enough in the training sets to become the default suggestion.
 
-This creates a [dangerous feedback loop](/blog/OptimizedIntoIrrelevanceWhenAIDoesTheThinkingForUs/) for junior developers. If they rely entirely on AI suggestions, they may never learn that these modern features exist. They might spend hours debugging complex JavaScript for a scroll effect that could have been three lines of CSS, simply because the AI didn't know any better.
+This creates a [dangerous feedback loop](/blog/OptimizedIntoIrrelevanceWhenAIDoesTheThinkingForUs/) for junior developers. If they rely entirely on AI suggestions, they may never learn that these modern features exist. They might spend hours debugging complex JavaScript for a scroll effect. Three lines of CSS could have done the job. The AI just did not know any better.
 
 ## Modern CSS Features AI Often Misses
 
@@ -55,7 +55,7 @@ They live in containers.
 }
 ```
 
-Models are currently also not trained a lot on the below features. To validate an outcome you need to know about it. Did you know all those new CSS features?
+Models are also not trained a lot on the features below yet. To validate an outcome, you need to know about it. So you need to know these new CSS features yourself.
 
 ## Scroll Driven Animations Without JavaScript
 
@@ -205,13 +205,13 @@ h1 {
 
 ### AI Makes Average Cheap
 
-AI makes average cheap. Junior developers often [trust AI output blindly](/blog/TheHiddenCostOfVibeCodingAndAIAgents/), repeating old patterns instead of exploring modern solutions. Modern CSS exists, but only humans push it forward.
+AI makes average cheap. Junior developers often [trust AI output blindly](/blog/TheHiddenCostOfVibeCodingAndAIAgents/). They repeat old patterns instead of exploring modern solutions. Modern CSS exists, but only humans push it forward.
 
 ## Conclusion
 
 ### The Web Must Keep Moving
 
-Frontend is not finished, and CSS evolves fast. If we let AI decide alone, the web will stop moving. Modern CSS keeps us sharp.
+Frontend is not finished. CSS evolves fast. If we let AI decide alone, the web will stop moving. Modern CSS keeps us sharp.
 
 ## Resources
 

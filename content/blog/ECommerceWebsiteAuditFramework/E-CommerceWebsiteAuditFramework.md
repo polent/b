@@ -16,7 +16,7 @@ tags:
 
 ## TL;DR
 
-This framework provides a comprehensive audit method for e-commerce websites. It covers SEO, performance, accessibility, front-end code, architecture, security, integrations, documentation, and operations. Each section includes sample do’s and don’ts, recommended tools, and evaluation criteria. These examples are illustrative only; in real audits, there are many more program-, client-, and project-specific checks. Deliverables include an executive summary, a detailed findings report, and a scorecard (1–5 rating) to prioritize fixes.
+This is a framework to audit e-commerce websites. It covers SEO, performance, accessibility, front-end code, architecture, security, integrations, documentation, and operations. Each section has sample do’s and don’ts, recommended tools, and evaluation criteria. The examples only show the idea. Real audits add many more program-specific, client-specific and project-specific checks. Deliverables are an executive summary, a detailed findings report, and a scorecard (1 to 5 rating) to prioritize fixes.
 
 {% image "./ec.png", "A flowchart diagram titled “E-Commerce Website Audit Framework.” In the center is the title box, surrounded by eight colored boxes: SEO & Online Visibility (on-page optimization, structured data, crawlability, search performance), Performance & Scalability (speed, resource usage, ability to handle growth), Accessibility (WCAG compliance, real-world usability), Frontend Code Quality (clean, maintainable, resilience), Software Architecture (scalability, modularity, resilience), Security (vulnerability protection, compliance with standards), Integrations & APIs (reliability, compliance of third-party systems), and Processes & Operations (deployment, monitoring, resilience).", [], "(min-width: 40em) 960px, 100vw" %}
 
@@ -38,9 +38,9 @@ This framework provides a comprehensive audit method for e-commerce websites. It
 
 ### SEO Tools
 
-- Browser: [Lighthouse SEO Audit](https://developer.chrome.com/docs/lighthouse) - [Documentation](https://developer.chrome.com/docs/lighthouse/seo/)
-- SaaS: [SEMrush](https://www.semrush.com/) - [Docs](https://www.semrush.com/kb/), [Ahrefs](https://ahrefs.com/) - [Academy](https://ahrefs.com/academy), [Screaming Frog](https://www.screamingfrog.co.uk/seo-spider/) - [User Guide](https://www.screamingfrog.co.uk/seo-spider/user-guide/)
-- Agentic: [Surfer SEO](https://surferseo.com/) - [Knowledge Base](https://docs.surferseo.com/) for content optimization
+- Browser: [Lighthouse SEO Audit](https://developer.chrome.com/docs/lighthouse): [Documentation](https://developer.chrome.com/docs/lighthouse/seo/)
+- SaaS: [SEMrush](https://www.semrush.com/): [Docs](https://www.semrush.com/kb/), [Ahrefs](https://ahrefs.com/): [Academy](https://ahrefs.com/academy), [Screaming Frog](https://www.screamingfrog.co.uk/seo-spider/): [User Guide](https://www.screamingfrog.co.uk/seo-spider/user-guide/)
+- Agentic: [Surfer SEO](https://surferseo.com/): [Knowledge Base](https://docs.surferseo.com/) for content optimization
 
 ## 2. Performance & Scalability
 
@@ -60,9 +60,9 @@ This framework provides a comprehensive audit method for e-commerce websites. It
 
 ### Performance Tools
 
-- Browser: [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - [Performance tab guide](https://developer.chrome.com/docs/devtools/performance/)
-- SaaS: [WebPageTest](https://www.webpagetest.org/) - [Documentation](https://docs.webpagetest.org/), [GTmetrix](https://gtmetrix.com/) - [Help Center](https://gtmetrix.com/help/), [SpeedCurve](https://www.speedcurve.com/) - [Docs](https://support.speedcurve.com/)
-- CI/CD: [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) - [Getting Started](https://github.com/GoogleChrome/lighthouse-ci/blob/main/docs/getting-started.md), [k6](https://k6.io/) - [Documentation](https://grafana.com/docs/k6/latest/) for load testing
+- Browser: [Chrome DevTools](https://developer.chrome.com/docs/devtools/): [Performance tab guide](https://developer.chrome.com/docs/devtools/performance/)
+- SaaS: [WebPageTest](https://www.webpagetest.org/): [Documentation](https://docs.webpagetest.org/), [GTmetrix](https://gtmetrix.com/): [Help Center](https://gtmetrix.com/help/), [SpeedCurve](https://www.speedcurve.com/): [Docs](https://support.speedcurve.com/)
+- CI/CD: [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci): [Getting Started](https://github.com/GoogleChrome/lighthouse-ci/blob/main/docs/getting-started.md), [k6](https://k6.io/): [Documentation](https://grafana.com/docs/k6/latest/) for load testing
 
 ## 3. Accessibility
 
@@ -82,11 +82,11 @@ This framework provides a comprehensive audit method for e-commerce websites. It
 
 ### Accessibility Tools
 
-- Browser: [axe DevTools](https://www.deque.com/axe/devtools/) - [User Guide](https://docs.deque.com/devtools-html/4.0.0/), [WAVE](https://wave.webaim.org/) - [Documentation](https://wave.webaim.org/help), [Lighthouse Accessibility Audit](https://developer.chrome.com/docs/lighthouse) - [Accessibility docs](https://developer.chrome.com/docs/lighthouse/accessibility/)
-- Automated: [Pa11y CI](https://github.com/pa11y/pa11y-ci) - [Usage Guide](https://github.com/pa11y/pa11y-ci#usage)
-- Manual: Screen readers ([NVDA](https://www.nvaccess.org/) - [User Guide](https://www.nvaccess.org/files/nvda/documentation/userGuide.html), [JAWS](https://www.freedomscientific.com/products/software/jaws/) - [Documentation](https://support.freedomscientific.com/Products/Blindness/JAWS), [VoiceOver](https://support.apple.com/guide/voiceover/welcome/mac) - [User Guide](https://support.apple.com/guide/voiceover/welcome/mac))
+- Browser: [axe DevTools](https://www.deque.com/axe/devtools/): [User Guide](https://docs.deque.com/devtools-html/4.0.0/), [WAVE](https://wave.webaim.org/): [Documentation](https://wave.webaim.org/help), [Lighthouse Accessibility Audit](https://developer.chrome.com/docs/lighthouse): [Accessibility docs](https://developer.chrome.com/docs/lighthouse/accessibility/)
+- Automated: [Pa11y CI](https://github.com/pa11y/pa11y-ci): [Usage Guide](https://github.com/pa11y/pa11y-ci#usage)
+- Manual: Screen readers ([NVDA](https://www.nvaccess.org/): [User Guide](https://www.nvaccess.org/files/nvda/documentation/userGuide.html), [JAWS](https://www.freedomscientific.com/products/software/jaws/): [Documentation](https://support.freedomscientific.com/Products/Blindness/JAWS), [VoiceOver](https://support.apple.com/guide/voiceover/welcome/mac): [User Guide](https://support.apple.com/guide/voiceover/welcome/mac))
 
-Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility for All](https://www.publicissapient.com/insights/liberty-accessibility-for-all)” initiative
+Reference: Publicis Sapient CoE Accessibility in Canada: “[Accessibility for All](https://www.publicissapient.com/insights/liberty-accessibility-for-all)” initiative
 
 ## 4. Front-End Code Quality
 
@@ -106,9 +106,9 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 
 ### Quality Tools
 
-- Static Analysis: [ESLint](https://eslint.org/) - [Documentation](https://eslint.org/docs/latest/), [Stylelint](https://stylelint.io/) - [User Guide](https://stylelint.io/user-guide/)
+- Static Analysis: [ESLint](https://eslint.org/): [Documentation](https://eslint.org/docs/latest/), [Stylelint](https://stylelint.io/): [User Guide](https://stylelint.io/user-guide/)
 - Browser: [Coverage tab](https://developer.chrome.com/docs/devtools/coverage/) in DevTools (unused CSS/JS)
-- CI/CD: [SonarQube](https://www.sonarsource.com/products/sonarqube/) - [Documentation](https://docs.sonarsource.com/sonarqube-server/) for code quality
+- CI/CD: [SonarQube](https://www.sonarsource.com/products/sonarqube/): [Documentation](https://docs.sonarsource.com/sonarqube-server/) for code quality
 
 ## 5. Software Architecture
 
@@ -128,9 +128,9 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 
 ### Architecture Tools
 
-- Code Level: [Architecture Decision Records (ADR)](https://adr.github.io/) - [Templates](https://github.com/joelparkerhenderson/architecture-decision-record), [PlantUML](https://plantuml.com/) - [Language Reference Guide](https://plantuml.com/guide) diagrams
-- Monitoring: [Datadog](https://www.datadoghq.com/) - [Documentation](https://docs.datadoghq.com/), [New Relic](https://newrelic.com/) - [Docs](https://docs.newrelic.com/), [OpenTelemetry](https://opentelemetry.io/) - [Documentation](https://opentelemetry.io/docs/)
-- Testing: [Postman](https://www.postman.com/) - [Learning Center](https://learning.postman.com/)/[Newman](https://github.com/postmanlabs/newman) - [CLI docs](https://learning.postman.com/docs/running-collections/using-newman-cli/) for APIs
+- Code Level: [Architecture Decision Records (ADR)](https://adr.github.io/): [Templates](https://github.com/joelparkerhenderson/architecture-decision-record), [PlantUML](https://plantuml.com/): [Language Reference Guide](https://plantuml.com/guide) diagrams
+- Monitoring: [Datadog](https://www.datadoghq.com/): [Documentation](https://docs.datadoghq.com/), [New Relic](https://newrelic.com/): [Docs](https://docs.newrelic.com/), [OpenTelemetry](https://opentelemetry.io/): [Documentation](https://opentelemetry.io/docs/)
+- Testing: [Postman](https://www.postman.com/): [Learning Center](https://learning.postman.com/)/[Newman](https://github.com/postmanlabs/newman): [CLI docs](https://learning.postman.com/docs/running-collections/using-newman-cli/) for APIs
 
 ## 6. Security
 
@@ -151,8 +151,8 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 ### Security Tools
 
 - Browser: [Security tab](https://developer.chrome.com/docs/devtools/security/) in Chrome DevTools
-- Code Level: [OWASP Dependency-Check](https://owasp.org/www-project-dependency-check/) - [Documentation](https://jeremylong.github.io/DependencyCheck/), [Snyk](https://snyk.io/) - [Documentation](https://docs.snyk.io/)
-- SaaS: [Burp Suite](https://portswigger.net/burp) - [Documentation](https://portswigger.net/burp/documentation), [OWASP ZAP](https://www.zaproxy.org/) - [User Guide](https://www.zaproxy.org/docs/) (DAST scans)
+- Code Level: [OWASP Dependency-Check](https://owasp.org/www-project-dependency-check/): [Documentation](https://jeremylong.github.io/DependencyCheck/), [Snyk](https://snyk.io/): [Documentation](https://docs.snyk.io/)
+- SaaS: [Burp Suite](https://portswigger.net/burp): [Documentation](https://portswigger.net/burp/documentation), [OWASP ZAP](https://www.zaproxy.org/): [User Guide](https://www.zaproxy.org/docs/) (DAST scans)
 
 ## 7. Integrations & APIs
 
@@ -172,9 +172,9 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 
 ### Integrations Tools
 
-- [Postman](https://www.postman.com/) - [Documentation](https://learning.postman.com/docs/getting-started/introduction/), [Insomnia](https://insomnia.rest/) - [Documentation](https://docs.insomnia.rest/) (manual testing)
-- [Pact](https://pact.io/) - [Documentation](https://docs.pact.io/) (contract testing)
-- [WireMock](https://wiremock.org/) - [Documentation](https://wiremock.org/docs/) (API mocking)
+- [Postman](https://www.postman.com/): [Documentation](https://learning.postman.com/docs/getting-started/introduction/), [Insomnia](https://insomnia.rest/): [Documentation](https://docs.insomnia.rest/) (manual testing)
+- [Pact](https://pact.io/): [Documentation](https://docs.pact.io/) (contract testing)
+- [WireMock](https://wiremock.org/): [Documentation](https://wiremock.org/docs/) (API mocking)
 
 ## 8. Documentation & Governance
 
@@ -194,9 +194,9 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 
 ### Documentation Tools
 
-- [Confluence](https://www.atlassian.com/software/confluence) - [Documentation](https://confluence.atlassian.com/doc/), [Notion](https://www.notion.so/) - [Help Center](https://www.notion.so/help), or [GitHub Wiki](https://docs.github.com/en/communities/documenting-your-project-with-wikis) - [About wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis)
-- [ADR templates](https://github.com/joelparkerhenderson/architecture-decision-record) - [Examples](https://github.com/joelparkerhenderson/architecture-decision-record/tree/main/examples) (Architectural Decision Records)
-- Scorecards & dashboards ([Grafana](https://grafana.com/) - [Documentation](https://grafana.com/docs/grafana/latest/))
+- [Confluence](https://www.atlassian.com/software/confluence): [Documentation](https://confluence.atlassian.com/doc/), [Notion](https://www.notion.so/): [Help Center](https://www.notion.so/help), or [GitHub Wiki](https://docs.github.com/en/communities/documenting-your-project-with-wikis): [About wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis)
+- [ADR templates](https://github.com/joelparkerhenderson/architecture-decision-record): [Examples](https://github.com/joelparkerhenderson/architecture-decision-record/tree/main/examples) (Architectural Decision Records)
+- Scorecards & dashboards ([Grafana](https://grafana.com/): [Documentation](https://grafana.com/docs/grafana/latest/))
 
 ## 9. Processes & Operations
 
@@ -216,9 +216,9 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 
 ### Process Tools
 
-- CI/CD: [GitHub Actions](https://github.com/features/actions) - [Documentation](https://docs.github.com/en/actions), [GitLab CI](https://docs.gitlab.com/ci/) - [CI/CD Guide](https://docs.gitlab.com/ci/), [Jenkins](https://www.jenkins.io/) - [Documentation](https://www.jenkins.io/doc/)
-- Observability: [Prometheus](https://prometheus.io/) - [Documentation](https://prometheus.io/docs/) + [Grafana](https://grafana.com/) - [Docs](https://grafana.com/docs/), [ELK Stack](https://www.elastic.co/elastic-stack) - [Documentation](https://www.elastic.co/guide/index.html)
-- Incident Mgmt: [PagerDuty](https://www.pagerduty.com/) - [Documentation](https://support.pagerduty.com/docs), [Opsgenie](https://www.atlassian.com/software/opsgenie) - [Documentation](https://support.atlassian.com/opsgenie/)
+- CI/CD: [GitHub Actions](https://github.com/features/actions): [Documentation](https://docs.github.com/en/actions), [GitLab CI](https://docs.gitlab.com/ci/): [CI/CD Guide](https://docs.gitlab.com/ci/), [Jenkins](https://www.jenkins.io/): [Documentation](https://www.jenkins.io/doc/)
+- Observability: [Prometheus](https://prometheus.io/): [Documentation](https://prometheus.io/docs/) + [Grafana](https://grafana.com/): [Docs](https://grafana.com/docs/), [ELK Stack](https://www.elastic.co/elastic-stack): [Documentation](https://www.elastic.co/guide/index.html)
+- Incident Mgmt: [PagerDuty](https://www.pagerduty.com/): [Documentation](https://support.pagerduty.com/docs), [Opsgenie](https://www.atlassian.com/software/opsgenie): [Documentation](https://support.atlassian.com/opsgenie/)
 
 ## Deliverables of the Audit
 
@@ -234,7 +234,7 @@ Reference: Publicis Sapient CoE Accessibility in Canada – “[Accessibility fo
 **Project:** Audit of “ShopNow E-Commerce”
 **Date:** September 2025
 
-The audit identified several strengths in the current platform, including a scalable cloud architecture and good API documentation. However, there are significant gaps in accessibility, performance, and security.
+The audit identified several strengths in the current platform, including a scalable cloud architecture and good API documentation. But there are significant gaps in accessibility, performance, and security.
 
 - **Accessibility**: The site does not meet WCAG 2.1 AA. Missing alt text, poor contrast, and keyboard traps were found. This limits usability for a portion of users and poses compliance risks.
 - **Performance**: Load times on mobile devices are slow (LCP ~4.2s). Large unoptimized images and render-blocking scripts are the main issues.
@@ -243,13 +243,13 @@ The audit identified several strengths in the current platform, including a scal
 
 **Recommended Roadmap:**
 
-- **Quick Wins (0–3 months):** Fix image optimization, apply security headers, add alt text.
-- **Mid-Term (3–6 months):** Upgrade dependency management, add Lighthouse CI in pipeline, implement automated accessibility checks.
+- **Quick Wins (0 to 3 months):** Fix image optimization, apply security headers, add alt text.
+- **Mid-Term (3 to 6 months):** Upgrade dependency management, add Lighthouse CI in pipeline, implement automated accessibility checks.
 - **Long-Term (6+ months):** Redesign color palette for accessibility, adopt service mesh for API resilience, build observability dashboards.
 
-#### Scorecard (Example, 1–5 Rating)
+#### Scorecard (Example, 1 to 5 Rating)
 
-| Category        | Rating (1–5) | Notes                                                                 |
+| Category        | Rating (1 to 5) | Notes                                                                 |
 |-----------------|--------------|----------------------------------------------------------------------|
 | SEO             | 3            | Indexing is fine, but missing structured data and duplicate metas.   |
 | Performance     | 2            | Mobile performance weak (LCP > 4s), no CDN usage.                    |
