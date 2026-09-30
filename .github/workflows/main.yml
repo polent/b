@@ -6,7 +6,8 @@ on:
 
 concurrency:
   group: deploy-${{ github.ref }}
-  cancel-in-progress: true
+  # Cancel superseded PR runs. Never cancel a deploy mid mirror.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 permissions:
   contents: read
@@ -32,14 +33,23 @@ jobs:
     - name: Build and check site
       run: npm test
 
-    - name: deploy file to server
+    - name: Install lftp
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-      uses: wlixcc/SFTP-Deploy-Action@a5ccb9c6211a94cc59404f0fdb2a9936a6dfee64 # v1.2.6
-      with:
-        username: ${{ secrets.FTP_USERNAME }}
-        server: ${{ secrets.FTP_SERVER }}
-        port: ${{ secrets.FTP_PORT }}
-        local_path: './_site/*'
-        remote_path: '/'
-        sftp_only: true
-        password: ${{ secrets.FTP_PASSWORD }}
+      run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+    # Mirror _site to the server over SFTP. Uploads changed files first,
+    # then deletes remote files that are no longer in _site.
+    # Excluded paths live only on the server and are never touched.
+    - name: Deploy to server
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      env:
+        SFTP_USER: ${{ secrets.FTP_USERNAME }}
+        SFTP_HOST: ${{ secrets.FTP_SERVER }}
+        SFTP_PORT: ${{ secrets.FTP_PORT }}
+        LFTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+      run: |
+        MIRROR="mirror --reverse --delete --parallel=4 --verbose"
+        MIRROR="$MIRROR --exclude-glob .htaccess --exclude-glob .htpasswd --exclude ^\.well-known/"
+        lftp --env-password -u "$SFTP_USER" -p "$SFTP_PORT" \
+          -e "set sftp:auto-confirm yes; set net:max-retries 3; $MIRROR ./_site/ /; bye" \
+          "sftp://$SFTP_HOST"
