@@ -31,7 +31,8 @@
 		})();
 		</script>
 
-    {%- if canonical %}<link rel="canonical" href="{{ canonical }}"/>{% endif %}
+    {%- set canonicalUrl = canonical or (page.url | htmlBaseUrl(metadata.url)) %}
+    <link rel="canonical" href="{{ canonicalUrl }}"/>
 
 		{#- Open Graph and Twitter card metadata for social previews #}
 		{%- set ogTitle = title or metadata.title %}
