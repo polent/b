@@ -20,8 +20,19 @@ module.exports = (eleventyConfig) => {
       // Warning: Avif can be resource-intensive so take care!
       let formats = ["avif", "webp", "auto"];
       let file = relativeToInputPath(this.page.inputPath, src);
+      const parsedWidths = Array.isArray(widths)
+        ? widths
+        : String(widths || "")
+            .split(",")
+            .map((width) => width.trim())
+            .filter(Boolean);
+      const requestedWidths = parsedWidths.length
+        ? parsedWidths
+            .map((width) => (width === "auto" ? width : Number(width)))
+            .filter((width) => width === "auto" || (Number.isFinite(width) && width > 0))
+        : [360, 608, 960, 1240, "auto"];
       let metadata = await eleventyImage(file, {
-        widths: [360, 608, 960, 1240, "auto"],
+        widths: requestedWidths,
         formats,
         outputDir: path.join(eleventyConfig.dir.output, "img"), // Advanced usage note: `eleventyConfig.dir` works here because we’re using addPlugin.
       });
@@ -29,7 +40,7 @@ module.exports = (eleventyConfig) => {
       // TODO loading=eager and fetchpriority=high
       let imageAttributes = {
         alt,
-        sizes,
+        sizes: sizes || "100vw",
         loading: "lazy",
         decoding: "async",
         class: "b-image",
