@@ -29,12 +29,12 @@ jobs:
       run: npm ci
     - name: Install Playwright Chromium
       run: npx playwright install --with-deps chromium
-    - name: Build
-      run: npm run build
+    - name: Build and check site
+      run: npm test
 
     - name: deploy file to server
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-      uses: wlixcc/SFTP-Deploy-Action@5cae30355c872f284b98e1da3e1cc6b8b8e8243e # v1.2.6
+      uses: wlixcc/SFTP-Deploy-Action@a5ccb9c6211a94cc59404f0fdb2a9936a6dfee64 # v1.2.6
       with:
         username: ${{ secrets.FTP_USERNAME }}
         server: ${{ secrets.FTP_SERVER }}
@@ -42,5 +42,4 @@ jobs:
         local_path: './_site/*'
         remote_path: '/'
         sftp_only: true
-        delete_remote_files: true
         password: ${{ secrets.FTP_PASSWORD }}
