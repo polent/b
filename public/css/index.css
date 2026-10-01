@@ -1206,37 +1206,36 @@ a[href].header-anchor:hover {
    Search page
    ========================================================================= */
 
+/* Pagefind Component UI sets `all: initial` on its elements, so site
+   styles do not cascade in. The --pf-* properties are the only theming
+   hook. They point at site tokens, which already switch for dark mode. */
 .search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
   margin: var(--space-lg) 0;
   max-width: var(--measure);
-  --pagefind-ui-primary: var(--link);
-  --pagefind-ui-text: var(--ink);
-  --pagefind-ui-background: var(--surface);
-  --pagefind-ui-border: var(--rule);
-  --pagefind-ui-tag: var(--surface);
-  --pagefind-ui-border-width: 1px;
-  --pagefind-ui-border-radius: var(--radius);
-  --pagefind-ui-font: var(--font-body);
+  --pf-text: var(--ink);
+  --pf-text-secondary: var(--muted);
+  --pf-text-muted: var(--muted);
+  --pf-background: var(--bg);
+  --pf-border: var(--rule);
+  --pf-border-focus: var(--muted);
+  --pf-skeleton: var(--surface);
+  --pf-skeleton-shine: var(--rule);
+  --pf-hover: var(--surface);
+  --pf-mark: var(--ink-strong);
+  --pf-outline-focus: var(--ring);
+  --pf-font: var(--font-body);
+  --pf-border-radius: var(--radius);
+  --pf-input-height: 44px;
+  --pf-summary-font-size: var(--step--1);
+  --pf-result-title-font-size: var(--step-0);
+  --pf-result-excerpt-font-size: var(--step--1);
 }
 
-/* Pagefind's input rule sets background-color but no color, so the
-   <input> falls back to the user-agent default (black) and ignores
-   --pagefind-ui-text in dark mode. Force it to follow the theme. */
-.search-wrapper .pagefind-ui__search-input {
-  color: var(--pagefind-ui-text) !important;
-}
-
-/* Center the label of Pagefind's Clear-search button and balance its
-   asymmetric default padding (which is 0 15px 0 2px scaled).
-   !important is needed because pagefind-ui.css is loaded after this
-   stylesheet and its scoped selector has equal specificity. */
-.search-wrapper .pagefind-ui__search-clear {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  text-align: center !important;
-  line-height: 1 !important;
-  padding-left: calc(15px * var(--pagefind-ui-scale)) !important;
+.search-wrapper pagefind-filter-dropdown {
+  align-self: flex-start;
 }
 
 /* =========================================================================
