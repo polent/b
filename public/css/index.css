@@ -846,8 +846,9 @@ pre[class*="language-"] {
 }
 
 /* Direct Links / Markdown Headers.
-   The anchor's text is transparent until hover, so it must be exempt from the
-   prose underline above — otherwise it renders as a floating dash beside every
+   The anchor stays visible in the muted colour so it passes WCAG AA contrast
+   and works for touch and keyboard users. It is exempt from the prose
+   underline above, otherwise it renders as a floating dash beside every
    heading. The `.post-content` prefix is needed to outweigh that rule. */
 .header-anchor {
   font-style: normal;
@@ -858,16 +859,15 @@ pre[class*="language-"] {
 .post-content a[href].header-anchor,
 a[href].header-anchor,
 a[href].header-anchor:visited {
-  color: transparent;
+  color: var(--muted);
   text-decoration: none;
 }
+.post-content a[href].header-anchor:focus,
+.post-content a[href].header-anchor:hover,
 a[href].header-anchor:focus,
 a[href].header-anchor:hover {
   text-decoration: none;
   color: var(--accent);
-}
-:hover > a[href].header-anchor {
-  color: var(--muted);
 }
 
 /* =========================================================================
