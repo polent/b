@@ -52,6 +52,10 @@ Look at your living room. People buy a sculpture at IKEA. A hand carved one cost
 
 Junior engineers face the hardest barrier. If you generate boilerplate without understanding the core DOM, HTML, CSS, and basic JavaScript execution, you never build mental models. You only learn how to prompt.
 
+Someone told me about the calculator recently. When it came out, people feared kids would lose simple math. That did not happen. But only because teachers are still paid to teach the basics in school. Kids learn to calculate by hand first. Then they get the tool.
+
+Juniors today have a different problem. Nobody teaches them the way seniors taught us in the last twenty years. Or the way we taught ourselves thirty years ago. They get the calculator on day one and never learn the math behind it. When the tool gives a wrong answer, they cannot tell. That is dangerous.
+
 ## Who Fed the Machine?
 
 One thing I keep thinking about. The tools learned from us. From developers who answered forum questions at night. From teachers who explained the box model for decades. From people who wrote tutorials, books, and documentation for free.
