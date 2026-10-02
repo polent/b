@@ -9,4 +9,12 @@ module.exports = {
     email: "sitte@polente.de",
     url: "https://polente.de/ueber/",
   },
+  // EchoThread comment widget. The API key is public and ends up in the HTML.
+  // Leave it empty and the comment section is not rendered.
+  comments: {
+    provider: "EchoThread",
+    apiKey: "ayrczcBJIO22NUQqiRF5O8RZLBgM15fI6WfzU4rGcuM",
+    script: "https://cdn.echothread.io/widget.js",
+    privacyUrl: "https://echothread.io/privacy",
+  },
 };

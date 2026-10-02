@@ -1,0 +1,49 @@
+{#- Comments load only on request. Nothing is sent to the comment provider
+    until the reader clicks the button, so no consent banner is needed. #}
+<section class="comments" aria-labelledby="comments-heading" data-pagefind-ignore>
+	<h2 id="comments-heading" tabindex="-1">Comments</h2>
+	<div class="comments-consent">
+		<p>Comments are hosted by {{ metadata.comments.provider }}. Loading them connects your browser to their servers in the US. Details in the <a href="/privacy/">privacy notice</a>.</p>
+		<button type="button" class="comments-load" hidden>Load comments</button>
+		<noscript><p>Comments need JavaScript.</p></noscript>
+	</div>
+	<div id="echothread"
+		data-api-key="{{ metadata.comments.apiKey }}"
+		data-identifier="{{ comment_id or page.fileSlug }}"
+		data-page-url="{{ page.url | htmlBaseUrl(metadata.url) }}"
+		data-page-title="{{ title }}"
+		data-src="{{ metadata.comments.script }}"></div>
+</section>
+
+{#- Progressive enhancement: the button stays hidden without JS. The widget has
+    no runtime theme API, so the current site theme is passed once at load. #}
+<script>
+(function () {
+	var section = document.querySelector(".comments");
+	if (!section) return;
+	var button = section.querySelector(".comments-load");
+	var consent = section.querySelector(".comments-consent");
+	var container = document.getElementById("echothread");
+	var heading = document.getElementById("comments-heading");
+	button.hidden = false;
+
+	button.addEventListener("click", function () {
+		var root = document.documentElement;
+		var theme = root.getAttribute("data-theme");
+		if (!theme) {
+			theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+		}
+		container.setAttribute("data-theme", theme);
+		var accent = getComputedStyle(root).getPropertyValue("--accent").trim();
+		if (accent) container.setAttribute("data-accent-color", accent);
+
+		var script = document.createElement("script");
+		script.src = container.getAttribute("data-src");
+		script.async = true;
+		container.parentNode.appendChild(script);
+
+		consent.remove();
+		heading.focus();
+	});
+})();
+</script>

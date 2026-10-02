@@ -59,6 +59,10 @@ layout: layouts/base.njk
 {%- endif %}
 {%- endif %}
 
+{%- if metadata.comments.apiKey and comments != false %}
+{% include "comments.njk" %}
+{%- endif %}
+
 {#- Structured data so search engines and LLM crawlers get the post as data
     rather than having to infer it from markup. #}
 <script type="application/ld+json">

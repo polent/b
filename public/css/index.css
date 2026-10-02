@@ -1004,6 +1004,56 @@ a[href].header-anchor:hover {
 }
 
 /* =========================================================================
+   Comments
+
+   Click to load. The consent note and button sit in a quiet surface box and
+   are removed once the widget is requested.
+   ========================================================================= */
+
+.comments {
+  max-width: var(--measure);
+  margin: var(--space-xl) 0 0;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--rule);
+}
+.comments h2:focus {
+  outline: none;
+}
+.comments h2:focus-visible {
+  outline: 3px solid var(--ring);
+}
+.comments-consent {
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background-color: var(--surface);
+  font-size: var(--step--1);
+  color: var(--muted);
+}
+.comments-consent p {
+  margin: 0 0 var(--space-sm);
+}
+.comments-load {
+  font: inherit;
+  font-family: var(--font-mono);
+  font-size: var(--step--2);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-strong);
+  background-color: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-pill);
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+  transition: border-color var(--motion-fast) var(--ease),
+    color var(--motion-fast) var(--ease);
+}
+.comments-load:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* =========================================================================
    Tags
    ========================================================================= */
 
