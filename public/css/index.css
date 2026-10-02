@@ -69,6 +69,9 @@
   --accent: #0e7490;
   --accent-quiet: #d9edf1;
   --ring: #ff9800;
+  --danger-bg: #fee2e2;
+  --danger-ink: #991b1b;
+  --danger-rule: #fca5a5;
 
   /* Legacy aliases. prism-diff.css and the Pagefind overrides still address
      these names; keep them mapped rather than editing those files. */
@@ -109,6 +112,9 @@
     --accent: #4fc9de;
     --accent-quiet: #1b3540;
     --ring: #ffb74d;
+    --danger-bg: #3a1a1f;
+    --danger-ink: #fecaca;
+    --danger-rule: #7f1d1d;
 
     --color-gray-50: #8b9aa7;
     --color-gray-90-inverse: #333;
@@ -131,6 +137,9 @@
   --accent: #4fc9de;
   --accent-quiet: #1b3540;
   --ring: #ffb74d;
+  --danger-bg: #3a1a1f;
+  --danger-ink: #fecaca;
+  --danger-rule: #7f1d1d;
 
   --color-gray-50: #8b9aa7;
   --color-gray-90-inverse: #333;
@@ -1051,6 +1060,18 @@ a[href].header-anchor:hover {
 .comments-load:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+/* The widget hardcodes a light pink error box with no dark variant, and the
+   text colour can get lost against it. The id selector outranks the widget's
+   class rules, so both themes get a readable pair from our own tokens. */
+#echothread .et-message-error {
+  background-color: var(--danger-bg);
+  color: var(--danger-ink);
+  border-color: var(--danger-rule);
+}
+#echothread .et-message-error span,
+#echothread .et-error-dismiss {
+  color: inherit;
 }
 
 /* =========================================================================
