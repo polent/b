@@ -1025,6 +1025,12 @@ a[href].header-anchor:hover {
   padding-top: var(--space-md);
   border-top: 1px solid var(--rule);
 }
+/* With the sidebar TOC, span TOC plus content like the post shell does. */
+@media (min-width: 68.75rem) {
+  article:has(.post-shell-has-toc) + .comments {
+    max-width: calc(14rem + var(--space-xl) + var(--measure));
+  }
+}
 .comments h2:focus {
   outline: none;
 }

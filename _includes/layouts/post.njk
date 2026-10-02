@@ -48,6 +48,10 @@ layout: layouts/base.njk
 </div>
 </article>
 
+{%- if metadata.comments.apiKey and comments != false %}
+{% include "comments.njk" %}
+{%- endif %}
+
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
 {%- set nextPost = collections.posts | getNextCollectionItem %}
@@ -57,10 +61,6 @@ layout: layouts/base.njk
 	{%- if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
 </ul>
 {%- endif %}
-{%- endif %}
-
-{%- if metadata.comments.apiKey and comments != false %}
-{% include "comments.njk" %}
 {%- endif %}
 
 {#- Structured data so search engines and LLM crawlers get the post as data
