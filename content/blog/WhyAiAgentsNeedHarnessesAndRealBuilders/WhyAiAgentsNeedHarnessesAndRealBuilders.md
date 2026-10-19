@@ -30,7 +30,7 @@ For teams already working in this space, the more relevant reading is usually pr
 
 ## What Google Research Built with Harness²
 
-Google Research open-sourced Harness². It is a framework for recursive agent harnessing.
+Google Research open-sourced [Harness²](https://github.com/google-research/harness2). It is a framework for recursive agent harnessing.
 
 The key idea is simple. The model weights stay frozen. Instead of retraining the model, the framework improves the harness around it.
 
@@ -93,9 +93,9 @@ This is the part that matters most. Not the hype. Not the promised autonomy. The
 
 ## Related reading
 
-- [The Myth of the Code Reader: Why AI Agents Are the Better Senior Engineers](/blog/TheMythOfTheCodeReaderWhyAIAgentsAreTheBetterSeniorEngineers/)
-- [Why AI Is Making Frontend Average](/blog/WhyAIIsMakingFrontendAverage/)
-- [The Dark Factory Trap: Finding the Sweet Spot for AI in Engineering](/blog/BeyondTheHypeCodingInPractice/)
-- [Why Coding Agents Cannot Replace Experience Engineering](/blog/WhyCodingAgentsCannotReplaceExperienceEngineering/)
+* [The Myth of the Code Reader: Why AI Agents Are the Better Senior Engineers](/blog/TheMythOfTheCodeReaderWhyAIAgentsAreTheBetterSeniorEngineers/)
+* [Why AI Is Making Frontend Average](/blog/WhyAIIsMakingFrontendAverage/)
+* [The Dark Factory Trap: Finding the Sweet Spot for AI in Engineering](/blog/BeyondTheHypeCodingInPractice/)
+* [Why Coding Agents Cannot Replace Experience Engineering](/blog/WhyCodingAgentsCannotReplaceExperienceEngineering/)
 
 Keep building systems by hand to stay sharp.
