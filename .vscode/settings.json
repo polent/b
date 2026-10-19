@@ -1,0 +1,19 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^git status --short && node -p \"require\\('\\./node_modules/markdown-it-mermaid-server/package\\.json'\\)\\.version\" && node -p \"require\\('\\./node_modules/mermaid-cli-batch/package\\.json'\\)\\.version\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "printf": true,
+        "/^node -p \"JSON\\.stringify\\(require\\('\\./node_modules/mermaid-cli-batch/package\\.json'\\), null, 2\\)\" && grep -R -n -- '--input\\\\\\|input:' node_modules/mermaid-cli-batch \\| head -35$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^node node_modules/mermaid-cli-batch/index\\.mjs --input mermaidTmp/chkjghuazsxu\\.mmd --verbose$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "npx playwright": true,
+        "true": true
+    }
+}

@@ -10,7 +10,7 @@
 	<div id="echothread"
 		data-api-key="{{ metadata.comments.apiKey }}"
 		data-identifier="{{ comment_id or page.fileSlug }}"
-		data-page-url="{{ page.url | htmlBaseUrl(metadata.url) }}"
+		data-page-url="{{ page.url and (page.url | htmlBaseUrl(metadata.url)) }}"
 		data-page-title="{{ title }}"
 		data-src="{{ metadata.comments.script }}"></div>
 </section>

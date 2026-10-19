@@ -3,3 +3,5 @@ node_modules/
 .slingshot
 mermaidTmp/
 .claude/settings.json
+.agents/*.local.*
+.agents/local/

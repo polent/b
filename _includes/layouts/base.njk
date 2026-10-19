@@ -31,14 +31,14 @@
 		})();
 		</script>
 
-    {%- set canonicalUrl = canonical or (page.url | htmlBaseUrl(metadata.url)) %}
-    <link rel="canonical" href="{{ canonicalUrl }}"/>
+    {%- set canonicalUrl = canonical or (page.url and (page.url | htmlBaseUrl(metadata.url))) %}
+    {%- if canonicalUrl %}<link rel="canonical" href="{{ canonicalUrl }}"/>{%- endif %}
 
 		{#- Open Graph and Twitter card metadata for social previews #}
 		{%- set ogTitle = title or metadata.title %}
 		{%- set ogDescription = description or metadata.description %}
-		{%- set ogUrl = page.url | htmlBaseUrl(metadata.url) %}
-		{%- set ogType = "article" if page.url.indexOf("/blog/") == 0 and page.url != "/blog/" else "website" %}
+		{%- set ogUrl = page.url and (page.url | htmlBaseUrl(metadata.url)) %}
+		{%- set ogType = "article" if page.url and page.url.indexOf("/blog/") == 0 and page.url != "/blog/" else "website" %}
 		<meta property="og:site_name" content="{{ metadata.title }}">
 		<meta property="og:type" content="{{ ogType }}">
 		<meta property="og:title" content="{{ ogTitle }}">
