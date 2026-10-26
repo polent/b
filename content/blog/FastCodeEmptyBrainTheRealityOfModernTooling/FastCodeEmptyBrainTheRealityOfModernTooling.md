@@ -98,6 +98,7 @@ I enjoy the new way of working. I also keep baking my own bread and fixing thing
 
 ## Further Reading and References
 
+* [The Missing AI Payoff Outside Big Tech](/blog/TheMissingAIPayoffOutsideBigTech/): Why buying tokens turns into pure overhead without human judgment and grounded delivery.
 * [Engineering Excellence or Brain Rot? The AI Development Paradox](/blog/IsAIRottingOurProgrammingBrainsorFreeingUs/): My earlier take on the same question, with lessons from legacy code and greenfield work.
 * [The Hidden Cost of Vibe Coding and AI Agents](/blog/TheHiddenCostOfVibeCodingAndAIAgents/): Why "it works" is not the same as "it is good".
 * [Web Development Education (Mathias Schäfer)](https://molily.de/web-dev-education): A grounded perspective on web development fundamentals, highlighting why direct understanding of browser mechanics and standard web technologies matters over pure abstraction.

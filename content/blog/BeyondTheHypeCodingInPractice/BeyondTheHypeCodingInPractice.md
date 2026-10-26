@@ -58,7 +58,7 @@ What the AI could not see: the CMS API had no commenting endpoint. Comments only
 
 AI tools make our pipelines faster, our security checks stricter, and our documentation more consistent. They help our engineering teams deliver up to 50 percent more value with high quality standards.
 
-Real system architecture, user empathy, and strategic decisions cannot be outsourced to a dark factory. Real human expertise remains the foundation of reliable software.
+Real system architecture, user empathy, and strategic decisions cannot be outsourced to a dark factory. Real human expertise remains the foundation of reliable software and [measurable business payoff](/blog/TheMissingAIPayoffOutsideBigTech/).
 
 [^1]: [MindStudio Blog: What Is a Dark Factory Codebase?](https://www.mindstudio.ai/blog/what-is-a-dark-factory-codebase)
 [^2]: [Model Context Protocol Specification](https://modelcontextprotocol.io)

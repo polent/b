@@ -39,4 +39,4 @@ Junior developers may lack deep technical background, but they bring curiosity a
 
 This friction between team members is what protects projects from expensive mistakes.
 
-Coding agents are good at boilerplate, repetitive tasks, and fast prototyping. But they are tools, not teammates. The responsibility for architectural decisions, client collaboration, accessibility, and user experience stays with humans.
+Coding agents are good at boilerplate, repetitive tasks, and fast prototyping. But they are [tools, not a magic payoff](/blog/TheMissingAIPayoffOutsideBigTech/). The responsibility for architectural decisions, client collaboration, accessibility, and user experience stays with humans.

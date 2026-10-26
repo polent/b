@@ -76,7 +76,7 @@ The AI market and the dot-com bubble of the late 1990s and early 2000s differ in
 
 A major difference is the type of companies involved. In the dot-com bubble, many startups went public with unproven business models and little or no profit. The internet hype drove them. The AI field is different. More established companies dominate it. Tech giants like Google, Microsoft and Amazon lead. They have invested in AI for years. They have deep pockets, vast datasets and advanced technology infrastructure. That gives them a big advantage in building AI. This maturity points to a more stable market than the volatile dot-com era.
 
-These companies will be the winners. The free riders who think [using a chat prompt solves their issues](/blog/PromptingIsNotEverythingWhyTheToolMatters/) will not.
+These companies will be the winners. The free riders who think [using a chat prompt solves their issues](/blog/PromptingIsNotEverythingWhyTheToolMatters/) will not, which already shows up in [the missing AI payoff outside big tech](/blog/TheMissingAIPayoffOutsideBigTech/).
 
 ### Lower Stock Valuations in AI
 

@@ -58,7 +58,7 @@ Imagine a line that goes in as "integration is blocked pending a decision from l
 
 Underneath sits an old management failure with new tooling. Everyone in the chain assumed somebody earlier had checked. Nobody had. [Automation bias](/blog/TheHiddenCostOfVibeCodingAndAIAgents/) does the rest. A confident answer from a machine gets less scrutiny than a hesitant one from a person. That is exactly backwards. AI did not invent diffusion of responsibility. It runs it at machine speed, with better typography.
 
-When no one checks the output, errors multiply quietly. AI tools are not deterministic calculators that guarantee truth. They generate plausible token sequences. Relying on them without careful manual review leads straight to flawed business decisions.
+When no one checks the output, errors multiply quietly. AI tools are not deterministic calculators that guarantee truth. They generate plausible token sequences. Relying on them without careful manual review leads straight to [flawed business decisions and zero financial payoff](/blog/TheMissingAIPayoffOutsideBigTech/).
 
 Three habits stop the chain. Never summarize a summary. Go back to the primary artifact instead. Keep provenance attached, so the next person can find the source without archaeology. And treat a signature as a signature: whoever's name is on the slide owns every number on it.
 

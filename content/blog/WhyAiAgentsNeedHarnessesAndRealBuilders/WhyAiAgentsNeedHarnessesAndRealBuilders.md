@@ -14,7 +14,7 @@ tags:
 
 Some people talk like AI agents will soon run software teams. That sounds clean in a keynote. In practice, it is a bad way to build products.
 
-Software delivery is not line production. It is trade-offs, system design, debugging, and business judgment.
+Software delivery is not line production. It is trade-offs, system design, debugging, and [business judgment](/blog/TheMissingAIPayoffOutsideBigTech/).
 
 An unguided agent mirrors the average pattern from the average training data. That is useful for boilerplate. It is not a substitute for understanding architecture, risk, and user value.
 
@@ -93,6 +93,7 @@ This is the part that matters most. Not the hype. Not the promised autonomy. The
 
 ## Related reading
 
+* [The Missing AI Payoff Outside Big Tech](/blog/TheMissingAIPayoffOutsideBigTech/)
 * [The Myth of the Code Reader: Why AI Agents Are the Better Senior Engineers](/blog/TheMythOfTheCodeReaderWhyAIAgentsAreTheBetterSeniorEngineers/)
 * [Why AI Is Making Frontend Average](/blog/WhyAIIsMakingFrontendAverage/)
 * [The Dark Factory Trap: Finding the Sweet Spot for AI in Engineering](/blog/BeyondTheHypeCodingInPractice/)
