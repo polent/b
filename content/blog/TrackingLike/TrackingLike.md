@@ -164,6 +164,7 @@ Best practices and other things to read
 - [https://www.getadvanced.net/technology-blog/article/sharing-personal-data-when-you-become-the-product](https://www.getadvanced.net/technology-blog/article/sharing-personal-data-when-you-become-the-product)
 - [https://blog.chromium.org/2019/05/improving-privacy-and-security-on-web.html](https://blog.chromium.org/2019/05/improving-privacy-and-security-on-web.html)
 - [https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html](https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html)
+- [Ad Blockers and Pi-hole Are Digital Self Defense](/blog/AdBlockersAndPiHoleAreDigitalSelfDefense/)
 
 ## \* Why ‘The Hare and the Hedgehog’?
 

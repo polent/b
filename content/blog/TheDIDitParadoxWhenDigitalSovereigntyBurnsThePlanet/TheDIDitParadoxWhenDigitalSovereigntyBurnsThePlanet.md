@@ -69,3 +69,4 @@ Before you declare your digital independence, run this quick audit. It shows if 
 * **[Green IT Global: The Efficiency Paradox of Decentralization](https://greenit.globant.com/)**
 * **[Circular Electronics Partnership: Roadmap for Hardware Lifecycles](https://cep2030.org/)**
 * **[Digital Independence Day (#DIDit) Campaign: Marc-Uwe Kling](https://di.day/)**
+* **[Ad Blockers and Pi-hole Are Digital Self Defense](/blog/AdBlockersAndPiHoleAreDigitalSelfDefense/)**
